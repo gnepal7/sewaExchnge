@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Add Item System Layout</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="images/favicon.png" type="images/img/fav.png">
+	
+	<!-- fontawesome -->
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<!-- owl -->
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+
+	<!-- custom -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>	
+
+	<div class="progress-wrapper">
+		<div class="progress-bar"></div>
+	</div>
+
+	<nav class="nav py-1">
+		<div class="wrapper-wide dg col12 gap-3 header-wrap">
+			<div class="colg-3">
+				<a href="index.html" class="logo">
+					<img src="images/img/logo.png">
+				</a>
+			</div>
+
+			<div class="colg-4 search-wrap">
+				<form class="search-form">
+					<input type="search" placeholder="search item(s) here....">
+					<i class="fa fa-search"></i>
+				</form>
+			</div>
+
+			<div class="colg-5">
+				<ul class="btn-group action-buttons df gap-2">
+					<li class="action-buttons_add">
+						<a class="btn-sm btn-main-br  prime df gap-1" href="addPost.html">
+							<i class="fa fa-plus"></i>
+							<span>Add Item</span>
+						</a>
+					</li>
+					<!-- these two list will show before login -->
+					<li>
+						<a class="btn-sm btn-lw-bg sec db" href="login.html">							
+							Login
+						</a>
+					</li>
+					<li>
+						<a class="btn-sm btn-dim-bg prime db" href="signup.html">							
+							signup
+						</a>
+					</li>
+
+					<!-- these two list will show after login -->					
+					<li class="df sobg br-1 alc">
+						<a class="btn-sm blc db notify-btn" href="javascript:void()">				
+							<i class="fa fa-bell"></i>
+						</a>
+						<a class="btn-sm sec df profile-btn" href="javascript:void()">		
+							<img src="images/img/man.png">
+							<i class="fa fa-chevron-down"></i>
+						</a>
+					</li>
+
+				</ul>
+			</div>
+			
+		</div>
+	</nav>
+
+
+	<div class="box_on-click notification p-2 br-1">
+		<h4 class="blc box_on-click_title pb-1 df alc">Notifications 
+			<span class="clear">Clear</span>
+		</h4>
+		<ul class="box_on-click_ul dfc">
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Vestibulum ac arcu id libero dignissim mollis sed ut nunc</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Sed cursus nibh molestie, imperdiet urna a, blandit justo</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Morbi auctor odio sed massa semper molestie</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Praesent nec eros sed sem lacinia mattis sit amet in diam</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Aliquam dictum libero id orci laoreet dignissim</a>
+			</li>
+		</ul>
+	</div>
+
+
+	<div class="box_on-click profile_box py-1 px-2 br-1">
+		<h4 class="blc box_on-click_title pb-1 mb-1 df alc">Gopal Nepal</h4>
+		<ul class="box_on-click_ul dfc">
+			<li class="box_on-click_li">
+				<a class="box_on-click_a blc df gap-1 alc p-1" href="#">
+					<i class="fa fa-user-circle"></i>
+					<span>Visit Profile
+					</a>
+				</li>
+				<li class="box_on-click_li">
+					<a class="box_on-click_a blc df gap-1 alc p-1" href="#">
+						<i class="fa fa-sign-out"></i>
+						<span>Logout</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+
+
+		<section class="wrapper-wide mt-2">
+			
+
+			<div class="dg col12 gap-3">				
+
+				<div class="colg-9 form-content">		
+					<h3 class="h3 blc tac mb-1">Add New Item</h3>			
+					<ul class="stepper stepper_ul gap-1">
+						<li class="stepper_li step active br-1">Basic Info</li>
+						<li class="stepper_li step br-1">Description</li>
+						<li class="stepper_li step br-1">Media Upload</li>
+						<li class="stepper_li step br-1">Location Info</li>
+						<li class="stepper_li step br-1">Review & Submit</li>
+						<li class="stepper_li step br-1">Verification</li>						
+					</ul>
+					
+					<form id="listingForm" action="" class="p-2 br-2 sobg mt-2">
+						<!-- Step 1 -->
+						<div class="step-content active" data-step="1">
+							<h4 class="prime colg-12">Step 1: Basic Info</h4>
+
+							<div class="form-group dfc colg-4">
+								<label for="bicycle">Item/Service Title *</label>
+								<input type="text" name="bicycle" placeholder="Bicycle">
+							</div>
+
+							<div class="form-group dfc colg-4">
+								<div class="form-group gap-1">
+									<label for="category" class="db">Choose Category *</label>
+									<select>
+									    <option>Goods</option>
+									    <option>Skills</option>
+									    <option>Services</option>
+									    <option>Jobs</option>
+									    <option>Rent</option>
+									    <option>Recyclables</option>
+									</select>						
+								</div>
+
+							</div>
+							<!-- end form-group -->		
+
+							<div class="form-group dfc colg-4">
+								<div class="form-group colg-6 gap-1">
+									<label for="category" class="db">Choose Sub-Category *</label>
+									<select>
+									    <option>Goods</option>
+									    <option>Skills</option>
+									    <option>Plastic Scrap</option>
+									    <option>Metal Scrap</option>
+									    <option>Paper Scrap</option>
+									    <option>Glass Scrap</option>
+									</select>						
+								</div>								
+							</div>
+
+							<div class="form-group dfc colg-12">
+								<label for="ex-type">Exchange Type *</label>
+								<div class="df gap-1 single_line">
+									<label class="check-label with-bg">Pure Exchange
+										<input type="checkbox">
+										<span></span>
+									</label>
+									<label class="check-label with-bg">Vaule Exchange
+										<input type="checkbox" checked="checked">
+										<span></span>
+									</label>
+									<label class="check-label with-bg">Cash Settlement
+										<input type="checkbox">
+										<span></span>
+									</label>
+									<label class="check-label with-bg">Hybrid Exchange
+										<input type="checkbox" checked="checked">
+										<span></span>
+									</label>
+								</div>
+							</div>
+
+							<div class="form-group dfc colg-12">
+								<label for="esti-value">Exchange Value (EV)</label>
+								<input type="text" name="esti-value" placeholder="exchange value (EV)">
+							</div>	
+							<div class="df gap-1 single_line colg-12">								
+								<label class="check-label with-bg">Sewa Credit (Auto Calculated)
+									<input type="checkbox" checked="checked">
+									<span></span>
+								</label>
+							</div>
+							<div class="form-group dfc colg-12">
+								<label for="ex-type">Settlement Preference:*</label>
+								<div class="df gap-1 single_line">
+									<label class="radio-label with-bg">Fixed Amount
+										<input type="radio" name="amount">
+										<span></span>
+									</label>
+
+									<label class="radio-label with-bg">Flexible Range
+										<input type="radio" name="amount">
+										<span></span>
+									</label>
+
+									<label class="radio-label with-bg">Negotiable
+										<input type="radio" checked="checked" name="amount">
+										<span></span>
+									</label>
+								</div>
+							</div>
+
+							<div class="btn-group colg-12">
+								<a class="btn-sm btn-main-br btn-next" href="javascript:void">Next
+									<i class="fa fa-chevron-right"></i> 
+								</a>
+							</div>
+						</div>
+						
+
+						<!-- Step 2 -->
+						<div class="step-content" data-step="2">
+							<h4 class="prime colg-12">Step 2: Description</h4>
+							
+							<div class="form-group dfc colg-6">
+								<label for="message">Item Description:</label>
+								<textarea 
+								id="message" 
+								name="message" 
+								rows="9" 
+								maxlength="500" 
+								minlength="30"
+								placeholder="Please describe the item (minimum 30 characters)"
+								required
+								></textarea>
+
+								<div class="char-count" style="text-align:right; font-size:0.85rem; margin-top:6px; min-height:1.2em;">
+									<span id="charLeft">500</span> characters remaining
+									<span id="minWarning" style="color:#d32f2f; display:none;"> (minimum 30 required)</span>
+								</div>
+							</div>
+
+							<div class="form-group dfc colg-6">
+								<label for="ex-type">Condition*</label>
+								<div class="df gap-1 single_line">
+									<label class="radio-label with-bg">New
+										<input type="radio" checked="checked" name="condition">
+										<span></span>
+									</label>
+
+									<label class="radio-label with-bg">Used
+										<input type="radio" name="condition">
+										<span></span>
+									</label>
+
+									<label class="radio-label with-bg">Service
+										<input type="radio" checked="checked" name="condition">
+										<span></span>
+									</label>
+								</div>
+							</div>
+
+							<div class="form-group dfc colg-6">
+								<label for="quantity">Quantity</label>
+								<input type="number" name="quantity" placeholder="10">
+							</div>
+
+							<div class="form-group dfc colg-6">
+								<label for="quantity">Validity Period</label>
+								<div class="df gap-1">
+									<input type="date"> to
+									<input type="date">
+								</div>
+							</div>
+
+							<div class="btn-group mt-1 df gap-1 colg-12">
+								<a class="btn-sm btn-gray-br btn-back" href="javascript:void">
+									<i class="fa fa-chevron-left"></i>
+									Back
+								</a>
+								<a class="btn-sm btn-main-br btn-next" href="javascript:void">Next 
+									<i class="fa fa-chevron-right"></i>
+								</a>
+							</div>
+
+						</div>
+
+						<!-- Step 3 -->
+						<div class="step-content" data-step="3">
+							<h4 class="prime colg-12">Step 3:  Media Upload</h4>
+							<p class="p2 mb-1 colg-12">Upload photos and media to show your item/service clearly.</p>
+							<div class="form-group dfc colg-6">
+								<label>Main Image</label>
+								<div class="file-input" id="uploadFile">
+									<input type="file" id="myFileInput" class="file-input-input">
+									<label for="myFileInput" class="file-input-label">Upload Main Image*</label>
+								</div>
+								<div class="img-preview mb-1" style="display:none;">
+									<img id="previewImg" />
+								</div>
+							</div>
+
+							<div class="form-group dfc colg-12">
+								<label class="mt-2">Add More Images</label>							  
+								<div class="file-input" id="uploadFile">
+									<input 
+									type="file" 
+									id="myFileMultiple" 
+									class="file-input-input" 
+									accept="image/*" 
+									multiple               
+									>
+									<label for="myFileMultiple" class="file-input-label">Upload Images</label>
+								</div>
+								<div class="img-preview multiple df gap-1" id="previewContainer"></div>
+								
+							</div>
+
+							<div class="form-group dfc colg-12">
+								<div class="file-input">
+									<label class="">Upload Video</label>
+								  <input type="file" id="myVideoInput" class="file-input-input" accept="video/*">
+								  <label for="myVideoInput" class="file-input-label">Upload Video</label>
+								</div>
+								<video id="videoPreview" controls></video>
+							</div>
+
+							<div class="btn-group mt-1 df gap-1 colg-12">
+								<a class="btn-sm btn-gray-br btn-back" href="javascript:void">
+									<i class="fa fa-chevron-left"></i>
+									Back
+								</a>
+								<a class="btn-sm btn-main-br btn-next" href="javascript:void">Next 
+									<i class="fa fa-chevron-right"></i>
+								</a>
+							</div>
+
+						</div>
+
+						<!-- Step 4 -->
+						<div class="step-content" data-step="4">
+							<h4 class="prime colg-12">Step 4: Location Info</h4>
+
+							<div class="form-group dfc mb-2 colg-6">
+								<label for="province" class="db">Province</label>
+								<select>
+									<option>Koshi</option>
+									<option>Madhesh</option>
+									<option>Bagmati</option>
+								</select>						
+							</div>
+
+							<div class="form-group dfc colg-6">
+								<label for="district" class="db">District</label>
+								<select>
+									<option>Taplejung</option>
+									<option>Ilam</option>
+									<option>Panchthar</option>
+									<option>Jhapa</option>
+								</select>						
+							</div>
+
+							<div class="form-group dfc colg-6">
+								<label for="mun" class="db">Municipality/Rural Municipality</label>
+								<select>
+									<option>Fungling</option>
+									<option>Taplejung</option>
+								</select>						
+							</div>
+
+							<div class="form-group dfc colg-6">								
+								<label class="radio-label toggle-style">
+									<input type="checkbox" name="gps">
+									<span></span>
+									Auto Detect GPS
+								</label>		
+							</div>
+
+							<div class="form-group dfc colg-12">
+								<label>Location Map</label>	
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1766.388766341674!2d85.3283045!3d27.69326995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19bd1f6c414d%3A0x8eea65fddb97588e!2sHanumansthan%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1769527489276!5m2!1sen!2snp" width="" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+							<div class="form-group dfc colg-12">
+								<div class="df gap-1 single_line">
+
+									<label class="check-label with-bg">Required Pickup
+										<input type="checkbox" checked="checked">
+										<span></span>
+									</label>
+
+									<label class="check-label with-bg">Delivery Option
+										<input type="checkbox">
+										<span></span>
+									</label>
+
+								</div>
+							</div>
+
+							<div class="btn-group mt-1 df gap-1 colg-12">
+								<a class="btn-sm btn-gray-br btn-back" href="javascript:void">
+									<i class="fa fa-chevron-left"></i>
+									Back
+								</a>
+								<a class="btn-sm btn-main-br btn-next" href="javascript:void">Next 
+									<i class="fa fa-chevron-right"></i>
+								</a>
+							</div>
+
+						</div>
+
+						<!-- Step 5 -->
+						<div class="step-content" data-step="5">
+							<h4 class="prime colg-12">Step 5: Review & Submit</h4>
+							<div class="review dfc colg-12">
+								<aside class="review_item df gap-1 pt-1">
+									<h6 class="">Item/Service title:</h6>
+									<p class="p2">Bicycle</p>
+								</aside>
+								<aside class="review_item df gap-1 alc">
+									<h6 class="">Category:</h6>
+									<p class="p2">Recylable stuff</p>
+								</aside>
+								<aside class="review_item df gap-1 alc">
+									<h6 class="">Sub-category:</h6>
+									<p class="p2">Plastic Stuff</p>
+								</aside>
+								<aside class="review_item df gap-1 alc">
+									<h6 class="">Sub-category:</h6>
+									<p class="p2">Plastic Stuff</p>
+								</aside>
+								<hr>
+								<aside class="review_item df gap-1 alc">
+									<h6 class="">Exchange type:</h6>
+									<p class="p2">Hybrid Exchange</p>
+								</aside>
+								<aside class="review_item df gap-1 alc">
+									<h6 class="">Exchange value:</h6>
+									<p class="p2">Rs.4500</p>
+								</aside>
+								<aside class="review_item df gap-1 alc">
+									<h6 class="">Settlement Preference:</h6>
+									<p class="p2">Negotiable</p>
+								</aside>
+								<aside class="review_item df gap-1 alc">
+									<h6 class="">Description:</h6>
+									<p class="p2">
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+									</p>
+								</aside>
+								<aside class="review_item df gap-1 alc">
+									<h6 class="">Condition:</h6>
+									<p class="p2">New</p>
+								</aside>
+								<aside class="review_item df gap-1 alc">
+									<h6 class="">Quantity:</h6>
+									<p class="p2">1</p>
+								</aside>
+								<aside class="review_item df gap-1 alc">
+									<h6 class="">Validity Period:</h6>
+									<p class="p2">2025-01-20 to 2025-02-10</p>
+								</aside>
+								<hr>
+								<aside class="review_item df gap-1 alc">
+									<h6 class="">Banner Image:</h6>
+									<p class="p2"><img class="main-img br-1" src="images/slide2.jpg"></p>
+								</aside>
+								<aside class="review_item df gap-1 alc">
+									<h6 class="">Images:</h6>
+									<ul class="review_ul df gap-1">
+										<li class="review_li img-li">
+											<p class="p2">
+												<img src="images/slide3.jpg">
+											</p>
+										</li>
+										<li class="review_li img-li">
+											<p class="p2">
+												<img src="images/slide4.jpg">
+											</p>
+										</li>
+										<li class="review_li img-li">
+											<p class="p2">
+												<img src="images/slide5.jpg">
+											</p>
+										</li>
+										<li class="review_li img-li">
+											<p class="p2">
+												<img src="images/slide6.jpg">
+											</p>
+										</li>
+										<li class="review_li img-li">
+											<p class="p2">
+												<img src="images/slide7.jpg">
+											</p>
+										</li>
+									</ul>
+								</aside>
+								<aside class="review_item df gap-1 alc">
+									<h6 class="">Video:</h6>
+									<video controls autoplay muted playsinline>
+									  <source src="videos/intro.mp4" type="video/mp4">
+									</video>
+								</aside>
+								<hr>
+								<aside class="review_item df gap-1 alc">
+									<h6 class="">Province:</h6>
+									<p class="p2">Koshi</p>
+								</aside>
+								<aside class="review_item df gap-1 alc">
+									<h6 class="">District:</h6>
+									<p class="p2">Taplejung</p>
+								</aside>
+								<aside class="review_item df gap-1 alc">
+									<h6 class="">RM/Mun:</h6>
+									<p class="p2">Fungling</p>
+								</aside>
+								<aside class="review_item df gap-1 alc">
+									<h6 class="">Location map:</h6>
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1766.388766341674!2d85.3283045!3d27.69326995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19bd1f6c414d%3A0x8eea65fddb97588e!2sHanumansthan%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1769527489276!5m2!1sen!2snp" width="" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+								</aside>
+								<aside class="review_item df gap-1 alc">
+									<h6 class="">Required pickup:</h6>
+									<p class="p2">Yes</p>
+								</aside>
+								<aside class="review_item df gap-1 alc">
+									<h6 class="">Delivery Option:</h6>
+									<p class="p2">No</p>
+								</aside>
+								<aside class="review_item df gap-1 alc">
+									<h6 class="">Delivery Option:</h6>
+									<p class="p2">No</p>
+								</aside>
+							</div>
+							<!-- end review -->
+							<div class="form-group dfc colg-12">
+								<a class="btn-sm px-1 btn-main-bg db submit_btn mb-2" href="javascript:void()">Submit</a>
+							</div>
+
+							<div class="btn-group mt-1 df gap-1 colg-12">
+								<a class="btn-sm btn-gray-br btn-back" href="javascript:void">
+									<i class="fa fa-chevron-left"></i>
+									Back
+								</a>	
+								<a class="btn-sm btn-main-br btn-next" href="javascript:void">Next 
+									<i class="fa fa-chevron-right"></i>
+								</a>						
+							</div>
+						</div>
+
+						<!-- Step 6 -->
+						<div class="step-content" data-step="6">
+							<h4 class="prime colg-12">Step 5: Verification</h4>
+							<p class="p2 colg-12">Select a verification mode to process your item/service</p>
+							<h6 class="prime mt-1 colg-12">Product ID: <strong>098haghdt8907645</strong></h6>
+
+							<div class="form-group dfc mt-2 p-1 br-1 wh-bg colg-12">
+								<label class="radio-label">Auto trust mode
+									<input type="radio" name="verification-mode">
+									<span></span>									
+								</label>
+								<cite>Processing 1-2 hour approximately</cite>
+							</div>
+							<div class="form-group dfc mt-2 p-1 br-1 wh-bg colg-12">
+								<label class="radio-label">Community trust mode
+									<input type="radio" checked="checked" name="verification-mode">
+									<span></span>									
+								</label>
+								<cite>Community endersoment & social profile (Recomended)</cite>
+							</div>
+							<div class="form-group dfc mt-2 p-1 br-1 wh-bg colg-12">
+								<label class="radio-label">Comprehensive mode
+									<input type="radio" name="verification-mode">
+									<span></span>									
+								</label>
+								<cite>Processing 6-8 hour approximately</cite>
+							</div>
+
+							<div class="form-group dfc m1-1 colg-12">
+								<a class="btn-sm btn-main-bg verify-btn" href="javascript:void()">Verify Item</a>
+							</div>
+
+							<div class="btn-group mt-1 df gap-1 colg-12">
+								<a class="btn-sm btn-gray-br btn-back" href="javascript:void">
+									<i class="fa fa-chevron-left"></i>
+									Back
+								</a>
+							</div>
+
+						</div>
+
+					</form>
+
+
+				</div>
+
+			<div class="colg-3 dfc gap-2">
+
+				<div class="br-col p-2 br-1 sobg">
+					<h4 class="prime mb-1">Verification Tips</h4>
+					<ul class="post_right-ul dfc">
+						<li class="post_right-li blc pt-1">Complete all details securately.</li>
+						<li class="post_right-li blc mt-1 pt-1">Add clear photos & videos.</li>
+						<li class="post_right-li blc mt-1 pt-1">Link your wallet.</li>
+						<li class="post_right-li blc mt-1 pt-1">Agrees to terms.</li>
+					</ul>
+				</div>
+
+				<div class="br-col p-2 br-1 lig-bg">
+					<h4 class="prime mb-1">Upload Progress</h4>
+					<ul class="post_right-ul dfc gap-1">
+						<li class="post_right-li blc pt-1 df gap-1 p-1 sobg alc br-1">
+							<i class="fa fa-info-circle"></i>Basic info
+						</li>
+						<li class="post_right-li blc pt-1 df gap-1 p-1 sobg alc br-1">
+							<i class="fa fa-file-alt"></i>Description
+						</li>
+						<li class="post_right-li blc pt-1 df gap-1 p-1 sobg alc br-1">
+							<i class="fa fa-file-upload"></i>Upload File
+						</li>
+						<li class="post_right-li blc pt-1 df gap-1 p-1 sobg alc br-1">
+							<i class="fa fa-paper-plane"></i>Submit
+						</li>
+					</ul>
+				</div>
+
+				<div class="br-col p-2 br-1 sobg">
+					<h4 class="prime mb-1">Commision Model</h4>
+					<ul class="post_right-ul dfc">
+						<li class="post_right-li blc alc pt-1 p-1 wh-bg br-1 df gap-1 no-br">
+							<i class="fa fa-check-circle"></i>
+							Verification Fee : Rs. 50+
+						</li>
+					</ul>
+				</div>
+
+
+			</div>
+
+
+		</div>
+
+	</section>
+
+
+		<footer class="footer mt-3">
+			<div class="footer_top">
+				<aside class="df gap-2 alc py-4 wrapper-wide">
+					<img src="images/img/logo.png" class="logo">
+					<h3 class="wh">Sewa Exchange</h3>
+				</aside>
+			</div>
+			<div class="footer_bottom pt-4">
+				<div class="wrapper-wide dg col12 gap-3">					
+
+					<div class="colg-3 foot_col">
+						<h4 class="mb-1">Sewa Exchange</h4>
+						<ul class="footer_ul dfc">
+							<li class="footer_li">
+								<a href="#" class="footer_a wh db">About Platform</a>
+							</li>
+							<li class="footer_li">
+								<a href="#" class="footer_a wh db">Exchange Policy</a>
+							</li>
+							<li class="footer_li">
+								<a href="#" class="footer_a wh db">Wallet Policy</a>
+							</li>
+							<li class="footer_li">
+								<a href="#" class="footer_a wh db">Cash Policy</a>
+							</li>
+							<li class="footer_li">
+								<a href="#" class="footer_a wh db">Agent Policy</a>
+							</li>					
+						</ul>
+					</div>
+
+					<div class="colg-3 foot_col">
+						<h4 class="mb-1">Support</h4>
+						<ul class="footer_ul dfc">
+							<li class="footer_li">
+								<a href="#" class="footer_a wh db">Help Center</a>
+							</li>
+							<li class="footer_li">
+								<a href="#" class="footer_a wh db">How Exchange Works</a>
+							</li>
+							<li class="footer_li">
+								<a href="#" class="footer_a wh db">Safety Guidelines</a>
+							</li>							
+							<li class="footer_li">
+								<a href="#" class="footer_a wh db">Contact Support</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="colg-3 foot_col">
+						<h4 class="mb-1">Company</h4>
+						<ul class="footer_ul dfc">
+							<li class="footer_li">
+								<a href="#" class="footer_a wh db">About Us</a>
+							</li>
+							<li class="footer_li">
+								<a href="#" class="footer_a wh db">Terms & Conditions</a>
+							</li>
+							<li class="footer_li">
+								<a href="#" class="footer_a wh db">Privacy Policy</a>
+							</li>
+							<li class="footer_li">
+								<a href="#" class="footer_a wh db">Dispute Resolution</a>
+							</li>											
+						</ul>
+					</div>
+
+					<div class="colg-3 foot_col">
+						<h4 class="mb-1">Connect</h4>
+						<ul class="footer_ul dfc">
+							<li class="footer_li df gap-1 alc">
+								<i class="fa fa-map-marker-alt gr"></i>
+								<a href="javascript:void()" class="footer_a wh db">Anamnagar, Kathmandu, Nepal</a>
+							</li>
+							<li class="footer_li df gap-1 alc">
+								<i class="fa fa-envelope gr"></i>
+								<a href="#" class="footer_a wh db">info@sewaexchange.com</a>
+							</li>
+							<li class="footer_li df gap-1 alc">
+								<i class="fa fa-phone gr"></i>
+								<a href="javascript:void()" class="footer_a wh db">00977-9812345678</a>
+							</li>					
+						</ul>
+						<ul class="footer_ul df gap-1 social_ul mt-1">
+							<li class="footer_li">
+								<a href="#" class="footer_a fb">
+									<i class="fab fa-facebook-f"></i>
+								</a>
+							</li>
+							<li class="footer_li">
+								<a href="#" class="footer_a tw">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</li>
+							<li class="footer_li">
+								<a href="#" class="footer_a wht">
+									<i class="fab fa-whatsapp"></i>
+								</a>
+							</li>							
+						</ul>
+					</div>
+
+					<div class="colg-12 py-2 copyright">
+						<p class="gr">© 2026 Sewa Exchange. All rights reserved.</p>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/main.js"></script>
+
+		<script>
+			$(document).ready(function(){
+				$("#uploadFile").on("change", function (e) {
+					const file = e.target.files[0];
+
+					if (file) {
+						const reader = new FileReader();
+
+						reader.onload = function (e) {
+							$("#previewImg").attr("src", e.target.result);
+							$(".img-preview").fadeIn();
+						};
+
+						reader.readAsDataURL(file);
+					}
+				});
+			});
+
+		</script>
+
+		<script>
+			$(function() {
+				let current = 1;
+				const totalSteps = 6;
+				let formData = {};
+
+				function goToStep(target) {
+					if (target < 1 || target > totalSteps) return;
+
+		        // Save data of the step we're LEAVING
+		        if (current === 1) {
+		        	formData.title    = $('[data-step="1"] input[type="text"]').val() || '';
+		        	formData.category = $('[data-step="1"] .category-btn.active').text() || 'Goods';
+		        }
+		        // Add more steps here later, e.g.
+		        // if (current === 2) { formData.description = $('#description').val(); }
+
+		        current = target;
+
+		        // Update stepper UI
+		        $(".stepper_li.step")
+		        .removeClass("active done")
+		        .eq(current-1).addClass("active");
+		        $(".stepper_li.step").slice(0, current-1).addClass("done");
+
+		        // Show correct content
+		        $(".step-content").removeClass("active");
+		        $(`.step-content[data-step="${current}"]`).addClass("active");
+		      }
+
+		    // ── Next button ───────────────────────────────────────
+		    $(".btn-next").on("click", function(e) {
+		        e.preventDefault();           // prevent any form submit
+
+		        if (current < totalSteps) {
+		        	goToStep(current + 1);
+		        } else if (current === totalSteps) {
+		            // Final step → "submit"
+		            console.log("Submitted data:", formData);
+		            alert("Listing submitted!\n\n" + JSON.stringify(formData, null, 2));
+		            // Later: $.post("/api/listings", formData).then(...)
+		          }
+		        });
+
+		    // ── Back button ───────────────────────────────────────
+		    $(".btn-back").on("click", function(e) {
+		    	e.preventDefault();
+		    	if (current > 1) {
+		    		goToStep(current - 1);
+		    	}
+		    });
+
+		    // Category toggle
+		    $(".category-btn").on("click", function() {
+		    	$(this).closest(".categories")
+		    	.find(".category-btn").removeClass("active");
+		    	$(this).addClass("active");
+		    });
+
+		    // Optional: initialize first step explicitly
+		    goToStep(1);
+
+
+				// characters limit for product description
+				$('#message').on('input', function() {
+					const count = this.value.length;
+					const remaining = 500 - count;
+
+					$('#charLeft').text(remaining);
+
+				  // Show/hide minimum warning
+				  if (count < 30) {
+				  	$('#minWarning').show();
+				  	$(this).css('border-color', '#d32f2f'); 
+				  } else {
+				  	$('#minWarning').hide();
+				  	$(this).css('border-color', ''); 
+				  }
+
+				  // Optional: near max warning
+				  const $counter = $('.char-count');
+				  if (remaining <= 50 && remaining > 0) {
+				  	$counter.css('color', '#f57c00');      
+				  } else if (remaining <= 0) {
+				  	$counter.css('color', '#d32f2f');   
+				  } else {
+				  	$counter.css('color', '#666');
+				  }
+				}).trigger('input');  
+
+				// Replace your old single-preview logic with this
+				document.getElementById('myFileMultiple').addEventListener('change', function(e) {
+				  const files = e.target.files;           
+				  const container = document.getElementById('previewContainer');
+				  
+				  container.innerHTML = '';               
+				  container.style.display = files.length > 0 ? 'flex' : 'none';
+				 
+				  Array.from(files).forEach(file => {
+				    if (!file.type.startsWith('image/')) return; 
+
+				    const reader = new FileReader();
+				    reader.onload = function(event) {
+				    	const img = document.createElement('img');
+				    	img.src = event.target.result;				    
+				    	container.appendChild(img);
+				    };
+				    reader.readAsDataURL(file);
+				  });
+
+				  window.uploadedFiles = Array.from(files); 
+				});
+
+				// vide preview after uploaded
+				$("#myVideoInput").change(function() {
+				  const file = this.files[0];
+				  if (file) {
+				    $("#videoPreview")
+				      .attr("src", URL.createObjectURL(file))
+				      .show();
+				  }
+				});
+
+			});
+		</script>
+	</body>
+	</html>

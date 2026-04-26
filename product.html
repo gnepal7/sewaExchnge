@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Sewa Exchange: Page</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <link rel="icon" href="images/favicon.png" type="images/img/fav.png">
+   <!-- fontawesome -->
+   <link rel="stylesheet" type="text/css" href="css/all.min.css">
+   <!-- owl -->
+   <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+   <!-- custom -->
+   <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+   <div class="progress-wrapper">
+      <div class="progress-bar"></div>
+   </div>
+   <nav class="nav py-1">
+      <div class="wrapper-wide dg col12 gap-3 header-wrap">
+         <div class="colg-3">
+            <a href="index.html" class="logo">
+               <img src="images/img/logo.png">
+            </a>
+         </div>
+         <div class="colg-4 search-wrap">
+            <form class="search-form">
+               <input type="search" placeholder="search item(s) here....">
+               <i class="fa fa-search"></i>
+            </form>
+         </div>
+         <div class="colg-5">
+            <ul class="btn-group action-buttons df gap-2">
+               <li class="action-buttons_add">
+                  <a class="btn-sm btn-main-br prime df gap-1" href="addPost.html">
+                     <i class="fa fa-plus"></i>
+                     <span>Add Item</span>
+                  </a>
+               </li>
+               <!-- these two list will show before login -->
+               <li>
+                  <a class="btn-sm btn-lw-bg sec db" href="login.html">
+                     Login
+                  </a>
+               </li>
+               <li>
+                  <a class="btn-sm btn-dim-bg prime db" href="signup.html">
+                     signup
+                  </a>
+               </li>
+               <!-- these two list will show after login -->
+               <li class="df sobg br-1 alc">
+                  <a class="btn-sm blc db notify-btn" href="javascript:void()">
+                     <i class="fa fa-bell"></i>
+                  </a>
+                  <a class="btn-sm sec df profile-btn" href="javascript:void()">
+                     <img src="images/img/man.png">
+                     <i class="fa fa-chevron-down"></i>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+   <div class="box_on-click notification p-2 br-1">
+      <h4 class="blc box_on-click_title pb-1 df alc">Notifications
+         <span class="clear">Clear</span>
+      </h4>
+      <ul class="box_on-click_ul dfc">
+         <li class="box_on-click_li py-1">
+            <a class="box_on-click_a blc" href="#">Vestibulum ac arcu id libero dignissim mollis sed ut nunc</a>
+         </li>
+         <li class="box_on-click_li py-1">
+            <a class="box_on-click_a blc" href="#">Sed cursus nibh molestie, imperdiet urna a, blandit justo</a>
+         </li>
+         <li class="box_on-click_li py-1">
+            <a class="box_on-click_a blc" href="#">Morbi auctor odio sed massa semper molestie</a>
+         </li>
+         <li class="box_on-click_li py-1">
+            <a class="box_on-click_a blc" href="#">Praesent nec eros sed sem lacinia mattis sit amet in diam</a>
+         </li>
+         <li class="box_on-click_li py-1">
+            <a class="box_on-click_a blc" href="#">Aliquam dictum libero id orci laoreet dignissim</a>
+         </li>
+      </ul>
+   </div>
+   <div class="box_on-click profile_box py-1 px-2 br-1">
+      <h4 class="blc box_on-click_title pb-1 mb-1 df alc">Gopal Nepal</h4>
+      <ul class="box_on-click_ul dfc">
+         <li class="box_on-click_li">
+            <a class="box_on-click_a blc df gap-1 alc p-1" href="#">
+               <i class="fa fa-user-circle"></i>
+               <span>Visit Profile</span>
+            </a>
+         </li>
+         <li class="box_on-click_li">
+            <a class="box_on-click_a blc df gap-1 alc p-1" href="#">
+               <i class="fa fa-sign-out"></i>
+               <span>Logout</span>
+            </a>
+         </li>
+      </ul>
+   </div>
+   <section class="wrapper-wide dg col12 gap-3 py-2 product">
+      <div class="colg-8 dg col12 gap-2">
+
+         <div class="colg-7 half product_info img-zoom-container">
+            <div class="product-carousel owl-carousel owl-theme">
+               <article class="item br-2" data-dot="<img src='images/slide1.jpg'>">
+                  <img src="images/slide1.jpg" class="br-1 zoom-img">
+               </article>
+               <article class="item br-2" data-dot="<img src='images/slide2.jpg'>">
+                  <img src="images/slide2.jpg" class="br-1 zoom-img">
+               </article>
+               <article class="item br-2" data-dot="<img src='images/slide3.jpg'>">
+                  <img src="images/slide3.jpg" class="br-1 zoom-img">
+               </article>
+               <article class="item br-2" data-dot="<img src='images/slide4.jpg'>">
+                  <img src="images/slide4.jpg" class="br-1 zoom-img">
+               </article>
+            </div>
+         </div>
+
+         <div class="colg-5 half">
+            <aside class="product_detail-name colg-12">
+               <h2 class="blc mb-1">Wallpaper for room</h2>
+               <span class="product_detail-name-verify df gap-1 alc py-1 px-2 br-1 pri-bglg prime mb-1">
+                  <i class="fa fa-check-circle"></i> Verified
+               </span>
+               <!-- price will be shown after login -->
+               <!-- <figcaption class="product_value df gap-1 mt-1 pt-1 alc">
+                  <p class="p1">Exchange value:</p>
+                  <h4 class="sec">RS. 2200</h4>
+               </figcaption> -->
+               
+            </aside>
+            <aside class="product_cat df gap-1 mt-1 pt-1 alc">
+               <p class="p2">Category:</p>
+               <a class="product_tag" href="#">Goods</a>
+            </aside>
+            <aside class="product_type df gap-1 mt-1 pt-1 alc">
+               <span class="product_type-name py-1 px-2 blc br-1 sobg">Value Exchange</span>
+               <span class="product_type-name py-1 px-2 blc br-1 sobg">Community Exchange</span>
+            </aside>
+            <aside class="product_type df gap-1 mt-1 pt-1 alc">
+               <span class="product_type-name py-1 px-2 blc br-1 sobg">Value Model</span>
+               <span class="product_type-name py-1 px-2 blc br-1 sobg">Negotiable</span>
+            </aside>
+            <aside class="product_type df gap-1 mt-1 pt-1 alc">
+               <span class="product_type-name py-1 px-2 blc br-1 sobg">Sattlement</span>
+               <span class="product_type-name py-1 px-2 blc br-1 sobg">Wallet Based</span>
+            </aside>
+
+            <aside class="product_type df gap-1 mt-1 pt-1 alc">
+               <h6 class="bla mb-1">Want to Exchange?</h6>
+               <a class="btn-sm btn-ass-bg br-1" href="javascript:void()">Exchange Now</a>
+            </aside>
+
+            <!-- It will shown after login -->
+
+            <!-- <div class="product_by df gap-1 mt-1 pt-1 alc">
+               <aside class="product_author df gap-1">
+                  <img src="images/img/man2.jpg">
+                  <figcaption class="dfc">
+                     <a href="#">Ramesh Neupane</a>
+                     <span class="product_author-number blc">9841000000</span>
+                     <span class="product_author-rating gr">
+                        <i class="fa fa-star"></i>
+                        20
+                     </span>
+                  </figcaption>
+               </aside>
+               <span class="product_count gr">13 Items</span>
+            </div> -->
+
+
+            <!-- <div class="product_btns df gap-1 mt-1 pt-1 alc">
+               <a class="btn-sm btn-main-bg df alc gap-1" href="javascript:void()">
+                  <i class="fa fa-bookmark"></i>
+                  Save
+               </a>
+               <a class="btn-sm btn-gray-br df alc gap-1" href="javascript:void()">
+                  <i class="fa fa-phone"></i>
+                  call
+               </a>
+            </div> -->
+         </div>
+
+         <div class="colg-12 full-col product_detail dfc gap-2 mt-1 pt-1">
+            <div class="product_detail-description dfc">
+               <h5 class="prime">Description</h5>
+               <!-- <figcaption class="p-1 sobg br-1 df gap-1">
+                  <strong>Item ID</strong>
+                  <span class="blc">C956E9</span>
+               </figcaption>
+               <figcaption class="p-1 sobg br-1 df gap-1">
+                  <strong>Delivary</strong>
+                  <span class="blc">Not Available</span>
+               </figcaption>
+               <figcaption class="p-1 sobg br-1 df gap-1">
+                  <strong>Item Posted</strong>
+                  <span class="blc">2025-01-10</span>
+               </figcaption>
+               <figcaption class="p-1 sobg br-1 df gap-1">
+                  <strong>Expiry Date</strong>
+                  <span class="blc">2025-01-29</span>
+               </figcaption>
+               <figcaption class="p-1 sobg br-1 df gap-1">
+                  <strong>Used For</strong>
+                  <span class="blc">New</span>
+               </figcaption> -->
+               <p class="p2">
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+               </p>
+               <!-- this paragraph will be displayed after login -->
+               <!-- <p class="p1">
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+               </p> -->
+            </div>
+            <div class="product_detail-location dfc">
+               <h5 class="prime">Location</h5>
+               <p class="p1">Chamati, Suman Marg, Kathmandu-16, Kathmandu</p>
+               <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.6496423918475!2d85.33507687448801!3d27.697221525939767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb199909cccf51%3A0x1f6a5f07cb3af4b5!2sVenus%20Hospital!5e0!3m2!1sen!2snp!4v1769075925873!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            </div>
+            <div class="product_detail-comment dfc gap-1">
+               <h5 class="prime">Comment</h5>
+               <aside class="product_detail-comment_wrap df pb-1 gap-2">
+                  <div class="img-wrap">
+                     <img src="images/img/man2.jpg">
+                     <i class="fa fa-check-circle verified"></i>
+                  </div>                  
+                  <figcaption class="dfc gap-1">
+                     <aside class="name-wrap df gap-2 alc">
+                        <strong class="name db">Ramhari Sapkota</strong>
+                        <time class="gr">5 days ago</time>
+                     </aside>                     
+                     <!-- <p class="blc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> -->
+
+                     <aside class="rating_group df gap-1" data-rating="3">
+                       <i class="fa fa-star" data-value="1"></i>
+                       <i class="fa fa-star" data-value="2"></i>
+                       <i class="fa fa-star" data-value="3"></i>
+                       <i class="fa fa-star" data-value="4"></i>
+                       <i class="fa fa-star" data-value="5"></i>
+                       <span class="rating_group-count">(select rating)</span>
+                     </aside>
+
+                  </figcaption>
+               </aside>
+               <aside class="product_detail-comment_wrap df pb-1 gap-2">
+                  <div class="img-wrap">
+                     <img src="images/img/man2.jpg">
+                     <i class="fa fa-check-circle verified"></i>
+                  </div>
+                  <figcaption class="dfc">
+                     <aside class="name-wrap df gap-2 alc">
+                        <strong class="name db">Ramhari Sapkota</strong>
+                        <time class="gr">5 days ago</time>
+                     </aside>                      
+                     <aside class="rating_group df gap-1" data-rating="3">
+                       <i class="fa fa-star" data-value="1"></i>
+                       <i class="fa fa-star" data-value="2"></i>
+                       <i class="fa fa-star" data-value="3"></i>
+                       <i class="fa fa-star" data-value="4"></i>
+                       <i class="fa fa-star" data-value="5"></i>
+                       <span class="rating_group-count">(select rating)</span>
+                     </aside>
+                  </figcaption>
+               </aside>
+               <aside class="product_detail-comment_wrap df pb-1 gap-2">
+                  <div class="img-wrap">
+                     <img src="images/img/man2.jpg">
+                  </div>
+                  <figcaption class="dfc">
+                     <aside class="name-wrap df gap-2 alc">
+                        <strong class="name db">Ramhari Sapkota</strong>
+                        <time class="gr">5 days ago</time>
+                     </aside> 
+                     <aside class="rating_group df gap-1">
+                        <i class="fa fa-star rated"></i>
+                        <i class="fa fa-star rated"></i>
+                        <i class="fa fa-star rated"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <span class="rating_group-count bla">(3 of 5)</span>
+                     </aside>
+                  </figcaption>
+               </aside>
+               <aside class="product_detail-comment_wrap df pb-1 gap-2">
+                  <div class="img-wrap">
+                     <img src="images/img/man2.jpg">
+                     <i class="fa fa-check-circle verified"></i>
+                  </div>
+                  <figcaption class="dfc">
+                     <aside class="name-wrap df gap-2 alc">
+                        <strong class="name db">Ramhari Sapkota</strong>
+                        <time class="gr">5 days ago</time>
+                     </aside> 
+                     <aside class="rating_group df gap-1">
+                        <i class="fa fa-star rated"></i>
+                        <i class="fa fa-star rated"></i>
+                        <i class="fa fa-star rated"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <span class="rating_group-count bla">(3 of 5)</span>
+                     </aside>
+                  </figcaption>
+               </aside>
+
+               <aside class="product_detail-comment_wrap df pb-1 gap-2">
+                  <form class="form comment-form dfc gap-1" action="">
+                     <div class="form-group">
+                        <label for="comt" class="mb-1">Write Your Comment</label>
+                        <textarea 
+                        id="message" 
+                        name="message" 
+                        rows="5" 
+                        maxlength="100" 
+                        minlength="10"
+                        placeholder="Please describe the item (minimum10 characters)"
+                        required
+                        ></textarea>
+                     </div>
+                     <div class="form-group">
+                        <a class="btn-sm btn-main-br py-1 px-2" href="javascript:void()">Comment</a>
+                     </div>
+                  </form>
+               </aside>
+
+            </div>
+
+         </div>
+
+      </div>
+      <!-- end main colg-9 -->
+      <div class="colg-4">
+         <div class="p-2 br-1 sobg dfc product_ex-info mb-2">
+            <aside class="df gap-1 product_ex-info_top alc br-1 p-1 wh-bg mb-1">
+               <i class="fa fa-info-circle"></i>
+               <h4 class="prime">Exchange Info</h4>
+            </aside>
+            <aside class="df gap-1 product_ex-info_text alc">
+               <h6 class="blc">Exchange Value:</h6>
+               <p class="p1">Exchange + Value</p>
+            </aside>
+            <aside class="df gap-1 product_ex-info_text alc">
+               <h6 class="blc">Vaule Model:</h6>
+               <p class="p2">Negotiable</p>
+            </aside>
+            <aside class="df gap-1 product_ex-info_text alc">
+               <h6 class="blc">Sattlement:</h6>
+               <p class="p1">Wallet Based</p>
+            </aside>
+         </div>
+         
+         <div class="p-2 br-1 pri-bglg dfc loginBtn-wrap mb-2">
+            <h5 class="bla mb-1">Join the Exchange Community</h5>
+            <div class="btn-group df gap-2">
+               <a class="btn-sm btn-main-br wh" href="javascript:void()">LOGIN</a>
+               <span>/</span>
+               <a class="btn-sm btn-main-bg wh" href="javascript:void()">SiGNUP</a>
+            </div>
+         </div>
+      </div>
+      <!-- end colg-3 -->
+      
+      <div class="colg-12">
+         <h3 class="prime mb-1">Similar Product</h3>
+         <div class="similarProduct col15 gap-2">
+            <article class="exchange_item br-1">
+               <img src="images/product/crew-t-short.png" class="brtl-1 brtr-1">
+               <aside class="pr-1 pb-1 pl-1 exchange_item-info dfc">
+                  <h6 class="prime exchange_item-title">Premium Regular Fit Long Sleeve Crew Neck T-Shirt For Men</h6>
+                  <span class="exchange_item-cat db">Goods - Goods | Kathmandu, Nepal</span>
+                  <figcaption class="exchange_item-rating df gap-1 mt-1 alc">
+                     <span class="exchange_item-rating-number">4.8
+                        <i class="fa fa-star active"></i>
+                        <i class="fa fa-star active"></i>
+                        <i class="fa fa-star active"></i>
+                        <i class="fa fa-star"></i>
+                     </span>
+                     <a class="exchange_item-btn blc" href="#">Purpose Exchange</a>
+                  </figcaption>
+               </aside>
+            </article>
+
+            <article class="exchange_item br-1">
+               <img src="images/product/sliper.png" class="brtl-1 brtr-1">
+               <aside class="pr-1 pb-1 pl-1 exchange_item-info dfc">
+                  <h6 class="prime exchange_item-title">Women's Solid Color Flip Flops, Casual Clip Toe Beach Shoes, Summer Lightweight Platform Shoes</h6>
+                  <span class="exchange_item-cat db">Service - Service | Lalitpur, Nepal</span>
+                  <figcaption class="exchange_item-rating df gap-1 mt-1 alc">
+                     <span class="exchange_item-rating-number">3.5
+                        <i class="fa fa-star active"></i>
+                        <i class="fa fa-star active"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                     </span>
+                     <a class="exchange_item-btn blc" href="#">Purpose Exchange</a>
+                  </figcaption>
+               </aside>
+            </article>
+
+            <article class="exchange_item br-1">
+               <img src="images/product/lady-jacket.png" class="brtl-1 brtr-1">
+               <aside class="pr-1 pb-1 pl-1 exchange_item-info dfc">
+                  <h6 class="prime exchange_item-title">Warm Inner Fleece Full Zipup Hoodie Jacket And Straight Trouser Set For Women</h6>
+                  <span class="exchange_item-cat db">Good - Service | Lalitpur, Nepal</span>
+                  <figcaption class="exchange_item-rating df gap-1 mt-1 alc">
+                     <span class="exchange_item-rating-number">3.5
+                        <i class="fa fa-star active"></i>
+                        <i class="fa fa-star active"></i>
+                        <i class="fa fa-star active"></i>
+                        <i class="fa fa-star"></i>
+                     </span>
+                     <a class="exchange_item-btn blc" href="#">Purpose Exchange</a>
+                  </figcaption>
+               </aside>
+            </article>
+
+            <article class="exchange_item br-1">
+               <img src="images/product/costemic.png" class="brtl-1 brtr-1">
+               <aside class="pr-1 pb-1 pl-1 exchange_item-info dfc">
+                  <h6 class="prime exchange_item-title">Multi-function Blush Stick Long Lasting Natural Cheek Face Rouge Blusher Cream Waterproof High Brightening Skin Tone Makeup</h6>
+                  <span class="exchange_item-cat db">Good - Service | Lalitpur, Nepal</span>
+                  <figcaption class="exchange_item-rating df gap-1 mt-1 alc">
+                     <span class="exchange_item-rating-number">3.5
+                        <i class="fa fa-star active"></i>
+                        <i class="fa fa-star active"></i>
+                        <i class="fa fa-star active"></i>
+                        <i class="fa fa-star"></i>
+                     </span>
+                     <a class="exchange_item-btn blc" href="#">Purpose Exchange</a>
+                  </figcaption>
+               </aside>
+            </article>
+
+            <article class="exchange_item br-1">
+               <img src="images/product/tuition.jpg" class="brtl-1 brtr-1">
+               <aside class="pr-1 pb-1 pl-1 exchange_item-info dfc">
+                  <h6 class="prime exchange_item-title">Online/Physical tuition classes for +2 students</h6>
+                  <span class="exchange_item-cat db">Skill - Skill | Kathmandu, Nepal</span>
+                  <figcaption class="exchange_item-rating df gap-1 mt-1 alc">
+                     <span class="exchange_item-rating-number">3.5
+                        <i class="fa fa-star active"></i>
+                        <i class="fa fa-star active"></i>
+                        <i class="fa fa-star active"></i>
+                        <i class="fa fa-star"></i>
+                     </span>
+                     <a class="exchange_item-btn blc" href="#">Purpose Exchange</a>
+                  </figcaption>
+               </aside>
+            </article>
+         </div>
+         <!-- end similarProduct -->
+         <div class="btn-group mt-2 dfc alc tac">
+            <a class="btn-sm btn-main-br br-1" href="javascript:void()">Load More</a>
+         </div>
+      </div>
+      
+
+   </section>
+
+   <div class="chat_box">
+      <div class="tab-wrap spb alc">
+         <h4 class="blc mb-1">Conversation</h4>
+         <ul class="tab-menu df">
+            <li class="tab-item"><a href="#dis" class="tab-link p-1">Discussion</a></li>
+            <li class="tab-item"><a href="#al" class="tab-link p-1">Activity Log</a></li>
+         </ul>
+         <aside id="dis" class="tab-content">
+            <div class="conversation-panel">
+              <!-- message 1: user -->
+              <div class="msg-row user">
+                <div class="bubble">
+                  <div class="msg-text">
+                    <p>Hello, is my camera listing under review? Hello, is my camera listing under review?
+                     Hello, is my camera listing under review? Hello, is my camera listing under review?
+                    </p>
+                  </div>
+                  <span class="timestamp">10:15 AM</span>
+                </div>
+              </div>
+
+              <!-- message 2: support -->
+              <div class="msg-row support">
+                <div class="bubble">
+                  <div class="msg-text">
+                    <p>Hi, yes, we're reviewing it. Please give us some time.
+                     Hi, yes, we're reviewing it. Please give us some time.
+                     Hi, yes, we're reviewing it. Please give us some time.
+                    </p>
+                  </div>
+                  <span class="timestamp">10:16 AM</span>
+                </div>
+              </div>
+
+              <!-- message 3: user -->
+              <div class="msg-row user">
+                <div class="bubble">
+                  <div class="msg-text">
+                    <p>Can you let me know when it gets approved?</p>
+                  </div>
+                  <span class="timestamp">10:20 AM</span>
+                </div>
+              </div>
+
+              <!-- message 4: support -->
+              <div class="msg-row support">
+                <div class="bubble">
+                  <div class="msg-text">
+                    <p>Sure, I'll notify you once it's approved.</p>
+                  </div>
+                  <span class="timestamp">10:22 AM</span>
+                </div>
+              </div>
+
+              <!-- message 5: user final "Thank you!" -->
+              <div class="msg-row user">
+                <div class="bubble">
+                  <div class="msg-text">
+                    <p>Thank you! I appreciate it.</p>
+                  </div>
+                  <span class="timestamp">10:30 AM</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="chat-footer">
+              <input type="text" placeholder="Type a message..." value="">
+              <button class="send-btn">Send</button>
+            </div>            
+            <div class="bottom-note">
+              
+            </div>
+         </aside>
+         <!-- end id dis -->
+         <aside id="al" class="tab-content">
+            Log 
+         </aside>
+         <!-- end id dis -->
+      </div>
+   </div>
+   <aside class="chat_btn">
+      <i class="fa fa-comments chat-icon chat_show"></i>
+      <i class="fa fa-times chat-icon chat_hide"></i>
+   </aside>
+  <!-- end chat part -->
+
+   <footer class="footer mt-3">
+      <div class="footer_top">
+         <aside class="df gap-2 alc py-4 wrapper-wide">
+            <img src="images/img/logo.png" class="logo">
+            <h3 class="wh">Sewa Exchange</h3>
+         </aside>
+      </div>
+      <div class="footer_bottom pt-4">
+         <div class="wrapper-wide dg col12 gap-3">
+            <div class="colg-3 foot_col">
+               <h4 class="mb-1">Sewa Exchange</h4>
+               <ul class="footer_ul dfc">
+                  <li class="footer_li">
+                     <a href="#" class="footer_a wh db">About Platform</a>
+                  </li>
+                  <li class="footer_li">
+                     <a href="#" class="footer_a wh db">Exchange Policy</a>
+                  </li>
+                  <li class="footer_li">
+                     <a href="#" class="footer_a wh db">Wallet Policy</a>
+                  </li>
+                  <li class="footer_li">
+                     <a href="#" class="footer_a wh db">Cash Policy</a>
+                  </li>
+                  <li class="footer_li">
+                     <a href="#" class="footer_a wh db">Agent Policy</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="colg-3 foot_col">
+               <h4 class="mb-1">Support</h4>
+               <ul class="footer_ul dfc">
+                  <li class="footer_li">
+                     <a href="#" class="footer_a wh db">Help Center</a>
+                  </li>
+                  <li class="footer_li">
+                     <a href="#" class="footer_a wh db">How Exchange Works</a>
+                  </li>
+                  <li class="footer_li">
+                     <a href="#" class="footer_a wh db">Safety Guidelines</a>
+                  </li>
+                  <li class="footer_li">
+                     <a href="#" class="footer_a wh db">Contact Support</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="colg-3 foot_col">
+               <h4 class="mb-1">Company</h4>
+               <ul class="footer_ul dfc">
+                  <li class="footer_li">
+                     <a href="#" class="footer_a wh db">About Us</a>
+                  </li>
+                  <li class="footer_li">
+                     <a href="#" class="footer_a wh db">Terms & Conditions</a>
+                  </li>
+                  <li class="footer_li">
+                     <a href="#" class="footer_a wh db">Privacy Policy</a>
+                  </li>
+                  <li class="footer_li">
+                     <a href="#" class="footer_a wh db">Dispute Resolution</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="colg-3 foot_col">
+               <h4 class="mb-1">Connect</h4>
+               <ul class="footer_ul dfc">
+                  <li class="footer_li df gap-1 alc">
+                     <i class="fa fa-map-marker-alt gr"></i>
+                     <a href="javascript:void()" class="footer_a wh db">Anamnagar, Kathmandu, Nepal</a>
+                  </li>
+                  <li class="footer_li df gap-1 alc">
+                     <i class="fa fa-envelope gr"></i>
+                     <a href="#" class="footer_a wh db">info@sewaexchange.com</a>
+                  </li>
+                  <li class="footer_li df gap-1 alc">
+                     <i class="fa fa-phone gr"></i>
+                     <a href="javascript:void()" class="footer_a wh db">00977-9812345678</a>
+                  </li>
+               </ul>
+               <ul class="footer_ul df gap-1 social_ul mt-1">
+                  <li class="footer_li">
+                     <a href="#" class="footer_a fb">
+                        <i class="fab fa-facebook-f"></i>
+                     </a>
+                  </li>
+                  <li class="footer_li">
+                     <a href="#" class="footer_a tw">
+                        <i class="fab fa-twitter"></i>
+                     </a>
+                  </li>
+                  <li class="footer_li">
+                     <a href="#" class="footer_a wht">
+                        <i class="fab fa-whatsapp"></i>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+            <div class="colg-12 py-2 copyright">
+               <p class="gr">© 2026 Sewa Exchange. All rights reserved.</p>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <script src="js/jquery-3.5.0.min.js"></script>
+   <script src="js/owl.carousel.min.js"></script>
+   <script src="js/main.js"></script>
+   <script>
+      $(document).ready(function(){
+         $(".product-carousel").owlCarousel({
+            items: 1,
+            dots: true,
+            dotsData: true,
+            loop: false,
+            nav: false
+         });
+         $(".product-carousel .owl-dot").on("click", function() {
+            $(".product-carousel").trigger("to.owl.carousel", [$(this).index(), 300]);
+         });
+
+
+         // characters limit for product description
+         $('#message').on('input', function() {
+            const count = this.value.length;
+            const remaining = 100 - count;
+
+            $('#charLeft').text(remaining);
+
+           // Show/hide minimum warning
+           if (count < 10) {
+            $('#minWarning').show();
+            $(this).css('border-color', '#d32f2f'); 
+           } else {
+            $('#minWarning').hide();
+            $(this).css('border-color', ''); 
+           }
+
+           // Optional: near max warning
+           const $counter = $('.char-count');
+           if (remaining <= 50 && remaining > 0) {
+            $counter.css('color', '#f57c00');      
+           } else if (remaining <= 0) {
+            $counter.css('color', '#d32f2f');   
+           } else {
+            $counter.css('color', '#666');
+           }
+         }).trigger('input');  
+
+
+         // zooming image while hovering on slider image
+         $('.zoom-img').hover(
+           function() { $(this).css('transform', 'scale(3.5)'); },
+           function() { $(this).css('transform', 'scale(1)'); }
+         ).on('mousemove', function(e) {
+           const rect = this.getBoundingClientRect();
+           const x = ((e.clientX - rect.left) / rect.width) * 100;
+           const y = ((e.clientY - rect.top) / rect.height) * 100;
+           $(this).css('transform-origin', `${x}% ${y}%`);
+         });
+
+
+         // chat box show/hide 
+         $('.chat_show').click(function(){
+           $('.chat_box').css('display', 'flex');
+           $(this).hide();
+           $('.chat_hide').show();
+         });
+         $('.chat_hide').click(function(){
+           $('.chat_box').css('display', 'none');
+           $(this).hide();
+           $('.chat_show').show();
+         });
+
+      });
+   </script>
+</body>
+</html>

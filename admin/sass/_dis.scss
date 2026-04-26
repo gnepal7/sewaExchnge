@@ -1,0 +1,126 @@
+$displays:(
+	df:flex,
+	db:block,
+	dg:grid,
+	di:inline-block,
+	dt:table,
+	dif:inline-flex
+);
+@each $dis, $value in $displays{
+	.#{$dis}{
+		display: $value;
+	}
+}
+/***** color classes for html *****/
+$classes:(
+	prime:$primary,
+	sec:$secondary,
+	wh:$whi,
+	blc:$bla,
+	gr:rgba($gry, .7),
+	gre:$green,
+	re: $red,
+	yel:$yellow
+);
+@each $co, $value in $classes{
+	.#{$co}{
+		color:$value;
+	}
+}
+/***** let background classes on html *****/
+$bg-classes:(
+	pri-bg: $primary,
+	sec-bg: $secondary,
+	pri-bglg:rgba($primary, .1),
+	sec-bglg:rgba($secondary, .15),
+	lig-bg:$lgry,
+	blc-bg:$bla,
+	blc-bglg:rgba($bla, .1),
+	sobg:$bgcolor,
+	wh-bg:$whi,
+	gr-bglg:lighten($green, 55%),
+	gr-bg:$green,
+	re-bglg:lighten($red, 45%),
+	re-bg: $red,
+	ye-bglg:lighten($yellow, 40%)
+);
+@each $bg, $value in $bg-classes{
+	.#{$bg}{
+		background-color: $value;
+	}
+}
+.col12{
+	grid-template-columns: repeat(12, 1fr);
+}
+.af{
+	@include af(18.125rem, 1fr, 18.125rem, 2fr);
+}
+.dfc{
+	display: flex;
+	flex-direction: column;
+}
+.alc{
+	align-items: center;
+}
+.tac{
+	text-align: center;
+}
+.shadow{
+	@include box-shadow(0, 0, 3px, rgba($gry, .7));
+}
+.hide-on-desktop{
+	@include min(768px){
+		display: none;
+	}
+}
+.hide-on-mobile{
+	@include max(767px){
+		display: none;
+	}
+}
+.col15{
+	display:grid;
+	grid-template-columns: repeat(15, 1fr);
+	& > div[class^="colg-"]{
+		@include max(767px){
+			grid-column:span 15;
+		}
+	}
+}
+.fw-normal{
+	font-weight: normal;
+}
+.spb{
+	justify-content: space-between;
+}
+.mb-xs{
+	margin-bottom:0.2rem;
+}
+.no-margin{
+	margin:0;
+}
+.img-outer{
+	overflow: hidden;
+	position: relative;
+	& img{
+		height:100%;
+		object-fit:cover;
+		@include vendor(transition, all ease-in-out .4s);
+		width: 100%;
+		opacity:0;
+		transform:scale(0);
+	}
+	&:hover{
+		& img{
+			@include vendor(transform, scale(1.01));
+			@include vendor(transition, all ease-in-out .4s);
+		}
+	}
+	&.in-view{
+		& img{
+			opacity:1;
+			transform:scale(1);
+			@include vendor(transition, all ease-in-out .4s);
+		}
+	}
+}

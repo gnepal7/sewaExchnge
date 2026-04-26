@@ -1,0 +1,45 @@
+.table-wrap{
+	@include max(767px){
+		padding: 0 0 0.75rem;
+	    white-space: nowrap;
+	    overflow-x: auto;
+	    width: 100%;
+	    @include mgn(0 auto);
+	}
+}
+table{
+	width:100%;
+	border-collapse: collapse;
+	& thead{
+		background-color:lighten($primary, 60%);
+		text-align: left;	
+		& th{
+			font-size:1rem;
+			color:darken($gry, 50%);
+		}
+	}
+	& th,
+	& td{
+		@include pad(.7rem);
+		font-weight: normal;
+	}
+	& tbody{
+		& tr{
+			transition:all linear .2s;
+			&:nth-child(odd){
+				background-color:darken($whi, 1%);
+			}
+			&:nth-child(even){
+				background-color:darken($bgcolor, 1%);
+			}
+			&:hover{
+				cursor: pointer;
+				background-color:lighten($primary, 65%);
+			}
+		}
+		& td{
+			font-size:.85rem;
+			color:$bla;
+		}
+	}
+}

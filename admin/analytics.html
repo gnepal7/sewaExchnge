@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sewa Exchange: Analytics</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="images/img/favi.png" type="png">
+	
+	<!-- fontawesome -->
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<!-- custom -->
+	<link rel="stylesheet" type="text/css" href="css/admin.css">
+</head>
+<body>	
+
+	<div class="progress-wrapper">
+		<div class="progress-bar"></div>
+	</div>
+
+	<nav class="nav py-1 top_nav">
+		<div class="wrapper-wide df alc gap-3 header-wrap">
+			<a href="dashboard.html" class="logo df alc gap-1">
+				<img src="images/img/logo.png">
+				<h3 class="prime">SewaExchange</h3>
+			</a>
+
+			<form class="search-form header-form">
+				<input type="search" class="br-3" placeholder="search item(s) here....">
+				<i class="fa fa-search"></i>
+			</form>
+
+			<ul class="btn-group action-buttons df gap-2">
+				<!-- these two list will show after login -->					
+				<li class="df sobg br-1 alc">
+					<a class="btn-sm blc db notify-btn" href="javascript:void()">				
+						<i class="fa fa-bell"></i>
+					</a>
+					<a class="btn-sm sec df profile-btn" href="javascript:void()">		
+						<img src="images/img/man.png">
+						<i class="fa fa-chevron-down"></i>
+					</a>
+				</li>
+
+			</ul>
+			
+		</div>
+	</nav>
+
+	<div class="box_on-click notification p-2 br-1">
+		<h4 class="blc box_on-click_title pb-1 df alc">Notifications 
+			<span class="clear">Clear</span>
+		</h4>
+		<ul class="box_on-click_ul dfc">
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Vestibulum ac arcu id libero dignissim mollis sed ut nunc</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Sed cursus nibh molestie, imperdiet urna a, blandit justo</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Morbi auctor odio sed massa semper molestie</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Praesent nec eros sed sem lacinia mattis sit amet in diam</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Aliquam dictum libero id orci laoreet dignissim</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="box_on-click profile_box py-1 px-2 br-1">
+		<h4 class="blc box_on-click_title pb-1 mb-1 df alc">Gopal Nepal</h4>
+		<ul class="box_on-click_ul dfc">
+			<li class="box_on-click_li">
+				<a class="box_on-click_a blc df gap-1 alc p-1" href="#">
+					<i class="fa fa-user-circle"></i>
+					<span>Visit Profile
+					</a>
+				</li>
+				<li class="box_on-click_li">
+					<a class="box_on-click_a blc df gap-1 alc p-1" href="#">
+						<i class="fa fa-sign-out"></i>
+						<span>Logout</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<section class="db">
+			<nav class="nav left_nav p-2">
+				<aside class="mb-1">
+					<h4 class="gr mt-2 hide-on-desktop">MENU</h4>
+					<button class="nav_toggler">
+						<i class="fa fa-bars toggler"></i>				   
+					</button>
+					<button class="close-menu">
+						<i class="fa fa-times toggler"></i>				   
+					</button>
+				</aside>
+
+				<ul class="nav_ul dfc">
+					<li class="nav_li">
+						<a href="dashboard.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-dashboard homeicon"></i>
+							<h6>Dashboard</h6>
+						</a>
+					</li>
+
+					<li class="nav_li">
+						<a href="users.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-users"></i>
+							<h6>Users</h6>
+						</a>
+					</li>
+
+					<li class="nav_li">
+						<a href="agents.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-user-secret"></i>
+							<h6>Agents</h6>
+						</a>
+					</li>
+
+					<li class="nav_li">
+						<a href="exchange.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-exchange"></i>
+							<h6>Exchanges</h6>
+						</a>
+					</li>
+
+					<li class="nav_li">
+						<a href="wallet_system.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-wallet"></i>
+							<h6>Wallet System</h6>
+						</a>
+					</li>
+
+					<li class="nav_li">
+						<a href="finance.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-money-bill"></i>
+							<h6>Finance</h6>
+						</a>
+					</li>
+
+					<hr class="my-2">
+
+					<li class="nav_li">
+						<a href="dispute.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-vcard"></i>
+							<h6>Disputes</h6>
+						</a>
+					</li>
+
+					<li class="nav_li">
+						<a href="trust_system.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-clipboard-check"></i>
+							<h6>Trust System</h6>
+						</a>
+					</li>
+					<li class="nav_li active">
+						<a href="analytics.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-chart-column"></i>
+							<h6>Analytics</h6>
+						</a>
+					</li>
+					<li class="nav_li">
+						<a href="complaince.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-shield"></i>
+							<h6>Complaince</h6>
+						</a>
+					</li>
+					<li class="nav_li">
+						<a href="community.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-people-group"></i>
+							<h6>Community</h6>
+						</a>
+					</li>
+					<li class="nav_li">
+						<a href="settings.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-cogs"></i>
+							<h6>Settings</h6>
+						</a>
+					</li>
+
+				</ul>
+
+			</nav>
+			<!-- end menu_wrap -->
+
+			<div class="content">
+				<div class="content_page analyticSystem dg col12 p-2 gap-1">
+
+					<div class="content_page-btnSection colg-12 df gap-2 pb-1">
+						<h4 class="prime">Analytics Overview</h4>
+						<div class="content_page-btnSection_btnGroup df gap-1">							
+							<a class="btn btn-xs btn-gray-br df alc" href="#">
+								<i class="fa fa-money-check"></i>
+								Withdraw Funs
+							</a>
+							<a class="btn btn-xs btn-dim-br df alc" href="#">
+								<i class="fa fa-file-download"></i>
+								Export Report
+							</a>
+						</div>
+					</div>
+
+					<div class="info colg-12 dg col12 gap-2 pb-1">
+
+						<div class="info_box colg-3 df gap-1 p-1 br-1">
+							<i class="fa fa-exchange gre"></i>
+							<figcaption class="dfc">
+								<h5 class="gre">Rs.3,25,000</h5>
+								<p class="p2 df ">Total Exchanges 
+									<span class="gre ml-1">
+										<i class="fa fa-chevron-up up-arrow"></i>
+									8.5%
+									</span>
+								</p>
+							</figcaption>
+						</div>
+
+						<div class="info_box colg-3 df gap-1 p-1 br-1">
+							<i class="fa fa-users prime"></i>
+							<figcaption class="dfc">
+								<h5 class="prime">7,320</h5>
+								<p class="p2 df ">Total Users 
+									<span class="prime ml-1">
+										<i class="fa fa-chevron-up up-arrow"></i>
+									6.5%
+									</span>
+								</p>
+							</figcaption>
+						</div>
+
+						<div class="info_box colg-3 df gap-1 p-1 br-1">
+							<i class="fa fa-briefcase sec"></i>
+							<figcaption class="dfc">
+								<h5 class="sec">Rs.4,15,000</h5>
+								<p class="p2 df ">Total Users 
+									<span class="sec ml-1">
+										<i class="fa fa-chevron-up up-arrow"></i>
+									9.2%
+									</span>
+								</p>
+							</figcaption>
+						</div>
+						<div class="info_box colg-3 df gap-1 p-1 br-1">
+							<i class="fa fa-balance yel"></i>
+							<figcaption class="dfc">
+								<h5 class="yel">60</h5>
+								<p class="p2 df ">Total Dispute 
+									<span class="yel ml-1">
+										<i class="fa fa-chevron-up up-arrow"></i>
+									0.0%
+									</span>
+								</p>
+							</figcaption>
+						</div>
+
+					</div>
+
+					<div class="colg-12 dg col12 gap-2 info">
+						<div class="colg-6 dg col12 p-1 info_box br-1 gap-1">
+							<h5 class="prime colg-6">Daily activities trends</h5>
+							<form class="form colg-6 dg col12 gap-2" action="">
+								<div class="colg-12 form-group df gap-1 alc">
+									<select class="content_page-top_select">
+										<option>Last 30 days</option>
+										<option>Last 2 months</option>
+										<option>Last 3 months</option>
+									</select>
+								</div>
+							</form>
+							<aside class="trendBar colg-12">
+								<canvas id="trendChart"></canvas>
+							</aside>
+						</div>
+						<div class="colg-6 dg col12 p-1 info_box br-1 gap-1">
+							<h5 class="prime colg-12">Users by province</h5>
+							<aside class="provincePieBar colg-12">
+								<canvas id="provincePie"></canvas>
+							</aside>
+							
+						</div>
+					</div>
+
+
+					<div class="colg-12 dg col12 gap-2 pb-1 categoryInsight">
+						<h6 class="blc colg-3">Ctegory Insights:</h6>
+						<form class="form colg-9 dg col12 gap-2" action="">
+							<div class="colg-4 form-group df gap-1 alc">
+								<select class="content_page-top_select">
+									<option>By Exchange Type</option>
+									<option>Type One</option>
+									<option>Type Two</option>
+								</select>
+							</div>	
+							<div class="colg-4 form-group df gap-1 alc">
+								<select class="content_page-top_select">
+									<option>By Province</option>
+									<option>Koshi</option>
+									<option>Madhesh</option>
+								</select>
+							</div>						
+							<div class="colg-4 form-group search-form inside-form df gap-1 alc">
+								<input type="date" class="btn-gray-br" placeholder="select time range....">
+							</div>
+						</form>
+					</div>
+
+					<div class="colg-12 dg col12 gap-2 info categoryInsightDetail">
+						<div class="colg-6 dg col12 p-1 info_box br-1 gap-1 mb-1">
+							<aside class="categoryExchangeBar colg-12">
+								<canvas id="exchangeChart"></canvas>
+							</aside>
+							
+						</div>
+						<div class="colg-6 dg col12 p-1 info_box br-1 gap-1 mb-1">
+							<h5 class="prime colg-12">Top Agents</h5>
+							<div class="colg-12 table-wrap pb-1">
+								<table>
+									<thead>
+										<tr>
+											<th>Agent</th>
+											<th>Phone</th>
+											<th>Exchanges</th>
+											<th>Ratings</th>											
+										</tr>
+									</thead>
+									<tbody>
+
+										<tr>
+											<td>
+												<aside class="df">
+													<img src="images/img/man.png">
+													<figcaption class="dfc gap-sm">
+														<span class="name">Nabin Sitaula</span>
+														<span class="email">sitaula@gmail.com</span>
+													</figcaption>
+												</aside>
+											</td>
+											<td>9851056231</td>
+											<td>540</td>
+											<td>
+												<aside class="df alc">
+													<i class="fa fa-star star xs active"></i>
+													<i class="fa fa-star star xs active"></i>
+													<i class="fa fa-star star xs active"></i>
+													<i class="fa fa-star star xs active"></i>
+													<i class="fa fa-star star xs"></i>
+													<span class="yel">4.9</span>
+												</aside>
+											</td>											
+										</tr>
+										<tr>
+											<td>
+												<aside class="df">
+													<img src="images/img/man2.jpg">
+													<figcaption class="dfc gap-sm">
+														<span class="name">Saroj Bhat</span>
+														<span class="email">bhat.saroj@gmail.com</span>
+													</figcaption>
+												</aside>
+											</td>
+											<td>9851056231</td>
+											<td>510</td>
+											<td>
+												<aside class="df alc">
+													<i class="fa fa-star star xs active"></i>
+													<i class="fa fa-star star xs active"></i>
+													<i class="fa fa-star star xs active"></i>
+													<i class="fa fa-star star xs active"></i>
+													<i class="fa fa-star star xs"></i>
+													<span class="yel">4.8</span>
+												</aside>
+											</td>											
+										</tr>
+										<tr>
+											<td>
+												<aside class="df">
+													<img src="images/img/man.png">
+													<figcaption class="dfc gap-sm">
+														<span class="name">Nabin Sitaula</span>
+														<span class="email">sitaula@gmail.com</span>
+													</figcaption>
+												</aside>
+											</td>
+											<td>9851056231</td>
+											<td>540</td>
+											<td>
+												<aside class="df alc">
+													<i class="fa fa-star star xs active"></i>
+													<i class="fa fa-star star xs active"></i>
+													<i class="fa fa-star star xs active"></i>
+													<i class="fa fa-star star xs active"></i>
+													<i class="fa fa-star star xs"></i>
+													<span class="yel">4.9</span>
+												</aside>
+											</td>											
+										</tr>
+										<tr>
+											<td>
+												<aside class="df">
+													<img src="images/img/man2.jpg">
+													<figcaption class="dfc gap-sm">
+														<span class="name">Saroj Bhat</span>
+														<span class="email">bhat.saroj@gmail.com</span>
+													</figcaption>
+												</aside>
+											</td>
+											<td>9851056231</td>
+											<td>510</td>
+											<td>
+												<aside class="df alc">
+													<i class="fa fa-star star xs active"></i>
+													<i class="fa fa-star star xs active"></i>
+													<i class="fa fa-star star xs active"></i>
+													<i class="fa fa-star star xs active"></i>
+													<i class="fa fa-star star xs"></i>
+													<span class="yel">4.8</span>
+												</aside>
+											</td>											
+										</tr>
+										<tr>
+											<td>
+												<aside class="df">
+													<img src="images/img/man.png">
+													<figcaption class="dfc gap-sm">
+														<span class="name">Nabin Sitaula</span>
+														<span class="email">sitaula@gmail.com</span>
+													</figcaption>
+												</aside>
+											</td>
+											<td>9851056231</td>
+											<td>540</td>
+											<td>
+												<aside class="df alc">
+													<i class="fa fa-star star xs active"></i>
+													<i class="fa fa-star star xs active"></i>
+													<i class="fa fa-star star xs active"></i>
+													<i class="fa fa-star star xs active"></i>
+													<i class="fa fa-star star xs"></i>
+													<span class="yel">4.9</span>
+												</aside>
+											</td>											
+										</tr>
+										<tr>
+											<td>
+												<aside class="df">
+													<img src="images/img/man2.jpg">
+													<figcaption class="dfc gap-sm">
+														<span class="name">Saroj Bhat</span>
+														<span class="email">bhat.saroj@gmail.com</span>
+													</figcaption>
+												</aside>
+											</td>
+											<td>9851056231</td>
+											<td>510</td>
+											<td>
+												<aside class="df alc">
+													<i class="fa fa-star star xs active"></i>
+													<i class="fa fa-star star xs active"></i>
+													<i class="fa fa-star star xs active"></i>
+													<i class="fa fa-star star xs active"></i>
+													<i class="fa fa-star star xs"></i>
+													<span class="yel">4.8</span>
+												</aside>
+											</td>											
+										</tr>
+
+									</tbody>
+								</table>
+
+							</div>
+							<!-- end table-wrap -->
+							
+						</div>
+					</div>
+					<!-- end categoryInsightDetail -->
+
+				</div>
+
+				<footer class="footer p-1 sobg">
+					<ul class="footer_ul df gap-2 alc">
+						<li class="footer_li df alc">
+							<i class="fa fa-lock"></i>
+							<a class="footer_a blc" href="#">Secure Platform</a>
+						</li>
+						<li class="footer_li df alc">
+							<i class="fa fa-people-group"></i>
+							<a class="footer_a blc" href="#">Trusted Community</a>
+						</li>
+						<li class="footer_li df alc">
+							<i class="fa fa-wallet"></i>
+							<a class="footer_a blc" href="#">Wallet Protected</a>
+						</li>
+						<li class="footer_li df alc">
+							<i class="fa fa-check-circle"></i>
+							<a class="footer_a blc" href="#">Verified System</a>
+						</li>					
+						<li class="footer_li df alc">
+							<i class="fa fa-money-bill-wheat"></i>
+							<a class="footer_a blc" href="#">Community Economy</a>
+						</li>					
+					</ul>
+				</footer>
+
+			</div>
+			<!-- end content -->
+
+		</section>
+
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/chart.js"></script>
+		<script src="js/chartjs-plugin-datalabels@2.js"></script>		
+		<script type="text/javascript">
+			// Stacked Area Chart 
+			new Chart($('#trendChart'), {
+			    type: 'line',
+			    data: {
+			        labels: ['3/4', '3/23', '3/24', '3/24', '3/24', '4/24', '4/26'],
+			        datasets: [
+			            { label: 'Exchanges', data: [5, 15, 10, 20, 18, 22, 28], borderColor: '#4caf50', fill: true, backgroundColor: 'rgba(76,175,80,0.1)' },
+			            { label: 'New Users', data: [2, 5, 8, 12, 10, 15, 18], borderColor: '#2196f3', fill: true, backgroundColor: 'rgba(33,150,243,0.1)' },
+			            { label: 'Revenue', data: [1, 10, 15, 10, 12, 15, 14], borderColor: '#ff9800', fill: true, backgroundColor: 'rgba(255,152,0,0.1)' }
+			        ]
+			    },
+			    options: { maintainAspectRatio: false, plugins: { legend: { position: 'bottom' } } }
+			});
+			// Province Pie
+			new Chart($('#provincePie'), {
+			    type: 'pie',
+			    data: {
+			        labels: ['Bagmati', 'Gandaki', 'Koshi', 'Others'],
+			        datasets: [{
+			            data: [52, 24, 18, 6],
+			            backgroundColor: ['#4285F4', '#FBBC05', '#34A853', '#A142F4'],
+			            borderWidth: 2,
+			            borderColor: '#fff'
+			        }]
+			    },
+			    options: {
+			        maintainAspectRatio: false,
+			        plugins: {
+			            legend: {
+			                display: true,
+			                position: 'right', 
+			                labels: { usePointStyle: true, padding: 20 }
+			            }
+			        },
+			        layout: { padding: 10 }
+			    }
+			});
+
+			// exchange rating 
+			new Chart($('#exchangeChart'), {
+			    type: 'bar',
+			    plugins: [ChartDataLabels], 
+			    data: {
+			        labels: ['Electronics', 'Furniture', 'Vehicles', 'Others'],
+			        datasets: [{
+			            data: [1850, 1540, 960, 993],
+			            backgroundColor: ['#66b3ff', '#ffcc66', '#81c784', '#4db6ac'],
+			            barThickness: 40
+			        }]
+			    },
+			    options: {
+			        maintainAspectRatio: false,
+			        plugins: {
+			            legend: { display: false },
+			            datalabels: {
+			                anchor: 'end',
+			                align: 'top',
+			                font: { weight: 'bold', size: 14 },
+			                formatter: (value) => value.toLocaleString()
+			            }
+			        },
+			        scales: {
+			            y: { beginAtZero: false, min: 600 }, 
+			            x: { grid: { display: false } }
+			        }
+			    }
+			});
+
+		</script>
+
+	</body>
+	</html>

@@ -1,0 +1,16 @@
+$img-size:(
+	big:(dkt:80vh, mob:88vh),
+	half-col:(dkt:25rem, mob:auto),
+	one-4:(dkt:17rem, mob:auto),
+	one-3:(dkt:13rem, mob:auto),
+	one-2:(dkt:7.5rem, mob:5.5rem),
+	one-1:(dkt:6rem, mob:5.2rem)
+);
+@each $name, $value in $img-size{
+	.#{$name}{
+		height:map-get($value, dkt);
+		@include max(767px){
+			height:map-get($value, mob);
+		}
+	}
+}

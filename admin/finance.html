@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sewa Exchange: Finance Management</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="images/img/favi.png" type="png">
+	
+	<!-- fontawesome -->
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<!-- custom -->
+	<link rel="stylesheet" type="text/css" href="css/admin.css">
+</head>
+<body>	
+
+	<div class="progress-wrapper">
+		<div class="progress-bar"></div>
+	</div>
+
+	<nav class="nav py-1 top_nav">
+		<div class="wrapper-wide df alc gap-3 header-wrap">
+			<a href="dashboard.html" class="logo df alc gap-1">
+				<img src="images/img/logo.png">
+				<h3 class="prime">SewaExchange</h3>
+			</a>
+
+			<form class="search-form header-form">
+				<input type="search" class="br-3" placeholder="search item(s) here....">
+				<i class="fa fa-search"></i>
+			</form>
+
+			<ul class="btn-group action-buttons df gap-2">
+				<!-- these two list will show after login -->					
+				<li class="df sobg br-1 alc">
+					<a class="btn-sm blc db notify-btn" href="javascript:void()">				
+						<i class="fa fa-bell"></i>
+					</a>
+					<a class="btn-sm sec df profile-btn" href="javascript:void()">		
+						<img src="images/img/man.png">
+						<i class="fa fa-chevron-down"></i>
+					</a>
+				</li>
+
+			</ul>
+			
+		</div>
+	</nav>
+
+	<div class="box_on-click notification p-2 br-1">
+		<h4 class="blc box_on-click_title pb-1 df alc">Notifications 
+			<span class="clear">Clear</span>
+		</h4>
+		<ul class="box_on-click_ul dfc">
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Vestibulum ac arcu id libero dignissim mollis sed ut nunc</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Sed cursus nibh molestie, imperdiet urna a, blandit justo</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Morbi auctor odio sed massa semper molestie</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Praesent nec eros sed sem lacinia mattis sit amet in diam</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Aliquam dictum libero id orci laoreet dignissim</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="box_on-click profile_box py-1 px-2 br-1">
+		<h4 class="blc box_on-click_title pb-1 mb-1 df alc">Gopal Nepal</h4>
+		<ul class="box_on-click_ul dfc">
+			<li class="box_on-click_li">
+				<a class="box_on-click_a blc df gap-1 alc p-1" href="#">
+					<i class="fa fa-user-circle"></i>
+					<span>Visit Profile
+					</a>
+				</li>
+				<li class="box_on-click_li">
+					<a class="box_on-click_a blc df gap-1 alc p-1" href="#">
+						<i class="fa fa-sign-out"></i>
+						<span>Logout</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<section class="db">
+			<nav class="nav left_nav p-2">
+				<aside class="mb-1">
+					<h4 class="gr mt-2 hide-on-desktop">MENU</h4>
+					<button class="nav_toggler">
+						<i class="fa fa-bars toggler"></i>				   
+					</button>
+					<button class="close-menu">
+						<i class="fa fa-times toggler"></i>				   
+					</button>
+				</aside>
+
+				<ul class="nav_ul dfc">
+					<li class="nav_li">
+						<a href="dashboard.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-dashboard homeicon"></i>
+							<h6>Dashboard</h6>
+						</a>
+					</li>
+
+					<li class="nav_li">
+						<a href="users.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-users"></i>
+							<h6>Users</h6>
+						</a>
+					</li>
+
+					<li class="nav_li">
+						<a href="agents.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-user-secret"></i>
+							<h6>Agents</h6>
+						</a>
+					</li>
+
+					<li class="nav_li">
+						<a href="exchange.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-exchange"></i>
+							<h6>Exchanges</h6>
+						</a>
+					</li>
+
+					<li class="nav_li">
+						<a href="wallet_system.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-wallet"></i>
+							<h6>Wallet System</h6>
+						</a>
+					</li>
+
+					<li class="nav_li active">
+						<a href="finance.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-money-bill"></i>
+							<h6>Finance</h6>
+						</a>
+					</li>
+
+					<hr class="my-2">
+
+					<li class="nav_li">
+						<a href="dispute.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-vcard"></i>
+							<h6>Disputes</h6>
+						</a>
+					</li>
+
+					<li class="nav_li">
+						<a href="trust_system.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-clipboard-check"></i>
+							<h6>Trust System</h6>
+						</a>
+					</li>
+					<li class="nav_li">
+						<a href="analytics.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-chart-column"></i>
+							<h6>Analytics</h6>
+						</a>
+					</li>
+					<li class="nav_li">
+						<a href="complaince.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-shield"></i>
+							<h6>Complaince</h6>
+						</a>
+					</li>
+					<li class="nav_li">
+						<a href="community.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-people-group"></i>
+							<h6>Community</h6>
+						</a>
+					</li>
+					<li class="nav_li">
+						<a href="settings.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-cogs"></i>
+							<h6>Settings</h6>
+						</a>
+					</li>
+
+				</ul>
+
+			</nav>
+			<!-- end menu_wrap -->
+
+			<div class="content">
+				<div class="content_page financeSystem dg col12 p-2 gap-1">
+
+					<div class="content_page-btnSection colg-12 df gap-2 pb-1">
+						<h4 class="prime">Finance Management</h4>
+						<div class="content_page-btnSection_btnGroup df gap-1">
+							<a class="btn btn-xs btn-gray-br df alc" href="#">
+								<i class="fa fa-file-pdf"></i>
+								Export PDF
+							</a>
+							<a class="btn btn-xs btn-dim-br df alc" href="#">
+								<i class="fa fa-file-csv"></i>
+								Export CSV
+							</a>
+						</div>
+					</div>
+
+					<div class="info colg-12 dg col12 gap-2 pb-1">
+
+						<div class="info_box colg-3 df gap-1 p-1 br-1">
+							<i class="fa fa-money-bill gre"></i>
+							<figcaption class="dfc">
+								<h5 class="gre">Rs.3,00,000</h5>
+								<p class="p2">Total Revenue</p>
+							</figcaption>
+						</div>
+
+						<div class="info_box colg-3 df gap-1 p-1 br-1">
+							<i class="fa fa-money-bill-1 re"></i>
+							<figcaption class="dfc">
+								<h5 class="re">Rs.90,000</h5>
+								<p class="p2">Total Expenses</p>
+							</figcaption>
+						</div>
+
+						<div class="info_box colg-3 df gap-1 p-1 br-1">
+							<i class="fa fa-money-bill-1-wave prime"></i>
+							<figcaption class="dfc">
+								<h5 class="prime">Rs.2,15,000</h5>
+								<p class="p2">Total Profit</p>
+							</figcaption>
+						</div>
+						<div class="info_box colg-3 df gap-1 p-1 br-1">
+							<i class="fa fa-exchange sec"></i>
+							<figcaption class="dfc">
+								<h5 class="sec">Rs.1,550</h5>
+								<p class="p2">Total Exchanges</p>
+							</figcaption>
+						</div>
+
+					</div>
+
+					<div class="colg-12 dg col12 gap-2 pb-1 revAndExpenses">
+						<h6 class="blc colg-3">Revenue & Expenses:</h6>
+						<form class="form colg-9 dg col12 gap-2" action="">
+							<div class="colg-6 form-group df gap-1 alc">
+								<select class="content_page-top_select">
+									<option>Last 30 days</option>
+									<option>Last 2 months</option>
+									<option>Last 3 months</option>
+								</select>
+							</div>							
+							<div class="colg-6 form-group search-form inside-form df gap-1 alc">
+								<input type="date" class="btn-gray-br" placeholder="select time range....">
+								<!-- <i class="fa fa-search"></i> -->
+							</div>
+						</form>
+					</div>
+					<!-- end content_page-top -->
+
+					<div class="bars_wrap colg-12 dg col12 gap-2 pb-1">
+						<div class="colg-4 chart-box lineChart p-2 br-1">
+							<canvas id="lineChart"></canvas>
+						</div>
+
+						<div class="colg-4 chart-box barChart p-2 br-1">
+							<canvas id="barChart"></canvas>
+						</div>
+
+						<div class="colg-4 chart-box pieChart p-2 br-1">
+							<canvas id="pieChart"></canvas>
+						</div>						
+					</div>
+					<!-- end bars_wrap -->
+
+					<div class="info info2 colg-12 col15 gap-2 pb-1">
+
+						<div class="info_box colg-3 df gap-1 p-1 br-1">
+							<i class="fa fa-wallet prime"></i>
+							<figcaption class="dfc">
+								<p class="p2">User wallet balance</p>
+								<h5 class="prime">Rs.3,25,000</h5>								
+							</figcaption>
+						</div>
+
+						<div class="info_box colg-3 df gap-1 p-1 br-1">
+							<i class="fa fa-briefcase-clock yel"></i>
+							<figcaption class="dfc">
+								<p class="p2">Escrow balance</p>
+								<h5 class="yel">Rs.58,000</h5>								
+							</figcaption>
+						</div>
+
+						<div class="info_box colg-3 df gap-1 p-1 br-1">
+							<i class="fa fa-money-bill gre"></i>
+							<figcaption class="dfc">
+								<p class="p2">Platform Wallet</p>
+								<h5 class="gre">Rs.2,15,000</h5>								
+							</figcaption>
+						</div>
+						<div class="info_box colg-3 df gap-1 p-1 br-1">
+							<i class="fa fa-money-bill-1 sec"></i>
+							<figcaption class="dfc">
+								<p class="p2">Pending withdrawl</p>
+								<h5 class="sec">Rs.11,550</h5>								
+							</figcaption>
+						</div>
+						<div class="info_box colg-3 df gap-1 p-1 br-1">
+							<i class="fa fa-exchange re"></i>
+							<figcaption class="dfc">
+								<p class="p2">Exchange Balance</p>
+								<h5 class="re">Rs.11,550</h5>								
+							</figcaption>
+						</div>
+
+					</div>
+
+					<div class="colg-12 dg col12 gap-2 pb-1 revAndExpenses">
+						<h6 class="blc colg-3">Recent finance transcation:</h6>
+						<form class="form colg-9 dg col12 gap-2" action="">
+							<div class="colg-6 form-group df gap-1 alc">
+								<select class="content_page-top_select">
+									<option>Last 30 days</option>
+									<option>Last 2 months</option>
+									<option>Last 3 months</option>
+								</select>
+							</div>							
+							<div class="colg-6 form-group search-form inside-form df gap-1 alc">
+								<input type="date" class="btn-gray-br" placeholder="select time range....">
+								<!-- <i class="fa fa-search"></i> -->
+							</div>
+						</form>
+					</div>
+					<!-- end content_page-top -->
+
+					<div class="colg-12 table-wrap">
+						<table>
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>Date</th>
+									<th>Description</th>
+									<th>Type</th>
+									<th>Amount(Rs.)</th>
+									<th>Balance(Rs.)</th>
+									<th>Reference ID</th>
+									<th>Status</th>
+									<th>Action(s)</th>
+								</tr>
+							</thead>
+							<tbody>
+
+								<tr>
+									<td>1</td>
+									<td>2026/02/05</td>									
+									<td>Exchange Comission</td>
+									<td>
+										<span class="blc br-1 status revenue">Revenue</span>
+									</td>
+									<td class="gre">+10,000</td>
+									<td>55,500</td>
+									<td>COM8675</td>
+									<td>
+										<span class="blc br-1 status completed">Completed</span>
+									</td>
+									<td>
+										<aside class="df">
+											<a class="btn view-btn" href="#">View</a>
+										</aside>
+									</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>2026/02/09</td>									
+									<td>Withdrawl Process</td>
+									<td>
+										<span class="blc br-1 status expenses">Expenses</span>
+									</td>
+									<td class="re">-9,000</td>
+									<td>46,500</td>
+									<td>WP8675</td>
+									<td>
+										<span class="blc br-1 status pending">Pending</span>
+									</td>
+									<td>
+										<aside class="df">
+											<a class="btn view-btn" href="#">View</a>
+										</aside>
+									</td>
+								</tr>	
+								<tr>
+									<td>3</td>
+									<td>2026/02/07</td>									
+									<td>Withdrawl Process</td>
+									<td>
+										<span class="blc br-1 status revenue">Revenue</span>
+									</td>
+									<td class="gre">+9,000</td>
+									<td>65,500</td>
+									<td>WPT8675</td>
+									<td>
+										<span class="blc br-1 status completed">Completed</span>
+									</td>
+									<td>
+										<aside class="df">
+											<a class="btn view-btn" href="#">View</a>
+										</aside>
+									</td>
+								</tr>	
+								<tr>
+									<td>4</td>
+									<td>2026/02/07</td>									
+									<td>Withdrawl Process</td>
+									<td>
+										<span class="blc br-1 status revenue">Revenue</span>
+									</td>
+									<td class="gre">+9,000</td>
+									<td>65,500</td>
+									<td>WPT8675</td>
+									<td>
+										<span class="blc br-1 status rejected">Rejected</span>
+									</td>
+									<td>
+										<aside class="df">
+											<a class="btn view-btn" href="#">View</a>
+										</aside>
+									</td>
+								</tr>	
+								<tr>
+									<td>5</td>
+									<td>2026/02/07</td>									
+									<td>Withdrawl Process</td>
+									<td>
+										<span class="blc br-1 status expenses">Revenue</span>
+									</td>
+									<td class="re">-6,000</td>
+									<td>59,500</td>
+									<td>WPB8675</td>
+									<td>
+										<span class="blc br-1 status pending">Pending</span>
+									</td>
+									<td>
+										<aside class="df">
+											<a class="btn view-btn" href="#">View</a>
+										</aside>
+									</td>
+								</tr>						
+
+							</tbody>
+						</table>
+
+					</div>
+					<!-- end table-wrap -->
+
+					<div class="mt-1 colg-12 alc paginate df gap-2">
+						<aside class="paginate_left df gap-1">
+							<a class="page-numbers" href="#">First</a>
+							<a class="prev page-numbers" href="#">&lt;</a>
+							<span aria-current="page" class="page-numbers current">2</span>					
+							<span aria-current="page" class="page-numbers count">of</span>	
+							<a class="next page-numbers" href="#">&gt;</a>					
+							<a class="page-numbers" href="#">18</a>
+						</aside>
+						<aside class="paginate_right df">
+							<p class="p2">Showing 
+								<strong class="blc">5</strong>
+								of 
+								<strong class="blc">3,25</strong>
+							</p>
+						</aside>
+					</div>	
+					
+
+				</div>
+
+				<footer class="footer p-1 sobg">
+					<ul class="footer_ul df gap-2 alc">
+						<li class="footer_li df alc">
+							<i class="fa fa-lock"></i>
+							<a class="footer_a blc" href="#">Secure Platform</a>
+						</li>
+						<li class="footer_li df alc">
+							<i class="fa fa-people-group"></i>
+							<a class="footer_a blc" href="#">Trusted Community</a>
+						</li>
+						<li class="footer_li df alc">
+							<i class="fa fa-wallet"></i>
+							<a class="footer_a blc" href="#">Wallet Protected</a>
+						</li>
+						<li class="footer_li df alc">
+							<i class="fa fa-check-circle"></i>
+							<a class="footer_a blc" href="#">Verified System</a>
+						</li>					
+						<li class="footer_li df alc">
+							<i class="fa fa-money-bill-wheat"></i>
+							<a class="footer_a blc" href="#">Community Economy</a>
+						</li>					
+					</ul>
+				</footer>
+
+			</div>
+			<!-- end content -->
+
+		</section>
+
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/chart.js"></script>
+		<script type="text/javascript">
+			// Revenue vs Expenses
+			new Chart($('#lineChart'), {
+			    type: 'line',
+			    data: {
+			        labels: ['20/24', '30/26', '37/06', '32/38', '30/46', '40/26', '18/24', '18/21'],
+			        datasets: [
+			            { label: 'Revenue', data: [5, 45, 65, 45, 70, 55, 80, 120], borderColor: '#28a745', fill: true, backgroundColor: 'rgba(40,167,69,0.1)' },
+			            { label: 'Expenses', data: [2, 8, 20, 35, 40, 38, 45, 50], borderColor: '#dc3545', fill: true, backgroundColor: 'rgba(220,53,69,0.1)' }
+			        ]
+			    }
+			});
+
+			// Daily barchart
+			new Chart($('#barChart'), {
+			    type: 'bar',
+			    data: {
+			        labels: ['20/24', '30/26', '22/36', '30/23', '40/05', '31/02', '22/51', '20/55', '17/23', '30/11'],
+			        datasets: [{ label: 'Daily', data: [20, 25, 30, 15, 45, 55, 65, 70, 40, 60], backgroundColor: '#3b82f6' }]
+			    }
+			});
+
+			// Pie Chart
+			new Chart($('#pieChart'), { // keeping your ID for convenience
+			    type: 'bar',
+			    data: {
+			        labels: ['Bagmati', 'Gandaki', 'Koshi'],
+			        datasets: [{
+			            data: [60, 25, 15],
+			            backgroundColor: ['#3b82f6', '#f59e0b', '#10b981']
+			        }]
+			    },
+			    options: {
+			        indexAxis: 'y', // Makes it horizontal
+			        plugins: { legend: { display: false } }
+			    }
+			});
+
+		</script>
+
+	</body>
+	</html>

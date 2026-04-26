@@ -1,0 +1,114 @@
+.page-bg{
+	background:url('../images/page-bg.jpg') center center;
+	background-attachment: fixed;
+	position: relative;
+	z-index: 1;
+	&:before{
+		content:"";
+		height: 100%;
+		width:100%;
+		background-color:rgba($bla, .4);
+		position:fixed;
+		top:0;
+		z-index:-1;
+	}
+}
+.pageWrap{
+	background-color:rgba($whi, .8);
+}
+.page{
+	& *{
+		&:not(.img-outer){
+			// margin-bottom:1rem;
+		}		
+	}
+	& p{
+		font-size: 1.1rem;
+		line-height: 1.7;
+		text-align: justify;
+		color:lighten($bla, 10%);
+	}
+	&_ul,
+	&_ol{
+		padding-left: 1.5rem;
+		list-style-position: inside;
+	}
+	&_ul{
+		list-style: square;
+	}
+	&_ol{
+		list-style: decimal;
+	}
+	&_li{
+		font-weight: normal;
+		font-size: .98rem;
+	}
+	&_a{
+		text-decoration: underline;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+
+	&_right{
+		@include min(768px){
+			padding-left:2.1rem;
+		}
+		&-ul{
+
+		}
+		&-li{
+			color: $bla;
+			padding: .6rem 0;
+			border-bottom: 1px dashed $lgry;
+			font-size: 1rem;
+			& i{
+				color:darken($lgry, 5%);
+			}
+		}
+		&-a{
+
+		}
+	}
+	& .img-outer{
+		&:first-of-type{
+			& img{
+				@include min(768px){
+					height: 25rem;
+				}
+			}
+		}
+	}
+
+}
+.breadcrumb{
+	&_ul{
+
+	}
+	&_li{
+		font-size: 1rem;
+		position:relative;
+		&:not(:last-of-type){
+			padding-right:2rem;
+			&:before{
+				content:">";
+				@include absPos(auto, .5rem, auto, auto);
+			}
+		}
+	}
+	&_a{
+
+	}
+}
+.pageBottom{
+	border-top:1px solid $lgry;
+	&_ul{
+		border-top:1px dotted $lgry;
+	}
+	&_li{
+		text-align: center;
+	}
+	&_a{
+
+	}
+}

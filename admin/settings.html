@@ -1,0 +1,2263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sewa Exchange: Settings</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="images/img/favi.png" type="png">
+	
+	<!-- fontawesome -->
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+
+	<!-- selec2 css -->	
+	<link rel="stylesheet" type="text/css" href="css/select2.min.css">
+	<!-- custom -->
+	<link rel="stylesheet" type="text/css" href="css/admin.css">
+</head>
+<body>	
+
+	<div class="progress-wrapper">
+		<div class="progress-bar"></div>
+	</div>
+
+	<nav class="nav py-1 top_nav">
+		<div class="wrapper-wide df alc gap-3 header-wrap">
+			<a href="dashboard.html" class="logo df alc gap-1">
+				<img src="images/img/logo.png">
+				<h3 class="prime">SewaExchange</h3>
+			</a>
+
+			<form class="search-form header-form">
+				<input type="search" class="br-3" placeholder="search item(s) here....">
+				<i class="fa fa-search"></i>
+			</form>
+
+			<ul class="btn-group action-buttons df gap-2">
+				<!-- these two list will show after login -->					
+				<li class="df sobg br-1 alc">
+					<a class="btn-sm blc db notify-btn" href="javascript:void()">				
+						<i class="fa fa-bell"></i>
+					</a>
+					<a class="btn-sm sec df profile-btn" href="javascript:void()">		
+						<img src="images/img/man.png">
+						<i class="fa fa-chevron-down"></i>
+					</a>
+				</li>
+
+			</ul>
+			
+		</div>
+	</nav>
+
+	<div class="box_on-click notification p-2 br-1">
+		<h4 class="blc box_on-click_title pb-1 df alc">Notifications 
+			<span class="clear">Clear</span>
+		</h4>
+		<ul class="box_on-click_ul dfc">
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Vestibulum ac arcu id libero dignissim mollis sed ut nunc</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Sed cursus nibh molestie, imperdiet urna a, blandit justo</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Morbi auctor odio sed massa semper molestie</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Praesent nec eros sed sem lacinia mattis sit amet in diam</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Aliquam dictum libero id orci laoreet dignissim</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="box_on-click profile_box py-1 px-2 br-1">
+		<h4 class="blc box_on-click_title pb-1 mb-1 df alc">Gopal Nepal</h4>
+		<ul class="box_on-click_ul dfc">
+			<li class="box_on-click_li">
+				<a class="box_on-click_a blc df gap-1 alc p-1" href="#">
+					<i class="fa fa-user-circle"></i>
+					<span>Visit Profile
+					</a>
+				</li>
+				<li class="box_on-click_li">
+					<a class="box_on-click_a blc df gap-1 alc p-1" href="#">
+						<i class="fa fa-sign-out"></i>
+						<span>Logout</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<section class="db">
+			<nav class="nav left_nav p-2">
+				<aside class="mb-1">
+					<h4 class="gr mt-2 hide-on-desktop">MENU</h4>
+					<button class="nav_toggler">
+						<i class="fa fa-bars toggler"></i>				   
+					</button>
+					<button class="close-menu">
+						<i class="fa fa-times toggler"></i>				   
+					</button>
+				</aside>
+
+				<ul class="nav_ul dfc">
+					<li class="nav_li">
+						<a href="dashboard.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-dashboard homeicon"></i>
+							<h6>Dashboard</h6>
+						</a>
+					</li>
+
+					<li class="nav_li">
+						<a href="users.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-users"></i>
+							<h6>Users</h6>
+						</a>
+					</li>
+
+					<li class="nav_li">
+						<a href="agents.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-user-secret"></i>
+							<h6>Agents</h6>
+						</a>
+					</li>
+
+					<li class="nav_li">
+						<a href="exchange.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-exchange"></i>
+							<h6>Exchanges</h6>
+						</a>
+					</li>
+
+					<li class="nav_li">
+						<a href="wallet_system.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-wallet"></i>
+							<h6>Wallet System</h6>
+						</a>
+					</li>
+
+					<li class="nav_li">
+						<a href="finance.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-money-bill"></i>
+							<h6>Finance</h6>
+						</a>
+					</li>
+
+					<hr class="my-2">
+
+					<li class="nav_li">
+						<a href="dispute.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-vcard"></i>
+							<h6>Disputes</h6>
+						</a>
+					</li>
+
+					<li class="nav_li">
+						<a href="trust_system.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-clipboard-check"></i>
+							<h6>Trust System</h6>
+						</a>
+					</li>
+					<li class="nav_li">
+						<a href="analytics.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-chart-column"></i>
+							<h6>Analytics</h6>
+						</a>
+					</li>
+					<li class="nav_li">
+						<a href="complaince.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-shield"></i>
+							<h6>Complaince</h6>
+						</a>
+					</li>
+					<li class="nav_li">
+						<a href="community.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-people-group"></i>
+							<h6>Community</h6>
+						</a>
+					</li>
+					<li class="nav_li active">
+						<a href="settings.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-cogs"></i>
+							<h6>Settings</h6>
+						</a>
+					</li>
+
+				</ul>
+
+			</nav>
+			<!-- end menu_wrap -->
+
+			<div class="content">
+				<div class="content_page securitySystem dg col12 p-2 gap-1">
+
+					<div class="content_page-btnSection colg-12 df gap-2 pb-1">
+						<h4 class="prime">Settings</h4>
+						<div class="content_page-btnSection_btnGroup df gap-1">							
+							<a class="btn btn-xs btn-main-bg df alc" href="#">
+								<i class="fa fa-save"></i>
+								Save
+							</a>
+						</div>
+					</div>
+
+					<div class="tab-wrap colg-12">
+						<ul class="tab-menu">
+							<li class="tab-item">
+								<a href="#sys" class="tab-link">System</a>
+							</li>
+							<li class="tab-item">
+								<a href="#security" class="tab-link">Security</a>
+							</li>
+							<li class="tab-item">
+								<a href="#noti" class="tab-link">Notifications</a>
+							</li>
+							<li class="tab-item">
+								<a href="#fee" class="tab-link">Fees&Escrow</a>
+							</li>
+							<li class="tab-item">
+								<a href="#acc" class="tab-link">Account</a>
+							</li>
+						</ul>
+
+						<aside id="sys" class="tab-content">
+							<div class="systemSetting colg-12 dg col12 gap-1">
+
+								<div class="colg-4 systemSetting_box">
+									<aside class="border_box br-1">
+										<h6 class="prime py-1 px-2 brtl-1 brtr-1 pri-bglg">Core System Control</h6>
+										<form class="form" action="">
+
+											<div class="form-group df alc gap-1 px-2 py-1">
+												<label>System Mode</label>
+												<label class="radio-label toggle-style df">
+													<input type="checkbox" name="dark">
+													<span></span>
+													Light
+												</label>
+											</div>
+											<div class="form-group df spb alc gap-1 px-2 py-1">
+												<input type="date" name="date">
+												<input type="time" name="time">
+											</div>
+											<div class="form-group df spb alc gap-1 px-2 py-1">
+												<label class="radio-label toggle-style df spb">
+													<input type="checkbox" name="dark" checked="checked">
+													Nofity user before downtime
+													<span></span>													
+												</label>
+											</div>
+											<div class="form-group df spb alc gap-1 px-2 py-1">
+												<label>Default Language</label>
+												<select>
+													<option>Nepali</option>
+													<option>English</option>
+												</select>
+											</div>
+											<div class="form-group df spb alc gap-1 px-2 py-1">
+												<label>Default Currency</label>
+												<select>
+													<option>NPR</option>
+													<option>USD</option>
+												</select>
+											</div>
+											<div class="form-group df spb alc gap-1 px-2 py-1">
+												<label>Timezone</label>
+												<select>
+													<option>Kathmandu</option>
+													<option>GMT</option>
+												</select>
+											</div>
+											<div class="form-group df spb alc gap-1 px-2 py-1">
+												<label>Branding</label>
+												<div class="file-input" id="uploadFile">
+													<input type="file" id="brandImgInput" class="file-input-input">
+													<label for="brandImgInput" class="file-input-label">Upload Image</label>
+												</div>																							
+											</div>
+											<div class="img-preview mb-1 px-2" style="display:none;">
+												<img id="previewImg" />
+											</div>	
+											<div class="form-group df spb alc gap-1 px-2 py-1">
+												<label for="footerText">Footer Text</label>
+												<input type="text" id="footerText" placeholder="footer text">
+											</div>
+											<div class="form-group df spb alc gap-1 px-2 py-1">
+												<label for="supportEmail">Support Email</label>
+												<input type="text" id="supportEmail" value="support@sewaexchange.com">
+											</div>
+
+										</form>
+									</aside>
+								</div>
+								<!-- systemSetting_box end -->
+
+								<div class="colg-4 systemSetting_box dfc gap-1">
+									<aside class="border_box br-1">
+										<h6 class="prime py-1 px-2 brtl-1 brtr-1 gr-bglg">System Health</h6>
+										<form class="form" action="">
+
+											<div class="form-group df spb alc gap-1 px-2 py-1">
+												<figcaption class="df spb alc gap-1">
+													<p class="p1">Wallet System</p>
+													<p class="p2 df alc">
+														<i class="fa fa-check-circle gre xs"></i>
+														Operational
+												</figcaption>
+											</div>
+											<div class="form-group df spb alc gap-1 px-2 py-1">
+												<figcaption class="df spb alc gap-1">
+													<p class="p1">Exchange System</p>
+													<p class="p2 df alc">
+														<i class="fa fa-check-circle gre xs"></i>
+														Operational
+												</figcaption>
+											</div>
+											<div class="form-group df spb alc gap-1 px-2 py-1">
+												<figcaption class="df spb alc gap-1">
+													<p class="p1">Agent System</p>
+													<p class="p2 df alc">
+														<i class="fa fa-check-circle gre xs"></i>
+														Operational
+												</figcaption>
+											</div>
+											<div class="form-group df spb alc gap-1 px-2 py-1">
+												<a class="small_btn btn-xs btn-main-br" href="javascript:void()">View Detail Log</a>
+											</div>
+										</form>
+									</aside>
+
+									<aside class="border_box br-1">
+										<h6 class="prime py-1 px-2 brtl-1 brtr-1 gr-bglg">Backup&Restore</h6>
+										<form class="form" action="">
+
+											<div class="form-group df spb alc gap-1 px-2 py-1">
+												<label class="radio-label toggle-style df spb">
+													<input type="checkbox" name="dark" checked="checked">
+													Auto daily backup
+													<span></span>													
+												</label>
+											</div>
+
+											<div class="form-group df spb alc gap-1 px-2 py-1">
+												<label>Backup retention</label>
+												<select>
+													<option>7 days</option>
+													<option>15 days</option>
+													<option>1 month</option>
+												</select>
+											</div>
+											
+											<div class="form-group df spb alc gap-1 px-2 py-1">
+												<a class="small_btn btn-xs btn-main-br" href="javascript:void()">Manual backup</a>
+												<a class="small_btn btn-xs btn-gray-br" href="javascript:void()">Restore system</a>
+											</div>
+										</form>
+									</aside>
+
+								</div>
+								<!-- systemSetting_box end -->
+
+								<div class="colg-4 systemSetting_box dfc gap-1">
+									<aside class="border_box br-1">
+										<h6 class="prime py-1 px-2 brtl-1 brtr-1 pri-bglg">Performance control</h6>
+										<form class="form" action="">
+
+											<div class="form-group df spb alc gap-1 px-2 py-1">
+												<label>Cache auto control</label>
+												<select>
+													<option>6 hours</option>
+													<option>12 hours</option>
+													<option>24 hours</option>
+												</select>
+											</div>
+											<div class="form-group df spb alc gap-1 px-2 py-1">
+												<label>Sync frequency</label>
+												<select>
+													<option>15 minutes</option>
+													<option>30 minutes</option>
+													<option>45 minutes</option>
+												</select>
+											</div>
+											<div class="form-group df spb alc gap-1 px-2 py-1">
+												<label class="radio-label toggle-style df spb">
+													<input type="checkbox" name="dark" checked="checked">
+													Dashboard auto refresh
+													<span></span>													
+												</label>
+											</div>
+											<div class="form-group df spb alc gap-1 px-2 py-1">
+												<a class="small_btn btn-xs btn-gray-br" href="javascript:void()">Refresh</a>
+											</div>
+										</form>
+									</aside>
+
+									<aside class="border_box br-1">
+										<h6 class="prime py-1 px-2 brtl-1 brtr-1 gr-bglg">Planned maintenance</h6>
+										<form class="form" action="">
+
+											<div class="form-group df spb alc gap-1 px-2 py-1">
+												<label class="radio-label toggle-style df spb">
+													<input type="checkbox" name="dark" checked="checked">
+													05/07/2025-10/07/2025
+													<span></span>													
+												</label>
+											</div>
+
+											<div class="form-group df spb alc gap-1 px-2 py-1">
+												<label>Starts in 6 days</label>
+												<select>
+													<option>60 min</option>
+													<option>110 min</option>
+													<option>120 min</option>
+												</select>
+											</div>
+											<div class="form-group df spb alc gap-1 px-2 py-1">
+												<label class="radio-label toggle-style df spb">
+													<input type="checkbox" name="dark" checked="checked">
+													Nofity before downtime
+													<span></span>													
+												</label>
+											</div>
+											
+										</form>
+									</aside>
+
+								</div>
+								<!-- systemSetting_box end -->
+
+								<div class="colg-12 table-wrap">
+									<div class="form-group df alc gap-1 py-1">
+										<h6 class="prime mb-1">Types of system Logs</h6>
+										<select>
+											<option>All</option>
+											<option>Errors</option>
+											<option>Warnings</option>
+											<option>Info</option>
+										</select>
+									</div>
+									
+									<table class="mb-1">
+										<thead>
+											<tr>
+												<th>Date</th>
+												<th>Type</th>
+												<th>Module</th>
+												<th>Description</th>	
+												<th>Action</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>2026/02/03 02:45pm</td>
+												<td>
+													<span class="status error">Error</span>
+												</td>
+												<td>Wallet</td>
+												<td>Payment timeout</td>
+												<td>
+													<a class="btn retry-btn" href="#">Retry</a>
+												</td>
+											</tr>
+											<tr>
+												<td>2026/02/03 02:45pm</td>
+												<td>
+													<span class="status warning">Warning</span>
+												</td>
+												<td>Server</td>
+												<td>High CPU usage</td>
+												<td>
+													<a class="btn view-btn" href="#">View</a>
+												</td>
+											</tr>
+											<tr>
+												<td>2026/02/03 02:45pm</td>
+												<td>
+													<span class="status info-status">Info</span>
+												</td>
+												<td>Backup</td>
+												<td>Auto backup completed</td>
+												<td>
+													<a class="btn view-btn" href="#">View</a>
+												</td>
+											</tr>
+											<tr>
+												<td>2026/02/03 02:45pm</td>
+												<td>
+													<span class="status error">Error</span>
+												</td>
+												<td>Wallet</td>
+												<td>Payment timeout</td>
+												<td>
+													<a class="btn retry-btn" href="#">Retry</a>
+												</td>
+											</tr>
+											<tr>
+												<td>2026/02/03 02:45pm</td>
+												<td>
+													<span class="status warning">Warning</span>
+												</td>
+												<td>Server</td>
+												<td>High CPU usage</td>
+												<td>
+													<a class="btn view-btn" href="#">View</a>
+												</td>
+											</tr>
+																																	
+
+										</tbody>
+									</table>
+
+									<div class="mt-1 colg-12 alc paginate df gap-2">
+										<aside class="paginate_left df gap-1">
+											<a class="page-numbers" href="#">First</a>
+											<a class="prev page-numbers" href="#">&lt;</a>
+											<span aria-current="page" class="page-numbers current">2</span>					
+											<span aria-current="page" class="page-numbers count">of</span>	
+											<a class="next page-numbers" href="#">&gt;</a>					
+											<a class="page-numbers" href="#">99</a>
+										</aside>
+										<aside class="paginate_right df">
+											<p class="p2">Showing 
+												<strong class="blc">5</strong>
+												of 
+												<strong class="blc">105</strong>
+											</p>
+										</aside>
+									</div>
+									
+								</div>
+								<!-- end table-wrap -->
+
+							</div>
+
+						</aside>
+						<!-- end ts -->
+						<aside id="security" class="tab-content">
+							<div class="colg-12 dg col12 gap-2">						
+								<div class="colg-4 dfc gap-2">
+
+									<div class="securitySystem sys-col general box br-1">
+										<h6 class="prime py-1 px-2">General Security System</h6>
+										<form class="dfc" action="">
+
+											<div class="form-group dfc py-1 px-1">							
+												<label class="radio-label toggle-style df spb">
+													<input type="checkbox" name="gps" checked="checked">
+													<span></span>
+													Two Factor Authentication
+												</label>	
+												<cite>Required 2FA for user login email/OTP</cite>	
+											</div>
+											<div class="form-group dfc py-1 px-1">							
+												<label class="radio-label toggle-style df spb">
+													<input type="checkbox" name="gps">
+													<span></span>
+													Login Captcha
+												</label>	
+												<cite>Enalbel Captcha for login protection</cite>	
+											</div>
+											<div class="form-group dfc py-1 px-1 ip-add_form edit-row">
+											   <label>IP Whitelist</label>    
+											   <input type="text" value="192.168.0.101" readonly> 
+											   <div class="btn-group">
+											   	<a class="btn edit-trigger" href="javascript:void(0)">Edit</a>
+											   	<a class="btn cancel-trigger" href="javascript:void(0)" style="display:none;">Cancel</a>
+											   </div>
+
+											</div>
+											<div class="form-group dfc py-1 px-1">
+												<label for="category" class="db">Restricted Country</label>
+												<select class="multiple-select w-100" name="countries[]" multiple="multiple">
+												    <option>Nepal</option>
+												    <option>India</option>
+												    <option>China</option>
+												    <option>SriLanka</option>
+												    <option>Bhutan</option>
+												    <option>Bangladesh</option>
+												    <option>Pakistan</option>
+												</select>
+											</div>
+											<div class="form-group dfc py-1 px-1">
+												<label for="category" class="db">View Restricted Login Devices</label>
+												<select class="multiple-select w-100" name="countries[]" multiple="multiple">
+												    <option selected>Desktop-15hupb0097</option>
+												    <option selected>Desktop-15hupb0010</option>
+												    <option>Desktop-15hupb0015</option>
+												    <option>Desktop-15hupb0016</option>
+												    <option>Desktop-15hupb0048</option>
+												    <option>Desktop-15hupb0069</option>
+												</select>
+											</div>
+
+											<div class="form-group dfc py-1 px-1">							
+												<label class="radio-label toggle-style df spb">
+													<input type="checkbox" name="gps" checked="checked">
+													<span></span>
+													Emails for failed attempt
+												</label>	
+											</div>
+											
+										</form>
+									</div>
+									<!-- box end -->
+
+									<div class="securitySystem sys-col requirement-sys box br-1">
+										<h6 class="prime py-1 px-2">User Security Requirements</h6>
+										<form class="dfc" action="">
+
+											<div class="form-group dfc py-1 px-1 edit-row">
+											   <label class="db">Minimum Password Length</label>
+											   <div class="dfc">
+											      <input type="text" value="8 characters" readonly> 
+											      <div class="btn-group">
+											        <a class="btn edit-trigger" href="javascript:void(0)">Edit</a>
+											        <a class="btn cancel-trigger" href="javascript:void(0)" style="display:none;">Cancel</a>
+											      </div>
+											    </div>
+											</div>
+
+											<div class="form-group dfc py-1 px-1 edit-row">
+											   <label class="db">Failed Login Limit</label>
+											   <div class="dfc">
+											      <input type="text" value="5 attempts" readonly> 
+											      <div class="btn-group">
+											        <a class="btn edit-trigger" href="javascript:void(0)">Edit</a>
+											        <a class="btn cancel-trigger" href="javascript:void(0)" style="display:none;">Cancel</a>
+											      </div>
+											    </div>
+											</div>
+
+											<div class="form-group dfc py-1 px-1 edit-row">
+											   <label class="db">Session Time Out</label>
+											   <div class="dfc">
+											      <input type="text" value="30 minutes" readonly> 
+											      <div class="btn-group">
+											        <a class="btn edit-trigger" href="javascript:void(0)">Edit</a>
+											        <a class="btn cancel-trigger" href="javascript:void(0)" style="display:none;">Cancel</a>
+											      </div>
+											    </div>
+											</div>
+
+										</form>
+									</div>
+									<!-- end box -->
+
+								</div>
+								<div class="colg-8 dg col12 dfc gap-1">
+
+									<div class="colg-12 dg col12 gap-1 pb-1 activityLogs">
+										<h6 class="blc colg-4">Account Activity Logs:</h6>
+										<form class="form colg-8 dg col12 gap-2" action="">
+											<div class="colg-6 form-group df gap-1 alc">
+												<select class="content_page-top_select">
+													<option>Last 3 months</option>
+													<option>Last 6 months</option>
+													<option>Last 9 months</option>
+													<option>Last 1 year</option>
+												</select>
+											</div>							
+											<div class="colg-6 form-group search-form inside-form df gap-1 alc">
+												<input type="search" class="btn-gray-br" placeholder="search item(s) here....">
+												<i class="fa fa-search"></i>
+											</div>
+										</form>
+									</div>
+
+									<div class="info colg-12 dg col12 gap-2 pb-1">
+										<div class="colg-12 table-wrap">
+											<table>
+												<thead>
+													<tr>
+														<th>Date</th>
+														<th>User/Email</th>
+														<th>IP Address</th>
+														<th>Activity</th>
+														<th>Users</th>														
+														<th>Action(s)</th>
+													</tr>
+												</thead>
+												<tbody>
+
+													<tr>
+														<td>2026/02/03</td>
+														<td>
+															<aside class="dfc">
+																<span class="name">Nabin Sitaula</span>
+																<span class="email">sitaula@gmail.com</span>
+															</aside>
+														</td>
+														<td>10.25.203.25</td>
+														<td>Login</td>
+														<td>
+															<aside class="df alc">
+																<img src="images/img/man.png">
+																Admin
+															</aside>
+														</td>
+														<td>
+															<a class="btn view-btn" href="#">View</a>
+														</td>
+													</tr>
+
+													<tr>
+														<td>2026/02/02</td>
+														<td>
+															<aside class="dfc">
+																<span class="name">Mukunda Gaire</span>
+																<span class="email">gaire.mukun@gmail.com</span>
+															</aside>
+														</td>
+														<td>10.25.203.35</td>
+														<td>Inactive payment release action</td>
+														<td>
+															<aside class="df alc">
+																<img src="images/img/man2.jpg">
+																Admin
+															</aside>
+														</td>
+														<td>
+															<a class="btn view-btn" href="#">View</a>
+														</td>
+													</tr>
+
+													<tr>
+														<td>2026/02/02</td>
+														<td>
+															<aside class="dfc">
+																<span class="name">Mukunda Gaire</span>
+																<span class="email">gaire.mukun@gmail.com</span>
+															</aside>
+														</td>
+														<td>10.25.203.35</td>
+														<td>Edit escrow list</td>
+														<td>
+															<aside class="df alc">
+																<img src="images/img/man2.jpg">
+																Admin
+															</aside>
+														</td>
+														<td>
+															<a class="btn view-btn" href="#">View</a>
+														</td>
+													</tr>
+
+													<tr>
+														<td>2026/02/02</td>
+														<td>
+															<aside class="dfc">
+																<span class="name">Mukunda Gaire</span>
+																<span class="email">gaire.mukun@gmail.com</span>
+															</aside>
+														</td>
+														<td>10.25.203.35</td>
+														<td>Login</td>
+														<td>
+															<aside class="df alc">
+																<img src="images/img/man2.jpg">
+																Admin
+															</aside>
+														</td>
+														<td>
+															<a class="btn view-btn" href="#">View</a>
+														</td>
+													</tr>
+													<tr>
+														<td>2026/02/05</td>
+														<td>
+															<aside class="dfc">
+																<span class="name">Jagat Chauhan</span>
+																<span class="email">chauhan.jagat@gmail.com</span>
+															</aside>
+														</td>
+														<td>10.25.203.35</td>
+														<td>Change Password</td>
+														<td>
+															<aside class="df alc">
+																<img src="images/img/man.png">
+																Admin
+															</aside>
+														</td>
+														<td>
+															<a class="btn view-btn" href="#">View</a>
+														</td>
+													</tr>
+
+													<tr>
+														<td>2026/02/03</td>
+														<td>
+															<aside class="dfc">
+																<span class="name">Nabin Sitaula</span>
+																<span class="email">sitaula@gmail.com</span>
+															</aside>
+														</td>
+														<td>10.25.203.25</td>
+														<td>Login</td>
+														<td>
+															<aside class="df alc">
+																<img src="images/img/man.png">
+																Admin
+															</aside>
+														</td>
+														<td>
+															<a class="btn view-btn" href="#">View</a>
+														</td>
+													</tr>
+
+													<tr>
+														<td>2026/02/02</td>
+														<td>
+															<aside class="dfc">
+																<span class="name">Mukunda Gaire</span>
+																<span class="email">gaire.mukun@gmail.com</span>
+															</aside>
+														</td>
+														<td>10.25.203.35</td>
+														<td>Inactive payment release action</td>
+														<td>
+															<aside class="df alc">
+																<img src="images/img/man2.jpg">
+																Admin
+															</aside>
+														</td>
+														<td>
+															<a class="btn view-btn" href="#">View</a>
+														</td>
+													</tr>
+
+													<tr>
+														<td>2026/02/02</td>
+														<td>
+															<aside class="dfc">
+																<span class="name">Mukunda Gaire</span>
+																<span class="email">gaire.mukun@gmail.com</span>
+															</aside>
+														</td>
+														<td>10.25.203.35</td>
+														<td>Edit escrow list</td>
+														<td>
+															<aside class="df alc">
+																<img src="images/img/man2.jpg">
+																Admin
+															</aside>
+														</td>
+														<td>
+															<a class="btn view-btn" href="#">View</a>
+														</td>
+													</tr>
+
+													<tr>
+														<td>2026/02/02</td>
+														<td>
+															<aside class="dfc">
+																<span class="name">Mukunda Gaire</span>
+																<span class="email">gaire.mukun@gmail.com</span>
+															</aside>
+														</td>
+														<td>10.25.203.35</td>
+														<td>Login</td>
+														<td>
+															<aside class="df alc">
+																<img src="images/img/man2.jpg">
+																Admin
+															</aside>
+														</td>
+														<td>
+															<a class="btn view-btn" href="#">View</a>
+														</td>
+													</tr>
+													<tr>
+														<td>2026/02/05</td>
+														<td>
+															<aside class="dfc">
+																<span class="name">Jagat Chauhan</span>
+																<span class="email">chauhan.jagat@gmail.com</span>
+															</aside>
+														</td>
+														<td>10.25.203.35</td>
+														<td>Change Password</td>
+														<td>
+															<aside class="df alc">
+																<img src="images/img/man.png">
+																Admin
+															</aside>
+														</td>
+														<td>
+															<a class="btn view-btn" href="#">View</a>
+														</td>
+													</tr>
+													<tr>
+														<td>2026/02/02</td>
+														<td>
+															<aside class="dfc">
+																<span class="name">Mukunda Gaire</span>
+																<span class="email">gaire.mukun@gmail.com</span>
+															</aside>
+														</td>
+														<td>10.25.203.35</td>
+														<td>Edit escrow list</td>
+														<td>
+															<aside class="df alc">
+																<img src="images/img/man2.jpg">
+																Admin
+															</aside>
+														</td>
+														<td>
+															<a class="btn view-btn" href="#">View</a>
+														</td>
+													</tr>
+
+													<tr>
+														<td>2026/02/02</td>
+														<td>
+															<aside class="dfc">
+																<span class="name">Mukunda Gaire</span>
+																<span class="email">gaire.mukun@gmail.com</span>
+															</aside>
+														</td>
+														<td>10.25.203.35</td>
+														<td>Login</td>
+														<td>
+															<aside class="df alc">
+																<img src="images/img/man2.jpg">
+																Admin
+															</aside>
+														</td>
+														<td>
+															<a class="btn view-btn" href="#">View</a>
+														</td>
+													</tr>
+
+												</tbody>
+											</table>
+
+										</div>
+
+										<div class="mt-1 colg-12 alc paginate df gap-2">
+											<aside class="paginate_left df gap-1">
+												<a class="page-numbers" href="#">First</a>
+												<a class="prev page-numbers" href="#">&lt;</a>
+												<span aria-current="page" class="page-numbers current">2</span>					
+												<span aria-current="page" class="page-numbers count">of</span>	
+												<a class="next page-numbers" href="#">&gt;</a>					
+												<a class="page-numbers" href="#">99</a>
+											</aside>
+											<aside class="paginate_right df">
+												<p class="p2">Showing 
+													<strong class="blc">12</strong>
+													of 
+													<strong class="blc">105</strong>
+												</p>
+											</aside>
+										</div>	
+
+									</div>
+									<!-- end info -->
+
+								</div>
+							</div>
+						</aside>
+						<!-- end si -->
+						<aside id="noti" class="tab-content">
+							<div class="notificationSystem br-1 dg col12 gap-1">
+								<div class="colg-4 notificationSystem_box dfc gap-1">
+									<aside class="border_box br-1">
+
+										<p class=" p1 blc py-1 px-2 gr-bglg brtl-1 brtr-1 df gap-1 alc">
+											<label class="radio-label toggle-style df spb">
+												Dispute Alert
+												<input type="checkbox" name="dispute" checked="checked">
+												<span></span>											
+											</label>
+										</p>
+
+										<form class="form" action="">
+
+											<div class="form-group px-2 py-1">
+												<label class="radio-label toggle-style df spb">
+													New dispute submitted
+													<input type="checkbox" name="new-dispute" checked="checked">
+													<span></span>											
+												</label>
+											</div>
+
+											<div class="form-group px-2 py-1 df spb alc">
+												<label for="category">Response Pending</label>
+												<span class="status normal">Normal</span>
+											</div>
+											<div class="form-group px-2 py-1 df spb alc">
+												<label for="category">Escalited Dispute</label>
+												<span class="status high">High</span>
+											</div>
+											<div class="form-group px-2 py-1 df spb alc">
+												<label for="category">Resolution deadline nearing</label>
+												<span class="status normal">Yes</span>
+											</div>
+											<div class="form-group px-2 py-1 df spb alc">
+												<a class="small_btn btn-xs btn-gray-br" href="javascript:void()">Send to Moderator + Complaince</a>
+											</div>									
+
+										</form>
+									</aside>
+									
+									<aside class="border_box br-1">
+
+										<p class=" p1 blc py-1 px-2 gr-bglg brtl-1 brtr-1 df gap-1 alc">
+											<label class="radio-label toggle-style df spb">
+												System alerts
+												<input type="checkbox" name="dispute" checked="checked">
+												<span></span>											
+											</label>
+										</p>
+
+										<form class="form" action="">
+
+											<div class="form-group px-2 py-1">
+												<label class="radio-label toggle-style df spb">
+													System Alerts
+													<input type="checkbox" name="new-dispute" checked="checked">
+													<span></span>											
+												</label>
+											</div>
+
+											<div class="form-group px-2 py-1 df spb alc">
+												<label for="category">Server down</label>
+												<span class="status critical">Critical</span>
+											</div>
+											<div class="form-group px-2 py-1 df spb alc">
+												<label class="radio-label toggle-style df spb">
+													Payment gateway issue
+													<input type="checkbox" name="new-dispute" checked="checked">
+													<span></span>											
+												</label>
+											</div>
+											<div class="form-group px-2 py-1 df spb alc">
+												<label for="category">Suspisciour IP</label>
+												<span class="status high">High</span>
+											</div>
+
+											<div class="form-group px-2 py-1 df spb alc">
+												<label class="radio-label toggle-style df spb">
+													Background job failed
+													<input type="checkbox" name="new-dispute" checked="checked">
+													<span></span>											
+												</label>
+											</div>
+
+										</form>
+									</aside>
+
+								</div>
+								<!-- notificationSystem_box end -->
+								<div class="colg-4 notificationSystem_box br-1 dfc gap-1">
+
+									<aside class="border_box br-1">
+
+										<p class=" p1 blc py-1 px-2 pri-bglg brtl-1 brtr-1 df gap-1 alc">
+											<label class="radio-label toggle-style df spb">
+												Large Transcation alerts
+												<input type="checkbox" name="dispute" checked="checked">
+												<span></span>											
+											</label>
+										</p>
+
+										<form class="form" action="">
+											<div class="form-group px-2 py-1 df spb alc">
+												<label for="category">High value exchange</label>
+												<select>
+												    <option>NPR 50,000</option>
+												    <option>NPR 70,000</option>
+												</select>
+											</div>
+											<div class="form-group px-2 py-1 df spb alc">
+												<label for="category">Large withdrawal</label>
+												<select>
+												    <option>NPR 30,000</option>
+												    <option>NPR 20,000</option>
+												</select>
+											</div>
+											<div class="form-group px-2 py-1 df spb alc">
+												<label for="category">Unusual frequent big transcation</label>
+												<span class="status high">High</span>
+											</div>
+
+											<div class="form-group px-2 py-1 dfc gap-1">
+												<a class="small_btn btn-xs btn-gray-br" href="javascript:void()">Send to Finance + Super Admin</a>
+												<a class="small_btn btn-xs btn-dim-br" href="javascript:void()">Send to all admins</a>
+											</div>
+
+										</form>
+									</aside>
+
+									<aside class="border_box br-1">
+
+										<p class=" p1 blc py-1 px-2 pri-bglg brtl-1 brtr-1 df gap-1 alc">
+											<label class="radio-label toggle-style df spb">
+												Security alerts
+												<input type="checkbox" name="dispute" checked="checked">
+												<span></span>											
+											</label>
+										</p>
+
+										<form class="form" action="">
+											<div class="form-group px-2 py-1 df spb alc">
+												<label for="category">Multiple failed login</label>
+												<span class="status critical">Critical</span>
+											</div>
+											<div class="form-group px-2 py-1 df spb alc">
+												<label class="radio-label toggle-style df spb">
+													New device login
+													<input type="checkbox" name="dispute" checked="checked">
+													<span></span>											
+												</label>
+											</div>
+											<div class="form-group px-2 py-1 df spb alc">
+												<label class="radio-label toggle-style df spb">
+													Suscipicious location
+													<input type="checkbox" name="dispute" checked="checked">
+													<span></span>											
+												</label>
+											</div>
+
+											<div class="form-group px-2 py-1 dfc gap-1">
+												<a class="small_btn btn-xs btn-main-br" href="javascript:void()">Send to Super Admin + IT</a>
+											</div>
+
+										</form>
+									</aside>
+
+								</div>
+								<!-- end notificationSystem_box -->
+
+								<div class="colg-4 notificationSystem_box br-1 dfc gap-1">
+									<aside class="border_box br-1">
+
+										<p class=" p1 blc py-1 px-2 re-bglg brtl-1 brtr-1 df gap-1 alc">
+											<label class="radio-label toggle-style df spb">
+												Complaince alerts
+												<input type="checkbox" name="dispute" checked="checked">
+												<span></span>											
+											</label>
+										</p>
+
+										<form class="form" action="">
+
+											<div class="form-group px-2 py-1 df spb alc">
+												<label for="category">Suscipisious devics</label>
+												<span class="status critical">Critical</span>
+											</div>
+											<div class="form-group px-2 py-1 df spb alc">
+												<label for="category">Large transcation flagged</label>
+												<span class="status normal">Normal</span>
+											</div>
+											<div class="form-group px-2 py-1 df spb alc">
+												<label for="category">KYC/AML validator</label>
+												<span class="status critical">Critical</span>
+											</div>
+
+											<div class="form-group px-2 py-1 df spb alc">
+												<a class="small_btn btn-xs btn-ass-br" href="javascript:void()">Send to Moderator + Complaince</a>
+											</div>
+
+										</form>
+									</aside>
+
+									<aside class="border_box br-1">
+
+										<p class="p1 blc py-1 px-2 gr-bglg brtl-1 brtr-1 df gap-1 alc">
+											Alert recipents
+										</p>
+
+										<form class="form" action="">
+
+											<div class="form-group px-2 py-1 df spb alc">
+												<label for="category">System alert</label>
+												<span class="notification_alert br-1">Admins</span>
+											</div>
+											<div class="form-group px-2 py-1 df spb alc">
+												<label for="category">Complaince alert</label>
+												<span class="notification_alert br-1">Complaince team</span>
+											</div>
+											<div class="form-group px-2 py-1 df spb alc">
+												<label for="category">Dispute alert</label>
+												<span class="notification_alert br-1">Moderator + complaince</span>
+											</div>
+											<div class="form-group px-2 py-1 df spb alc">
+												<label for="category">Large transcation alert</label>
+												<span class="notification_alert br-1">Finance, Super Admin</span>
+											</div>
+											<div class="form-group px-2 py-1 df spb alc">
+												<label for="category">Health alert</label>
+												<span class="notification_alert br-1">Tech team</span>
+											</div>
+											<div class="form-group px-2 py-1 df spb alc">
+												<label for="category">Security alert</label>
+												<span class="notification_alert br-1">Super Admin + IT </span>
+											</div>
+
+										</form>
+									</aside>
+								</div>
+								<!-- notificationSystem_box -->
+
+								<div class="colg-12 table-wrap">
+
+									<div class="df alc gap-1 py-1">
+										<h6 class="prime mb-1">Alert Settings</h6>
+										<a class="btn btn-xs btn-main-br" href="javascript:void()">Reset to detault</a>
+									</div>
+
+									<table class="mb-1">
+										<thead>
+											<tr>
+												<th>Browser/Device</th>
+												<th>IP address</th>
+												<th>Last access</th>
+												<th>Action</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Chrome/Laptop</td>
+												<td>192.168.0.11</td>
+												<td>Today 11:35am</td>
+												<td>
+													<a class="btn revoke-btn" href="#">Revoke</a>
+												</td>
+											</tr>
+											<tr>
+												<td>Chrome/Samaumg Mobile</td>
+												<td>192.168.0.18</td>
+												<td>Today 11:25am</td>
+												<td>
+													<a class="btn revoke-btn" href="#">Revoke</a>
+												</td>
+											</tr>
+											<tr>
+												<td>Chrome/Mackbook</td>
+												<td>192.168.0.16</td>
+												<td>Today 10:35am</td>
+												<td>
+													<a class="btn revoke-btn" href="#">Revoke</a>
+												</td>
+											</tr>
+											<tr>
+												<td>Chrome/Laptop</td>
+												<td>192.168.0.11</td>
+												<td>Today 11:35am</td>
+												<td>
+													<a class="btn revoke-btn" href="#">Revoke</a>
+												</td>
+											</tr>
+											<tr>
+												<td>Chrome/Samaumg Mobile</td>
+												<td>192.168.0.18</td>
+												<td>Today 11:25am</td>
+												<td>
+													<a class="btn revoke-btn" href="#">Revoke</a>
+												</td>
+											</tr>
+
+										</tbody>
+									</table>
+
+									<div class="mt-1 colg-12 alc paginate df gap-2">
+										<aside class="paginate_left df gap-1">
+											<a class="page-numbers" href="#">First</a>
+											<a class="prev page-numbers" href="#">&lt;</a>
+											<span aria-current="page" class="page-numbers current">2</span>					
+											<span aria-current="page" class="page-numbers count">of</span>	
+											<a class="next page-numbers" href="#">&gt;</a>					
+											<a class="page-numbers" href="#">99</a>
+										</aside>
+										<aside class="paginate_right df">
+											<p class="p2">Showing 
+												<strong class="blc">5</strong>
+												of 
+												<strong class="blc">105</strong>
+											</p>
+										</aside>
+									</div>
+
+								</div>
+
+								
+							</div>
+							
+
+						</aside>
+						<!-- end ta -->
+						<aside id="fee" class="tab-content">
+							<div class="colg-12 dg col12 gap-1 feeSetting">
+
+								<div class="colg-6 feeSetting_option border_box p-1 br-1 gap-1">
+									<h5 class="colg-12 prime mb-1">Fee Settings</h5>
+									<form class="dfc" action="">
+
+										<div class="form-group df py-1 edit-row gap-1">
+										   <label class="db">Exchange Fees</label>
+										   <select>
+										       <option>0.25%</option>
+										       <option>0.10%</option>
+										       <option>0.15%</option>
+										   </select>
+										</div>
+										<div class="form-group df py-1 edit-row gap-1">
+										   <label class="db">Agent Fees</label>
+										   <select>
+										       <option>0.25%</option>
+										       <option>0.10%</option>
+										       <option>0.15%</option>
+										   </select>
+										</div>
+										<div class="form-group df py-1 edit-row gap-1">
+										   <label class="db">Service Fees</label>
+										   <select>
+										       <option>0.25%</option>
+										       <option>0.10%</option>
+										       <option>0.15%</option>
+										   </select>
+										</div>
+
+										<div class="form-group dfc py-1 edit-row gap-1">
+										   <label class="db">Withdwral Fee</label>
+										   <label class="radio-label with-bg">NPR
+										   	<input type="radio" checked="checked" name="condition">
+										   	<span></span>
+										   </label>
+
+										   <label class="radio-label with-bg">USD
+										   	<input type="radio" name="condition">
+										   	<span></span>
+										   </label>
+										</div>
+									</form>
+									<h5 class="colg-12 prime mb-1">Fee Changes</h5>
+									<div class="colg-12 table-wrap">
+										<table class="mb-1">
+											<thead>
+												<tr>
+													<th>Date</th>
+													<th>Type</th>
+													<th>Changed by</th>	
+													<th>Detail</th>
+												</tr>
+											</thead>
+											<tbody>
+
+												<tr>
+													<td>2026/02/03 02:45pm</td>
+													<td>Exchanged Fee</td>
+													<td>Admin</td>
+													<td>Changed by market condition</td>
+												</tr>
+												<tr>
+													<td>2026/02/03 02:45pm</td>
+													<td>0.25% to 0.35%</td>
+													<td>Admin</td>
+													<td>Changed by market condition</td>
+												</tr>
+												<tr>
+													<td>2026/02/03 02:45pm</td>
+													<td>Exchanged Fee</td>
+													<td>Admin</td>
+													<td>Changed by market condition</td>
+												</tr>
+												<tr>
+													<td>2026/02/03 02:45pm</td>
+													<td>0.25% to 0.35%</td>
+													<td>Admin</td>
+													<td>Changed by market condition</td>
+												</tr>	
+												<tr>
+													<td>2026/02/03 02:45pm</td>
+													<td>Exchanged Fee</td>
+													<td>Admin</td>
+													<td>Changed by market condition</td>
+												</tr>
+
+											</tbody>
+										</table>
+
+									</div>
+									<div class="pt-1 colg-12 alc paginate df gap-2">
+										<aside class="paginate_left df gap-1">
+											<a class="page-numbers" href="#">First</a>
+											<a class="prev page-numbers" href="#">&lt;</a>
+											<span aria-current="page" class="page-numbers current">2</span>					
+											<span aria-current="page" class="page-numbers count">of</span>	
+											<a class="next page-numbers" href="#">&gt;</a>					
+											<a class="page-numbers" href="#">99</a>
+										</aside>
+										<aside class="paginate_right df">
+											<p class="p2">Showing 
+												<strong class="blc">5</strong>
+												of 
+												<strong class="blc">105</strong>
+											</p>
+										</aside>
+									</div>
+
+								</div>
+								<!-- accountSetting_profile end -->
+
+								<div class="colg-6 escrow_setting border_box p-1 br-1 gap-1">
+									<h6 class="colg-12 prime mb-1">Escrow Setting</h6>
+									<form class="dfc" action="">
+
+										<div class="form-group df py-1 edit-row">
+										  <label class="db">Auto Escrow</label>
+										  <label class="radio-label toggle-style df spb">
+										  	<input type="checkbox" name="escrow" checked="checked">
+										  	<span></span>										  	
+										  </label>
+										</div>
+										<div class="form-group df py-1 edit-row">
+										   <label class="db">Hold period</label>
+										   <select>
+										       <option>24 hours</option>
+										       <option>30 hours</option>
+										       <option>48 hours</option>
+										   </select>
+										</div>
+										<div class="form-group df py-1 edit-row">
+										   <label class="db">Minimum Delay</label>
+										   <select>
+										       <option>1 hours</option>
+										       <option>5 hours</option>
+										       <option>7 hours</option>
+										   </select>
+										</div>
+										<div class="form-group df py-1 edit-row">
+										   <label class="db">Dispute Period</label>
+										   <select>
+										       <option>1 day</option>
+										       <option>3 days</option>
+										       <option>5 days</option>
+										   </select>
+										</div>
+
+									</form>
+
+									<h5 class="colg-12 prime mb-1">Escrow Trnascations</h5>
+									<div class="colg-12 table-wrap">
+										<table>
+											<thead>
+												<tr>
+													<th>Date</th>
+													<th>User</th>
+													<th>Status</th>
+													<th>Amount(NPR)</th>
+													<th>Action(s)</th>	
+												</tr>
+											</thead>
+											<tbody>
+
+												<tr>
+													<td>2026/02/03 02:45pm</td>
+													<td>Rajesh Maharjan</td>
+													<td>
+														<span class="blc br-1 status disputed">Disputed</span>
+													</td>
+													<td>13,000</td>
+													<td>
+															<a class="btn view-btn" href="javascript:void()">View</a>
+														</aside>
+													</td>
+												</tr>
+												<tr>
+													<td>2026/02/03 02:45pm</td>
+													<td>Rajesh Maharjan</td>
+													<td>
+														<span class="blc br-1 status disputed">Disputed</span>
+													</td>
+													<td>13,000</td>
+													<td>
+															<a class="btn view-btn" href="javascript:void()">View</a>
+														</aside>
+													</td>
+												</tr>
+												<tr>
+													<td>2026/02/03 02:45pm</td>
+													<td>Rajesh Maharjan</td>
+													<td>
+														<span class="blc br-1 status disputed">Disputed</span>
+													</td>
+													<td>13,000</td>
+													<td>
+															<a class="btn view-btn" href="javascript:void()">View</a>
+														</aside>
+													</td>
+												</tr>
+												<tr>
+													<td>2026/02/03 02:45pm</td>
+													<td>Rajesh Maharjan</td>
+													<td>
+														<span class="blc br-1 status disputed">Disputed</span>
+													</td>
+													<td>13,000</td>
+													<td>
+															<a class="btn view-btn" href="javascript:void()">View</a>
+														</aside>
+													</td>
+												</tr>
+												<tr>
+													<td>2026/02/03 02:45pm</td>
+													<td>Rajesh Maharjan</td>
+													<td>
+														<span class="blc br-1 status disputed">Disputed</span>
+													</td>
+													<td>13,000</td>
+													<td>
+															<a class="btn view-btn" href="javascript:void()">View</a>
+														</aside>
+													</td>
+												</tr>
+												<tr>
+													<td>2026/02/03 02:45pm</td>
+													<td>Rajesh Maharjan</td>
+													<td>
+														<span class="blc br-1 status disputed">Disputed</span>
+													</td>
+													<td>13,000</td>
+													<td>
+															<a class="btn view-btn" href="javascript:void()">View</a>
+														</aside>
+													</td>
+												</tr>
+												<tr>
+													<td>2026/02/03 02:45pm</td>
+													<td>Rajesh Maharjan</td>
+													<td>
+														<span class="blc br-1 status disputed">Disputed</span>
+													</td>
+													<td>13,000</td>
+													<td>
+															<a class="btn view-btn" href="javascript:void()">View</a>
+														</aside>
+													</td>
+												</tr>
+																																		
+											</tbody>
+										</table>
+
+									</div>
+									<div class="pt-1 colg-12 alc paginate df gap-2">
+										<aside class="paginate_left df gap-1">
+											<a class="page-numbers" href="#">First</a>
+											<a class="prev page-numbers" href="#">&lt;</a>
+											<span aria-current="page" class="page-numbers current">2</span>					
+											<span aria-current="page" class="page-numbers count">of</span>	
+											<a class="next page-numbers" href="#">&gt;</a>					
+											<a class="page-numbers" href="#">99</a>
+										</aside>
+										<aside class="paginate_right df">
+											<p class="p2">Showing 
+												<strong class="blc">7</strong>
+												of 
+												<strong class="blc">105</strong>
+											</p>
+										</aside>
+									</div>
+
+								</div>
+								<!-- feeAndEscrow end -->
+
+							</div>
+
+						</aside>
+
+						<aside id="acc" class="tab-content">
+							<div class="colg-12 dg col12 gap-1 accountSetting">
+								<div class="colg-12 df spb py-1 px-2 border_box gap-1 br-1">
+									<aside class="accountSetting_box df gap-1 alc">
+										<i class="fa fa-id-card-clip xs"></i>
+										<h6 class="accountSetting_box-title">Admin Profile</h6>
+									</aside>
+									<a class="btn btn-xs btn-main-br" href="javascript:void()">Reset to detault</a>	
+								</div>
+
+								<div class="colg-4 accountSetting_box dfc gap-1">
+									<aside class="border_box br-1">
+										<aside class="df gap-1 alc pri-bglg py-1 px-2 brtr-1 brtl-1">
+											<i class="fa fa-id-card xs"></i>
+											<h6 class="accountSetting_box-title">Admin Profile</h6>
+										</aside>
+										<form class="dfc" action="">
+
+											<div class="form-group dfc py-1 px-2 edit-row">
+											  <label class="db mb-xs">Name</label>
+											  <div class="dfc">
+											    <input type="text" value="Ramhari Basnet" readonly> 
+											    <div class="btn-group">
+											      <a class="btn edit-trigger" href="javascript:void(0)">Edit</a>
+											      <a class="btn cancel-trigger" href="javascript:void(0)" style="display:none;">Cancel</a>
+											    </div>
+											  </div>
+											</div>
+
+											<div class="form-group dfc py-1 px-2 edit-row">
+											  <label class="db mb-xs">Role</label>
+											  <select>
+											  	<option>Super Admin</option>
+											  	<option>Admiin</option>
+											  </select>
+											</div>
+
+											<div class="form-group dfc py-1 px-2 edit-row">
+											  <label class="db mb-xs">E-mail</label>
+											  <div class="dfc">
+											    <input type="text" value="admin@sewaexchange.com" readonly> 
+											    <div class="btn-group">
+											      <a class="btn edit-trigger" href="javascript:void(0)">Edit</a>
+											      <a class="btn cancel-trigger" href="javascript:void(0)" style="display:none;">Cancel</a>
+											    </div>
+											  </div>
+											</div>
+
+											<div class="form-group dfc py-1 px-2 edit-row">
+											  <label class="db mb-xs">Contact Number</label>
+											  <div class="dfc">
+											    <input type="text" value="9841000000" readonly> 
+											    <div class="btn-group">
+											      <a class="btn edit-trigger" href="javascript:void(0)">Edit</a>
+											      <a class="btn cancel-trigger" href="javascript:void(0)" style="display:none;">Cancel</a>
+											    </div>
+											  </div>
+											</div>
+
+											<div class="form-group dfc py-1 px-2 edit-row">
+											  <label class="db">Address</label>
+											  <div class="dfc">
+											    <input type="text" value="Baneswor, Kathmandu" readonly> 
+											    <div class="btn-group">
+											      <a class="btn edit-trigger" href="javascript:void(0)">Edit</a>
+											      <a class="btn cancel-trigger" href="javascript:void(0)" style="display:none;">Cancel</a>
+											    </div>
+											  </div>
+											</div>
+
+											<div class="form-group dfc py-1 px-2 edit-row">
+											  <label class="db">Join Date</label>
+											  <div class="dfc">
+											    <input type="date" value="2026/02/05" readonly> 
+											    <div class="btn-group">
+											      <a class="btn edit-trigger" href="javascript:void(0)">Edit</a>
+											      <a class="btn cancel-trigger" href="javascript:void(0)" style="display:none;">Cancel</a>
+											    </div>
+											  </div>
+											</div>
+
+											<div class="form-group df py-1 px-2 alc gap-1">
+												<img src="images/img/man.png" class="accountSetting_profile-img"/>
+												<div class="file-input">
+													<input type="file" id="myFileInput" class="file-input-input">
+													<label for="myFileInput" class="file-input-label">Change profile picture</label>
+												</div>												
+											</div>
+
+											<div class="form-group dfc py-1 px-2 edit-row">
+											  <label class="db">Password</label>
+											  <div class="dfc">
+											    <input type="password" value="sewaexchange" readonly> 
+											    <div class="btn-group">
+											      <a class="btn edit-trigger" href="javascript:void(0)">change</a>
+											      <a class="btn cancel-trigger" href="javascript:void(0)" style="display:none;">Cancel</a>
+											    </div>
+											  </div>
+											</div>
+
+										</form>
+									</aside>
+								</div>
+								<!-- accountSetting_box end	 -->
+								
+								<div class="colg-4 accountSetting_box dfc gap-1">
+									<aside class="border_box br-1">
+										<aside class="df gap-1 alc gr-bglg py-1 px-2 brtr-1 brtl-1">
+											<i class="fa fa-shield-halved xs"></i>
+											<h6 class="colg-12 blc">Account Security</h6>
+										</aside>
+
+										<form class="form" action="">
+
+											<div class="form-group py-1 px-2">
+												<label class="radio-label toggle-style df spb">
+													<input type="checkbox" name="users" checked="checked">
+													Two-factor Authentication
+													<span></span>													
+												</label>
+											</div>
+
+											<div class="form-group py-1 px-2 df gap-1">
+												<i class="fa fa-hand-sparkles gr"></i>
+												<p class="p2">Likely to improve user trust and security</p>
+											</div>
+
+											<div class="form-group py-1 px-2">
+												<a class="btn btn-xs br-1 btn-main-bg" href="javascript:void()">Manage 2FA</a>
+											</div>
+
+										</form>
+
+									</aside>
+
+									<aside class="border_box br-1">
+										<aside class="accountSetting_box df gap-1 alc gr-bglg py-1 px-2 brtr-1 brtl-1">
+											<i class="fa fa-unlock-keyhole xs"></i>
+											<h6 class="colg-12 blc">Login Policy</h6>
+										</aside>
+
+										<form class="form" action="">
+
+											<div class="form-group py-1 px-2 dfc">
+												<label class="db">Minimum password length</label>
+												<select>
+													<option>8 Characters</option>
+													<option>13 Characters</option>
+													<option>19 Characters</option>
+												</select>												
+											</div>
+
+											<div class="form-group py-1 px-2 dfc">
+												<label class="db">Max failed attempts</label>
+												<select>
+													<option>5 times</option>
+													<option>7 times</option>
+													<option>10 times</option>
+												</select>												
+											</div>
+
+											<div class="form-group py-1 px-2 dfc">
+												<label class="db">Minimum password length</label>
+												<select>
+													<option>8 Characters</option>
+													<option>13 Characters</option>
+													<option>19 Characters</option>
+												</select>												
+											</div>
+
+											<div class="form-group py-1 px-2 dfc">
+												<label class="check-label with-bg">Auto-lock after faliure
+													<input type="checkbox" checked="checked">
+													<span></span>
+												</label>											
+											</div>
+
+											<div class="form-group py-1 px-2 dfc">
+												<label class="db">Password expiry</label>
+												<select>
+													<option>90 days</option>
+													<option>3 months</option>
+													<option>6 months</option>
+												</select>												
+											</div>
+										</form>
+									</aside>
+
+								</div>
+								<!-- accountSetting_box end -->
+
+								<div class="colg-4 accountSetting_box dfc gap-1">
+									<aside class="border_box br-1">
+										<aside class="df gap-1 alc pri-bglg py-1 px-2 brtr-1 brtl-1">
+											<i class="fa fa-users-line xs"></i>
+											<h6 class="colg-12 blc">Role & Permission</h6>
+										</aside>
+
+										<div class="table-wrap">
+											<table>
+												<thead>
+													<tr>
+														<th>Role</th>
+														<th>Super Admin</th>
+														<th>Finance</th>
+														<th>Setting</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Users</td>
+														<td>
+															<label class="check-label with-bg">
+																<input type="checkbox" checked="checked">
+																<span></span>
+															</label>
+														</td>
+														<td>
+															<label class="check-label with-bg">
+																<input type="checkbox" checked="checked">
+																<span></span>
+															</label>
+														</td>
+														<td>
+															<label class="check-label with-bg">
+																<input type="checkbox" checked="checked">
+																<span></span>
+															</label>
+														</td>
+													</tr>
+
+													<tr>
+														<td>Exchange</td>
+														<td>
+															<label class="check-label with-bg">
+																<input type="checkbox" checked="checked">
+																<span></span>
+															</label>
+														</td>
+														<td>
+															<label class="check-label with-bg">
+																<input type="checkbox" checked="checked">
+																<span></span>
+															</label>
+														</td>
+														<td>
+															<label class="check-label with-bg">
+																<input type="checkbox" checked="checked">
+																<span></span>
+															</label>
+														</td>
+													</tr>
+
+													<tr>
+														<td>Finance</td>
+														<td>
+															<label class="check-label with-bg">
+																<input type="checkbox" checked="checked">
+																<span></span>
+															</label>
+														</td>
+														<td>
+															<label class="check-label with-bg">
+																<input type="checkbox" checked="checked">
+																<span></span>
+															</label>
+														</td>
+														<td>
+															<label class="check-label with-bg">
+																<input type="checkbox" checked="checked">
+																<span></span>
+															</label>
+														</td>
+													</tr>
+													<tr>
+														<td>Dispute</td>
+														<td>
+															<label class="check-label with-bg">
+																<input type="checkbox">
+																<span></span>
+															</label>
+														</td>
+														<td>
+															<label class="check-label with-bg">
+																<input type="checkbox">
+																<span></span>
+															</label>
+														</td>
+														<td>
+															<label class="check-label with-bg">
+																<input type="checkbox">
+																<span></span>
+															</label>
+														</td>
+													</tr>
+
+
+												</tbody>
+											</table>
+										</div>										
+
+									</aside>
+
+									<aside class="border_box br-1">
+										<form class="form" action="">
+											<h6 class="colg-12 blc py-1 px-2">IP wishlisting</h6>
+											<div class="form-group df gap-1 pt-1 py-1 px-2 alc">
+												<input type="text" value="192.168.1.120">
+											  <label class="db no-margin">Allowed</label>
+											  <i class="fa fa-trash delete-ip-btn re"></i>
+											</div>
+											<div class="form-group df gap-1 pt-1 py-1 px-2 alc">
+												<input type="text" value="192.168.1.125">
+											  <label class="db no-margin">Allowed</label>
+											  <i class="fa fa-trash delete-ip-btn re"></i>
+											</div>
+											<div class="form-group df gap-1 pt-1 py-1 px-2 alc">
+												<input type="text" value="192.168.1.125">
+											  <label class="db no-margin">Allowed</label>
+											  <i class="fa fa-trash delete-ip-btn re"></i>
+											</div>
+
+											<div class="form-group df gap-1 pt-1 py-1 px-2 alc">
+												<a class="btn btn-xs add_ip_btn btn-gray-br" href="javascript:void()">	
+													<i class="fa fa-plus xs"></i>
+													<span>Add IP</span>
+												</a>
+											</div>											
+
+										</form>
+
+									</aside>
+
+								</div>
+								<!-- accountSetting_box end -->
+
+								<div class="colg-12 dg col12 table_outer gap-1">
+									
+									<div class="border_box colg-12 border_box br-1">
+										<div class="df spb py-1 px-2 blc-bglg gap-1 brtr-1 brtl-1">
+											<aside class="accountSetting_box df gap-1 alc">
+												<i class="fa fa-computer xs"></i>
+												<h6 class="accountSetting_box-title">Active sessions</h6>
+											</aside>
+											<a class="btn btn-xs btn-main-br" href="javascript:void()">Logout all devices</a>	
+										</div>										
+										<div class="table-wrap p-1">
+											<div class="df alc gap-1 py-1">
+												<h6 class="prime mb-1">Select sessions</h6>
+												<select>
+													<option>All</option>
+													<option>Security</option>
+													<option>Setting</option>
+													<option>finance</option>
+												</select>
+											</div>
+											<table>
+												<thead>
+													<tr>
+														<th>Date</th>
+														<th>Type</th>
+														<th>Details</th>	
+														<th>IP Address</th>													
+														<th>Action(s)</th>
+													</tr>
+												</thead>
+												<tbody>
+
+													<tr>
+														<td>2026/02/03 02:45pm</td>
+														<td>Chrome-windoes</td>
+														<td>Office</td>
+														<td>192.168.2.103</td>
+														<td>
+															<a class="btn revoke-btn" href="#">Revoke</a>
+														</td>
+													</tr>
+													<tr>
+														<td>2026/02/03 02:45pm</td>
+														<td>Samsung-s1</td>
+														<td>Home</td>
+														<td>192.168.2.103</td>
+														<td>
+															<a class="btn revoke-btn" href="#">Revoke</a>
+														</td>
+													</tr>
+													<tr>
+														<td>2026/02/03 02:45pm</td>
+														<td>Chrome-windoes</td>
+														<td>Office</td>
+														<td>192.168.2.103</td>
+														<td>
+															<a class="btn revoke-btn" href="#">Revoke</a>
+														</td>
+													</tr>
+													<tr>
+														<td>2026/02/03 02:45pm</td>
+														<td>Samsung-s1</td>
+														<td>Home</td>
+														<td>192.168.2.103</td>
+														<td>
+															<a class="btn revoke-btn" href="#">Revoke</a>
+														</td>
+													</tr>
+													<tr>
+														<td>2026/02/03 02:45pm</td>
+														<td>Chrome-windoes</td>
+														<td>Office</td>
+														<td>192.168.2.103</td>
+														<td>
+															<a class="btn revoke-btn" href="#">Revoke</a>
+														</td>
+													</tr>									
+
+												</tbody>
+											</table>
+
+											<div class="pt-1 colg-12 alc paginate df gap-2">
+												<aside class="paginate_left df gap-1">
+													<a class="page-numbers" href="#">First</a>
+													<a class="prev page-numbers" href="#">&lt;</a>
+													<span aria-current="page" class="page-numbers current">2</span>					
+													<span aria-current="page" class="page-numbers count">of</span>	
+													<a class="next page-numbers" href="#">&gt;</a>					
+													<a class="page-numbers" href="#">99</a>
+												</aside>
+												<aside class="paginate_right df">
+													<p class="p2">Showing 
+														<strong class="blc">5</strong>
+														of 
+														<strong class="blc">105</strong>
+													</p>
+												</aside>
+											</div>
+
+										</div>
+									</div>
+									<!-- end border_box -->
+
+									<div class="border_box colg-12 border_box br-1">
+										<div class="df spb py-1 px-2 blc-bglg gap-1 brtr-1 brtl-1">
+											<aside class="accountSetting_box df gap-1 alc">
+												<i class="fa fa-computer xs"></i>
+												<h6 class="accountSetting_box-title">Admin activity logs</h6>
+											</aside>
+										</div>										
+										<div class="table-wrap p-1">
+											<form class="dg col12 filter_wrap gap-2 alc" action="">
+												<h6 class="prime colg-2">Filter by:</h6>
+												<div class="colg-5 df alc gap-1 py-1">													
+													<select>
+														<option>All</option>
+														<option>Security</option>
+														<option>Setting</option>
+														<option>finance</option>
+													</select>
+												</div>
+												<div class="colg-5 df alc gap-1 py-1">
+													<input type="date" name="">
+												</div>
+
+											</form>
+
+
+											
+											<table>
+												<thead>
+													<tr>
+														<th>Date</th>
+														<th>Type</th>
+														<th>Details</th>	
+														<th>IP Address</th>													
+														<th>Action(s)</th>
+													</tr>
+												</thead>
+												<tbody>
+
+													<tr>
+														<td>2026/02/03 02:45pm</td>
+														<td>Chrome-windoes</td>
+														<td>Password Changed Successfully</td>
+														<td>192.168.2.103</td>
+														<td>
+															<a class="btn revoke-btn" href="#">Revoke</a>
+														</td>
+													</tr>
+													<tr>
+														<td>2026/02/03 02:45pm</td>
+														<td>Samsung-s1</td>
+														<td>Mukunde Gaire added as agent</td>
+														<td>192.168.2.103</td>
+														<td>
+															<a class="btn revoke-btn" href="#">Revoke</a>
+														</td>
+													</tr>
+													<tr>
+														<td>2026/02/03 02:45pm</td>
+														<td>Chrome-windoes</td>
+														<td>Password Changed Successfully</td>
+														<td>192.168.2.103</td>
+														<td>
+															<a class="btn revoke-btn" href="#">Revoke</a>
+														</td>
+													</tr>
+													<tr>
+														<td>2026/02/03 02:45pm</td>
+														<td>Samsung-s1</td>
+														<td>Mukunde Gaire added as agent</td>
+														<td>192.168.2.103</td>
+														<td>
+															<a class="btn revoke-btn" href="#">Revoke</a>
+														</td>
+													</tr>
+													<tr>
+														<td>2026/02/03 02:45pm</td>
+														<td>Chrome-windoes</td>
+														<td>Password Changed Successfully</td>
+														<td>192.168.2.103</td>
+														<td>
+															<a class="btn revoke-btn" href="#">Revoke</a>
+														</td>
+													</tr>									
+
+												</tbody>
+											</table>
+
+											<div class="pt-1 colg-12 alc paginate df gap-2">
+												<aside class="paginate_left df gap-1">
+													<a class="page-numbers" href="#">First</a>
+													<a class="prev page-numbers" href="#">&lt;</a>
+													<span aria-current="page" class="page-numbers current">2</span>					
+													<span aria-current="page" class="page-numbers count">of</span>	
+													<a class="next page-numbers" href="#">&gt;</a>					
+													<a class="page-numbers" href="#">99</a>
+												</aside>
+												<aside class="paginate_right df">
+													<p class="p2">Showing 
+														<strong class="blc">5</strong>
+														of 
+														<strong class="blc">105</strong>
+													</p>
+												</aside>
+											</div>
+
+										</div>
+									</div>
+									<!-- end border_box -->
+
+									
+
+								</div>
+								<!-- end table_outer -->
+
+							</div>							
+
+						</aside>
+						
+					</div>	
+					<!-- end tab-wrap -->
+
+				</div>
+
+				<footer class="footer p-1 sobg">
+					<ul class="footer_ul df gap-2 alc">
+						<li class="footer_li df alc">
+							<i class="fa fa-lock"></i>
+							<a class="footer_a blc" href="#">Secure Platform</a>
+						</li>
+						<li class="footer_li df alc">
+							<i class="fa fa-people-group"></i>
+							<a class="footer_a blc" href="#">Trusted Community</a>
+						</li>
+						<li class="footer_li df alc">
+							<i class="fa fa-wallet"></i>
+							<a class="footer_a blc" href="#">Wallet Protected</a>
+						</li>
+						<li class="footer_li df alc">
+							<i class="fa fa-check-circle"></i>
+							<a class="footer_a blc" href="#">Verified System</a>
+						</li>					
+						<li class="footer_li df alc">
+							<i class="fa fa-money-bill-wheat"></i>
+							<a class="footer_a blc" href="#">Community Economy</a>
+						</li>					
+					</ul>
+				</footer>
+
+			</div>
+			<!-- end content -->
+
+		</section>
+
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/select2.min.js"></script>	
+		<script src="js/sweetalert2@11.js"></script>
+		<script src="js/main.js"></script>
+		<script type="text/javascript">
+
+			$(document).ready(function() {
+			  $('.multiple-select').select2({
+			    placeholder: "Select categories",
+			    allowClear: true
+			  });
+			  // display profile image after uploading
+			  $("#uploadFile").on("change", function (e) {
+					const file = e.target.files[0];
+					if (file) {
+						const reader = new FileReader();
+						reader.onload = function (e) {
+							$("#previewImg").attr("src", e.target.result);
+							$(".img-preview").fadeIn();
+						};
+						reader.readAsDataURL(file);
+					}
+				});
+
+				$("#myFileInput").change(function() {
+				  if (this.files && this.files[0]) {
+				    $(".accountSetting_profile-img").attr(
+				      "src", 
+				      URL.createObjectURL(this.files[0])
+				    );
+				  }
+				});
+
+
+				// Add new IP row
+				$(".add_ip_btn").click(function() {
+				    const newRow = `
+				      <div class="form-group df gap-1 pt-1 py-1 px-2 alc">
+				          <input type="text" placeholder="ip address">
+				          <label class="db no-margin">Allowed</label>
+				          <i class="fa fa-trash delete-ip-btn re"></i>
+				      </div>
+				    `;
+				    
+				    $(this).closest(".form-group").before(newRow);
+				});
+
+				// Delete row (works for both existing and newly added)
+				$(document).on("click", ".delete-ip-btn", function() {
+				    $(this).closest(".form-group").remove();
+				});
+
+			});
+
+			// delete ip wishlisting
+			$('.del-btn').click(function(e) {
+			    e.preventDefault();
+			    Swal.fire({
+			        title: 'Are you sure?',
+			        icon: 'warning',
+			        showCancelButton: true,
+			        confirmButtonText: 'Yes, delete it!'
+			    }).then((result) => {
+			        if (result.isConfirmed) {
+			            Swal.fire('Deleted!', '', 'success');
+			        }
+			    });
+			});
+
+			// field will be editable after on edit btn
+			$(document).on('click', '.edit-trigger', function() {
+			   let $row = $(this).closest('.edit-row');
+			   let $input = $row.find('input');
+			   let $cancel = $row.find('.cancel-trigger');
+
+			   if ($input.prop('readonly')) {
+			      $input.prop('readonly', false).addClass('editable').focus();
+			      $(this).text('Save');
+			      $cancel.show();
+			   } else {
+			      $input.prop('readonly', true).removeClass('editable');
+			      $(this).text('Edit');
+			      $cancel.hide();
+			   }
+			});
+
+			$(document).on('click', '.cancel-trigger', function() {
+			    let $row = $(this).closest('.edit-row');
+			    $row.find('input').prop('readonly', true).removeClass('editable');
+			    $row.find('.edit-trigger').text('Edit');
+			    $(this).hide();
+			});
+
+			// failed login attempt editable
+
+
+		</script>	
+
+	</body>
+	</html>

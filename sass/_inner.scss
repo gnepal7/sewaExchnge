@@ -1,0 +1,77 @@
+/***** login/Signup *****/
+.form{
+	&_outer{
+		box-shadow: 1px 2px 5px 1px lighten($gry, 10%);
+	}
+	& .form-group{
+		position: relative;
+		& i.show-pass{
+			@include absPos(auto, .9rem, .9rem, auto);
+			color:darken($bgcolor, 11%);
+			font-size:1rem;
+			cursor: pointer;
+		}
+		&.login_btn-wrap{
+			align-items: baseline;
+		}
+	}
+	& input[type="password"]{
+		padding-right:2rem;
+	}
+	&_signup{
+		&-left{
+
+		}
+	}
+}
+.a_underlined{
+	text-decoration: underline;
+	text-transform: uppercase;
+	font-size:1rem;	
+}
+
+.wallet{
+	&_a{
+		display: flex;
+		border:1px solid $gry;
+		width: 6rem;
+		height: 6rem;
+		align-content: center;
+		align-items: center;
+		& img{
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+}
+/***** signup page *****/
+.if_account{
+	border:1px solid lighten($primary, 50%);
+	justify-content: space-between;
+}
+.form{
+	&_signup{
+		&-left{
+			border:1px solid lighten($gry, 5%);
+			border-bottom:0;
+			&_info{
+				& ul{
+					& li{
+						font-size: 1rem;
+					}
+				}
+			}
+		}
+	}
+}
+.accept-privary{
+	border-top:1px solid lighten($lgry, 15%);
+	&_ul{
+
+	}
+	&_li{
+		&:not(:last-of-type){
+			border-right:1px solid $gry;
+		}
+	}
+}

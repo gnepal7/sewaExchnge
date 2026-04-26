@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sewa Exchange: dashboard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="images/img/favi.png" type="png">
+	
+	<!-- fontawesome -->
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<!-- megamenu -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- custom -->
+	<link rel="stylesheet" type="text/css" href="css/admin.css">
+</head>
+<body>	
+
+	<div class="progress-wrapper">
+		<div class="progress-bar"></div>
+	</div>
+
+	<nav class="nav py-1 top_nav">
+		<div class="wrapper-wide df alc gap-3 header-wrap">
+			<a href="dashboard.html" class="logo df alc gap-1">
+				<img src="images/img/logo.png">
+				<h3 class="prime">SewaExchange</h3>
+			</a>
+
+			<form class="search-form header-form">
+				<input type="search" class="br-3" placeholder="search item(s) here....">
+				<i class="fa fa-search"></i>
+			</form>
+
+			<ul class="mega-menu df alc gap-1">
+				<li class="mega-menu_li">
+					<a class="go_to_home_a btn-sm lig-bg" href="#">Visit site</a>
+				</li>
+				<li class="dropdown menu-btn pri-bglg br-1">
+				    <div>
+				        <span>MegaMenu</span>
+				        <i class="fa fa-chevron-down hide-on-mobile"></i>
+				        <span class="material-symbols-outlined">
+				            <i class="fa fa-chevron-right"></i>
+				        </span>
+				    </div>
+				    <ul class="menu sobg">
+				    	<h6 class="mega_title prime">This is title</h6>
+				        <li>  
+				            <a href="#">Men</a>
+				        </li>
+				        <li class="sub-dropdown">
+				            <div>
+				                <span>Featured</span>
+				                <span class="material-symbols-outlined">
+				                    <i class="fa fa-chevron-right"></i>
+				                </span>
+				            </div> 
+				            <ul class="sub-menu">
+				            	<li><strong>This is title</strong></li>
+				                <li>
+				                    <a href="#">Featured</a>
+				                </li>
+				                <li>
+				                    <a href="#">New Releases</a>
+				                </li>
+				                <li>
+				                    <a href="# ">SKNRS Launch Calendar</a>
+				                </li>
+				                <li>
+				                    <a href="#">Bestsellers</a>
+				                </li>
+				            </ul>
+				        </li>
+				        <li class="sub-dropdown">
+				            <div>
+				                <span>Shoes</span>
+				                <span class="material-symbols-outlined">
+				                    <i class="fa fa-chevron-right"></i>
+				                </span>
+				            </div>
+				            <ul class="sub-menu">
+				                <li>
+				                    <a href="#">All Shoes</a>
+				                </li>
+				                <li>
+				                    <a href="#">Lifestyle</a>
+				                </li>
+				                <li>
+				                    <a href="#">Jordan</a>
+				                </li>
+				                <li>
+				                    <a href="#">Running</a>
+				                </li>
+				                <li>
+				                    <a href="#">Football</a>
+				                </li>
+				                <li>
+				                    <a href="#">Basketball</a>
+				                </li>
+				                <li>
+				                    <a href="#">Training and Gym</a>
+				                </li>
+				                <li>
+				                    <a href="#">Skateboarding</a>
+				                </li>
+				            </ul>
+				        </li>
+				        <li class="sub-dropdown">
+				            <div>
+				                <span>Clothing</span>
+				                <span class="material-symbols-outlined">
+				                    <i class="fa fa-chevron-right"></i>
+				                </span>
+				            </div>
+				            <ul class="sub-menu">
+				                <li>
+				                    <a href="#">All Clothing</a>
+				                </li>
+				                <li>
+				                    <a href="#">Lyfestyle</a>
+				                </li>
+				                <li>
+				                    <a href="#">Tops and T-Shirts</a>
+				                </li>
+				                <li>
+				                    <a href="#">Hoodies and Sweatshirts</a>
+				                </li>
+				                <li>
+				                    <a href="#">Shorts</a>
+				                </li>
+				                <li>
+				                    <a href="#">Tracksuits</a>
+				                </li>
+				                <li>
+				                    <a href="#">Trousers and Tights</a>
+				                </li>
+				                <li>
+				                    <a href="#">Jackets</a>
+				                </li>
+				                <li>
+				                    <a href="#">Kits and Jerseys</a>
+				                </li>
+				            </ul>
+				        </li>
+				        <li class="sub-dropdown">
+				            <div>
+				                <span>Shop By Sport</span>
+				                <span class="material-symbols-outlined">
+				                    <i class="fa fa-chevron-right"></i>
+				                </span>
+				            </div>
+				            <ul class="sub-menu">
+				                <li>
+				                    <a href="#">All Sports</a>
+				                </li>
+				                <li>
+				                    <a href="#">Running</a>
+				                </li>
+				                <li>
+				                    <a href="#">Football</a>
+				                </li>
+				                <li>
+				                    <a href="#">Basketball</a>
+				                </li>
+				                <li>
+				                    <a href="#">Training and Gym</a>
+				                </li>
+				                <li>
+				                    <a href="#">Tennis</a>
+				                </li>
+				                <li>
+				                    <a href="#">Golf</a>
+				                </li>
+				            </ul>
+				        </li>
+				        <li class="sub-dropdown">
+				            <div>
+				                <span>Accessories</span>
+				                <span class="material-symbols-outlined">
+				                    <i class="fa fa-chevron-right"></i>
+				                </span>
+				            </div>
+				            <ul class="sub-menu">
+				                <li>
+				                    <a href="#">All Accessories</a>
+				                </li>
+				                <li>
+				                    <a href="#">Bags and Backpacks</a>
+				                </li>
+				                <li>
+				                    <a href="#">Socks</a>
+				                </li>
+				            </ul>
+				        </li>
+				    </ul>
+				</li>
+			</ul>
+
+			<ul class="btn-group action-buttons df gap-2">
+				<!-- these two list will show after login -->					
+				<li class="df sobg br-1 alc">
+					<a class="btn-sm blc db notify-btn" href="javascript:void()">				
+						<i class="fa fa-bell"></i>
+					</a>
+					<a class="btn-sm sec df profile-btn" href="javascript:void()">		
+						<img src="images/img/man.png">
+						<i class="fa fa-chevron-down"></i>
+					</a>
+				</li>
+
+			</ul>
+			
+		</div>
+	</nav>
+
+
+	<div class="box_on-click notification p-2 br-1">
+		<h4 class="blc box_on-click_title pb-1 df alc">Notifications 
+			<span class="clear">Clear</span>
+		</h4>
+		<ul class="box_on-click_ul dfc">
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Vestibulum ac arcu id libero dignissim mollis sed ut nunc</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Sed cursus nibh molestie, imperdiet urna a, blandit justo</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Morbi auctor odio sed massa semper molestie</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Praesent nec eros sed sem lacinia mattis sit amet in diam</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Aliquam dictum libero id orci laoreet dignissim</a>
+			</li>
+		</ul>
+	</div>
+
+
+	<div class="box_on-click profile_box py-1 px-2 br-1">
+		<h4 class="blc box_on-click_title pb-1 mb-1 df alc">Gopal Nepal</h4>
+		<ul class="box_on-click_ul dfc">
+			<li class="box_on-click_li">
+			<a class="box_on-click_a blc df gap-1 alc p-1" href="#">
+				<i class="fa fa-user-circle"></i>
+				<span>Visit Profile</span>
+				</a>
+			</li>
+			<li class="box_on-click_li">
+				<a class="box_on-click_a blc df gap-1 alc p-1" href="#">
+					<i class="fa fa-sign-out"></i>
+					<span>Logout</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<section class="db">
+		<nav class="nav left_nav p-2">
+			<aside class="mb-1">
+				<h4 class="gr mt-2 hide-on-desktop">MENU</h4>
+				<button class="nav_toggler">
+					<i class="fa fa-bars toggler"></i>				   
+				</button>
+				<button class="close-menu">
+					<i class="fa fa-times toggler"></i>				   
+				</button>
+			</aside>
+
+			<ul class="nav_ul dfc">
+				<li class="nav_li active">
+					<a href="dashboard.html" class="nav_a df gap-1 p-1">
+						<i class="fa fa-dashboard homeicon"></i>
+						<h6>Dashboard</h6>
+					</a>
+				</li>
+
+				<li class="nav_li">
+					<a href="users.html" class="nav_a df gap-1 p-1">
+						<i class="fa fa-users"></i>
+						<h6>Users</h6>
+					</a>
+				</li>
+
+				<li class="nav_li">
+					<a href="agents.html" class="nav_a df gap-1 p-1">
+						<i class="fa fa-user-secret"></i>
+						<h6>Agents</h6>
+					</a>
+				</li>
+
+				<li class="nav_li">
+					<a href="exchange.html" class="nav_a df gap-1 p-1">
+						<i class="fa fa-exchange"></i>
+						<h6>Exchanges</h6>
+					</a>
+				</li>
+
+				<li class="nav_li">
+					<a href="wallet_system.html" class="nav_a df gap-1 p-1">
+						<i class="fa fa-wallet"></i>
+						<h6>Wallet System</h6>
+					</a>
+				</li>
+
+				<li class="nav_li">
+					<a href="finance.html" class="nav_a df gap-1 p-1">
+						<i class="fa fa-money-bill"></i>
+						<h6>Finance</h6>
+					</a>
+				</li>
+
+				<hr class="my-2">
+
+				<li class="nav_li">
+					<a href="dispute.html" class="nav_a df gap-1 p-1">
+						<i class="fa fa-vcard"></i>
+						<h6>Disputes</h6>
+					</a>
+				</li>
+
+				<li class="nav_li">
+					<a href="trust_system.html" class="nav_a df gap-1 p-1">
+						<i class="fa fa-clipboard-check"></i>
+						<h6>Trust System</h6>
+					</a>
+				</li>
+				<li class="nav_li">
+					<a href="analytics.html" class="nav_a df gap-1 p-1">
+						<i class="fa fa-chart-column"></i>
+						<h6>Analytics</h6>
+					</a>
+				</li>
+				<li class="nav_li">
+					<a href="complaince.html" class="nav_a df gap-1 p-1">
+						<i class="fa fa-shield"></i>
+						<h6>Complaince</h6>
+					</a>
+				</li>
+				<li class="nav_li">
+					<a href="community.html" class="nav_a df gap-1 p-1">
+						<i class="fa fa-people-group"></i>
+						<h6>Community</h6>
+					</a>
+				</li>
+				<li class="nav_li">
+					<a href="settings.html" class="nav_a df gap-1 p-1">
+						<i class="fa fa-cogs"></i>
+						<h6>Settings</h6>
+					</a>
+				</li>
+
+			</ul>
+
+		</nav>
+		<!-- end menu_wrap -->
+
+		<div class="content">
+			<div class="content_inside dg col12 p-2 gap-2">
+				<div class="content_inside-left colg-9 dfc gap-2">
+					<figcaption class="content_inside-left_top dfc">
+						<h4 class="prime">Admin Panel</h4>
+						<p class="p1 blc">Groven, Secure, Thrive</p>
+					</figcaption>
+
+					<div class="content_inside-left_info dg col12 gap-1">
+
+						<aside class="content_inside-left_info-box colg-3 df gap-1 p-1 br-1 sobg">
+							<i class="fa fa-users"></i>
+							<figcaption class="content_inside-left_info-box_text dfc">
+								<h5 class="prime number">15,450</h5>
+								<p class="p2 blc para">Total Users</p>
+							</figcaption>
+						</aside>
+
+						<aside class="content_inside-left_info-box colg-3 df gap-1 p-1 br-1 sobg">
+							<i class="fa fa-exchange"></i>
+							<figcaption class="content_inside-left_info-box_text dfc">
+								<h5 class="prime number">1,450</h5>
+								<p class="p2 blc para">Active Exchange</p>
+							</figcaption>
+						</aside>
+
+						<aside class="content_inside-left_info-box colg-3 df gap-1 p-1 br-1 sobg">
+							<i class="fa fa-wallet"></i>
+							<figcaption class="content_inside-left_info-box_text dfc">
+								<h5 class="prime number">RS.2,55,535</h5>
+								<p class="p2 blc para">Wallet Balance</p>
+							</figcaption>
+						</aside>
+
+						<aside class="content_inside-left_info-box colg-3 df gap-1 p-1 br-1 sobg">
+							<i class="fa fa-info-circle"></i>
+							<figcaption class="content_inside-left_info-box_text dfc">
+								<h5 class="prime number">270</h5>
+								<p class="p2 blc para">Pending Request</p>
+							</figcaption>
+						</aside>
+
+					</div>
+					<!-- end content_inside-left_info -->
+
+					<div class="content_inside-left_health p-1 br-1 wh-bg">
+						<h6 class="blc content_inside-left_health-title mb-1">
+							System Health
+							<a href="#" class="prime">View Logs</a>
+						</h6>
+
+						<div class="dg col12 gap-1">
+
+							<aside class="content_inside-left_health-item colg-3 df br-1">
+								<i class="fa fa-wallet"></i>
+								<figcaption class="content_inside-left_health-item_text dfc">
+									<h6 class="blc sub-title">Wallet System</h6>
+									<p class="p2 blc para df alc">
+										<i class="fa fa-check-circle"></i>
+										Healthy
+									</p>
+									<a class="blc" href="#">View Logs</a>
+								</figcaption>
+							</aside>
+
+							<aside class="content_inside-left_health-item colg-3 df br-1">
+								<i class="fa fa-exchange"></i>
+								<figcaption class="content_inside-left_health-item_text dfc">
+									<h6 class="blc sub-title">Exchange System</h6>
+									<p class="p2 blc para df alc">
+										<i class="fa fa-check-circle"></i>
+										Healthy
+									</p>
+									<a class="blc" href="#">View Logs</a>
+								</figcaption>
+							</aside>
+
+							<aside class="content_inside-left_health-item colg-3 df br-1">
+								<i class="fa fa-user-secret"></i>
+								<figcaption class="content_inside-left_health-item_text dfc">
+									<h6 class="blc sub-title">Agent System</h6>
+									<p class="p2 blc para df alc">
+										<i class="fa fa-check-circle"></i>
+										Healthy
+									</p>
+									<a class="blc" href="#">View Logs</a>
+								</figcaption>
+							</aside>
+
+							<aside class="content_inside-left_health-item colg-3 df br-1">
+								<i class="fa fa-server"></i>
+								<figcaption class="content_inside-left_health-item_text dfc">
+									<h6 class="blc sub-title">Server Health</h6>
+									<p class="p2 blc para df alc">
+										<i class="fa fa-check-circle"></i>
+										Healthy
+									</p>
+									<a class="blc" href="#">View Logs</a>
+								</figcaption>
+							</aside>
+
+						</div>
+
+					</div>
+					<!-- end content_inside-left_health -->
+
+					<div class="content_inside-left_tuf dg col12 gap-2">
+
+						<div class="content_inside-left_trust colg-8 p-1 br-1">
+							<h6 class="prime title df alc">
+								<i class="fa fa-address-card"></i>
+								Trust
+							</h6>
+
+							<div class="dg col12 gap-1">
+
+								<aside class="colg-6 content_inside-left_tuf-item">
+									<figcaption class="content_inside-left_tuf-item_text df alc">
+										<i class="fa fa-user-alt gr"></i>
+										<h6 class="blc sub-title">Verified Users</h6>
+									</figcaption>
+								</aside>
+
+								<aside class="colg-6 content_inside-left_tuf-item">
+									<figcaption class="content_inside-left_tuf-item_text df alc">
+										<i class="fa fa-wallet gr"></i>
+										<h6 class="blc sub-title">Secure Wallet</h6>
+									</figcaption>
+								</aside>
+
+								<aside class="colg-6 content_inside-left_tuf-item">
+									<figcaption class="content_inside-left_tuf-item_text df alc">
+										<i class="fa fa-building-shield gr"></i>
+										<h6 class="blc sub-title">Evidence Solutions</h6>
+									</figcaption>
+								</aside>
+
+								<aside class="colg-6 content_inside-left_tuf-item">
+									<figcaption class="content_inside-left_tuf-item_text df alc">
+										<i class="fa fa-shield gr"></i>
+										<h6 class="blc sub-title">Dispute Resolution</h6>
+									</figcaption>
+								</aside>
+
+							</div>
+
+						</div>
+						<!-- end content_inside-left_tuf -->
+
+						<div class="content_inside-left_finance colg-4 p-1 br-1">
+							<h6 class="prime title df alc">
+								<i class="fa fa-money-bill"></i>
+								Finance
+							</h6>
+
+							<div class="dg col12 gap-1">
+								<aside class="colg-12 content_inside-left_tuf-item">
+									<figcaption class="content_inside-left_tuf-item_text df alc">
+										<i class="fa fa-money-bill-transfer gr"></i>
+										<h6 class="blc sub-title">Platform Revenue</h6>
+									</figcaption>
+								</aside>
+
+								<aside class="colg-12 content_inside-left_tuf-item">
+									<figcaption class="content_inside-left_tuf-item_text df alc">
+										<i class="fa fa-money-bill-trend-up gr"></i>
+										<h6 class="blc sub-title">Financial Report</h6>
+									</figcaption>
+								</aside>
+							</div>
+						</div>
+						<!-- end content_inside-left_finance -->
+
+						<div class="content_inside-left_finance colg-12 p-1 br-1">
+							<h6 class="prime title df alc">
+								<i class="fa fa-file-circle-plus"></i>
+								Complaince
+							</h6>
+
+							<div class="dg col12 gap-1">
+								<aside class="colg-3 content_inside-left_tuf-item">
+									<figcaption class="content_inside-left_tuf-item_text df alc">
+										<i class="fa fa-file-invoice gr"></i>
+										<h6 class="blc sub-title">Kyc Detail</h6>
+									</figcaption>
+								</aside>
+
+								<aside class="colg-3 content_inside-left_tuf-item">
+									<figcaption class="content_inside-left_tuf-item_text df alc">
+										<i class="fa fa-file-fragment gr"></i>
+										<h6 class="blc sub-title">Audit Logs</h6>
+									</figcaption>
+								</aside>
+								<aside class="colg-3 content_inside-left_tuf-item">
+									<figcaption class="content_inside-left_tuf-item_text df alc">
+										<i class="fa fa-vr-cardboard gr"></i>
+										<h6 class="blc sub-title">System Policy</h6>
+									</figcaption>
+								</aside>
+								<aside class="colg-3 content_inside-left_tuf-item">
+									<figcaption class="content_inside-left_tuf-item_text df alc">
+										<i class="fa fa-vr-cardboard gr"></i>
+										<h6 class="blc sub-title">System Policy</h6>
+									</figcaption>
+								</aside>
+								
+							</div>
+						</div>
+						<!-- end content_inside-left_complaince -->
+
+					</div>
+
+					
+
+				</div>
+				<!-- content_inside-left -->
+				
+
+				<div class="content_inside-right colg-3">
+					<ul class="content_inside-right_ul df gap-1 p-1 br-1">
+						<li class="content_inside-right_li df">
+							<a class="content_inside-right_a prime df alc">
+								<i class="fa fa-circle"></i>
+								Live
+							</a>
+						</li>
+						<li class="content_inside-right_li df df alc">
+							<a class="content_inside-right_a prime">
+								<i class="fa fa-wrench"></i>
+								Maintenance
+							</a>
+						</li>
+					</ul>
+
+					<div class="content_inside-right_ex dfc br-1 p-1 mt-2">
+						<h6 class="prime title df alc">
+							<i class="fa fa-exchange"></i>
+							Exchange Summary
+						</h6>
+						<div class="pie df alc gap-1 mb-1">
+							<div class="pie-chart dfc alc" data-percent="42.6">
+							    <span>75.6%</span>
+							</div>
+							<ul class="legend dfc">
+								<li><span class="dot new"></span> New: <strong>56</strong></li>
+								<li><span class="dot disputed"></span> Disputed: <strong>8</strong></li>
+								<li><span class="dot reset"></span> Reset: <strong>0</strong></li>
+							</ul>
+						</div>						
+						<a href="#" class="viewport blc tac lig-bg py-1 px-2 br-1">View Detailed Reports</a>
+					</div>
+
+					<div class="content_inside-right_liveFeed dfc gap-1 br-1 p-1 mt-2">
+						<h6 class="prime title df alc">
+							Live Activity Feed
+							<a class="blc" href="#">All</a>
+						</h6>
+						<div class="content_inside-right_liveFeed-text dfc">
+
+							<div class="df gap-1 content_inside-right_liveFeed-text_inner">
+								<aside class="content_inside-right_liveFeed-text_item df">
+									<img src="images/img/man2.jpg" class="content_inside-right_liveFeed-text_item-img">
+									<figcaption class="dfc content_inside-right_liveFeed-text_item-fig">
+										<h6 class="blc sub-title">Binod Pakhrin</h6>
+										<p class="p2">Pokhara</p> 
+									</figcaption>
+								</aside>
+								<time class="gr">7 min ago</time>
+							</div>
+
+							<div class="df gap-1 content_inside-right_liveFeed-text_inner">
+								<aside class="content_inside-right_liveFeed-text_item df">
+									<img src="images/img/man.png" class="content_inside-right_liveFeed-text_item-img">
+									<figcaption class="dfc content_inside-right_liveFeed-text_item-fig">
+										<h6 class="blc sub-title">Jyoti Pandey</h6>
+										<p class="p2">Mahendranager</p> 
+									</figcaption>
+								</aside>
+								<time class="gr">5 min ago</time>
+							</div>
+
+							<div class="df gap-1 content_inside-right_liveFeed-text_inner">
+								<aside class="content_inside-right_liveFeed-text_item df">
+									<img src="images/img/man2.jpg" class="content_inside-right_liveFeed-text_item-img">
+									<figcaption class="dfc content_inside-right_liveFeed-text_item-fig">
+										<h6 class="blc sub-title">Sabin Thapa</h6>
+										<p class="p2">Itahari</p> 
+									</figcaption>
+								</aside>
+								<time class="gr">6 min ago</time>
+							</div>
+
+						</div>
+
+					</div>
+					<!-- end content_inside-right_liveFeed -->
+
+				</div>
+				<!-- content_inside-right -->
+
+			</div>
+
+			 <div class="chat_box">
+			    <div class="tab-wrap spb alc">
+			       <h4 class="blc mb-1">Conversation</h4>
+			       <ul class="tab-menu df">
+			          <li class="tab-item"><a href="#dis" class="tab-link p-1">Discussion</a></li>
+			          <li class="tab-item"><a href="#al" class="tab-link p-1">Activity Log</a></li>
+			       </ul>
+			       <aside id="dis" class="tab-content">
+			          <div class="conversation-panel">
+			            <!-- message 1: user -->
+			            <div class="msg-row user">
+			            	<div class="avatar">
+			            	    <img src="images/img/man.png">
+			            	</div>
+			            	<div class="bubble">
+			                	<div class="msg-text">
+			                	<p>Hello, is my camera listing under review? Hello, is my camera listing under review?
+			                	Hello, is my camera listing under review? Hello, is my camera listing under review?
+			                	</p>
+			                	</div>
+			                	<span class="timestamp">10:15 AM</span>
+			            	</div>
+			            </div>
+
+			            <!-- message 2: support -->
+			            <div class="msg-row support">
+			            	<div class="avatar">
+			            	    <img src="images/img/man2.jpg">
+			            	</div>
+			            	<div class="bubble">
+			                	<div class="msg-text">
+			                	<p>Hi, yes, we're reviewing it. Please give us some time.
+			                	Hi, yes, we're reviewing it. Please give us some time.
+			                	Hi, yes, we're reviewing it. Please give us some time.
+			                	</p>
+			                	</div>
+			                	<span class="timestamp">10:16 AM</span>
+			            	</div>
+			            </div>
+
+			            <!-- message 3: user -->
+			            <div class="msg-row user">
+			            	<div class="avatar">
+			            	    <img src="images/img/man.png">
+			            	</div>
+			            	<div class="bubble">
+			                	<div class="msg-text">
+			                	<p>Can you let me know when it gets approved?</p>
+			                	</div>
+			                	<span class="timestamp">10:20 AM</span>
+			            	</div>
+			            </div>
+
+			            <!-- message 4: support -->
+			            <div class="msg-row support">
+			            	<div class="avatar">
+			            	    <img src="images/img/man2.jpg">
+			            	</div>
+			            	<div class="bubble">
+			                	<div class="msg-text">
+			                	<p>Sure, I'll notify you once it's approved.</p>
+			                	</div>
+			                	<span class="timestamp">10:22 AM</span>
+			            	</div>
+			            </div>
+
+			            <!-- message 5: user final "Thank you!" -->
+			            <div class="msg-row user">
+			            	<div class="avatar">
+			            	    <img src="images/img/man.png">
+			            	</div>
+			            	<div class="bubble">
+			                	<div class="msg-text">
+			                	<p>Thank you! I appreciate it.</p>
+			                	</div>
+			                	<span class="timestamp">10:30 AM</span>
+			            	</div>
+			            </div>
+			          </div>
+
+			          <div class="chat-footer">
+			            <input type="text" placeholder="Type a message..." value="">
+			            <button class="send-btn">Send</button>
+			          </div>            
+			          <div class="bottom-note">
+			            
+			          </div>
+			       </aside>
+			       <!-- end id dis -->
+			       <aside id="al" class="tab-content">
+			          Log 
+			       </aside>
+			       <!-- end id dis -->
+			    </div>
+			 </div>
+			 <aside class="chat_btn">
+			    <i class="fa fa-comments chat-icon chat_show"></i>
+			    <i class="fa fa-times chat-icon chat_hide"></i>
+			 </aside>
+			<!-- end chat part -->
+
+			<footer class="footer p-1 sobg">
+				<ul class="footer_ul df gap-2 alc">
+					<li class="footer_li df alc">
+						<i class="fa fa-lock"></i>
+						<a class="footer_a blc" href="#">Secure Platform</a>
+					</li>
+					<li class="footer_li df alc">
+						<i class="fa fa-people-group"></i>
+						<a class="footer_a blc" href="#">Trusted Community</a>
+					</li>
+					<li class="footer_li df alc">
+						<i class="fa fa-wallet"></i>
+						<a class="footer_a blc" href="#">Wallet Protected</a>
+					</li>
+					<li class="footer_li df alc">
+						<i class="fa fa-check-circle"></i>
+						<a class="footer_a blc" href="#">Verified System</a>
+					</li>					
+					<li class="footer_li df alc">
+						<i class="fa fa-money-bill-wheat"></i>
+						<a class="footer_a blc" href="#">Community Economy</a>
+					</li>					
+				</ul>
+			</footer>
+
+		</div>
+		<!-- end content -->
+
+	</section>
+
+	
+
+	<script src="js/jquery-3.5.0.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/megamenu.js"></script>
+	<script src="js/main.js"></script>
+
+	<script type="text/javascript">
+		function updatePie(percent) {
+		  $('.pie-chart').css('background', 
+		    `conic-gradient(#28a745 0% ${percent}%, #fd7e14 ${percent}% 60%, #6c757d 60% 100%)`
+		  );
+		  $('.pie-chart span').text(percent + '%');
+		}
+
+		$(document).ready(function(){
+
+		   // chat box show/hide 
+		   $('.chat_show').click(function(){
+		     $('.chat_box').css('display', 'flex');
+		     $(this).hide();
+		     $('.chat_hide').show();
+		   });
+		   $('.chat_hide').click(function(){
+		     $('.chat_box').css('display', 'none');
+		     $(this).hide();
+		     $('.chat_show').show();
+		   });
+
+		});
+
+	</script>
+
+</body>
+</html>

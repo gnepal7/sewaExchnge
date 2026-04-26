@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sewa Exchange</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="images/img/favi.png" type="png">
+	
+	<!-- fontawesome -->
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<!-- owl -->
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+
+	<!-- custom -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>	
+
+	<div class="progress-wrapper">
+		<div class="progress-bar"></div>
+	</div>
+
+	<nav class="nav py-1">
+		<div class="wrapper-wide dg col12 gap-3 header-wrap">
+			<div class="colg-2">
+				<a href="index.html" class="logo">
+					<img src="images/img/logo.png">
+				</a>
+			</div>
+
+			<div class="colg-4 search-wrap">
+				<form class="search-form">
+					<input type="search" placeholder="search item(s) here....">
+					<i class="fa fa-search"></i>
+				</form>
+			</div>
+
+			<div class="colg-6">
+				<ul class="btn-group action-buttons df gap-2">
+					<li class="action-buttons_add">
+						<a class="btn-sm btn-main-br  prime df gap-1" href="addPost.html">
+							<i class="fa fa-plus"></i>
+							<span>Add Item</span>
+						</a>
+					</li>
+					<!-- these two list will show before login -->
+					<li>
+						<a class="btn-sm btn-lw-bg sec db" href="login.html">							
+							Login
+						</a>
+					</li>
+					<li>
+						<a class="btn-sm btn-dim-bg prime db" href="signup.html">							
+							signup
+						</a>
+					</li>
+
+					<!-- these two list will show after login -->					
+					<li class="df sobg br-1 alc">
+						<a class="btn-sm blc db cart-list-btn" href="cart.html">			
+							<i class="fa fa-shopping-cart"></i>
+							<span class="item-added-on-cart">5</span>
+						</a>
+						<a class="btn-sm blc db notify-btn" href="javascript:void()">				
+							<i class="fa fa-bell"></i>
+						</a>
+						<a class="btn-sm sec df profile-btn" href="javascript:void()">		
+							<img src="images/img/man.png">
+							<i class="fa fa-chevron-down"></i>
+						</a>
+					</li>
+
+				</ul>
+			</div>
+			
+		</div>
+	</nav>
+
+
+	<div class="box_on-click notification p-2 br-1">
+		<h4 class="blc box_on-click_title pb-1 df alc">Notifications 
+			<span class="clear">Clear</span>
+		</h4>
+		<ul class="box_on-click_ul dfc">
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Vestibulum ac arcu id libero dignissim mollis sed ut nunc</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Sed cursus nibh molestie, imperdiet urna a, blandit justo</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Morbi auctor odio sed massa semper molestie</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Praesent nec eros sed sem lacinia mattis sit amet in diam</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Aliquam dictum libero id orci laoreet dignissim</a>
+			</li>
+		</ul>
+	</div>
+
+
+	<div class="box_on-click profile_box py-1 px-2 br-1">
+		<h4 class="blc box_on-click_title pb-1 mb-1 df alc">Gopal Nepal</h4>
+		<ul class="box_on-click_ul dfc">
+			<li class="box_on-click_li">
+			<a class="box_on-click_a blc df gap-1 alc p-1" href="#">
+				<i class="fa fa-user-circle"></i>
+				<span>Visit Profile
+				</a>
+			</li>
+			<li class="box_on-click_li">
+				<a class="box_on-click_a blc df gap-1 alc p-1" href="#">
+					<i class="fa fa-sign-out"></i>
+					<span>Logout</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+
+	<section class="banner sobg py-4">
+		<div class="dg col12 wrapper-wide">
+
+			<div class="colg-6 banner_content dfc gap-2">
+				<h1>
+					Sewa Exchange <br>
+					Exchange what you have. <br>
+					Get What you Need.
+				</h1>
+
+				<ul class="banner_ul df gap-1">
+					<li class="banner_li ml-2">Goods</li>
+					<li class="banner_li ml-2">Services</li>
+					<li class="banner_li ml-2">Skills</li>
+					<li class="banner_li ml-2"><strong>Community Exchange Platform</strong></li>
+				</ul>
+
+				<aside class="btn-group df gap-2">
+					<a class="btn-sm btn-main-bg py-1 px-3 wh" href="#">Start Exchange</a>
+					<a class="btn-sm btn-gray-br py-1 px-3" href="#">How it Works?</a>
+				</aside>
+			</div>
+
+			<div class="colg-6 banner_img">
+				<img src="images/exchange.png" alt="Exchange">
+			</div>
+
+		</div>
+	</section>
+
+	<section class="wrapper-wide mt-2">
+		<h3 class="prime">Active Exchange Feed</h3>
+		<div class="col15 activeFeed gap-2">
+
+			<article class="exchange_item br-1">
+				<img src="images/product/crew-t-short.png" class="brtl-1 brtr-1">
+				<aside class="pr-1 pb-1 pl-1 exchange_item-info dfc">
+					<h6 class="prime exchange_item-title">Premium Regular Fit Long Sleeve Crew Neck T-Shirt For Men</h6>
+					<span class="exchange_item-cat db">Goods - Goods | Kathmandu, Nepal</span>
+					<figcaption class="exchange_item-price df gap-1 mt-1 alc spb">
+						<h6 class="exchange_item-price_amount sec">Rs.780</h6>
+						<a href="#" class="btn btn-main-br btn-xs br-1 df alc gap-1">
+							<i class="fa fa-shopping-cart"></i>
+							Add to Cart
+						</a>
+					</figcaption>
+					<figcaption class="exchange_item-rating df gap-1 mt-1 alc">
+						<span class="exchange_item-rating-number">4.8
+							<i class="fa fa-star active"></i>
+							<i class="fa fa-star active"></i>
+							<i class="fa fa-star active"></i>
+							<i class="fa fa-star"></i>
+						</span>
+						<a class="exchange_item-btn blc" href="#">Purpose Exchange</a>
+					</figcaption>
+				</aside>
+			</article>
+
+			<article class="exchange_item br-1">
+				<img src="images/product/sliper.png" class="brtl-1 brtr-1">
+				<aside class="pr-1 pb-1 pl-1 exchange_item-info dfc">
+					<h6 class="prime exchange_item-title">Women's Solid Color Flip Flops, Casual Clip Toe Beach Shoes, Summer Lightweight Platform Shoes</h6>
+					<span class="exchange_item-cat db">Service - Service | Lalitpur, Nepal</span>
+					<figcaption class="exchange_item-rating df gap-1 mt-1 alc">
+						<span class="exchange_item-rating-number">3.5
+							<i class="fa fa-star active"></i>
+							<i class="fa fa-star active"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</span>
+						<a class="exchange_item-btn blc" href="#">Purpose Exchange</a>
+					</figcaption>
+				</aside>
+			</article>
+
+			<article class="exchange_item br-1">
+				<img src="images/product/lady-jacket.png" class="brtl-1 brtr-1">
+				<aside class="pr-1 pb-1 pl-1 exchange_item-info dfc">
+					<h6 class="prime exchange_item-title">Warm Inner Fleece Full Zipup Hoodie Jacket And Straight Trouser Set For Women</h6>
+					<span class="exchange_item-cat db">Good - Service | Lalitpur, Nepal</span>
+					<figcaption class="exchange_item-rating df gap-1 mt-1 alc">
+						<span class="exchange_item-rating-number">3.5
+							<i class="fa fa-star active"></i>
+							<i class="fa fa-star active"></i>
+							<i class="fa fa-star active"></i>
+							<i class="fa fa-star"></i>
+						</span>
+						<a class="exchange_item-btn blc" href="#">Purpose Exchange</a>
+					</figcaption>
+				</aside>
+			</article>
+
+			<article class="exchange_item br-1">
+				<img src="images/product/costemic.png" class="brtl-1 brtr-1">
+				<aside class="pr-1 pb-1 pl-1 exchange_item-info dfc">
+					<h6 class="prime exchange_item-title">Multi-function Blush Stick Long Lasting Natural Cheek Face Rouge Blusher Cream Waterproof High Brightening Skin Tone Makeup</h6>
+					<span class="exchange_item-cat db">Good - Service | Lalitpur, Nepal</span>
+					<figcaption class="exchange_item-rating df gap-1 mt-1 alc">
+						<span class="exchange_item-rating-number">3.5
+							<i class="fa fa-star active"></i>
+							<i class="fa fa-star active"></i>
+							<i class="fa fa-star active"></i>
+							<i class="fa fa-star"></i>
+						</span>
+						<a class="exchange_item-btn blc" href="#">Purpose Exchange</a>
+					</figcaption>
+				</aside>
+			</article>
+
+			<article class="exchange_item br-1">
+				<img src="images/product/tuition.jpg" class="brtl-1 brtr-1">
+				<aside class="pr-1 pb-1 pl-1 exchange_item-info dfc">
+					<h6 class="prime exchange_item-title">Online/Physical tuition classes for +2 students</h6>
+					<span class="exchange_item-cat db">Skill - Skill | Kathmandu, Nepal</span>
+					<figcaption class="exchange_item-rating df gap-1 mt-1 alc">
+						<span class="exchange_item-rating-number">3.5
+							<i class="fa fa-star active"></i>
+							<i class="fa fa-star active"></i>
+							<i class="fa fa-star active"></i>
+							<i class="fa fa-star"></i>
+						</span>
+						<a class="exchange_item-btn blc" href="#">Purpose Exchange</a>
+					</figcaption>
+				</aside>
+			</article>
+
+		</div>
+	</section>
+
+	<section class="mt-2 py-3 sobg">
+		<h3 class="wrapper-wide prime">What is Sewa Exchange?</h3>
+		<div class="wrapper-wide dg col12 sewaIntro gap-3">
+
+			<div class="colg-8 dg col12 gap-2">
+
+				<aside class="colg-6 df gap-2 sewaIntro_info br-1 p-2">
+					<i class="fa fa-exchange sewaIntro_info-icon"></i>
+					<figcaption class="sewaIntro_info-text">
+						<h5 class="prime">Digital Exchange Platform</h5>
+						<p class="sewaIntro_info-para">Exchange Goods or Service.</p>
+					</figcaption>
+				</aside>
+
+				<aside class="colg-6 df gap-2 sewaIntro_info br-1 p-2">
+					<i class="fa fa-hand-holding-hand sewaIntro_info-icon"></i>
+					<figcaption class="sewaIntro_info-text">
+						<h5 class="prime">Barter + Cash System</h5>
+						<p class="sewaIntro_info-para">Trace Directly or with Cash Balance.</p>
+					</figcaption>
+				</aside>
+
+				<aside class="colg-6 df gap-2 sewaIntro_info br-1 p-2">
+					<i class="fa fa-handshake sewaIntro_info-icon"></i>
+					<figcaption class="sewaIntro_info-text">
+						<h5 class="prime">Service Exchange</h5>
+						<p class="sewaIntro_info-para">Service Exchange with Good or Money.</p>
+					</figcaption>
+				</aside>
+
+				<aside class="colg-6 df gap-2 sewaIntro_info br-1 p-2">
+					<i class="fa fa-wallet sewaIntro_info-icon"></i>
+					<figcaption class="sewaIntro_info-text">
+						<h5 class="prime">Wallet-Based Secure Trading</h5>
+						<p class="sewaIntro_info-para">Transcation with Verified Wallet.</p>
+					</figcaption>
+				</aside>
+
+			</div>
+
+			<div class="colg-4 sewaIntro_img">
+				<img src="images/product/wallet.png">
+			</div>
+		</div>
+	</section>
+
+	<section class="mt-2 wrapper-wide">
+		<h3 class="prime">How It Works?</h3>
+		<ul class="dg col12 gap-3 works_ul p-2 sobg br-1">
+
+			<li class="works_li colg-3 df gap-2">
+				<figcaption class="works_text">
+					<h5 class="prime works_text-title">List what you have</h5>
+					<p class="works_text-para">Post goods, services or skills that can be exchanged.</p>
+				</figcaption>
+			</li>
+
+			<li class="works_li colg-3 df gap-2">
+				<figcaption class="works_text">
+					<h5 class="prime works_text-title">Find what you need</h5>
+					<p class="works_text-para">Search for goods, services, or skills what you need.</p>
+				</figcaption>
+			</li>
+
+			<li class="works_li colg-3 df gap-2">
+				<figcaption class="works_text">
+					<h5 class="prime works_text-title">Purpose exchange</h5>
+					<p class="works_text-para">Purpose exchange the goods, services or skills what you list.</p>
+				</figcaption>
+			</li>
+
+			<li class="works_li colg-3 df gap-2">
+				<figcaption class="works_text">
+					<h5 class="prime works_text-title">Confirm safely.</h5>
+					<p class="works_text-para">Search for goods, services, or skills what you need.</p>
+				</figcaption>
+			</li>
+
+		</ul>
+
+	</section>
+
+	<section class="mt-2">
+		<h3 class="wrapper-wide prime">Exchange Categories</h3>
+		<div class="wrapper-wide col15 exchangeCat gap-2">
+
+			<article class="exchangeCat_item exchangeCat_item-home br-1">
+				<img src="images/good-ex.png" class="brtl-1 brtr-1">
+				<aside class="pr-1 pb-1 pl-1 exchangeCat_item exchangeCat_item-home-info dfc">
+					<h5 class="prime exchangeCat_item exchangeCat_item-home-title">Good Exchange</h5>
+					<span class="exchange_item-cat db">Goods - Manufacture Exchange</span>
+					<figcaption class="exchange_item-rating df gap-1 mt-1 alc">
+						<span class="exchange_item-rating-number">4.5
+							<i class="fa fa-star active"></i>
+							<i class="fa fa-star active"></i>
+							<i class="fa fa-star active"></i>
+							<i class="fa fa-star"></i>
+						</span>
+						<a class="exchange_item-btn blc" href="#">Purpose Exchange</a>
+					</figcaption>
+				</aside>
+			</article>
+
+			<article class="exchangeCat_item exchangeCat_item-home br-1">
+				<img src="images/service-ex.png" class="brtl-1 brtr-1">
+				<aside class="pr-1 pb-1 pl-1 exchangeCat_item exchangeCat_item-home-info dfc">
+					<h5 class="prime exchangeCat_item exchangeCat_item-home-title">Service Exchange</h5>
+					<span class="exchange_item-cat db">Service - Manufacture Exchange</span>
+					<figcaption class="exchange_item-rating df gap-1 mt-1 alc">
+						<span class="exchange_item-rating-number">4.5
+							<i class="fa fa-star active"></i>
+							<i class="fa fa-star active"></i>
+							<i class="fa fa-star active"></i>
+							<i class="fa fa-star"></i>
+						</span>
+						<a class="exchange_item-btn blc" href="#">Purpose Exchange</a>
+					</figcaption>
+				</aside>
+			</article>
+
+			<article class="exchangeCat_item exchangeCat_item-home br-1">
+				<img src="images/skill-ex.png" class="brtl-1 brtr-1">
+				<aside class="pr-1 pb-1 pl-1 exchangeCat_item exchangeCat_item-home-info dfc">
+					<h5 class="prime exchangeCat_item exchangeCat_item-home-title">Skill Exchange</h5>
+					<span class="exchange_item-cat db">Skill - Manufacture Exchange</span>
+					<figcaption class="exchange_item-rating df gap-1 mt-1 alc">
+						<span class="exchange_item-rating-number">4.5
+							<i class="fa fa-star active"></i>
+							<i class="fa fa-star active"></i>
+							<i class="fa fa-star active"></i>
+							<i class="fa fa-star"></i>
+						</span>
+						<a class="exchange_item-btn blc" href="#">Purpose Exchange</a>
+					</figcaption>
+				</aside>
+			</article>
+
+			<article class="exchangeCat_item exchangeCat_item-home br-1">
+				<img src="images/job-ex.png" class="brtl-1 brtr-1">
+				<aside class="pr-1 pb-1 pl-1 exchangeCat_item exchangeCat_item-home-info dfc">
+					<h5 class="prime exchangeCat_item exchangeCat_item-home-title">Job Exchange</h5>
+					<span class="exchange_item-cat db">Job - Job Exchange</span>
+					<figcaption class="exchange_item-rating df gap-1 mt-1 alc">
+						<span class="exchange_item-rating-number">4.5
+							<i class="fa fa-star active"></i>
+							<i class="fa fa-star active"></i>
+							<i class="fa fa-star active"></i>
+							<i class="fa fa-star"></i>
+						</span>
+						<a class="exchange_item-btn blc" href="#">Purpose Exchange</a>
+					</figcaption>
+				</aside>
+			</article>
+
+			<article class="exchangeCat_item exchangeCat_item-home br-1">
+				<img src="images/rent-ex.png" class="brtl-1 brtr-1">
+				<aside class="pr-1 pb-1 pl-1 exchangeCat_item exchangeCat_item-home-info dfc">
+					<h5 class="prime exchangeCat_item exchangeCat_item-home-title">Rent Exchange</h5>
+					<span class="exchange_item-cat db">Rent - Manufacture Exchange</span>
+					<figcaption class="exchange_item-rating df gap-1 mt-1 alc">
+						<span class="exchange_item-rating-number">4.5
+							<i class="fa fa-star active"></i>
+							<i class="fa fa-star active"></i>
+							<i class="fa fa-star active"></i>
+							<i class="fa fa-star"></i>
+						</span>
+						<a class="exchange_item-btn blc" href="#">Purpose Exchange</a>
+					</figcaption>
+				</aside>
+			</article>
+
+		</div>
+	</section>
+
+
+	<section class="mt-2 py-3 sobg">
+		
+		<div class="wrapper-wide dg col12 secureWallet gap-3">
+			<div class="colg-4 secureWallet_img">
+				<img src="images/secure-wallet.png">
+			</div>
+			<div class="colg-8 dg col12 gap-2">
+				<h3 class="colg-12 prime">Secure Wallet System</h3>
+				<aside class="colg-6 df gap-2 secureWallet_info br-1 p-2">
+					<i class="fa fa-users-line secureWallet_info-icon"></i>
+					<figcaption class="secureWallet_info-text">
+						<h5 class="prime">Verified Users</h5>
+						<p class="secureWallet_info-para">All users are verified by sewaexchange.</p>
+					</figcaption>
+				</aside>
+
+				<aside class="colg-6 df gap-2 secureWallet_info br-1 p-2">
+					<i class="fa fa-check-circle secureWallet_info-icon"></i>
+					<figcaption class="secureWallet_info-text">
+						<h5 class="prime">Tailored System</h5>
+						<p class="secureWallet_info-para">Tailored and bounded System.</p>
+					</figcaption>
+				</aside>
+
+				<aside class="colg-6 df gap-2 secureWallet_info br-1 p-2">
+					<i class="fa fa-cash-register secureWallet_info-icon"></i>
+					<figcaption class="secureWallet_info-text">
+						<h5 class="prime">Admin Controlled Cash</h5>
+						<p class="sewaIntro_info-para">All Cash is fairly controlled by Admin.</p>
+					</figcaption>
+				</aside>
+
+				<aside class="colg-6 df gap-2 secureWallet_info br-1 p-2">
+					<i class="fa fa-money-check-alt secureWallet_info-icon"></i>
+					<figcaption class="secureWallet_info-text">
+						<h5 class="prime">Safer Resolution</h5>
+						<p class="secureWallet_info-para">Transcation with Verified Wallet.</p>
+					</figcaption>
+				</aside>
+
+				<aside class="colg-6 df gap-2 secureWallet_info br-1 p-2">
+					<i class="fa fa-exchange-alt secureWallet_info-icon"></i>
+					<figcaption class="secureWallet_info-text">
+						<h5 class="prime">Admin Controlled Cash</h5>
+						<p class="sewaIntro_info-para">Save and credit hirerchy.</p>
+					</figcaption>
+				</aside>
+
+				<aside class="colg-6 df gap-2 secureWallet_info br-1 p-2">
+					<i class="fa fa-id-card-clip secureWallet_info-icon"></i>
+					<figcaption class="secureWallet_info-text">
+						<h5 class="prime">Secure Exchange Flow</h5>
+						<p class="secureWallet_info-para">Transcation with Verified Wallet.</p>
+					</figcaption>
+				</aside>
+
+			</div>
+
+		</div>
+	</section>
+
+
+	<section class="mt-2">
+		<div class="wrapper communityBased gap-2">
+			<h3 class="prime communityBased_title">Community Powered Exchange</h3>
+			<div class="dg col12 gap-2">
+
+				<article class="communityBased_item colg-3 dfc gap-1 br-1 pt-1 pr-1 pl-1">
+					<img src="images/community2.png" class="br-1">
+					<h5 class="prime">Local Exchange</h5>
+				</article>
+
+				<article class="communityBased_item colg-3 dfc gap-1 br-1 pt-1 pr-1 pl-1">
+					<img src="images/community3.png" class="br-1">
+					<h5 class="prime">Knowledge Sharing</h5>
+				</article>
+
+				<article class="communityBased_item colg-3 dfc gap-1 br-1 pt-1 pr-1 pl-1">
+					<img src="images/community4.png" class="br-1">
+					<h5 class="prime">Local Support</h5>
+				</article>
+
+				<article class="communityBased_item colg-3 dfc gap-1 br-1 pt-1 pr-1 pl-1">
+					<img src="images/community2.png" class="br-1">
+					<h5 class="prime">Suatainable Support</h5>
+				</article>
+
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer mt-3">
+		<div class="footer_top">
+			<aside class="df gap-2 alc py-4 wrapper-wide">
+				<img src="images/img/logo.png" class="logo">
+				<h3 class="wh">Sewa Exchange</h3>
+			</aside>
+		</div>
+		<div class="footer_bottom pt-4">
+			<div class="wrapper-wide dg col12 gap-3">					
+
+				<div class="colg-3 foot_col">
+					<h4 class="mb-1">Sewa Exchange</h4>
+					<ul class="footer_ul dfc">
+						<li class="footer_li">
+							<a href="#" class="footer_a wh db">About Platform</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a wh db">Exchange Policy</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a wh db">Wallet Policy</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a wh db">Cash Policy</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a wh db">Agent Policy</a>
+						</li>					
+					</ul>
+				</div>
+
+				<div class="colg-3 foot_col">
+					<h4 class="mb-1">Support</h4>
+					<ul class="footer_ul dfc">
+						<li class="footer_li">
+							<a href="#" class="footer_a wh db">Help Center</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a wh db">How Exchange Works</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a wh db">Safety Guidelines</a>
+						</li>							
+						<li class="footer_li">
+							<a href="#" class="footer_a wh db">Contact Support</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="colg-3 foot_col">
+					<h4 class="mb-1">Company</h4>
+					<ul class="footer_ul dfc">
+						<li class="footer_li">
+							<a href="#" class="footer_a wh db">About Us</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a wh db">Terms & Conditions</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a wh db">Privacy Policy</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a wh db">Dispute Resolution</a>
+						</li>											
+					</ul>
+				</div>
+
+				<div class="colg-3 foot_col">
+					<h4 class="mb-1">Connect</h4>
+					<ul class="footer_ul dfc">
+						<li class="footer_li df gap-1 alc">
+							<i class="fa fa-map-marker-alt gr"></i>
+							<a href="javascript:void()" class="footer_a wh db">Anamnagar, Kathmandu, Nepal</a>
+						</li>
+						<li class="footer_li df gap-1 alc">
+							<i class="fa fa-envelope gr"></i>
+							<a href="#" class="footer_a wh db">info@sewaexchange.com</a>
+						</li>
+						<li class="footer_li df gap-1 alc">
+							<i class="fa fa-phone gr"></i>
+							<a href="javascript:void()" class="footer_a wh db">00977-9812345678</a>
+						</li>					
+					</ul>
+					<ul class="footer_ul df gap-1 social_ul mt-1">
+						<li class="footer_li">
+							<a href="#" class="footer_a fb">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a tw">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a wht">
+								<i class="fab fa-whatsapp"></i>
+							</a>
+						</li>							
+					</ul>
+				</div>
+
+				<div class="colg-12 py-2 copyright">
+					<p class="gr">© 2026 Sewa Exchange. All rights reserved.</p>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/jquery-3.5.0.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>

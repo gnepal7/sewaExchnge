@@ -1,0 +1,66 @@
+/***** heading style *****/
+$headings: (
+  h1: 2.5,
+  h2: 2,
+  h3: 1.5,
+  h4: 1.25,
+  h5: 1.125,
+  h6: 1
+);
+
+@each $h, $size in $headings {
+  #{$h}, .#{$h} {
+    font-family: $font-title;
+    line-height: 1.5;
+    font-weight: 600;
+    font-size: #{$size}rem;
+    line-height: 1.5;
+    @include max(991px){
+      font-size: ($size - 0.3) * 1rem;
+    }
+  }
+}
+
+
+em {
+	font-style: italic;
+}
+strong {
+	font-weight: 500;
+}
+small {
+	font-size: 75%;
+}
+dt {
+  font-weight: 700;
+}
+dd {
+  margin-bottom: 0.5rem;
+  margin-left: 0;
+}
+blockquote {
+  margin: 0 0 1rem;
+}
+b,
+strong {
+  font-weight: bolder;
+}
+sub,
+sup {
+  position: relative;
+  font-size: 0.75em;
+  line-height: 0;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+.p1{
+  font-size: 1rem;
+}
+.p2{
+  font-size: .9rem;
+}

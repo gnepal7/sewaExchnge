@@ -1,0 +1,381 @@
+@mixin boxFontStyle{
+	font-size: 1.7rem;						
+	margin-top:.2rem;
+}
+.sub-title{
+	font-size: .8rem;
+}
+@mixin smallTitleStyle{
+	margin-bottom:.7rem;
+	padding-bottom:.7rem;
+	border-bottom:1px dotted $lgry;
+	& i{
+		@include boxFontStyle;
+		color:lighten($lgry, 5%);
+		margin-right: .3rem;
+	}
+}
+@mixin smallAncgorStyle{
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-weight: normal;
+	&:hover{
+		text-decoration: none;
+	}
+}
+.content{	
+	position: relative;
+	@include min(768px){
+		width:calc( 100% - 15rem );
+		min-height: calc( 100vh + 5rem );
+		margin-left:15rem;
+	}
+	@include max(767px){
+		padding-top:1.2rem;
+	}
+	&_inside{
+		overflow-y: auto;
+		// height:calc( 100vh - 10.56rem );
+		&-left{
+			&_top{
+
+			}
+			&_info{
+				&-box{
+					& i{
+						@include boxFontStyle;
+						color:lighten($lgry, 5%);
+					}
+					&_text{
+						grid-gap:.3rem;
+						& .number{
+
+						}
+						& .para{
+
+						}
+					}
+				}
+			}
+			&_health{
+				border:1px solid lighten($gry, 10%);
+				&-title{
+					& a{
+						font-size: .8rem;						
+					}
+				}
+				&-item{
+					border: 1px solid lighten($lgry, 10%);
+					grid-gap:.5rem;
+					padding:.5rem;
+					& i{
+						@include boxFontStyle;
+						color:lighten($gry, 5%);
+					}
+					&_text{
+						font-size: .75rem;
+						grid-gap:.3rem;
+						& i{
+							font-size: .75rem;
+							color:$green;
+							margin-right:.2rem;
+						}
+						
+					}
+					
+				}
+				& a{
+					@include smallAncgorStyle;
+				}
+			}
+			&_tuf{
+				& .title{
+					@include smallTitleStyle;
+				}
+				&-item{
+					&_text{
+						grid-gap:.4rem;
+						& i{
+							font-size: .75rem;
+						}
+					}
+				}
+			}
+			&_trust{
+
+			}
+			&_trust, 
+			&_finance{
+				border:1px solid lighten($secondary, 40%);
+			}
+			&_finance{
+
+			}
+		}
+		&-right{
+			&_ul{
+				border:1px dashed $gry;
+			}
+			&_li{
+				&:not(:first-of-type){
+					border-left:1px solid lighten($lgry, 10%);
+					padding-left: .5rem;
+				}
+			}
+			&_a{
+				font-size: 1rem;
+				grid-gap:.5rem;
+				& i{
+					font-size: .75rem;
+					color:$lgry;
+				}
+			}
+			&_ex{
+				border:1px solid lighten($gry, 10%);
+				& .title{
+					@include smallTitleStyle;
+				}
+			}
+			&_liveFeed{
+				border:1px solid lighten($secondary, 40%);
+				& .title{
+					@include smallTitleStyle;
+					& a{
+						@include smallAncgorStyle;
+						margin-left:.3rem;
+					}
+				}				
+				&-text{
+					grid-gap:.7rem;	
+					&_inner{
+						&:not(:last-of-type){
+							border-bottom:1px dashed $lgry;
+							padding-bottom:.7rem;
+						}
+					}
+					& time{
+						font-size: .75rem;
+						margin-left:auto;
+					}				
+					&_item{
+						grid-gap:.3rem;
+						&-img{
+							width: 3.1rem;
+							height: 3.1rem;
+							@include radius(50%);
+							object-fit: cover;
+						}
+						&-fig{
+							& p{
+								@include lc(1);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.pie-chart {
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  background: conic-gradient(
+    $green 0% 42.6%,    
+    $secondary 42.6% 60%,    
+    $gry 60% 100%      
+  );
+  position: relative;  
+  justify-content: center;
+  & span{
+  	font-size: 1.5rem;
+  }
+}
+.legend {  
+  font-size: 0.95rem;
+  & .dot{
+  	display: inline-block;
+  	width: 12px;
+  	height: 12px;
+  	border-radius: 50%;
+  	margin-right: 8px;
+  	&.new{
+  		background-color: $green;
+  	}
+  	&.disputed{
+  		background-color: $secondary;
+  	}
+  	&.reset{
+  		background-color:darken($lgry, 20%);
+  	}
+  }
+}
+.viewport {  
+  font-size: 0.9rem;
+}
+
+/***** chat_div *****/
+.chat{
+	&_div{		
+		
+	}
+	&_box{
+		padding: 1rem;
+		border-radius: 1rem;
+		background-color: #fff;
+		max-width: 13rem;
+		position: fixed;
+		bottom: 5rem;
+		right: 1rem;
+		box-shadow: 1px 1px 10px 1px rgba(0,0,0, .4);
+		z-index: 22;
+		max-height: 22rem;
+		min-width: 20rem;
+		min-height: 20rem;
+		overflow-y: auto;	
+		max-width: 35rem;
+		@include max(767px){
+			max-width: calc(100% - 2rem);
+		}	
+		& .tab-wrap{
+			width: 100%;
+		}
+	}
+	&_box,
+	&_hide{
+		display: none;
+	}
+	&_box{
+
+	}
+	&_btn{
+		width: 3rem;
+		height: 3rem;
+		border-radius: 50%;
+		position: fixed;
+		bottom: 1.5rem;
+		right: 1rem;
+		background-color: $secondary;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		color:$whi;
+		z-index: 999;
+	}
+}
+.conversation-panel {
+    background: $whi;
+}
+.msg-row {
+    display: flex;
+    margin-bottom: 1rem;
+}
+.msg-row.user {
+    justify-content: flex-start; 
+}
+.msg-row.support {
+    justify-content: flex-end; 
+}
+.avatar img {
+    width: 2rem;
+    height:2rem;
+    @include radius(50%);
+    object-fit: cover;
+    margin-right:.2rem;
+}
+.bubble {
+    min-width: 75%;
+    max-width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+.msg-text {
+    padding: 0.9rem 1.2rem;
+    border-radius: 1.25rem;
+    font-size: 0.98rem;
+    line-height: 1.45;
+    word-break: break-word;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+.user .msg-text {
+    background: #f0f4fa;
+    color: #1e2b38;
+    border-radius:.5rem;
+}
+.support .msg-text {
+    background: #1a7de6;
+    color: white;
+    border-radius:.5rem;
+}
+/* timestamp */
+.timestamp {
+    font-size: 0.7rem;
+    margin-top: 6px;
+    color: #7b8b9f;
+    letter-spacing: -0.01em;
+    font-weight: 400;
+    padding-left: 6px;
+}
+.support .timestamp {
+    text-align: right;
+    padding-right: 6px;
+}
+.chat-footer {
+    border-top: 1px solid #e6ecf2;
+    background: #f9fbfe;
+    padding: 0.9rem 1.5rem 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.chat-footer input {
+    flex: 1;
+    background: white;
+    border: 1px solid #ccd8e4;
+    border-radius: 40px;
+    padding: 0.75rem 1.2rem;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border 0.15s, box-shadow 0.15s;
+    color: #1f2a36;
+}
+.chat-footer input::placeholder {
+    color: #8a9bb0;
+    font-weight: 350;
+}
+.chat-footer input:focus {
+    border-color: #1a7de6;
+    box-shadow: 0 0 0 3px rgba(26, 125, 230, 0.12);
+}
+.send-btn {
+    background: $primary;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: .75rem 1rem;
+    border-radius: 40px;
+    cursor: pointer;   
+    box-shadow: 0 4px 8px rgba(26,125,230,0.2);
+}
+.send-btn:active {
+    transform: none; 
+}
+.bottom-note {
+    text-align: right;
+    font-size: 0.7rem;
+    color: #8d9db0;
+    padding: 0.4rem 1.5rem 0.8rem 1.5rem;
+    border-top: 1px dashed #dce4ed;
+    background: #ffffff;
+}
+.msg-text p {
+    margin: 0;
+}
+.bubble .msg-text + .timestamp {
+    margin-top: 5px;
+}
+/***** end chat_div *****/

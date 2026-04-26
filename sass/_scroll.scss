@@ -1,0 +1,42 @@
+$scrollbar-thumb-width: 7px;
+$scrollbar-thumb-color: lighten($primary, 5%);
+$scrollbar-track-color: darken($gry, 10%);
+::-webkit-scrollbar {
+  width: $scrollbar-thumb-width;
+	height: $scrollbar-thumb-width;
+   	&-track {
+       background-color: $scrollbar-track-color;
+       @include radius(5px);
+   	}
+   	&-thumb {
+      background-color: $scrollbar-thumb-color;
+      @include radius(5px);
+   	}
+}
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+    scrollbar-color: lighten($primary, 5%) darken($gry, 10%) !important;
+    scrollbar-width: thin !important;
+  }
+}
+/***** scrollbar indicator *****/
+.progress{
+  &-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: .25rem;
+    background-color: $whi;
+    z-index:9;
+    @include max(767px){
+      display: none;
+    }
+  }
+  &-bar{
+    height: 100%;
+    background-color: lighten($secondary, 30%);
+    width: 0%;
+  }
+}

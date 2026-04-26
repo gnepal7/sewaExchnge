@@ -1,0 +1,246 @@
+.stepper {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  white-space: nowrap;
+  overflow-x: auto;
+  padding-bottom:.7rem;
+  @include min(992px){
+    justify-content: center;
+  }  
+  & .step {
+    border: 1px solid lighten($gry, 10%);
+    font-size: 1rem;
+    font-weight: normal;
+    color: $bla;
+    position: relative;
+    transition: all linear 0.3s;
+    background-color: $whi;
+    padding:.6rem 1.2rem;
+    &.active{
+      border-color: lighten($primary, 20%);
+      color: $primary;
+      background: white;
+    }
+    &.done{
+      border-color: transparent;
+      background-color: lighten($primary, 20%);
+      color:$whi;
+      &:first-of-type{
+        // margin-left: 3.5rem;
+      }
+    }
+    &.active,
+    &.done{
+      &:after{
+        background-color: lighten($primary, 20%);
+      }
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      background: $lgry;
+      top: 50%;
+      right: 100%;
+      transform: translateY(-50%);
+      z-index: -1;
+    }
+    &:first-child{
+      &:after{
+        display: none;
+      }
+    }
+  }
+}
+.form-content{
+  & label{
+    color:$bla;
+  }
+  & cite{
+    color:darken($lgry, 10%);
+  }
+  & .load_wallet, 
+  & .submit_btn,
+  & .verify-btn{
+    align-self: baseline;
+  }
+  & .img-preview{
+    height:auto;
+    width:auto;
+    & #previewImg{
+      height: 10rem;
+      width:10rem;
+      object-fit: cover;
+    }
+    &.multiple{
+      & img{
+        width:3rem;
+        height:3rem;
+        object-fit: cover;
+        &:nth-child(n+7){
+          display: none;
+        }
+      }
+    }
+  }
+  hr{
+    border:2px dashed lighten($gry, 5%);
+    margin-top:1rem;
+    margin-bottom:1rem;
+  }
+  & .review{
+    &_item{
+      justify-content: space-between;
+      padding-top:.7rem;
+      padding-bottom:.7rem;
+      line-height: 1;
+      &:not(:last-of-type){
+        border-bottom:1px solid lighten($lgry, 10%);
+      }
+      & .main-img{
+        width: 4rem;
+        aspect-ratio: 1/.75;
+        object-fit: cover;
+      }
+      & h6{
+        margin-bottom: 0;
+        color:lighten($bla, 20%);
+        font-weight: normal;
+      }
+      & h6,
+      & p{
+        flex:1;
+      }
+      & p{
+        color:$bla;
+        text-align: right;
+      }
+      &_ul{
+
+      }
+      &_li{
+        &:nth-child(n+4){
+          display: none;
+        }       
+        
+      }
+      & video, 
+      & iframe{
+        width:7.5rem;
+        aspect-ratio:1/.75;
+      }
+    }
+  }
+}
+
+.review_li.img-li{
+  & p{
+    & img{
+      width: 2.5rem;
+      height:2.5rem;
+      object-fit: cover;
+      @include radius(.2rem);
+    }
+  }
+}
+
+
+.single_line{
+  flex-wrap: wrap;
+  @include max(767px){
+    flex-direction: column;
+  }
+}
+.post{
+  &_right{
+    &-ul{
+
+    }
+    &-li{
+      border-top:1px dotted $lgry;
+      & i{
+        color:$lgry;
+        font-size: .75rem;
+      }
+      &.no-br{
+        border:0;
+      }
+    }
+    &-li,
+    &-a{
+      font-size: 1rem;
+      font-weight: normal;
+    }
+    &-a{
+
+    }
+  }
+}
+.radio-label,
+.check-label{
+  &.with-bg{
+    @include radius(.4rem);
+    padding-top:.7rem;
+    padding-right:.7rem;
+    padding-bottom:.7rem;
+    background-color: $whi;
+    padding-left:2.5rem;
+    color:darken($gry, 10%);
+    & span{
+      top:.8rem;
+      left:.6rem;
+    }
+  }
+}
+  
+// .form-content { padding: 0 40px 50px; }
+.step-content { display: none; }
+.step-content.active { 
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap:1.2rem;
+  }
+
+.radio-label{
+  &.toggle-style{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    padding-left:0;
+    & input{
+      display: none;
+      &:checked{
+        & + span{
+          background: $primary;
+          &:before{
+            transform: translateX(20px);
+          }
+        }
+      }
+    }
+    & span{
+      width: 42px;
+      height: 22px;
+      background: #ccc;
+      border-radius: 20px;
+      position: relative;
+      transition: .3s;
+      &:before{
+        content: "";
+        width: 18px;
+        height: 18px;
+        background: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        transition: .3s;
+      }
+    }
+  }
+}

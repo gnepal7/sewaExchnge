@@ -1,0 +1,82 @@
+/***** product_slider *****/
+.product-slider{
+	position:relative;
+	& .item{
+		position:relative;
+		z-index:1;
+		&:before{
+			@include overBg;
+			@include radius(.5rem);
+		}
+		& img{
+			height:21.25rem;
+			object-fit: cover;
+			@include radius(.5rem);			
+		}				
+		
+	}	
+}
+.owl-dots{
+	position: absolute;
+	right:0;
+	text-align: center;
+	bottom:.5rem;
+	right:1rem;
+	@include max(767px){
+		bottom:0;
+	}
+	& .owl-dot{
+		width:.625rem;
+		height:.625rem;
+		background-color: $gry !important;
+		@include radius(100%);
+		&:not(:last-of-type){
+			margin-right:.5rem;
+		}
+		&.active{
+			background-color: $secondary !important;
+		}
+		& img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			@include radius(.2rem);
+		}
+	}
+}
+
+.product-carousel{
+	& .owl-stage-outer {
+		pointer-events: auto;
+	}
+	& .item{
+		& img{
+			width: 100%;
+			height: 23rem;
+			object-fit: cover;
+			@include max(991px){
+				height:14rem;
+			}
+		}
+	}
+	& .owl-dots{
+		display: flex;
+		bottom:-.5rem;
+		position:relative;
+		z-index: 999;
+		left:auto;
+		right:auto;
+		justify-content: center;
+		& .owl-dot{
+			width:2rem;
+			height: 2rem;
+			background-color: transparent !important;
+			&.active{
+				img{
+					border: 1px solid $primary;
+					padding: .1rem;
+				}
+			}
+		}
+	}
+}

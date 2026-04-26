@@ -1,0 +1,144 @@
+/***** as container *****/
+.wrapper{
+	max-width: 75rem;
+	padding-left:1.4rem;
+	padding-right:1.4rem;
+	@include max(767px){
+		padding-left:.8rem;
+		padding-right:.8rem;
+	}
+	&,
+	&-wide{
+		margin-left:auto;
+		margin-right:auto;
+	}
+	&-wide{
+		max-width: calc( 100% - 4rem );
+		@include max(767px){
+			max-width: calc( 100% - 2rem );
+		}
+	}
+	&-full{
+		max-width:100%;
+	}
+}
+section,
+section[class^="wrapper"],
+div[class^="wrapper"]{
+	@include snap(y);
+}
+/***** column grid 12 *****/
+@for $p from 1 through 12 {
+	$dis: ("dg":"grid", "db":"block", "df":"flex" );
+	@each $display, $displayStyle in $dis{
+		@if ($display == dg) {
+			.colg-#{$p}{
+				@include min(768px){
+					grid-column: span #{$p * 1};
+				}
+				@include max(767px){
+					grid-column: span 12;
+				}
+			}
+		}
+		@else if ($display == db) {
+			.colb-#{$p} {
+				@include min(768px){
+					width: calc( (100%/12) * #{$p} );
+				}
+				@include max(767px){
+					width:100%;
+				}
+			}
+			.colb-off-#{$p}{
+				@include min(768px){
+					margin-left: calc( (100%/12) * #{$p} );
+				}
+			}
+		}
+		@else{
+			.colf-#{$p} {
+				@include min(768px){
+					flex: 0 0 calc( (100%/12) * #{$p} );
+				}
+				@include max(767px){
+					flex: 0 0 100%;
+				}
+			}
+		}
+	}
+}
+/***** grid gap while displaying parent element as grid/flex *****/
+@for $i from 1 through 5 {
+	.gap-#{$i} {
+		@include name(grid-gap, $i);
+	}
+}
+/***** margin/padding *****/
+@for $i from 1 through 5 {
+	$dir: ("n":"", "x":"", "y":"", "t": "top", "r": "right", "b": "bottom", "l":"left");
+	@each $pd, $pdside in $dir {
+		@if ($pd == n){
+			.p-#{$i} {
+				@include name(padding, $i);
+			}
+		}
+		@else if ($pd == x){
+			.px-#{$i} {
+				@include name(padding-left, $i);
+				@include name(padding-right, $i);
+			}
+		}
+		@else if ($pd == y){
+			.py-#{$i} {
+				@include name(padding-top, $i);
+				@include name(padding-bottom, $i);
+			}
+		}
+		@else{
+			.p#{$pd}-#{$i} {
+				@include name(padding-#{$pdside}, $i);
+			}
+		}
+	}
+	@each $mr, $mrside in $dir {
+		@if ($mr == n){
+			.m-#{$i} {
+				@include name(margin, $i);
+			}
+		}
+		@else if ($mr == x){
+			.mx-#{$i} {
+				@include name(margin-left, $i);
+				@include name(margin-right, $i);
+			}
+		}
+		@else if ($mr == y){
+			.my-#{$i} {
+				@include name(margin-top, $i);
+				@include name(margin-bottom, $i);
+			}
+		}
+		@else{
+			.m#{$mr}-#{$i} {
+				@include name(margin-#{$mrside}, $i);
+			}
+		}
+	}
+}
+/***** border radius for four side, let class in html *****/
+@for $r from 1 through 5 {
+	$rad: ("br":"", "brtl": "top-left", "brtr": "top-right", "brbr": "bottom-right", "brbl":"bottom-left");
+	@each $name, $radside in $rad {
+		@if ($name == 'br'){
+			.#{$name}-#{$r} {
+				@include name(border-radius, $r);
+			}
+		}
+		@else{
+			.#{$name}-#{$r} {
+				@include name(border-#{$radside}-radius, $r);
+			}
+		}
+	}
+}

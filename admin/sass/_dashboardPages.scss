@@ -1,0 +1,492 @@
+.content{	
+	&_page{
+		overflow-y: auto;
+		min-height:calc( 100vh + 1rem );
+		grid-template-rows: auto auto auto 1fr;
+		&-btnSection{
+			justify-content: space-between;
+			border-bottom:1px dashed lighten($lgry, 10%);
+			@include max(767px){
+				flex-direction: column;
+			}
+			&>*{
+				flex:0 0 auto;
+			}
+			&_btnGroup{
+				& .btn{
+					& i{
+						font-size: .6rem;
+						margin-right:.2rem;
+					}
+				}
+			}
+		}
+		&-top{
+			justify-content: space-between;
+			align-self: baseline;
+			border-bottom:1px dashed lighten($lgry, 10%);
+			&_label{
+				flex:0 0 auto;
+				white-space: nowrap;
+			}
+			&_select{
+				flex:1;
+			}
+			& .form-group{
+				
+			}
+		}
+		& .table-wrap{
+			align-self: first baseline;
+			white-space: nowrap;
+			overflow-x: auto;
+			@include max(767px){
+				margin-bottom:2rem;
+			}
+			& table{
+				& td{
+					& .df{
+						grid-gap:.3rem;
+					}
+					& .btn{
+						padding:.2rem .5rem;
+						border-radius:.2rem;
+						font-size: .65rem;
+						font-weight: 500;
+						line-height: 1.4;	
+						&:hover{
+							color:darken($bla, 10%);
+						}
+						&.view-btn{
+							border:1px solid lighten($green, 35%);
+							&:hover{
+								background-color:lighten($green, 35%);
+							}
+						}					
+						&.edit-btn{
+							border:1px solid lighten($primary, 35%);
+							&:hover{
+								background-color:lighten($primary, 35%);
+							}
+						}
+						&.del-btn{
+							border:1px solid lighten($red, 35%);
+							&:hover{
+								background-color:lighten($red, 35%);
+							}
+						}
+						&.retry-btn{
+							border:1px solid lighten($yellow, 20%);
+							&:hover{
+								background-color:lighten($yellow, 20%);
+							}
+						}
+						&.revoke-btn{
+							border:1px solid lighten($green, 20%);
+							&:hover{
+								background-color:lighten($green, 20%);
+							}
+						}
+					}
+					& .gap-sm{
+						// grid-gap:.1rem;
+					}
+					& i.star{
+						font-size: .5rem;
+						color:$gry;
+						&.active{
+							color:lighten($secondary, 35%);
+						}
+					}					
+					& img{
+						width:2rem;
+						height: 2rem;
+						object-fit: cover;
+						@include radius(50%);
+						margin-right:.2rem;
+					}
+
+				}
+				
+			}
+		}		
+		&.users{
+
+		}
+		&.agents{
+
+		}
+		&.exchange{
+
+		}
+		&.register{
+			
+		}
+		&.walletSystem,
+		&.financeSystem,
+		&.disputeSystem,
+		&.analyticSystem,
+		&.trustSystem,
+		&.complainceSystem,
+		&.communitySystem,
+		&.securitySystem{
+			& .info{
+				border-bottom:1px dashed lighten($lgry, 10%);
+				padding-bottom:.7rem;
+				& .info_box{
+					border:1px solid lighten($lgry, 20%);
+					& i:not(.star),
+					& i:not(.xs){
+						font-size:1.5rem;
+						margin-top:.3rem;
+					}
+					& span{
+						& i,
+						& i.up-arrow{
+							font-size:.75rem;
+						}
+					}
+					&-item{
+						&:not(:last-of-type){
+							padding-bottom:.5rem;
+							border-bottom:1px dotted lighten($primary, 40);
+						}
+						& img{
+							width:4rem;
+							height:4rem;
+							@include radius(50%);
+							object-fit: cover;
+						}
+						& figcaption{
+							grid-gap:.2rem;
+						}
+						& span{
+							font-size:.8rem;
+						}
+					}
+					& .table-wrap{
+						width: 100%;
+					}
+				}
+				&_ul{
+					flex-wrap: wrap;
+				}
+				&_li{
+					grid-gap:.3rem;
+					font-size: 1rem;
+					flex:0 0 auto;
+					& i.xs{
+						font-size: .85rem !important;
+						margin-top:0 !important;
+					}
+				}
+
+			}
+		}
+		&.financeSystem{
+			& .revAndExpenses{
+				// border-bottom:1px dashed lighten($lgry, 10%);
+			}
+			& .bars_wrap{
+				& .chart-box{
+					box-shadow:0 1px 1px 2px rgba($bla,.05);
+					& canvas{
+						width:100%;
+					}
+				}
+				& .lineChart{
+
+				}
+				& .barChart{
+
+				}
+				& .pieChart{
+
+				}
+			}
+		}
+		&.disputeSystem{
+
+		}
+		&.trustSystem{
+			& .info{
+				&_box{
+					border:1px solid lighten($lgry, 10%);
+					& .statusBar{
+						& #statusBarChart{
+							height:5rem;
+						}
+					}
+				}				
+			}
+		}
+		&.analyticSystem{
+
+		}
+		&.securitySystem{
+			& .box{
+				border:1px solid lighten($lgry, 15%);
+			}			
+			& .sys-col{
+				
+
+			}	
+			& form{
+				& .form-group{					
+					border-top:1px dashed lighten($lgry, 10%);	
+					&.ip-add_form{
+						& input{
+							flex:1;
+						}
+					}				
+				}
+
+				& .edit-trigger,
+				& .cancel-trigger{
+					font-size: .75rem;
+					margin-right:.5rem;
+					margin-top:.2rem;
+				}
+				& .del-btn{
+					cursor: pointer;
+				}
+				&.radio-label.toggle-style{
+					margin-bottom:0;
+				}
+			}
+			& .file-input-label{
+				font-size: .8rem;
+				padding: .4rem .7rem;
+			}	
+			& .activityLogs{
+
+			}
+		}
+	}
+	
+}
+span.status{
+	font-size: .7rem;
+	padding:.2rem .5rem;
+	@include radius(.3rem);
+	text-transform: uppercase;
+	transition: all linear .3s;
+	&.active,
+	&.successed, 
+	&.completed,
+	&.deposit, 
+	&.ex-released,
+	&.comission,
+	&.revenue,
+	&.resolved, 
+	&.tire3_top,
+	&.flagged,
+	&.active,
+	&.cat-tip,
+	&.normal{
+		background-color: lighten($green, 35%);
+	}
+	&.inactive,
+	&.holding,
+	&.under-review, 
+	&.tire1_basic,
+	&.suspiscious,
+	&.investigating,
+	&.cat-buy,
+	&.high,
+	&.warning{
+		background-color: lighten($yellow, 20%);
+	}
+	&.suspended,
+	&.disputed,
+	&.withdrawal,
+	&.ex-refund,
+	&.failed,
+	&.expenses,
+	&.rejected,
+	&.risk_high,
+	&.type_old,
+	&.unusal-behave,
+	&.critical,
+	&.reported,
+	&.cat-reported{
+		background-color: lighten($red, 35%);
+	}
+	&.pending,
+	&.inprogress, 
+	&.adjustment, 
+	&.tire2_middle,
+	&.review, 
+	&.type_medium,
+	&.fre-dispute,
+	&.risk_medium,
+	&.cat-announce,
+	&.category,
+	&.info-status{
+		background-color: lighten($primary, 35%);
+	}
+	&.cancelled,
+	&.type_new,
+	&.disputed{
+		background-color: lighten($gry, 7%);
+	}
+	&:hover{
+		cursor: pointer;
+	}
+}
+i.xs{
+	font-size: .85rem;
+	margin-right:.2rem;
+}
+.paginate{	
+	justify-content: space-between;
+	&>*{
+		flex: 0 0 auto;
+	}
+	&_left{
+		@include max(767px){
+			margin-top:0;
+			white-space: nowrap;
+			overflow-x:auto;
+			overflow-y:hidden;
+			padding-bottom: 0;
+		}
+	}
+	&_right{
+
+	}
+	margin-top:auto;
+	
+}
+.page-numbers{
+	padding:.7rem;
+	@include radius(.2rem);
+	background-color: lighten($lgry, 20%);
+	line-height: 1;
+	font-size: .75rem;
+	padding:.7rem;
+	color:lighten($bla, 5%);
+	&.current,
+	&:hover{
+		background-color: lighten($secondary, 30%);
+		color:$whi;
+	}
+}
+
+/***** contentDetail has displayed on popup style *****/
+.contentDetail{
+	height: 100%;
+	overflow-y: auto;
+	&_item{
+		justify-content: space-between;
+		transition:all linear .3s;
+		padding:.5rem .7rem;
+		// &:not(:last-of-type){
+		// 	padding-bottom:.5rem;
+		// 	margin-bottom:.5rem;
+		// 	border-bottom:1px dashed lighten($lgry, 20%) 
+		// }
+		&:nth-child(odd){
+			background-color: lighten($gry, 19%);
+		}
+		&:nth-child(even){
+			background-color: lighten($secondary, 55%);
+		}
+		&:hover{
+			cursor: pointer;
+			background-color: lighten($lgry, 22%);
+		}
+		&-name{
+			color:darken($gry, 22%);
+			font-size: .9rem;
+			font-weight: 400;
+		}
+		&-text{
+			color:$bla;
+			font-size:1.1;
+			& .star{
+				font-size:.5rem;
+				&.active{
+					color:lighten($secondary, 30%);
+				}
+			}
+			& img{
+				width:3.5rem;
+				@include radius(.5rem);
+				object-fit: cover;
+			}
+		}
+	}
+}
+
+/***** setting page *****/
+.border_box{
+	border:1px solid lighten($lgry, 10%);
+}
+.accountSetting{
+
+	&_profile{		
+		&-text{
+			grid-gap:.3rem;
+		}
+		&-img{
+			width:5rem;
+			height: 5rem;
+			@include radius(50%);
+			object-fit: cover;
+		}
+		&-name{
+
+		}
+		&-email{
+			font-size: .85rem;
+		}
+	}
+	&_security{
+
+	}
+	&_permission{
+
+	}
+}
+/***** systemSetting *****/
+.systemSetting{
+
+}
+/***** feeSetting *****/
+.feeSetting,
+.systemSetting{
+	&_option{
+
+	}
+	& form{
+		& .form-group{
+			&>*{
+				flex:1;
+			}
+		}
+	}
+}
+/****** notificationSystem *****/
+.small_btn{
+	font-size: .7rem;
+	text-transform: uppercase;
+	align-self: center;
+}
+.notificationSystem{
+	&_box{
+		& label.toggle-style{
+			margin:0;
+		}
+	}
+	& span.notification_alert{
+		padding:.3rem .6rem;
+		border:1px solid lighten($green, 40%);
+		line-height: 1;
+		font-size: .7rem;
+		text-transform: uppercase;
+	}	
+}
+
+
+

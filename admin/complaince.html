@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sewa Exchange: Complaince</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="images/img/favi.png" type="png">
+	
+	<!-- fontawesome -->
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<!-- custom -->
+	<link rel="stylesheet" type="text/css" href="css/admin.css">
+</head>
+<body>	
+
+	<div class="progress-wrapper">
+		<div class="progress-bar"></div>
+	</div>
+
+	<nav class="nav py-1 top_nav">
+		<div class="wrapper-wide df alc gap-3 header-wrap">
+			<a href="dashboard.html" class="logo df alc gap-1">
+				<img src="images/img/logo.png">
+				<h3 class="prime">SewaExchange</h3>
+			</a>
+
+			<form class="search-form header-form">
+				<input type="search" class="br-3" placeholder="search item(s) here....">
+				<i class="fa fa-search"></i>
+			</form>
+
+			<ul class="btn-group action-buttons df gap-2">
+				<!-- these two list will show after login -->					
+				<li class="df sobg br-1 alc">
+					<a class="btn-sm blc db notify-btn" href="javascript:void()">				
+						<i class="fa fa-bell"></i>
+					</a>
+					<a class="btn-sm sec df profile-btn" href="javascript:void()">		
+						<img src="images/img/man.png">
+						<i class="fa fa-chevron-down"></i>
+					</a>
+				</li>
+
+			</ul>
+			
+		</div>
+	</nav>
+
+	<div class="box_on-click notification p-2 br-1">
+		<h4 class="blc box_on-click_title pb-1 df alc">Notifications 
+			<span class="clear">Clear</span>
+		</h4>
+		<ul class="box_on-click_ul dfc">
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Vestibulum ac arcu id libero dignissim mollis sed ut nunc</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Sed cursus nibh molestie, imperdiet urna a, blandit justo</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Morbi auctor odio sed massa semper molestie</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Praesent nec eros sed sem lacinia mattis sit amet in diam</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Aliquam dictum libero id orci laoreet dignissim</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="box_on-click profile_box py-1 px-2 br-1">
+		<h4 class="blc box_on-click_title pb-1 mb-1 df alc">Gopal Nepal</h4>
+		<ul class="box_on-click_ul dfc">
+			<li class="box_on-click_li">
+				<a class="box_on-click_a blc df gap-1 alc p-1" href="#">
+					<i class="fa fa-user-circle"></i>
+					<span>Visit Profile
+					</a>
+				</li>
+				<li class="box_on-click_li">
+					<a class="box_on-click_a blc df gap-1 alc p-1" href="#">
+						<i class="fa fa-sign-out"></i>
+						<span>Logout</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<section class="db">
+			<nav class="nav left_nav p-2">
+				<aside class="mb-1">
+					<h4 class="gr mt-2 hide-on-desktop">MENU</h4>
+					<button class="nav_toggler">
+						<i class="fa fa-bars toggler"></i>				   
+					</button>
+					<button class="close-menu">
+						<i class="fa fa-times toggler"></i>				   
+					</button>
+				</aside>
+
+				<ul class="nav_ul dfc">
+					<li class="nav_li">
+						<a href="dashboard.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-dashboard homeicon"></i>
+							<h6>Dashboard</h6>
+						</a>
+					</li>
+
+					<li class="nav_li">
+						<a href="users.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-users"></i>
+							<h6>Users</h6>
+						</a>
+					</li>
+
+					<li class="nav_li">
+						<a href="agents.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-user-secret"></i>
+							<h6>Agents</h6>
+						</a>
+					</li>
+
+					<li class="nav_li">
+						<a href="exchange.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-exchange"></i>
+							<h6>Exchanges</h6>
+						</a>
+					</li>
+
+					<li class="nav_li">
+						<a href="wallet_system.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-wallet"></i>
+							<h6>Wallet System</h6>
+						</a>
+					</li>
+
+					<li class="nav_li">
+						<a href="finance.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-money-bill"></i>
+							<h6>Finance</h6>
+						</a>
+					</li>
+
+					<hr class="my-2">
+
+					<li class="nav_li">
+						<a href="dispute.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-vcard"></i>
+							<h6>Disputes</h6>
+						</a>
+					</li>
+
+					<li class="nav_li">
+						<a href="trust_system.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-clipboard-check"></i>
+							<h6>Trust System</h6>
+						</a>
+					</li>
+					<li class="nav_li">
+						<a href="analytics.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-chart-column"></i>
+							<h6>Analytics</h6>
+						</a>
+					</li>
+					<li class="nav_li active">
+						<a href="complaince.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-shield"></i>
+							<h6>Complaince</h6>
+						</a>
+					</li>
+					<li class="nav_li">
+						<a href="community.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-people-group"></i>
+							<h6>Community</h6>
+						</a>
+					</li>
+					<li class="nav_li">
+						<a href="settings.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-cogs"></i>
+							<h6>Settings</h6>
+						</a>
+					</li>
+
+				</ul>
+
+			</nav>
+			<!-- end menu_wrap -->
+
+			<div class="content">
+				<div class="content_page complainceSystem dg col12 p-2 gap-1">
+
+					<div class="content_page-btnSection colg-12 df gap-2 pb-1">
+						<h4 class="prime">Complaince Management</h4>
+						<div class="content_page-btnSection_btnGroup df gap-1">							
+							<a class="btn btn-xs btn-dim-br df alc" href="#">
+								<i class="fa fa-file-download"></i>
+								Export Report
+							</a>
+						</div>
+					</div>
+
+					<div class="info colg-12 dg col12 gap-2 pb-1">
+
+						<div class="info_box colg-3 df gap-1 p-1 br-1">
+							<i class="fa fa-id-card-clip gre"></i>
+							<figcaption class="dfc">
+								<h5 class="gre">755</h5>
+								<p class="p2 df ">Kyc Verified Users 
+									<span class="gre ml-1">
+										<i class="fa fa-chevron-up up-arrow"></i>
+									8.5%
+									</span>
+								</p>
+							</figcaption>
+						</div>
+
+						<div class="info_box colg-3 df gap-1 p-1 br-1">
+							<i class="fa fa-concierge-bell sec"></i>
+							<figcaption class="dfc">
+								<h5 class="sec">18</h5>
+								<p class="p2 df ">Alert Tiggered 
+									<span class="prime ml-1">
+										<i class="fa fa-chevron-up up-arrow"></i>
+									6.5%
+									</span>
+								</p>
+							</figcaption>
+						</div>
+
+						<div class="info_box colg-3 df gap-1 p-1 br-1">
+							<i class="fa fa-file-word prime"></i>
+							<figcaption class="dfc">
+								<h5 class="prime">7</h5>
+								<p class="p2 df ">Pending Reports 
+									<span class="sec ml-1">
+										<i class="fa fa-chevron-up up-arrow"></i>
+									9.2%
+									</span>
+								</p>
+							</figcaption>
+						</div>
+						<div class="info_box colg-3 df gap-1 p-1 br-1">
+							<i class="fa fa-exclamation-triangle re"></i>
+							<figcaption class="dfc">
+								<h5 class="re">2</h5>
+								<p class="p2 df ">Snactioned Users 
+									<span class="yel ml-1">
+										<i class="fa fa-chevron-up up-arrow"></i>
+									6.0%
+									</span>
+								</p>
+							</figcaption>
+						</div>
+
+					</div>
+
+					<div class="tab-wrap colg-12">
+						<ul class="tab-menu">
+							<li class="tab-item">
+								<a href="#ca" class="tab-link">Complaince Alerts</a>
+							</li>
+							<li class="tab-item">
+								<a href="#aml" class="tab-link">Anti-Money Loundaring</a>
+							</li>
+							<li class="tab-item">
+								<a href="#km" class="tab-link">KYC Monitoring</a>
+							</li>
+							<li class="tab-item">
+								<a href="#sa" class="tab-link">Suspiscious Activities</a>
+							</li>
+							<li class="tab-item">
+								<a href="#sl" class="tab-link">Sanctions List</a>
+							</li>
+						</ul>
+						<aside id="ca" class="tab-content colg-12 dg col12">
+							<div class="colg-12 dg col12 gap-2 pb-1 complainceAlerts">
+								<form class="form colg-12 col15 gap-2" action="">
+
+									<div class="colg-3 form-group df gap-1 alc">
+										<select class="content_page-top_select">
+											<option>All Alert Types</option>
+											<option>Type one</option>
+											<option>Type two</option>
+										</select>
+									</div>	
+
+									<div class="colg-3 form-group df gap-1 alc">
+										<select class="content_page-top_select">
+											<option>All Statues</option>
+											<option>Status one</option>
+											<option>Status two</option>
+										</select>
+									</div>
+									<div class="colg-3 form-group df gap-1 alc">
+										<select class="content_page-top_select">
+											<option>All Actions Required</option>
+											<option>Action One</option>
+											<option>Action Two</option>
+										</select>
+									</div>
+									<div class="colg-3 form-group df gap-1 alc">
+										<select class="content_page-top_select">
+											<option>All Risks</option>
+											<option>Risk One</option>
+											<option>Risk Two</option>
+										</select>
+									</div>
+
+									<div class="colg-3 form-group search-form inside-form df gap-1 alc">
+										<input type="date" class="btn-gray-br" placeholder="select time range....">
+										<!-- <i class="fa fa-search"></i> -->
+									</div>
+								</form>
+							</div>
+
+							<div class="colg-12 table-wrap dg col12">
+								<table class="colg-12" class="colg-12">
+									<thead>
+										<tr>
+											<th>ID</th>
+											<th>Issue ID</th>
+											<th>Date</th>
+											<th>User/Email</th>
+											<th>Alert Type</th>
+											<th>Risk</th>
+											<th>Status</th>
+											<th>Action Required</th>
+											<th>Details</th>
+											<th>Action(s)</th>
+										</tr>
+									</thead>
+									<tbody>
+
+										<tr>
+											<td>1</td>
+											<td>25345</td>
+											<td>06/02/2026</td>
+											<td>
+												<aside class="df">
+													<img src="images/img/man.png">
+													<figcaption class="dfc gap-sm">
+														<span class="name">Nabin Sitaula</span>
+														<span class="email">sitaula@gmail.com</span>
+													</figcaption>
+												</aside>
+											</td>
+											<td>
+												<span class="blc br-1 status suspiscious">Suspiscious Device</span>
+											</td>
+											<td>
+												<span class="blc br-1 status risk_high">High</span>
+											</td>
+											<td>
+												<span class="blc br-1 status type_new">New</span>
+											</td>
+											<td>
+												<span class="blc br-1 status review">Review</span>
+											</td>
+											<td>Device change to new location</td>
+											<td>
+												<aside class="df">
+													<a class="btn view-btn" href="#">View</a>
+												</aside>
+											</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>25346</td>
+											<td>07/02/2026</td>
+											<td>
+												<aside class="df">
+													<img src="images/img/man2.jpg">
+													<figcaption class="dfc gap-sm">
+														<span class="name">Nabin Dhamala</span>
+														<span class="email">dhamala@gmail.com</span>
+													</figcaption>
+												</aside>
+											</td>
+											<td>
+												<span class="blc br-1 status suspiscious">Large Transcation</span>
+											</td>
+											<td>
+												<span class="blc br-1 status risk_high">High</span>
+											</td>
+											<td>
+												<span class="blc br-1 status type_medium">Medium</span>
+											</td>
+											<td>
+												<span class="blc br-1 status investigating">Investigating</span>
+											</td>
+											<td>Rs.1,10.000 From Narayan Sapkota</td>
+											<td>
+												<aside class="df">
+													<a class="btn view-btn" href="#">View</a>
+												</aside>
+											</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>25348</td>
+											<td>07/02/2026</td>
+											<td>
+												<aside class="df">
+													<img src="images/img/man.png">
+													<figcaption class="dfc gap-sm">
+														<span class="name">Dharmendra Bista</span>
+														<span class="email">bista-dharm@gmail.com</span>
+													</figcaption>
+												</aside>
+											</td>
+											<td>
+												<span class="blc br-1 status fre-dispute">Frequent Dispute</span>
+											</td>
+											<td>
+												<span class="blc br-1 status risk_medium">Medium</span>
+											</td>
+											<td>
+												<span class="blc br-1 status type_old">Old</span>
+											</td>
+											<td>
+												<span class="blc br-1 status flagged">Flagged</span>
+											</td>
+											<td>3 disputes in 3 days.</td>
+											<td>
+												<aside class="df">
+													<a class="btn view-btn" href="#">View</a>
+												</aside>
+											</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>25348</td>
+											<td>07/02/2026</td>
+											<td>
+												<aside class="df">
+													<img src="images/img/man2.jpg">
+													<figcaption class="dfc gap-sm">
+														<span class="name">Purna Chauhan</span>
+														<span class="email">chauhan-bista@gmail.com</span>
+													</figcaption>
+												</aside>
+											</td>
+											<td>
+												<span class="blc br-1 status unusal-behave">Unusal Behaviour</span>
+											</td>
+											<td>
+												<span class="blc br-1 status critical">Critical</span>
+											</td>
+											<td>
+												<span class="blc br-1 status type_new">New</span>
+											</td>
+											<td>
+												<span class="blc br-1 status review">Review</span>
+											</td>
+											<td>Login attempts from multiple IP addresses.</td>
+											<td>
+												<aside class="df">
+													<a class="btn view-btn" href="#">View</a>
+												</aside>
+											</td>
+										</tr>
+										<tr>
+											<td>5</td>
+											<td>25345</td>
+											<td>06/02/2026</td>
+											<td>
+												<aside class="df">
+													<img src="images/img/man.png">
+													<figcaption class="dfc gap-sm">
+														<span class="name">Nabin Sitaula</span>
+														<span class="email">sitaula@gmail.com</span>
+													</figcaption>
+												</aside>
+											</td>
+											<td>
+												<span class="blc br-1 status suspiscious">Suspiscious Device</span>
+											</td>
+											<td>
+												<span class="blc br-1 status risk_high">High</span>
+											</td>
+											<td>
+												<span class="blc br-1 status type_new">New</span>
+											</td>
+											<td>
+												<span class="blc br-1 status review">Review</span>
+											</td>
+											<td>Device change to new location</td>
+											<td>
+												<aside class="df">
+													<a class="btn view-btn" href="#">View</a>
+												</aside>
+											</td>
+										</tr>
+										<tr>
+											<td>6</td>
+											<td>25346</td>
+											<td>07/02/2026</td>
+											<td>
+												<aside class="df">
+													<img src="images/img/man2.jpg">
+													<figcaption class="dfc gap-sm">
+														<span class="name">Nabin Dhamala</span>
+														<span class="email">dhamala@gmail.com</span>
+													</figcaption>
+												</aside>
+											</td>
+											<td>
+												<span class="blc br-1 status suspiscious">Large Transcation</span>
+											</td>
+											<td>
+												<span class="blc br-1 status risk_high">High</span>
+											</td>
+											<td>
+												<span class="blc br-1 status type_medium">Medium</span>
+											</td>
+											<td>
+												<span class="blc br-1 status investigating">Investigating</span>
+											</td>
+											<td>Rs.1,10.000 From Narayan Sapkota</td>
+											<td>
+												<aside class="df">
+													<a class="btn view-btn" href="#">View</a>
+												</aside>
+											</td>
+										</tr>
+										<tr>
+											<td>7</td>
+											<td>25348</td>
+											<td>07/02/2026</td>
+											<td>
+												<aside class="df">
+													<img src="images/img/man.png">
+													<figcaption class="dfc gap-sm">
+														<span class="name">Dharmendra Bista</span>
+														<span class="email">bista-dharm@gmail.com</span>
+													</figcaption>
+												</aside>
+											</td>
+											<td>
+												<span class="blc br-1 status fre-dispute">Frequent Dispute</span>
+											</td>
+											<td>
+												<span class="blc br-1 status risk_medium">Medium</span>
+											</td>
+											<td>
+												<span class="blc br-1 status type_old">Old</span>
+											</td>
+											<td>
+												<span class="blc br-1 status flagged">Flagged</span>
+											</td>
+											<td>3 disputes in 3 days.</td>
+											<td>
+												<aside class="df">
+													<a class="btn view-btn" href="#">View</a>
+												</aside>
+											</td>
+										</tr>
+										<tr>
+											<td>8</td>
+											<td>25348</td>
+											<td>07/02/2026</td>
+											<td>
+												<aside class="df">
+													<img src="images/img/man2.jpg">
+													<figcaption class="dfc gap-sm">
+														<span class="name">Purna Chauhan</span>
+														<span class="email">chauhan-bista@gmail.com</span>
+													</figcaption>
+												</aside>
+											</td>
+											<td>
+												<span class="blc br-1 status unusal-behave">Unusal Behaviour</span>
+											</td>
+											<td>
+												<span class="blc br-1 status critical">Critical</span>
+											</td>
+											<td>
+												<span class="blc br-1 status type_new">New</span>
+											</td>
+											<td>
+												<span class="blc br-1 status review">Review</span>
+											</td>
+											<td>Login attempts from multiple IP addresses.</td>
+											<td>
+												<aside class="df">
+													<a class="btn view-btn" href="#">View</a>
+												</aside>
+											</td>
+										</tr>
+										<tr>
+											<td>9</td>
+											<td>25345</td>
+											<td>06/02/2026</td>
+											<td>
+												<aside class="df">
+													<img src="images/img/man.png">
+													<figcaption class="dfc gap-sm">
+														<span class="name">Nabin Sitaula</span>
+														<span class="email">sitaula@gmail.com</span>
+													</figcaption>
+												</aside>
+											</td>
+											<td>
+												<span class="blc br-1 status suspiscious">Suspiscious Device</span>
+											</td>
+											<td>
+												<span class="blc br-1 status risk_high">High</span>
+											</td>
+											<td>
+												<span class="blc br-1 status type_new">New</span>
+											</td>
+											<td>
+												<span class="blc br-1 status review">Review</span>
+											</td>
+											<td>Device change to new location</td>
+											<td>
+												<aside class="df">
+													<a class="btn view-btn" href="#">View</a>
+												</aside>
+											</td>
+										</tr>
+										<tr>
+											<td>10</td>
+											<td>25346</td>
+											<td>07/02/2026</td>
+											<td>
+												<aside class="df">
+													<img src="images/img/man2.jpg">
+													<figcaption class="dfc gap-sm">
+														<span class="name">Nabin Dhamala</span>
+														<span class="email">dhamala@gmail.com</span>
+													</figcaption>
+												</aside>
+											</td>
+											<td>
+												<span class="blc br-1 status suspiscious">Large Transcation</span>
+											</td>
+											<td>
+												<span class="blc br-1 status risk_high">High</span>
+											</td>
+											<td>
+												<span class="blc br-1 status type_medium">Medium</span>
+											</td>
+											<td>
+												<span class="blc br-1 status investigating">Investigating</span>
+											</td>
+											<td>Rs.1,10.000 From Narayan Sapkota</td>
+											<td>
+												<aside class="df">
+													<a class="btn view-btn" href="#">View</a>
+												</aside>
+											</td>
+										</tr>
+										<tr>
+											<td>11</td>
+											<td>25348</td>
+											<td>07/02/2026</td>
+											<td>
+												<aside class="df">
+													<img src="images/img/man.png">
+													<figcaption class="dfc gap-sm">
+														<span class="name">Dharmendra Bista</span>
+														<span class="email">bista-dharm@gmail.com</span>
+													</figcaption>
+												</aside>
+											</td>
+											<td>
+												<span class="blc br-1 status fre-dispute">Frequent Dispute</span>
+											</td>
+											<td>
+												<span class="blc br-1 status risk_medium">Medium</span>
+											</td>
+											<td>
+												<span class="blc br-1 status type_old">Old</span>
+											</td>
+											<td>
+												<span class="blc br-1 status flagged">Flagged</span>
+											</td>
+											<td>3 disputes in 3 days.</td>
+											<td>
+												<aside class="df">
+													<a class="btn view-btn" href="#">View</a>
+												</aside>
+											</td>
+										</tr>
+										<tr>
+											<td>12</td>
+											<td>25348</td>
+											<td>07/02/2026</td>
+											<td>
+												<aside class="df">
+													<img src="images/img/man2.jpg">
+													<figcaption class="dfc gap-sm">
+														<span class="name">Purna Chauhan</span>
+														<span class="email">chauhan-bista@gmail.com</span>
+													</figcaption>
+												</aside>
+											</td>
+											<td>
+												<span class="blc br-1 status unusal-behave">Unusal Behaviour</span>
+											</td>
+											<td>
+												<span class="blc br-1 status critical">Critical</span>
+											</td>
+											<td>
+												<span class="blc br-1 status type_new">New</span>
+											</td>
+											<td>
+												<span class="blc br-1 status review">Review</span>
+											</td>
+											<td>Login attempts from multiple IP addresses.</td>
+											<td>
+												<aside class="df">
+													<a class="btn view-btn" href="#">View</a>
+												</aside>
+											</td>
+										</tr>
+										<tr>
+											<td>12</td>
+											<td>25348</td>
+											<td>07/02/2026</td>
+											<td>
+												<aside class="df">
+													<img src="images/img/man.png">
+													<figcaption class="dfc gap-sm">
+														<span class="name">Dharmendra Bista</span>
+														<span class="email">bista-dharm@gmail.com</span>
+													</figcaption>
+												</aside>
+											</td>
+											<td>
+												<span class="blc br-1 status fre-dispute">Frequent Dispute</span>
+											</td>
+											<td>
+												<span class="blc br-1 status risk_medium">Medium</span>
+											</td>
+											<td>
+												<span class="blc br-1 status type_old">Old</span>
+											</td>
+											<td>
+												<span class="blc br-1 status flagged">Flagged</span>
+											</td>
+											<td>3 disputes in 3 days.</td>
+											<td>
+												<aside class="df">
+													<a class="btn view-btn" href="#">View</a>
+												</aside>
+											</td>
+										</tr>
+										
+									</tbody>
+								</table>
+
+							</div>
+
+							<div class="mt-1 colg-12 alc paginate df gap-2">
+								<aside class="paginate_left df gap-1">
+									<a class="page-numbers" href="#">First</a>
+									<a class="prev page-numbers" href="#">&lt;</a>
+									<span aria-current="page" class="page-numbers current">2</span>					
+									<span aria-current="page" class="page-numbers count">of</span>	
+									<a class="next page-numbers" href="#">&gt;</a>					
+									<a class="page-numbers" href="#">18</a>
+								</aside>
+								<aside class="paginate_right df">
+									<p class="p2">Showing 
+										<strong class="blc">5</strong>
+										of 
+										<strong class="blc">3,25</strong>
+									</p>
+								</aside>
+							</div>	
+
+						</aside>
+						<!-- end ts -->
+						<aside id="aml" class="tab-content colg-12 dg col12">
+							<div class="colg-12 dg col12 gap-2 pb-1 complainceAlerts">
+								<form class="form colg-12 col15 gap-2" action="">
+
+									<div class="colg-3 form-group df gap-1 alc">
+										<select class="content_page-top_select">
+											<option>All Alert Types</option>
+											<option>Type one</option>
+											<option>Type two</option>
+										</select>
+									</div>	
+
+									<div class="colg-3 form-group df gap-1 alc">
+										<select class="content_page-top_select">
+											<option>All Statues</option>
+											<option>Status one</option>
+											<option>Status two</option>
+										</select>
+									</div>
+									<div class="colg-3 form-group df gap-1 alc">
+										<select class="content_page-top_select">
+											<option>All Actions Required</option>
+											<option>Action One</option>
+											<option>Action Two</option>
+										</select>
+									</div>
+									<div class="colg-3 form-group df gap-1 alc">
+										<select class="content_page-top_select">
+											<option>All Risks</option>
+											<option>Risk One</option>
+											<option>Risk Two</option>
+										</select>
+									</div>
+
+									<div class="colg-3 form-group search-form inside-form df gap-1 alc">
+										<input type="date" class="btn-gray-br" placeholder="select time range....">
+										<!-- <i class="fa fa-search"></i> -->
+									</div>
+								</form>
+							</div>
+							<div class="colg-12 table-wrap dg col12">
+								<table class="colg-12">
+									<thead>
+										<tr>
+											<th>ID</th>
+											<th>Issue ID</th>
+											<th>Date</th>
+											<th>User/Email</th>
+											<th>Alert Type</th>
+											<th>Risk</th>
+											<th>Status</th>
+											<th>Action Required</th>
+											<th>Details</th>
+											<th>Action(s)</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>25348</td>
+											<td>07/02/2026</td>
+											<td>
+												<aside class="df">
+													<img src="images/img/man.png">
+													<figcaption class="dfc gap-sm">
+														<span class="name">Dharmendra Bista</span>
+														<span class="email">bista-dharm@gmail.com</span>
+													</figcaption>
+												</aside>
+											</td>
+											<td>
+												<span class="blc br-1 status fre-dispute">Frequent Dispute</span>
+											</td>
+											<td>
+												<span class="blc br-1 status risk_medium">Medium</span>
+											</td>
+											<td>
+												<span class="blc br-1 status type_old">Old</span>
+											</td>
+											<td>
+												<span class="blc br-1 status flagged">Flagged</span>
+											</td>
+											<td>3 disputes in 3 days.</td>
+											<td>
+												<aside class="df">
+													<a class="btn view-btn" href="#">View</a>
+												</aside>
+											</td>
+										</tr>	
+									</tbody>
+								</table>
+							</div>
+							<div class="mt-1 colg-12 alc paginate df gap-2">
+								<aside class="paginate_left df gap-1">
+									<a class="page-numbers" href="#">First</a>
+									<a class="prev page-numbers" href="#">&lt;</a>
+									<span aria-current="page" class="page-numbers current">2</span>					
+									<span aria-current="page" class="page-numbers count">of</span>	
+									<a class="next page-numbers" href="#">&gt;</a>					
+									<a class="page-numbers" href="#">18</a>
+								</aside>
+								<aside class="paginate_right df">
+									<p class="p2">Showing 
+										<strong class="blc">5</strong>
+										of 
+										<strong class="blc">3,25</strong>
+									</p>
+								</aside>
+							</div>	
+
+						</aside>
+						<!-- end si -->
+						<aside id="km" class="tab-content colg-12 dg col12">
+							<div class="colg-12 dg col12 gap-2 pb-1 complainceAlerts">
+								<form class="form colg-12 col15 gap-2" action="">
+
+									<div class="colg-3 form-group df gap-1 alc">
+										<select class="content_page-top_select">
+											<option>All Alert Types</option>
+											<option>Type one</option>
+											<option>Type two</option>
+										</select>
+									</div>	
+
+									<div class="colg-3 form-group df gap-1 alc">
+										<select class="content_page-top_select">
+											<option>All Statues</option>
+											<option>Status one</option>
+											<option>Status two</option>
+										</select>
+									</div>
+									<div class="colg-3 form-group df gap-1 alc">
+										<select class="content_page-top_select">
+											<option>All Actions Required</option>
+											<option>Action One</option>
+											<option>Action Two</option>
+										</select>
+									</div>
+									<div class="colg-3 form-group df gap-1 alc">
+										<select class="content_page-top_select">
+											<option>All Risks</option>
+											<option>Risk One</option>
+											<option>Risk Two</option>
+										</select>
+									</div>
+
+									<div class="colg-3 form-group search-form inside-form df gap-1 alc">
+										<input type="date" class="btn-gray-br" placeholder="select time range....">
+										<!-- <i class="fa fa-search"></i> -->
+									</div>
+								</form>
+							</div>
+							<div class="colg-12 table-wrap dg col12">
+								<table class="colg-12">
+									<thead>
+										<tr>
+											<th>ID</th>
+											<th>Issue ID</th>
+											<th>Date</th>
+											<th>User/Email</th>
+											<th>Alert Type</th>
+											<th>Risk</th>
+											<th>Status</th>
+											<th>Action Required</th>
+											<th>Details</th>
+											<th>Action(s)</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>25348</td>
+											<td>07/02/2026</td>
+											<td>
+												<aside class="df">
+													<img src="images/img/man.png">
+													<figcaption class="dfc gap-sm">
+														<span class="name">Birendra Agrawal</span>
+														<span class="email">pal-naren@gmail.com</span>
+													</figcaption>
+												</aside>
+											</td>
+											<td>
+												<span class="blc br-1 status fre-dispute">Frequent Dispute</span>
+											</td>
+											<td>
+												<span class="blc br-1 status risk_medium">Medium</span>
+											</td>
+											<td>
+												<span class="blc br-1 status type_old">Old</span>
+											</td>
+											<td>
+												<span class="blc br-1 status flagged">Flagged</span>
+											</td>
+											<td>3 disputes in 3 days.</td>
+											<td>
+												<aside class="df">
+													<a class="btn view-btn" href="#">View</a>
+												</aside>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="mt-1 colg-12 alc paginate df gap-2">
+								<aside class="paginate_left df gap-1">
+									<a class="page-numbers" href="#">First</a>
+									<a class="prev page-numbers" href="#">&lt;</a>
+									<span aria-current="page" class="page-numbers current">2</span>					
+									<span aria-current="page" class="page-numbers count">of</span>	
+									<a class="next page-numbers" href="#">&gt;</a>					
+									<a class="page-numbers" href="#">18</a>
+								</aside>
+								<aside class="paginate_right df">
+									<p class="p2">Showing 
+										<strong class="blc">5</strong>
+										of 
+										<strong class="blc">3,25</strong>
+									</p>
+								</aside>
+							</div>	
+
+						</aside>
+						<!-- end ta -->
+						<aside id="sa" class="tab-content colg-12 dg col12">
+							<div class="colg-12 dg col12 gap-2 pb-1 complainceAlerts">
+								<form class="form colg-12 col15 gap-2" action="">
+
+									<div class="colg-3 form-group df gap-1 alc">
+										<select class="content_page-top_select">
+											<option>All Alert Types</option>
+											<option>Type one</option>
+											<option>Type two</option>
+										</select>
+									</div>	
+
+									<div class="colg-3 form-group df gap-1 alc">
+										<select class="content_page-top_select">
+											<option>All Statues</option>
+											<option>Status one</option>
+											<option>Status two</option>
+										</select>
+									</div>
+									<div class="colg-3 form-group df gap-1 alc">
+										<select class="content_page-top_select">
+											<option>All Actions Required</option>
+											<option>Action One</option>
+											<option>Action Two</option>
+										</select>
+									</div>
+									<div class="colg-3 form-group df gap-1 alc">
+										<select class="content_page-top_select">
+											<option>All Risks</option>
+											<option>Risk One</option>
+											<option>Risk Two</option>
+										</select>
+									</div>
+
+									<div class="colg-3 form-group search-form inside-form df gap-1 alc">
+										<input type="date" class="btn-gray-br" placeholder="select time range....">
+										<!-- <i class="fa fa-search"></i> -->
+									</div>
+								</form>
+							</div>
+							<div class="colg-12 table-wrap dg col12">
+								<table class="colg-12">
+									<thead>
+										<tr>
+											<th>ID</th>
+											<th>Issue ID</th>
+											<th>Date</th>
+											<th>User/Email</th>
+											<th>Alert Type</th>
+											<th>Risk</th>
+											<th>Status</th>
+											<th>Action Required</th>
+											<th>Details</th>
+											<th>Action(s)</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>2</td>
+											<td>25348</td>
+											<td>07/02/2026</td>
+											<td>
+												<aside class="df">
+													<img src="images/img/man.png">
+													<figcaption class="dfc gap-sm">
+														<span class="name">BirSingh Kafle</span>
+														<span class="email">pal-naren@gmail.com</span>
+													</figcaption>
+												</aside>
+											</td>
+											<td>
+												<span class="blc br-1 status fre-dispute">Frequent Dispute</span>
+											</td>
+											<td>
+												<span class="blc br-1 status risk_medium">Medium</span>
+											</td>
+											<td>
+												<span class="blc br-1 status type_old">Old</span>
+											</td>
+											<td>
+												<span class="blc br-1 status flagged">Flagged</span>
+											</td>
+											<td>3 disputes in 3 days.</td>
+											<td>
+												<aside class="df">
+													<a class="btn view-btn" href="#">View</a>
+												</aside>
+											</td>
+										</tr>	
+									</tbody>
+								</table>
+							</div>
+							<div class="mt-1 colg-12 alc paginate df gap-2">
+								<aside class="paginate_left df gap-1">
+									<a class="page-numbers" href="#">First</a>
+									<a class="prev page-numbers" href="#">&lt;</a>
+									<span aria-current="page" class="page-numbers current">2</span>					
+									<span aria-current="page" class="page-numbers count">of</span>	
+									<a class="next page-numbers" href="#">&gt;</a>					
+									<a class="page-numbers" href="#">18</a>
+								</aside>
+								<aside class="paginate_right df">
+									<p class="p2">Showing 
+										<strong class="blc">5</strong>
+										of 
+										<strong class="blc">3,25</strong>
+									</p>
+								</aside>
+							</div>
+
+						</aside>
+
+						<aside id="sl" class="tab-content colg-12 dg col12">
+							<div class="colg-12 dg col12 gap-2 pb-1 complainceAlerts">
+								<form class="form colg-12 col15 gap-2" action="">
+
+									<div class="colg-3 form-group df gap-1 alc">
+										<select class="content_page-top_select">
+											<option>All Alert Types</option>
+											<option>Type one</option>
+											<option>Type two</option>
+										</select>
+									</div>	
+
+									<div class="colg-3 form-group df gap-1 alc">
+										<select class="content_page-top_select">
+											<option>All Statues</option>
+											<option>Status one</option>
+											<option>Status two</option>
+										</select>
+									</div>
+									<div class="colg-3 form-group df gap-1 alc">
+										<select class="content_page-top_select">
+											<option>All Actions Required</option>
+											<option>Action One</option>
+											<option>Action Two</option>
+										</select>
+									</div>
+									<div class="colg-3 form-group df gap-1 alc">
+										<select class="content_page-top_select">
+											<option>All Risks</option>
+											<option>Risk One</option>
+											<option>Risk Two</option>
+										</select>
+									</div>
+
+									<div class="colg-3 form-group search-form inside-form df gap-1 alc">
+										<input type="date" class="btn-gray-br" placeholder="select time range....">
+										<!-- <i class="fa fa-search"></i> -->
+									</div>
+								</form>
+							</div>
+							<div class="colg-12 table-wrap dg col12">
+								<table class="colg-12">
+									<thead>
+										<tr>
+											<th>ID</th>
+											<th>Issue ID</th>
+											<th>Date</th>
+											<th>User/Email</th>
+											<th>Alert Type</th>
+											<th>Risk</th>
+											<th>Status</th>
+											<th>Action Required</th>
+											<th>Details</th>
+											<th>Action(s)</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>25348</td>
+											<td>07/02/2026</td>
+											<td>
+												<aside class="df">
+													<img src="images/img/man.png">
+													<figcaption class="dfc gap-sm">
+														<span class="name">RatnaMohan Karanjit</span>
+														<span class="email">pal-naren@gmail.com</span>
+													</figcaption>
+												</aside>
+											</td>
+											<td>
+												<span class="blc br-1 status fre-dispute">Frequent Dispute</span>
+											</td>
+											<td>
+												<span class="blc br-1 status risk_medium">Medium</span>
+											</td>
+											<td>
+												<span class="blc br-1 status type_old">Old</span>
+											</td>
+											<td>
+												<span class="blc br-1 status flagged">Flagged</span>
+											</td>
+											<td>3 disputes in 3 days.</td>
+											<td>
+												<aside class="df">
+													<a class="btn view-btn" href="#">View</a>
+												</aside>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="mt-1 colg-12 alc paginate df gap-2">
+								<aside class="paginate_left df gap-1">
+									<a class="page-numbers" href="#">First</a>
+									<a class="prev page-numbers" href="#">&lt;</a>
+									<span aria-current="page" class="page-numbers current">2</span>					
+									<span aria-current="page" class="page-numbers count">of</span>	
+									<a class="next page-numbers" href="#">&gt;</a>					
+									<a class="page-numbers" href="#">18</a>
+								</aside>
+								<aside class="paginate_right df">
+									<p class="p2">Showing 
+										<strong class="blc">5</strong>
+										of 
+										<strong class="blc">3,25</strong>
+									</p>
+								</aside>
+							</div>
+
+						</aside>
+					</div>	
+					<!-- end tab-wrap -->
+
+					<div class="colg-12 dg col12 gap-2 info">
+						<div class="colg-6 dg col12 p-1 info_box br-1 gap-1">
+							<ul class="info_ul colg-12 df gap-1">
+								<li class="info_li p-1 br-1 df alc sobg fw-normal">
+									<i class="fa fa-file-text gre xs"></i>
+									Reports
+									<h6 class="gre">7</h6>
+								</li>
+								<li class="info_li p-1 br-1 df alc sobg fw-normal">
+									<i class="fa fa-file-text prime xs"></i>
+									Under-Review
+									<h6 class="prime">5</h6>
+								</li>
+								<li class="info_li p-1 br-1 df alc sobg fw-normal">
+									<i class="fa fa-warning yel xs"></i>
+									Suspiscious Activities
+									<h6 class="yel">9</h6>
+								</li>
+								<li class="info_li p-1 br-1 df alc sobg fw-normal">
+									<i class="fa fa-user-lock re xs"></i>
+									High Risk Users
+									<h6 class="re">5</h6>
+								</li>								
+							</ul>
+						</div>
+						<div class="colg-6 dg col12 p-1 info_box br-1 gap-1">
+							<h5 class="prime colg-12">Pending Complaince Report</h5>
+							<div class="colg-12 table-wrap dg col12 colg-12">
+								<table class="colg-12">
+									<thead>
+										<tr>
+											<th>Issue ID</th>
+											<th>Date</th>
+											<th>Type</th>
+											<th>User</th>											
+											<th>Action</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>45261</td>
+											<td>2026/02/06</td>
+											<td>Fraud</td>
+											<td>Trilochan Karki</td>
+											<td>
+												<aside class="df">
+													<a class="btn view-btn" href="#">View</a>
+												</aside>
+											</td>											
+										</tr>
+										<tr>
+											<td>45265</td>
+											<td>2026/02/03</td>
+											<td>SAR</td>
+											<td>Nasika Newar</td>
+											<td>
+												<aside class="df">
+													<a class="btn view-btn" href="#">View</a>
+												</aside>
+											</td>											
+										</tr>
+										<tr>
+											<td>45269</td>
+											<td>2026/02/01</td>
+											<td>Fraud</td>
+											<td>Saroj Khatri</td>
+											<td>
+												<aside class="df">
+													<a class="btn view-btn" href="#">View</a>
+												</aside>
+											</td>											
+										</tr>
+										
+										
+									</tbody>
+								</table>								
+							</div>
+														
+						</div>
+					</div>
+
+				</div>
+
+				<footer class="footer p-1 sobg">
+					<ul class="footer_ul df gap-2 alc">
+						<li class="footer_li df alc">
+							<i class="fa fa-lock"></i>
+							<a class="footer_a blc" href="#">Secure Platform</a>
+						</li>
+						<li class="footer_li df alc">
+							<i class="fa fa-people-group"></i>
+							<a class="footer_a blc" href="#">Trusted Community</a>
+						</li>
+						<li class="footer_li df alc">
+							<i class="fa fa-wallet"></i>
+							<a class="footer_a blc" href="#">Wallet Protected</a>
+						</li>
+						<li class="footer_li df alc">
+							<i class="fa fa-check-circle"></i>
+							<a class="footer_a blc" href="#">Verified System</a>
+						</li>					
+						<li class="footer_li df alc">
+							<i class="fa fa-money-bill-wheat"></i>
+							<a class="footer_a blc" href="#">Community Economy</a>
+						</li>					
+					</ul>
+				</footer>
+
+			</div>
+			<!-- end content -->
+
+		</section>
+
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/main.js"></script>		
+
+	</body>
+	</html>

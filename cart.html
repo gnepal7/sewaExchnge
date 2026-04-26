@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sewa Exchange</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="images/img/favi.png" type="png">
+	
+	<!-- fontawesome -->
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<!-- owl -->
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+
+	<!-- custom -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>	
+
+	<div class="progress-wrapper">
+		<div class="progress-bar"></div>
+	</div>
+
+	<nav class="nav py-1">
+		<div class="wrapper-wide dg col12 gap-3 header-wrap">
+			<div class="colg-2">
+				<a href="index.html" class="logo">
+					<img src="images/img/logo.png">
+				</a>
+			</div>
+
+			<div class="colg-4 search-wrap">
+				<form class="search-form">
+					<input type="search" placeholder="search item(s) here....">
+					<i class="fa fa-search"></i>
+				</form>
+			</div>
+
+			<div class="colg-6">
+				<ul class="btn-group action-buttons df gap-2">
+					<li class="action-buttons_add">
+						<a class="btn-sm btn-main-br  prime df gap-1" href="addPost.html">
+							<i class="fa fa-plus"></i>
+							<span>Add Item</span>
+						</a>
+					</li>
+					<!-- these two list will show before login -->
+					<li>
+						<a class="btn-sm btn-lw-bg sec db" href="login.html">							
+							Login
+						</a>
+					</li>
+					<li>
+						<a class="btn-sm btn-dim-bg prime db" href="signup.html">							
+							signup
+						</a>
+					</li>
+
+					<!-- these two list will show after login -->					
+					<li class="df sobg br-1 alc">
+						<a class="btn-sm blc db cart-list-btn" href="javascript:void()">			
+							<i class="fa fa-shopping-cart"></i>
+							<span class="item-added-on-cart">5</span>
+						</a>
+						<a class="btn-sm blc db notify-btn" href="javascript:void()">				
+							<i class="fa fa-bell"></i>
+						</a>
+						<a class="btn-sm sec df profile-btn" href="javascript:void()">		
+							<img src="images/img/man.png">
+							<i class="fa fa-chevron-down"></i>
+						</a>
+					</li>
+
+				</ul>
+			</div>
+			
+		</div>
+	</nav>
+
+
+	<div class="box_on-click notification p-2 br-1">
+		<h4 class="blc box_on-click_title pb-1 df alc">Notifications 
+			<span class="clear">Clear</span>
+		</h4>
+		<ul class="box_on-click_ul dfc">
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Vestibulum ac arcu id libero dignissim mollis sed ut nunc</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Sed cursus nibh molestie, imperdiet urna a, blandit justo</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Morbi auctor odio sed massa semper molestie</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Praesent nec eros sed sem lacinia mattis sit amet in diam</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Aliquam dictum libero id orci laoreet dignissim</a>
+			</li>
+		</ul>
+	</div>
+
+
+	<div class="box_on-click profile_box py-1 px-2 br-1">
+		<h4 class="blc box_on-click_title pb-1 mb-1 df alc">Gopal Nepal</h4>
+		<ul class="box_on-click_ul dfc">
+			<li class="box_on-click_li">
+			<a class="box_on-click_a blc df gap-1 alc p-1" href="#">
+				<i class="fa fa-user-circle"></i>
+				<span>Visit Profile
+				</a>
+			</li>
+			<li class="box_on-click_li">
+				<a class="box_on-click_a blc df gap-1 alc p-1" href="#">
+					<i class="fa fa-sign-out"></i>
+					<span>Logout</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<section class="wrapper-wide cart dfc gap-2 pt-3 pb-1">
+		<ul id="progressbar" class="colg-12 df spb gap-2 mb-1">
+	    	<li class="active">Cart</li>
+	    	<li>Shipping</li>
+	    	<!-- <li>Payment</li> -->
+	    	<li>Confirm</li>
+		</ul>
+
+		<div class="checkout-step active-step">
+			<div class="table-wrap colg-12">
+				<table>
+					<thead>
+						<tr>
+							<th>Item(s)</th>
+							<th>Quantity</th>
+							<th>Amount(RS)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<aside class="df gap-1 alc">								
+									<img src="images/slide4.jpg">
+									<h6 class="cart_item-name">This is Cart title</h6>
+								</aside>
+							</td>
+							<td>
+								<aside class="quantity-toggle">
+								   <button type="button" class="qty-btn minus">-</button>
+								   <input type="number" class="qty-input" value="1" min="1" step="1" readonly>
+								   <button type="button" class="qty-btn plus">+</button>
+								</aside>
+							</td>
+							<td>
+								<h6 class="sec">Rs. 1350</h6>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<aside class="df gap-1 alc">								
+									<img src="images/slide5.jpg">
+									<h6 class="cart_item-name">This is Cart title2</h6>
+								</aside>
+							</td>
+							<td>
+								<aside class="quantity-toggle">
+								   <button type="button" class="qty-btn minus">-</button>
+								   <input type="number" class="qty-input" value="1" min="1" step="1" readonly>
+								   <button type="button" class="qty-btn plus">+</button>
+								</aside>
+							</td>
+							<td>
+								<h6 class="sec">Rs. 1350</h6>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<aside class="df gap-1 alc">								
+									<img src="images/slide6.jpg">
+									<h6 class="cart_item-name">This is Cart title3</h6>
+								</aside>
+							</td>
+							<td>
+								<aside class="quantity-toggle">
+								   <button type="button" class="qty-btn minus">-</button>
+								   <input type="number" class="qty-input" value="1" min="1" step="1" readonly>
+								   <button type="button" class="qty-btn plus">+</button>
+								</aside>
+							</td>
+							<td>
+								<h6 class="sec">Rs. 1350</h6>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<aside class="df gap-1 alc">								
+									<img src="images/slide7.jpg">
+									<h6 class="cart_item-name">This is Cart title5</h6>
+								</aside>
+							</td>
+							<td>
+								<aside class="quantity-toggle">
+								   <button type="button" class="qty-btn minus">-</button>
+								   <input type="number" class="qty-input" value="1" min="1" step="1" readonly>
+								   <button type="button" class="qty-btn plus">+</button>
+								</aside>
+							</td>
+							<td>
+								<h6 class="sec">Rs. 1350</h6>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<aside class="df gap-1 alc">								
+									<img src="images/slide1.jpg">
+									<h6 class="cart_item-name">This is Cart title5</h6>
+								</aside>
+							</td>
+							<td>
+								<aside class="quantity-toggle">
+								   <button type="button" class="qty-btn minus">-</button>
+								   <input type="number" class="qty-input" value="3" min="1" step="1" readonly>
+								   <button type="button" class="qty-btn plus">+</button>
+								</aside>
+							</td>
+							<td>
+								<h6 class="sec">Rs. 1350</h6>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+    		<div class="btn-group mt-1 colg-12 gap-2 mt-1">
+    			<a class="next-btn btn btn-sm br-1 btn-main-br" href="javascript:void()">Process</a>
+    		</div>
+		</div>
+
+		<div class="checkout-step shipping">
+			<div class="colg-12 dfc">
+				<aside class="df gap-1 shipping-info alc spb">
+				   <p class="p2">Address:</p>
+				   <p class="p1">Kathmandu</p>
+				</aside>
+				<aside class="df gap-1 shipping-info alc spb">
+				   <p class="p2">Email:</p>
+				   <p class="p1">mail@mail.com</p>
+				</aside>
+				<aside class="df gap-1 shipping-info alc spb">
+				   <p class="p2">Phone:</p>
+				   <p class="p1">7894561230</p>
+				</aside>
+			</div>
+	    	<div class="btn-group mt-1 colg-12 gap-2 mt-1">
+	    		<a class="prev-btn btn btn-sm br-1 btn-gray-br" href="javascript:void()">Back</a>
+	    		<a class="next-btn btn btn-sm br-1 btn-main-br" href="javascript:void()">Process</a>
+	    	</div>	    	
+		</div>
+
+		<!-- <div class="checkout-step cartPayment">
+			<div class="colg-12 dfc">
+				<aside class="df gap-1 cartPayment-info alc spb">
+			   	<p class="p2">Total Amount:</p>
+			   	<p class="p1">Rs.18,400</p>			   
+				</aside>
+			</div>
+			<div class="btn-group mt-1 colg-12 gap-2">
+				<a class="prev-btn btn btn-sm br-1 btn-gray-br" href="javascript:void()">Back</a>
+				<a class="btn btn-md btn-main-bg load_wallet br-2" href="javascript:void()">Proceed to Payment</a>
+			</div>			
+		</div> -->
+
+		<div class="checkout-step colg-12 confirmOrder">
+			<div class="colg-12 dfc">
+				<aside class="df gap-1 confirmOrder-info alc spb">
+			   	<p class="p2">This is Cart title1</p>
+			   	<p class="p2">Quantity (3)</p>
+			   	<p class="p1">Rs.2015</p>
+				</aside>
+				<aside class="df gap-1 confirmOrder-info alc spb">
+					<p class="p2">This is Cart title2</p>
+					<p class="p2">Quantity (7)</p>
+					<p class="p1">Rs.7025</p>
+				</aside>
+	    		<aside class="df gap-1 confirmOrderrder-info alc spb">
+	    	   	<h6 class="p2">Total Amount:</h6>
+	    	   	<h5 class="p1 sec">Rs.9,040</h5>			   
+	    		</aside>
+	    	</div>
+	    	<div class="btn-group mt-1 colg-12 gap-2 mt-1">
+	    		<a class="prev-btn btn btn-sm br-1 btn-gray-br" href="javascript:void()">Back</a>
+	    		<a class="next-btn btn btn-sm br-1 btn-main-bg" href="javascript:void()">Confirm Order</a>
+	    	</div>	    	
+		</div>
+	</section>
+
+
+
+	<footer class="footer mt-3">
+		<div class="footer_top">
+			<aside class="df gap-2 alc py-4 wrapper-wide">
+				<img src="images/img/logo.png" class="logo">
+				<h3 class="wh">Sewa Exchange</h3>
+			</aside>
+		</div>
+		<div class="footer_bottom pt-4">
+			<div class="wrapper-wide dg col12 gap-3">					
+
+				<div class="colg-3 foot_col">
+					<h4 class="mb-1">Sewa Exchange</h4>
+					<ul class="footer_ul dfc">
+						<li class="footer_li">
+							<a href="#" class="footer_a wh db">About Platform</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a wh db">Exchange Policy</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a wh db">Wallet Policy</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a wh db">Cash Policy</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a wh db">Agent Policy</a>
+						</li>					
+					</ul>
+				</div>
+
+				<div class="colg-3 foot_col">
+					<h4 class="mb-1">Support</h4>
+					<ul class="footer_ul dfc">
+						<li class="footer_li">
+							<a href="#" class="footer_a wh db">Help Center</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a wh db">How Exchange Works</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a wh db">Safety Guidelines</a>
+						</li>							
+						<li class="footer_li">
+							<a href="#" class="footer_a wh db">Contact Support</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="colg-3 foot_col">
+					<h4 class="mb-1">Company</h4>
+					<ul class="footer_ul dfc">
+						<li class="footer_li">
+							<a href="#" class="footer_a wh db">About Us</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a wh db">Terms & Conditions</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a wh db">Privacy Policy</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a wh db">Dispute Resolution</a>
+						</li>											
+					</ul>
+				</div>
+
+				<div class="colg-3 foot_col">
+					<h4 class="mb-1">Connect</h4>
+					<ul class="footer_ul dfc">
+						<li class="footer_li df gap-1 alc">
+							<i class="fa fa-map-marker-alt gr"></i>
+							<a href="javascript:void()" class="footer_a wh db">Anamnagar, Kathmandu, Nepal</a>
+						</li>
+						<li class="footer_li df gap-1 alc">
+							<i class="fa fa-envelope gr"></i>
+							<a href="#" class="footer_a wh db">info@sewaexchange.com</a>
+						</li>
+						<li class="footer_li df gap-1 alc">
+							<i class="fa fa-phone gr"></i>
+							<a href="javascript:void()" class="footer_a wh db">00977-9812345678</a>
+						</li>					
+					</ul>
+					<ul class="footer_ul df gap-1 social_ul mt-1">
+						<li class="footer_li">
+							<a href="#" class="footer_a fb">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a tw">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a wht">
+								<i class="fab fa-whatsapp"></i>
+							</a>
+						</li>							
+					</ul>
+				</div>
+
+				<div class="colg-12 py-2 copyright">
+					<p class="gr">© 2026 Sewa Exchange. All rights reserved.</p>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/jquery-3.5.0.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    $(".next-btn").click(function() {
+		        let currentStep = $(this).closest(".checkout-step");
+		        let nextStep = currentStep.next(".checkout-step");
+		        let stepIndex = $(".checkout-step").index(nextStep);
+
+		        if (nextStep.length > 0) {
+		            // Toggle visibility
+		            currentStep.removeClass("active-step");
+		            nextStep.addClass("active-step");
+
+		            // Update Progress Bar
+		            $("#progressbar li").eq(stepIndex).addClass("active");
+		        }
+		    });
+
+		    $(".prev-btn").click(function() {
+		        let currentStep = $(this).closest(".checkout-step");
+		        let prevStep = currentStep.prev(".checkout-step");
+		        let stepIndex = $(".checkout-step").index(currentStep);
+
+		        if (prevStep.length > 0) {
+		            // Toggle visibility
+		            currentStep.removeClass("active-step");
+		            prevStep.addClass("active-step");
+
+		            // Update Progress Bar (Remove active class from current)
+		            $("#progressbar li").eq(stepIndex).removeClass("active");
+		        }
+		    });
+
+
+		    $('.qty-btn').on('click', function() {
+		    	let $button = $(this);
+		    	let $input = $button.parent().find('.qty-input');
+		    	let oldValue = parseFloat($input.val());
+		    	let newVal;
+
+		    	if ($button.hasClass('plus')) {
+		        	newVal = oldValue + 1;
+		    	} else {
+		        	// Prevent decreasing below 1
+		        	if (oldValue > 1) {
+		            	newVal = oldValue - 1;
+		        	} else {
+		            	newVal = 1;
+		        	}
+		    	}
+
+		    	$input.val(newVal);
+		    	
+		    	// Optional: Trigger a 'change' event for cart totals update
+		    	$input.trigger('change');
+			});
+
+
+			// show new popup window for loading load_wallet
+			$(".load_wallet").click(function () {
+			   window.open(
+			  	  "load-wallet.html",
+			  	  "popupWindow",
+			  	  "width=600,height=500,left=200,top=100,resizable=yes,scrollbars=yes"
+			   );
+			});
+
+		});
+	</script>
+
+</body>
+</html>

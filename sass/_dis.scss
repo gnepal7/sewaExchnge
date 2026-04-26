@@ -1,0 +1,93 @@
+$displays:(
+	df:flex,
+	db:block,
+	dg:grid,
+	di:inline-block,
+	dt:table,
+	dif:inline-flex
+);
+@each $dis, $value in $displays{
+	.#{$dis}{
+		display: $value;
+	}
+}
+/***** color classes for html *****/
+$classes:(
+	prime:$primary,
+	sec:$secondary,
+	wh:$whi,
+	blc:$bla,
+	gr:rgba($gry, .7)
+);
+@each $co, $value in $classes{
+	.#{$co}{
+		color:$value;
+	}
+}
+/***** let background classes on html *****/
+$bg-classes:(
+	pri-bg: $primary,
+	sec-bg: $secondary,
+	pri-bglg:rgba($primary, .1),
+	sec-bglg:rgba($secondary, .15),
+	lig-bg:$lgry,
+	blc-bg:$bla,
+	blc-bglg:rgba($bla, .1),
+	sobg:$bgcolor,
+	wh-bg:$whi
+);
+@each $bg, $value in $bg-classes{
+	.#{$bg}{
+		background-color: $value;
+	}
+}
+.col12{
+	grid-template-columns: repeat(12, 1fr);
+}
+.af{
+	@include af(18.125rem, 1fr, 18.125rem, 2fr);
+}
+.dfc{
+	display: flex;
+	flex-direction: column;
+}
+.alc{
+	align-items: center;
+}
+.tac{
+	text-align: center;
+}
+.shadow{
+	@include box-shadow(0, 0, 3px, rgba($gry, .7));
+}
+.spb{
+	justify-content: space-between;
+}
+.fw-normal{
+	font-weight: normal;
+}
+.img-outer{
+	overflow: hidden;
+	position: relative;
+	& img{
+		height:100%;
+		object-fit:cover;
+		@include vendor(transition, all ease-in-out .4s);
+		width: 100%;
+		opacity:0;
+		transform:scale(0);
+	}
+	&:hover{
+		& img{
+			@include vendor(transform, scale(1.01));
+			@include vendor(transition, all ease-in-out .4s);
+		}
+	}
+	&.in-view{
+		& img{
+			opacity:1;
+			transform:scale(1);
+			@include vendor(transition, all ease-in-out .4s);
+		}
+	}
+}

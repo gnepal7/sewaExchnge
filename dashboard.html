@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sewa Exchange</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="images/favicon.png" type="image/png">
+	
+	<!-- fontawesome -->
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<!-- owl -->
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+
+	<!-- custom -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>	
+
+	<div class="progress-wrapper">
+		<div class="progress-bar"></div>
+	</div>
+
+	<nav class="nav py-1">
+		<div class="wrapper-wide dg col12 gap-3 header-wrap">
+			<div class="colg-3">
+				<a href="index.html" class="logo">
+					<img src="images/img/logo.png">
+				</a>
+			</div>
+
+			<div class="colg-4 search-wrap">
+				<form class="search-form">
+					<input type="search" placeholder="search item(s) here....">
+					<i class="fa fa-search"></i>
+				</form>
+			</div>
+
+			<div class="colg-5">
+				<ul class="btn-group action-buttons df gap-2">
+					<li class="action-buttons_add">
+						<a class="btn-sm btn-main-br  prime df gap-1" href="addPost.html">
+							<i class="fa fa-plus"></i>
+							<span>Add Item</span>
+						</a>
+					</li>
+				
+					<!-- these two list will show after login -->
+					<li>
+						<a class="btn-sm btn-dim-bg sec db notify-btn" href="javascript:void()">				
+							<i class="fa fa-bell"></i>
+						</a>
+					</li>
+					<li>
+						<a class="btn-sm btn-lw-bg sec df profile-btn" href="javascript:void()">		
+							<img src="images/img/man.png">
+							<i class="fa fa-chevron-down"></i>
+						</a>
+					</li>
+
+				</ul>
+			</div>
+			
+		</div>
+	</nav>
+
+
+	<div class="box_on-click notification p-2 br-1">
+		<h4 class="blc box_on-click_title pb-1 df alc">Notifications 
+			<span class="clear">Clear</span>
+		</h4>
+		<ul class="box_on-click_ul dfc">
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Vestibulum ac arcu id libero dignissim mollis sed ut nunc</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Sed cursus nibh molestie, imperdiet urna a, blandit justo</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Morbi auctor odio sed massa semper molestie</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Praesent nec eros sed sem lacinia mattis sit amet in diam</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Aliquam dictum libero id orci laoreet dignissim</a>
+			</li>
+		</ul>
+	</div>
+
+
+	<div class="box_on-click profile_box py-1 px-2 br-1">
+		<h4 class="blc box_on-click_title pb-1 mb-1 df alc">Gopal Nepal</h4>
+		<ul class="box_on-click_ul dfc">
+			<li class="box_on-click_li">
+				<a class="box_on-click_a blc df gap-1 alc p-1" href="#">
+					<i class="fa fa-user-circle"></i>
+					<span>Visit Profile
+					</a>
+				</li>			
+
+				<li class="box_on-click_li">
+					<a class="box_on-click_a blc df gap-1 alc p-1" href="#">
+						<i class="fa fa-sign-out"></i>
+						<span>Logout</span>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+
+
+		<!--<section class="wrapper-wide dg col12 gap-3 py-2">-->
+		<!--	<div class="colg-3 menu_wrap profile_menu tab-wrap p-2 pri-bglg br-1">-->
+		<!--		<aside class="mb-1 profile_info dfc alc pb-1 mb-1">-->
+		<!--			<img src="images/img/man.png">				-->
+		<!--			<h4 class="blc profile_name">Gopal Nepal</h4>-->
+		<!--			<div class="dfc gap-1 profile_info-sec py-1">-->
+		<!--				<p class="blc profile_phone df alc">-->
+		<!--					<i class="fa fa-mobile-screen-button"></i>-->
+		<!--					<span>9841000000</span>-->
+		<!--				</p>-->
+		<!--				<p class="blc profile_phone df alc">-->
+		<!--					<i class="fa fa-map-marker-alt"></i>-->
+		<!--					<span>Kathmandu, Nepal</span>-->
+		<!--				</p>-->
+		<!--				<p class="blc profile_phone df alc">-->
+		<!--					<i class="fa fa-check-circle"></i>-->
+		<!--					<span>Verified By: <strong>Sewa Exchange</strong></span>-->
+		<!--				</p>-->
+		<!--				<p class="blc profile_phone df alc">-->
+		<!--					<i class="fa fa-star"></i>-->
+		<!--					<span>Rating: <strong>4.8 (24 Reviews)</strong></span>-->
+		<!--				</p>-->
+		<!--				<p class="blc profile_phone df alc">-->
+		<!--					<i class="fa fa-check-square"></i>-->
+		<!--					<span>Successful Exchanges: <strong>15</strong></span>-->
+		<!--				</p>-->
+		<!--				<p class="blc profile_phone df alc">-->
+		<!--					<i class="fa fa-list-squares"></i>-->
+		<!--					<span>Active Items: <strong>31</strong></span>-->
+		<!--				</p>-->
+		<!--			</div>	-->
+
+		<!--			<h6 class="profile_balance blc">Balance:<span class="sec ml-1">Rs.15,000</span></h6>-->
+		<!--			<a class="btn-sm px-1 btn-main-br mt-1 db load_wallet" href="javascript:void()">Load Balance</a>-->
+		<!--		</aside>-->
+
+		<!--	</div>-->
+			<!-- end menu_wrap -->
+
+		<!--	<div class="colg-9 content dashboard">-->
+
+		<!--		<div class="tab-wrap">-->
+		<!--			<ul class="tab-menu">-->
+		<!--				<li class="tab-item"><a href="#ts" class="tab-link p-1">Today's Summary</a></li>-->
+		<!--				<li class="tab-item"><a href="#si" class="tab-link p-1">Saved Items</a></li>-->
+		<!--				<li class="tab-item"><a href="#ta" class="tab-link p-1">Transcation History</a></li>-->
+		<!--				<li class="tab-item"><a href="#cp" class="tab-link p-1">Change Password</a></li>-->
+		<!--			</ul>-->
+		<!--			<aside id="ts" class="tab-content">-->
+		<!--				<div class="table-wrap">-->
+		<!--					<table>-->
+		<!--						<thead>-->
+		<!--							<tr>-->
+		<!--								<th>ID</th>-->
+		<!--								<th>Goods/Services</th>-->
+		<!--								<th>Amount(RS)</th>-->
+		<!--							</tr>-->
+		<!--						</thead>-->
+		<!--						<tbody>-->
+		<!--							<tr>-->
+		<!--								<td>1</td>-->
+		<!--								<td>Buy Winter jacket, 2 pairs of Socks, and 1 Woolen cap</td>-->
+		<!--								<td>1200</td>-->
+		<!--							</tr>-->
+		<!--							<tr>-->
+		<!--								<td>2</td>-->
+		<!--								<td>Buy Party Shoes</td>-->
+		<!--								<td>2500</td>-->
+		<!--							</tr>-->
+		<!--							<tr>-->
+		<!--								<td>3</td>-->
+		<!--								<td>Buy Travelling Bag</td>-->
+		<!--								<td>4200</td>-->
+		<!--							</tr>-->
+		<!--							<tr>-->
+		<!--								<td>4</td>-->
+		<!--								<td>Buy Winter jacket</td>-->
+		<!--								<td>1200</td>-->
+		<!--							</tr>-->
+		<!--							<tr>-->
+		<!--								<td>5</td>-->
+		<!--								<td>Buy Party Shoes</td>-->
+		<!--								<td>2500</td>-->
+		<!--							</tr>-->
+		<!--							<tr>-->
+		<!--								<td>6</td>-->
+		<!--								<td>Buy Travelling Bag</td>-->
+		<!--								<td>4200</td>-->
+		<!--							</tr>-->
+		<!--							<tr>-->
+		<!--								<td>7</td>-->
+		<!--								<td>Buy Winter jacket</td>-->
+		<!--								<td>1200</td>-->
+		<!--							</tr>-->
+		<!--							<tr>-->
+		<!--								<td>8</td>-->
+		<!--								<td>Buy Party Shoes</td>-->
+		<!--								<td>2500</td>-->
+		<!--							</tr>-->
+		<!--							<tr>-->
+		<!--								<td>9</td>-->
+		<!--								<td>Buy Travelling Bag</td>-->
+		<!--								<td>4200</td>-->
+		<!--							</tr>-->
+		<!--							<tr>-->
+		<!--								<td>10</td>-->
+		<!--								<td>Buy Party Shoes</td>-->
+		<!--								<td>2500</td>-->
+		<!--							</tr>-->
+		<!--						</tbody>-->
+		<!--					</table>-->
+
+		<!--				</div>-->
+
+		<!--				<div class="mt-3 paginate col_12 df gap-1">-->
+		<!--					<a class="prev page-numbers" href="#">&lt;</a>-->
+		<!--					<span aria-current="page" class="page-numbers current">1</span>-->
+		<!--					<a class="page-numbers" href="#">2</a>-->
+		<!--					<a class="page-numbers" href="#">3</a>-->
+		<!--					<a class="page-numbers" href="#">4</a>-->
+		<!--					<a class="page-numbers" href="#">5</a>-->
+		<!--					<a class="page-numbers" href="#">6</a>-->
+		<!--					<a class="next page-numbers" href="#">&gt;</a>			-->
+		<!--				</div>-->
+
+		<!--			</aside>-->
+					<!-- end ts -->
+		<!--			<aside id="si" class="tab-content">-->
+		<!--				<div class="table-wrap">-->
+		<!--					<table>-->
+		<!--						<thead>-->
+		<!--							<tr>-->
+		<!--								<th>ID</th>-->
+		<!--								<th>Goods/Services</th>-->
+		<!--								<th>Amount(RS)</th>-->
+		<!--								<th>Date</th>-->
+		<!--							</tr>-->
+		<!--						</thead>-->
+		<!--						<tbody>-->
+		<!--							<tr>-->
+		<!--								<td>1</td>-->
+		<!--								<td>Boroline Dermacare Antiseptic Ayurvedic Cream 20 gm</td>-->
+		<!--								<td>900</td>-->
+		<!--								<td>2082-10-03</td>-->
+		<!--							</tr>-->
+		<!--							<tr>-->
+		<!--								<td>2</td>-->
+		<!--								<td>Vintage T9 Dragon Phoenix Hair Clipper Electric Hair Trimmer Retro Carved Oil Head Cutting Tool</td>-->
+		<!--								<td>599</td>-->
+		<!--								<td>2082-10-01</td>-->
+		<!--							</tr>-->
+		<!--							<tr>-->
+		<!--								<td>3</td>-->
+		<!--								<td>Vintage T9 Dragon Phoenix Hair Clipper Electric Hair Trimmer Retro Carved Oil Head Cutting Tool</td>-->
+		<!--								<td>677</td>-->
+		<!--								<td>2082-10-01</td>-->
+		<!--							</tr>-->
+		<!--							<tr>-->
+		<!--								<td>4</td>-->
+		<!--								<td>Suction Cup Phone Case Mount Phones Holder for Content Creators Hands-Free Video and Photo</td>-->
+		<!--								<td>677</td>-->
+		<!--								<td>2082-10-01</td>-->
+		<!--							</tr>-->
+		<!--							<tr>-->
+		<!--								<td>5</td>-->
+		<!--								<td>Premium Super Soft Bed Floor Carpet Dari Rug ( 85 X 57 Inches )</td>-->
+		<!--								<td>677</td>-->
+		<!--								<td>2082-10-01</td>-->
+		<!--							</tr>-->
+		<!--							<tr>-->
+		<!--								<td>6</td>-->
+		<!--								<td>Boroline Dermacare Antiseptic Ayurvedic Cream 20 gm</td>-->
+		<!--								<td>900</td>-->
+		<!--								<td>2082-10-03</td>-->
+		<!--							</tr>-->
+		<!--							<tr>-->
+		<!--								<td>7</td>-->
+		<!--								<td>Vintage T9 Dragon Phoenix Hair Clipper Electric Hair Trimmer Retro Carved Oil Head Cutting Tool</td>-->
+		<!--								<td>599</td>-->
+		<!--								<td>2082-10-01</td>-->
+		<!--							</tr>-->
+		<!--							<tr>-->
+		<!--								<td>8</td>-->
+		<!--								<td>Vintage T9 Dragon Phoenix Hair Clipper Electric Hair Trimmer Retro Carved Oil Head Cutting Tool</td>-->
+		<!--								<td>677</td>-->
+		<!--								<td>2082-10-01</td>-->
+		<!--							</tr>-->
+		<!--							<tr>-->
+		<!--								<td>9</td>-->
+		<!--								<td>Suction Cup Phone Case Mount Phones Holder for Content Creators Hands-Free Video and Photo</td>-->
+		<!--								<td>677</td>-->
+		<!--								<td>2082-10-01</td>-->
+		<!--							</tr>-->
+		<!--							<tr>-->
+		<!--								<td>10</td>-->
+		<!--								<td>Premium Super Soft Bed Floor Carpet Dari Rug ( 85 X 57 Inches )</td>-->
+		<!--								<td>677</td>-->
+		<!--								<td>2082-10-01</td>-->
+		<!--							</tr>-->
+									
+		<!--						</tbody>-->
+		<!--					</table>-->
+							
+		<!--				</div>-->
+		<!--				<div class="mt-3 paginate col_12 df gap-1">-->
+		<!--					<a class="prev page-numbers" href="#">&lt;</a>-->
+		<!--					<span aria-current="page" class="page-numbers current">1</span>-->
+		<!--					<a class="page-numbers" href="#">2</a>-->
+		<!--					<a class="page-numbers" href="#">3</a>-->
+		<!--					<a class="page-numbers" href="#">4</a>-->
+		<!--					<a class="page-numbers" href="#">5</a>-->
+		<!--					<a class="page-numbers" href="#">6</a>-->
+		<!--					<a class="next page-numbers" href="#">&gt;</a>			-->
+		<!--				</div>-->
+
+		<!--			</aside>-->
+					<!-- end si -->
+		<!--			<aside id="ta" class="tab-content">-->
+
+		<!--				<div class="df transcation-type">-->
+		<!--					<label>Select Transition Type</label>-->
+		<!--					<select name="Choose type">-->
+		<!--						<option>Approved</option>-->
+		<!--						<option>Pending</option>-->
+		<!--						<option>Rejected</option>-->
+		<!--						<option>Cancelled</option>-->
+		<!--					</select>-->
+		<!--				</div>-->
+
+		<!--				<div class="table-wrap">-->
+		<!--					<table>-->
+		<!--						<thead>-->
+		<!--							<tr>-->
+		<!--								<th>ID</th>-->
+		<!--								<th>Goods/Services</th>-->
+		<!--								<th>Amount(RS)</th>-->
+		<!--								<th>Date</th>-->
+		<!--								<th>Status</th>-->
+		<!--							</tr>-->
+		<!--						</thead>-->
+		<!--						<tbody>-->
+		<!--							<tr>-->
+		<!--								<td>1</td>-->
+		<!--								<td>Boroline Dermacare Antiseptic Ayurvedic Cream 20 gm</td>-->
+		<!--								<td>900</td>-->
+		<!--								<td>2082-10-03</td>-->
+		<!--								<td><a class="btn status-btn approved" href="javascript:void()">Approved</a></td>-->
+		<!--							</tr>-->
+		<!--							<tr>-->
+		<!--								<td>2</td>-->
+		<!--								<td>Vintage T9 Dragon Phoenix Hair Clipper Electric Hair Trimmer Retro Carved Oil Head Cutting Tool</td>-->
+		<!--								<td>599</td>-->
+		<!--								<td>2082-10-01</td>-->
+		<!--								<td><a class="btn status-btn pending" href="javascript:void()">pending</a></td>-->
+		<!--							</tr>-->
+		<!--							<tr>-->
+		<!--								<td>3</td>-->
+		<!--								<td>Vintage T9 Dragon Phoenix Hair Clipper Electric Hair Trimmer Retro Carved Oil Head Cutting Tool</td>-->
+		<!--								<td>677</td>-->
+		<!--								<td>2082-10-01</td>-->
+		<!--								<td><a class="btn status-btn rejected" href="javascript:void()">rejected</a></td>-->
+		<!--							</tr>-->
+		<!--							<tr>-->
+		<!--								<td>4</td>-->
+		<!--								<td>Suction Cup Phone Case Mount Phones Holder for Content Creators Hands-Free Video and Photo</td>-->
+		<!--								<td>677</td>-->
+		<!--								<td>2082-10-01</td>-->
+		<!--								<td><a class="btn status-btn cancelled" href="javascript:void()">cancelled</a></td>-->
+		<!--							</tr>-->
+		<!--							<tr>-->
+		<!--								<td>5</td>-->
+		<!--								<td>Premium Super Soft Bed Floor Carpet Dari Rug ( 85 X 57 Inches )</td>-->
+		<!--								<td>677</td>-->
+		<!--								<td>2082-10-01</td>-->
+		<!--								<td><a class="btn status-btn approved" href="javascript:void()">Approved</a></td>-->
+		<!--							</tr>-->
+		<!--							<tr>-->
+		<!--								<td>6</td>-->
+		<!--								<td>Boroline Dermacare Antiseptic Ayurvedic Cream 20 gm</td>-->
+		<!--								<td>900</td>-->
+		<!--								<td>2082-10-03</td>-->
+		<!--								<td><a class="btn status-btn pending" href="javascript:void()">pending</a></td>-->
+		<!--							</tr>-->
+		<!--							<tr>-->
+		<!--								<td>7</td>-->
+		<!--								<td>Vintage T9 Dragon Phoenix Hair Clipper Electric Hair Trimmer Retro Carved Oil Head Cutting Tool</td>-->
+		<!--								<td>599</td>-->
+		<!--								<td>2082-10-01</td>-->
+		<!--								<td><a class="btn status-btn rejected" href="javascript:void()">rejected</a></td>-->
+		<!--							</tr>-->
+		<!--							<tr>-->
+		<!--								<td>8</td>-->
+		<!--								<td>Vintage T9 Dragon Phoenix Hair Clipper Electric Hair Trimmer Retro Carved Oil Head Cutting Tool</td>-->
+		<!--								<td>677</td>-->
+		<!--								<td>2082-10-01</td>-->
+		<!--								<td><a class="btn status-btn pending" href="javascript:void()">pending</a></td>-->
+		<!--							</tr>-->
+		<!--							<tr>-->
+		<!--								<td>9</td>-->
+		<!--								<td>Suction Cup Phone Case Mount Phones Holder for Content Creators Hands-Free Video and Photo</td>-->
+		<!--								<td>677</td>-->
+		<!--								<td>2082-10-01</td>-->
+		<!--								<td><a class="btn status-btn approved" href="javascript:void()">Approved</a></td>-->
+		<!--							</tr>-->
+		<!--							<tr>-->
+		<!--								<td>10</td>-->
+		<!--								<td>Premium Super Soft Bed Floor Carpet Dari Rug ( 85 X 57 Inches )</td>-->
+		<!--								<td>677</td>-->
+		<!--								<td>2082-10-01</td>-->
+		<!--								<td><a class="btn status-btn pending" href="javascript:void()">pending</a></td>-->
+		<!--							</tr>-->
+									
+		<!--						</tbody>-->
+		<!--					</table>-->
+							
+		<!--				</div>-->
+		<!--				<div class="mt-3 paginate col_12 df gap-1">-->
+		<!--					<a class="prev page-numbers" href="#">&lt;</a>-->
+		<!--					<span aria-current="page" class="page-numbers current">1</span>-->
+		<!--					<a class="page-numbers" href="#">2</a>-->
+		<!--					<a class="page-numbers" href="#">3</a>-->
+		<!--					<a class="page-numbers" href="#">4</a>-->
+		<!--					<a class="page-numbers" href="#">5</a>-->
+		<!--					<a class="page-numbers" href="#">6</a>-->
+		<!--					<a class="next page-numbers" href="#">&gt;</a>			-->
+		<!--				</div>-->
+
+		<!--			</aside>-->
+					<!-- end ta -->
+		<!--			<aside id="cp" class="tab-content">-->
+		<!--				<form class="form password-reset_form dfc gap-2" action="">-->
+		<!--					<div class="form-group dfc">-->
+		<!--						<label for="old-pw" class="bla">Old Password</label>-->
+		<!--						<input type="password" name="old-pw" placeholder="password" />-->
+		<!--						<i class="fa fa-eye show-pass"></i>-->
+		<!--					</div>-->
+		<!--					<div class="form-group dfc">-->
+		<!--						<label for="new-pw" class="bla">New Password</label>-->
+		<!--						<input type="password" name="new-pw" placeholder="password" />-->
+		<!--						<i class="fa fa-eye show-pass"></i>-->
+		<!--					</div>-->
+		<!--					<div class="form-group dfc">-->
+		<!--						<label for="re-new-pw" class="bla">Re-type New Password</label>-->
+		<!--						<input type="password" name="re-new-pw" placeholder="password" />-->
+		<!--						<i class="fa fa-eye show-pass"></i>-->
+		<!--					</div>-->
+		<!--					<div class="form-group dfc login_btn-wrap">-->
+		<!--						<a class="btn-sm btn-main-bg px-2" href="javascript:void()">Update</a>-->
+		<!--					</div>				-->
+		<!--				</form>-->
+
+		<!--			</aside>-->
+		<!--		</div>			-->
+
+		<!--	</div>-->
+			<!-- end content -->
+
+		<!--</section>-->
+		
+		
+		
+		
+		
+		<section class="db">
+		<nav class="nav left_nav p-2">
+			<aside class="mb-1">
+				<h4 class="gr mt-2 hide-on-desktop">MENU</h4>
+				<button class="nav_toggler">
+					<i class="fa fa-bars toggler"></i>				   
+				</button>
+				<button class="close-menu hide-on-desktop">
+					<i class="fa fa-times toggler"></i>				   
+				</button>
+			</aside>
+
+			<ul class="nav_ul dfc">
+				<li class="nav_li active">
+					<a href="dashboard.html" class="nav_a df gap-1 p-1">
+						<i class="fa fa-dashboard homeicon"></i>
+						<h6>Dashboard</h6>
+					</a>
+				</li>
+
+				<li class="nav_li">
+					<a href="product-list.html" class="nav_a df gap-1 p-1">
+						<i class="fa fa-users"></i>
+						<h6>Product List</h6>
+					</a>
+				</li>
+
+				<li class="nav_li">
+					<a href="balance-list.html" class="nav_a df gap-1 p-1">
+						<i class="fa fa-user-secret"></i>
+						<h6>Balance translation list</h6>
+					</a>
+				</li>
+
+			</ul>
+
+		</nav>
+		<!-- end menu_wrap -->
+
+		<div class="content">
+			<div class="content_inside dg col12 p-2 gap-2">
+				<div class="content_inside-left colg-12 dfc gap-2">
+					<figcaption class="content_inside-left_top dfc">
+						<h4 class="prime">User Admin Panel</h4>
+						<p class="p1 blc">Groven, Secure, Thrive</p>
+					</figcaption>
+
+					<div class="content_inside-left_info dg col12 gap-1">
+
+						<aside class="content_inside-left_info-box colg-6 df gap-1 p-1 br-1 sobg">
+							<i class="fa fa-user"></i>
+							<figcaption class="content_inside-left_info-box_text dfc">
+								<h6 class="prime number">Name Surname</h6>
+								<p class="p2 blc para">101 listed exchanges</p>
+							</figcaption>
+						</aside>
+
+						<aside class="content_inside-left_info-box colg-6 df gap-1 p-1 br-1 sobg">
+							<i class="fa fa-exchange"></i>
+							<figcaption class="content_inside-left_info-box_text dfc">
+								<h6 class="prime number">50</h6>
+								<p class="p2 blc para">Active Exchange</p>
+							</figcaption>
+						</aside>
+
+						<aside class="content_inside-left_info-box colg-6 df gap-1 p-1 br-1 sobg">
+							<i class="fa fa-wallet"></i>
+							<figcaption class="content_inside-left_info-box_text dfc">
+								<h6 class="prime number">35</h6>
+								<p class="p2 blc para">Completed exchange</p>
+							</figcaption>
+						</aside>
+
+						<aside class="content_inside-left_info-box colg-6 df gap-1 p-1 br-1 sobg">
+							<i class="fa fa-info-circle"></i>
+							<figcaption class="content_inside-left_info-box_text dfc">
+								<h6 class="prime number">Rs.25,000 </h6>
+								<p class="p2 blc para">Wallet Banalce</p>
+							</figcaption>
+						</aside>
+
+					</div>
+					<!-- end content_inside-left_info -->
+
+					<div class="content_inside-left_health p-1 br-1 wh-bg">
+						
+						<div class="dg col12 gap-1">
+
+							<aside class="content_inside-left_health-item colg-4 df br-1">
+								<i class="fa fa-mobile"></i>
+								<figcaption class="content_inside-left_health-item_text dfc">
+									<h6 class="blc sub-title">Mobile</h6>
+									<p class="p2 blc para df alc">9841000000</p>
+								</figcaption>
+							</aside>
+							
+							<aside class="content_inside-left_health-item colg-4 df br-1">
+								<i class="fa fa-map-marker-alt"></i>
+								<figcaption class="content_inside-left_health-item_text dfc">
+									<h6 class="blc sub-title">Address</h6>
+									<p class="p2 blc para df alc">Kathmandu, Nepal</p>
+								</figcaption>
+							</aside>
+							
+							<aside class="content_inside-left_health-item colg-4 df br-1">
+								<i class="fa fa-check-circle"></i>
+								<figcaption class="content_inside-left_health-item_text dfc">
+									<h6 class="blc sub-title">Verified by:</h6>
+									<p class="p2 blc para df alc">Sewa Exchange</p>
+								</figcaption>
+							</aside>
+
+						</div>
+
+					</div>
+					<!-- end content_inside-left_health -->
+					
+				</div>
+				<!-- content_inside-left -->
+				
+
+			</div>
+
+			 <div class="chat_box">
+			    <div class="tab-wrap spb alc">
+			       <h4 class="blc mb-1">Conversation</h4>
+			       <ul class="tab-menu df">
+			          <li class="tab-item"><a href="#dis" class="tab-link p-1">Discussion</a></li>
+			          <li class="tab-item"><a href="#al" class="tab-link p-1">Activity Log</a></li>
+			       </ul>
+			       <aside id="dis" class="tab-content">
+			          <div class="conversation-panel">
+			            <!-- message 1: user -->
+			            <div class="msg-row user">
+			            	<div class="avatar">
+			            	    <img src="images/img/man.png">
+			            	</div>
+			            	<div class="bubble">
+			                	<div class="msg-text">
+			                	<p>Hello, is my camera listing under review? Hello, is my camera listing under review?
+			                	Hello, is my camera listing under review? Hello, is my camera listing under review?
+			                	</p>
+			                	</div>
+			                	<span class="timestamp">10:15 AM</span>
+			            	</div>
+			            </div>
+
+			            <!-- message 2: support -->
+			            <div class="msg-row support">
+			            	<div class="avatar">
+			            	    <img src="images/img/man2.jpg">
+			            	</div>
+			            	<div class="bubble">
+			                	<div class="msg-text">
+			                	<p>Hi, yes, we're reviewing it. Please give us some time.
+			                	Hi, yes, we're reviewing it. Please give us some time.
+			                	Hi, yes, we're reviewing it. Please give us some time.
+			                	</p>
+			                	</div>
+			                	<span class="timestamp">10:16 AM</span>
+			            	</div>
+			            </div>
+
+			            <!-- message 3: user -->
+			            <div class="msg-row user">
+			            	<div class="avatar">
+			            	    <img src="images/img/man.png">
+			            	</div>
+			            	<div class="bubble">
+			                	<div class="msg-text">
+			                	<p>Can you let me know when it gets approved?</p>
+			                	</div>
+			                	<span class="timestamp">10:20 AM</span>
+			            	</div>
+			            </div>
+
+			            <!-- message 4: support -->
+			            <div class="msg-row support">
+			            	<div class="avatar">
+			            	    <img src="images/img/man2.jpg">
+			            	</div>
+			            	<div class="bubble">
+			                	<div class="msg-text">
+			                	<p>Sure, I'll notify you once it's approved.</p>
+			                	</div>
+			                	<span class="timestamp">10:22 AM</span>
+			            	</div>
+			            </div>
+
+			            <!-- message 5: user final "Thank you!" -->
+			            <div class="msg-row user">
+			            	<div class="avatar">
+			            	    <img src="images/img/man.png">
+			            	</div>
+			            	<div class="bubble">
+			                	<div class="msg-text">
+			                	<p>Thank you! I appreciate it.</p>
+			                	</div>
+			                	<span class="timestamp">10:30 AM</span>
+			            	</div>
+			            </div>
+			          </div>
+
+			          <div class="chat-footer">
+			            <input type="text" placeholder="Type a message..." value="">
+			            <button class="send-btn">Send</button>
+			          </div>            
+			          <div class="bottom-note">
+			            
+			          </div>
+			       </aside>
+			       <!-- end id dis -->
+			       <aside id="al" class="tab-content">
+			          Log 
+			       </aside>
+			       <!-- end id dis -->
+			    </div>
+			 </div>
+			 <aside class="chat_btn">
+			    <i class="fa fa-comments chat-icon chat_show"></i>
+			    <i class="fa fa-times chat-icon chat_hide"></i>
+			 </aside>
+			<!-- end chat part -->
+
+			<footer class="footer p-1 sobg">
+				<ul class="footer_ul df gap-2 alc">
+					<li class="footer_li df alc">
+						<i class="fa fa-lock"></i>
+						<a class="footer_a blc" href="#">Secure Platform</a>
+					</li>
+					<li class="footer_li df alc">
+						<i class="fa fa-people-group"></i>
+						<a class="footer_a blc" href="#">Trusted Community</a>
+					</li>
+					<li class="footer_li df alc">
+						<i class="fa fa-wallet"></i>
+						<a class="footer_a blc" href="#">Wallet Protected</a>
+					</li>
+					<li class="footer_li df alc">
+						<i class="fa fa-check-circle"></i>
+						<a class="footer_a blc" href="#">Verified System</a>
+					</li>					
+					<li class="footer_li df alc">
+						<i class="fa fa-money-bill-wheat"></i>
+						<a class="footer_a blc" href="#">Community Economy</a>
+					</li>					
+				</ul>
+			</footer>
+
+		</div>
+		<!-- end content -->
+
+	</section>
+		
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/main.js"></script>
+		
+		<script>
+			$(document).ready(function(){
+				$(".show-pass").click(function() {
+					let input = $(this).siblings("input");
+					if (input.attr("type") === "password") {
+						input.attr("type", "text");
+						$(this).removeClass("fa-eye").addClass("fa-eye-slash");
+					} else {
+						input.attr("type", "password");
+						$(this).removeClass("fa-eye-slash").addClass("fa-eye");
+					}
+				});
+
+				
+				// show new popup window for loading load_wallet
+				$(".load_wallet").click(function () {
+  				window.open(
+  				    "load-wallet.html",
+  				    "popupWindow",
+  				    "width=600,height=500,left=200,top=100,resizable=yes,scrollbars=yes"
+  				  );
+				});
+
+			});
+		</script>
+
+
+	</body>
+	</html>

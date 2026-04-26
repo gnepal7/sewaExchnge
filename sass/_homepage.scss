@@ -1,0 +1,317 @@
+@mixin showBoxOnClick{
+	position: fixed;    		
+	display: block;
+	z-index: 9;
+	@include max(767px){
+	    right:1rem;
+	    top:15rem;
+	}
+}
+@mixin popBoxStyle{
+	background-color: darken($bgcolor, 5%);
+	@include box-shadow(2px, 1px, 3px, $lgry);
+	@include max(767px){
+		width:calc(100% - 2rem);
+		margin:0 auto;
+	}
+}
+.box_on-click{	
+	display: none;
+	&.notification{		
+		@include popBoxStyle;
+		max-width: 30rem;
+		max-height: 400px;
+		overflow-y: auto;		
+		&.show{
+			top: 4.8rem;
+			right: 8rem;
+			@include showBoxOnClick;
+		}
+		& .clear{
+			font-size: .75rem;
+			margin-left:auto;
+			text-transform: uppercase;
+			cursor: pointer;
+		}
+	}
+	&_ul{
+
+	}
+	&_li{
+		&:not(:last-of-type){
+			border-bottom:1px solid $bgcolor;
+		}
+	}
+	&_a{
+		font-size:.85rem;
+	}
+	&_title{
+		border-bottom:1px solid $lgry;		
+	}
+	&.profile_box{
+		@include popBoxStyle;
+		&.show{
+			right:2rem;
+			@include showBoxOnClick;
+			top:4.8rem;
+		}
+		& .box_on-click_a{
+			& .fa{
+				color:$gry;
+			}
+		}
+	}	
+}
+.block{
+	&_title{
+		margin-bottom:.5rem;
+		& a{
+			font-size:.75rem;
+			text-transform: uppercase;
+			font-weight: normal;
+		}
+	}
+}
+.ex-item{
+	border: 1px solid $bgcolor;
+	& *{
+		transition: all linear .2s;
+	}
+	&:hover{
+		&,
+		& *{
+			transition: all linear .2s;
+		}
+		border-color:lighten($secondary, 30%);
+		& .ex-item_price{
+			color:$bla;
+		}
+		& img{
+			transform:scale(1.01) rotate(1deg);
+		}
+	}
+	& img{
+		object-fit: cover;
+		transition: all linear .2s;
+		@include min(768px){
+			width:100%;
+			height:13.5rem;
+		}
+	}
+	&_title{
+		@include lc(2);
+	}
+	&_price{
+		color:$secondary;
+		display: flex;
+    	align-items: center;
+	}
+	&_discount{
+		font-size:.75rem;
+		font-weight: normal;
+	}
+}
+.btn-wrap{
+	justify-content: center;
+	& .load-more-btn{
+		justify-self: center;
+	}
+}
+
+/***** banner section *****/
+.banner{
+	@include max(991px){
+		margin-top:1.3rem;
+	}
+	&_content{
+		& h1{
+			@include max(991px){
+
+			}
+		}
+	}
+	&_ul{
+		@include max(991px){
+			flex-direction: column;
+		}
+	}
+	&_li{
+		list-style-type: circle;
+		font-size:1rem;
+	}
+	&_img{
+		& img{
+			@include max(991px){
+				margin-top:1rem;
+			}
+			max-width: 100%;
+		}
+	}
+}
+/***** active exchange feed *****/
+.col15{
+	display:grid;
+	grid-template-columns: repeat(15, 1fr);
+}
+.activeFeed{
+	
+}
+@mixin columnAndItemStyle{	
+	box-shadow: 1px 1px 3px lighten($gry, 13%);
+	transition: all linear .3s;
+	border:1px solid transparent;
+	@include max(991px){
+		grid-column:span 15;
+	}
+	&:hover{
+		border-color:lighten($secondary, 25%);
+		cursor: pointer;
+	}
+	& img{
+		width:100%;
+		object-fit: cover;
+		@include min(992px){
+			height:11rem;
+		}		
+	}
+}
+/***** active item style ****/
+.exchange_item{
+	grid-column:span 3;
+	@include columnAndItemStyle;	
+	&-title{
+		@include lc(2);
+	}
+	&-info{
+
+	}
+	&-cat{
+		font-size:.85rem;
+		color:darken($gry, 10%);
+		font-weight: normal;
+	}
+	&-btn{
+		font-size: .7rem;
+		text-decoration: underline;
+		text-transform: uppercase;
+		transition: all linear .2s;
+		@include radius(.5rem);
+		font-weight: 600;
+		&:hover{
+			text-decoration: none;
+			transform:scale(1.02) skew(2deg);
+		}
+	}
+	&-rating{
+		justify-content: space-between;
+		&-number{
+			font-size:.7rem;
+			color:$primary;
+			& i.fa{
+				color:$gry;
+				font-size: .6rem;
+				&.active{
+					color:lighten($secondary, 25%);
+				}
+			}
+		}
+	}	
+}
+/**** what is sewa exchange intro ****/
+@mixin smallParaStyle{
+	font-size: .85rem;
+	font-weight: normal;
+}
+.sewaIntro,
+.secureWallet{
+	&_info{
+		border:1px solid lighten($gry, 10%);
+		&-icon{
+			font-size: 1.7rem;
+			color:lighten($secondary, 30%);
+		}
+		&-text{
+
+		}
+		&-para{
+			@include smallParaStyle;
+		}	
+	}
+	&_img{
+		& img{
+			max-width: 100%;
+		}
+	}
+}
+
+/***** how it works *****/
+.works {
+  &_ul {
+    counter-reset: work;
+    padding-left: 2rem;    
+  }
+
+  &_li {
+    counter-increment: work;
+    &::before {
+      content: counter(work) "";
+      width: 3rem;
+      height: 3rem;
+      padding:1rem;
+      background-color: $whi;
+      border-radius: 50%;
+      color: $primary;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &_text{
+  	&-title{
+
+  	}
+  	&-para{
+		@include smallParaStyle;
+  	}
+  }
+}
+/***** exchangeCategory *****/
+.exchangeCat{
+	&_item{
+		@include columnAndItemStyle;
+		&-info{
+
+		}
+		&-title{
+
+		}
+		& h6{
+			margin-bottom: .3rem;			
+		}
+	}
+}
+.exchangeCat_item.exchangeCat_item-home{
+	grid-column:span 3;
+}
+/****** secureWallet *****/
+
+/***** Community Based Exchange *****/
+.communityBased{
+	&_title{
+		text-align: center;
+	}
+	&_item{
+		border:1px solid lighten($lgry, 20%);
+		transition: all linear .3s;
+		&:hover{
+			border-color:lighten($secondary, 30%);
+			transform: scale(1.01) rotate(1deg);
+		}
+		& img{
+			object-fit: cover;
+			@include min(992px){
+				height: 11rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,47 @@
+$scrollbar-width: 2px;
+$scrollbar-thumb-color: lighten($primary, 50%);
+$scrollbar-track-color: darken($gry, 20%);
+::-webkit-scrollbar {
+  width: $scrollbar-width;
+  height: $scrollbar-width;
+   	&-track {
+       background-color: transparent;
+       @include radius(100%);
+   	}
+   	&-thumb {
+      background-color: $scrollbar-thumb-color;
+      @include radius(100%);
+      border: 1px solid transparent; 
+      &:hover{
+        background-color: lighten($primary, 40%);
+      }
+   	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+    scrollbar-color: lighten($primary, 50%) transparent !important;
+    scrollbar-width: thin !important;
+  }
+}
+/***** scrollbar indicator *****/
+.progress{
+  &-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: .25rem;
+    background-color: $whi;
+    z-index:9;
+    @include max(767px){
+      display: none;
+    }
+  }
+  &-bar{
+    height: 100%;
+    background-color: lighten($secondary, 30%);
+    width: 0%;
+  }
+}

@@ -1,0 +1,201 @@
+.menu-btn{
+    background: none;
+    display: inline-block;
+}
+
+.menu-btn span{
+    font-size: .85rem;
+}
+
+.dropdown > div, .sub-dropdown > div {
+    cursor: pointer;
+}
+.dropdown .menu a{
+    font-size: .95rem;
+    padding: .5rem 0;
+}
+.dropdown .menu a:hover{
+    color: #9b9b9b;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar{
+        padding: 0 1.5rem;
+    }
+    .dropdown > div{
+        padding: .2rem .7rem;
+        margin: 0;
+        border: 0;
+    }
+    .mega-menu{
+        display: flex;
+        justify-content: center;
+    }
+    /* .menu-btn{
+        display: none;
+    } */
+    .menu{
+        position: absolute;
+        top: 4.65rem;
+        left: auto;
+        width: 100%;
+        padding: 0 2rem;
+        overflow-y: auto;
+        transition: 0.4s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1.5rem;
+        width: calc(100% - 15rem);
+        right: 0;
+        flex-wrap: wrap;
+    }
+
+    .menu > li:first-child{
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .sub-dropdown > div span:first-child{
+        font-weight: bold;
+    }
+    
+    .dropdown > div{
+        transition: 0.3s;
+    }
+
+    .dropdown:hover > div{
+        border-color: #000;
+    }
+
+    .dropdown li{
+        margin-bottom: .7rem;
+    }
+
+    .dropdown > div span:last-child, 
+    .sub-dropdown > div{
+        display: none;
+    }
+
+    /* Width */
+    .menu::-webkit-scrollbar{
+        width: 2px;
+    }
+    /* Track */
+    .menu::-webkit-scrollbar-track{
+        background: #f1f1f1;
+    }
+    /* Handle */
+    .menu::-webkit-scrollbar-thumb{
+        background: #888;
+    }
+
+    /* Handle on hover */
+    .menu::-webkit-scrollbar-thumb:hover{
+        background: #555;
+    }
+
+    /* Hide menu */
+    .menu{
+        height: 0;
+    }
+    .dropdown:hover .menu{
+        height: 70vh;
+        padding: 2rem;
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 767px) {
+    .menu-btn{
+        margin-left: 0;
+    }
+    .menu-btn span{
+        font-size: 1.1rem;
+    }
+
+
+    /* Width */
+    .mega-menu::-webkit-scrollbar{
+        width: 2px;
+    }
+    /* Track */
+    .mega-menu::-webkit-scrollbar-track{
+        background: #f1f1f1;
+    }
+    /* Handle */
+    .mega-menu::-webkit-scrollbar-thumb{
+        background: #888;
+    }
+    /* Handle on hover */
+    .mega-menu::-webkit-scrollbar-thumb:hover{
+        background: #555;
+    }
+    .mega-menu{
+        padding: 0 1rem 1rem 1rem;
+        height: 100%;
+        overflow-y: scroll;
+    }
+    .mega-menu li{
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+    .mega-menu li.dropdown{
+        width: 100%;
+        margin-top: .3rem;
+    }
+    .mega-menu li > div{
+        display: flex;
+        justify-content: space-between;
+        align-itrems: center;
+        gap: 0.5rem;
+    }
+    .menu li{
+        padding: 0 1rem;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .menu a{
+        display: block;
+        padding: 0.5rem 0;
+        font-size: 1rem;
+    }
+    .menu{
+        display: none;
+    }
+    /* Toggle class for Javascript */
+    .menu-show{
+        display: block;
+    }
+    .material-symbols-outlined{
+        transition: 0.3s;
+    }
+    /* Toggle class for javascript */
+    .icon-rotated{
+        transform: rotate(90deg);
+    }
+    .dropdown>div, .sub-dropdown > div{
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+    .sub-menu{
+        font-size: 0.9rem;
+        display: none;
+    }
+    /* Toggle class for Javascript */
+    .sub-menu-show{
+        display: block;
+    }
+    .dropdown:hover>div, .sub-dropdown:hover>div{
+        background: #dbdbdb;
+    }
+    /* Hide menu */
+    .menu-container{
+        height: 0;
+    }
+    /* Toggle class for javascript */
+    .mega-menu-show{
+        height: 60vh;
+    }
+}

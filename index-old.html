@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sewa Exchange</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="images/favicon.png" type="images/img/fav.png">
+	
+	<!-- fontawesome -->
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<!-- owl -->
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+
+	<!-- custom -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>	
+
+	<div class="progress-wrapper">
+		<div class="progress-bar"></div>
+	</div>
+
+	<nav class="nav py-1">
+		<div class="wrapper-wide dg col12 gap-3 header-wrap">
+			<div class="colg-3">
+				<a href="index.html" class="logo">
+					<img src="images/img/logo.png">
+				</a>
+			</div>
+
+			<div class="colg-4 search-wrap">
+				<form class="search-form">
+					<input type="search" placeholder="search item(s) here....">
+					<i class="fa fa-search"></i>
+				</form>
+			</div>
+
+			<div class="colg-5">
+				<ul class="btn-group action-buttons df gap-2">
+					<li class="action-buttons_add">
+						<a class="btn-sm btn-main-br  prime df gap-1" href="addPost.html">
+							<i class="fa fa-plus"></i>
+							<span>Add Item</span>
+						</a>
+					</li>
+					<!-- these two list will show before login -->
+					<li>
+						<a class="btn-sm btn-lw-bg sec db" href="login.html">							
+							Login
+						</a>
+					</li>
+					<li>
+						<a class="btn-sm btn-dim-bg prime db" href="signup.html">							
+							signup
+						</a>
+					</li>
+
+					<!-- these two list will show after login -->
+					<li>
+						<a class="btn-sm btn-dim-bg sec db notify-btn" href="javascript:void()">				<i class="fa fa-bell"></i>
+						</a>
+					</li>
+					<li>
+						<a class="btn-sm btn-lw-bg sec df profile-btn" href="javascript:void()">		
+							<img src="images/img/man.png">
+							<i class="fa fa-chevron-down"></i>
+						</a>
+					</li>
+
+				</ul>
+			</div>
+			
+		</div>
+	</nav>
+
+
+	<div class="box_on-click notification p-2 br-1">
+		<h4 class="blc box_on-click_title pb-1 df alc">Notifications 
+			<span class="clear">Clear</span>
+		</h4>
+		<ul class="box_on-click_ul dfc">
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Vestibulum ac arcu id libero dignissim mollis sed ut nunc</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Sed cursus nibh molestie, imperdiet urna a, blandit justo</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Morbi auctor odio sed massa semper molestie</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Praesent nec eros sed sem lacinia mattis sit amet in diam</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Aliquam dictum libero id orci laoreet dignissim</a>
+			</li>
+		</ul>
+	</div>
+
+
+	<div class="box_on-click profile_box py-1 px-2 br-1">
+		<h4 class="blc box_on-click_title pb-1 mb-1 df alc">Gopal Nepal</h4>
+		<ul class="box_on-click_ul dfc">
+			<li class="box_on-click_li">
+				<a class="box_on-click_a blc df gap-1 alc p-1" href="#">
+					<i class="fa fa-user-circle"></i>
+					<span>Visit Profile
+					</a>
+				</li>
+				<li class="box_on-click_li">
+					<a class="box_on-click_a blc df gap-1 alc p-1" href="#">
+						<i class="fa fa-sign-out"></i>
+						<span>Logout</span>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+
+
+		<section class="wrapper-wide dg col12 gap-3 py-2">
+			<div class="colg-3 menu_wrap">
+				<aside class="mb-1">
+					<h4 class="gr">CATEGORIES</h4>
+					<button class="nav_toggler">
+						<i class="fa fa-bars toggler"></i>				   
+					</button>
+				</aside>
+
+				<ul class="nav_ul dfc">
+					<ul class="default_ul">
+						<li class="nav_li p-1 active">
+							<a href="index.html" class="nav_a df gap-1">
+								<i class="fa fa-home homeicon"></i>
+								<h6>All Items</h6>
+								<span class="stockCount">(50450)</span>
+							</a>
+						</li>
+
+						<li class="nav_li p-1">
+							<a href="category.html" class="nav_a df gap-1">
+								<i class="fa fa-bicycle"></i>
+								<h6>Apparels & Accessories</h6>
+								<span class="stockCount">(1210)</span>
+							</a>
+						</li>
+
+						<li class="nav_li p-1">
+							<a href="#" class="nav_a df gap-1">
+								<i class="fa fa-lightbulb"></i>
+								<h6>Electronics</h6>
+								<span class="stockCount">(710)</span>
+							</a>
+						</li>
+
+						<li class="nav_li p-1">
+							<a href="#" class="nav_a df gap-1">
+								<i class="fa fa-computer"></i>
+								<h6>Computers & Peripherals</h6>
+								<span class="stockCount">(592)</span>
+							</a>
+						</li>
+
+						<li class="nav_li p-1">
+							<a href="#" class="nav_a df gap-1">
+								<i class="fa fa-bus"></i>
+								<h6>Automobiles</h6>
+								<span class="stockCount">(402)</span>
+							</a>
+						</li>
+
+						<li class="nav_li p-1">
+							<a href="#" class="nav_a df gap-1">
+								<i class="fa fa-chair"></i>
+								<h6>Furnishings & Appliances</h6>
+								<span class="stockCount">(656)</span>
+							</a>
+						</li>
+
+						<li class="nav_li p-1">
+							<a href="#" class="nav_a df gap-1">
+								<i class="fa fa-cake"></i>
+								<h6>Fresh Veggies & Meat</h6>
+								<span class="stockCount">(723)</span>
+							</a>
+						</li>
+
+						<li class="nav_li p-1">
+							<a href="#" class="nav_a df gap-1">
+								<i class="fa fa-money-bill"></i>
+								<h6>Jobs</h6>
+								<span class="stockCount">(1126)</span>
+							</a>
+						</li>
+					</ul>
+
+					<li class="nav_li">
+						<a href="javascript:void()" class="nav_a df gap-1 p-1 pri-bglg br-1" id="viewAll">
+							<i class="fa fa-plus"></i>
+							<h6>View All Categories</h6>
+						</a>
+					</li>
+
+					<ul class="sub_ul more-categories" style="display:none;">
+						<li class="mt-1 pt-1 pr-1 pb-1"><span class="gr">Goods:</span></li>
+						<li class="nav_li p-1">
+							<a href="#" class="nav_a df gap-1">
+								<i class="fa fa-bicycle"></i>
+								<h6>Apparels & Accessories</h6>
+								<span class="stockCount">(1210)</span>
+							</a>
+						</li>
+						<li class="nav_li p-1">
+							<a href="#" class="nav_a df gap-1">
+								<i class="fa fa-lightbulb"></i>
+								<h6>Electronics</h6>
+								<span class="stockCount">(710)</span>
+							</a>
+						</li>
+						<li class="nav_li p-1">
+							<a href="#" class="nav_a df gap-1">
+								<i class="fa fa-computer"></i>
+								<h6>Computers & Peripherals</h6>
+								<span class="stockCount">(592)</span>
+							</a>
+						</li>
+						<li class="nav_li p-1">
+							<a href="#" class="nav_a df gap-1">
+								<i class="fa fa-mobile-vibrate"></i>
+								<h6>Mobile & Accessories</h6>
+								<span class="stockCount">(1579)</span>
+							</a>
+						</li>
+						<li class="nav_li p-1">
+							<a href="#" class="nav_a df gap-1">
+								<i class="fa fa-guitar"></i>
+								<h6>Musical Instruments</h6>
+								<span class="stockCount">(551)</span>
+							</a>
+						</li>
+
+						<li class="mt-1 pt-1 pr-1 pb-1"><span class="gr">Vehicles:</span></li>
+						<li class="nav_li p-1">
+							<a href="#" class="nav_a df gap-1">
+								<i class="fa fa-bus"></i>
+								<h6>Automobiles</h6>
+								<span class="stockCount">(402)</span>
+							</a>
+						</li>
+
+						<li class="mt-1 pt-1 pr-1 pb-1"><span class="gr">Services:</span></li>
+						<li class="nav_li p-1">
+							<a href="#" class="nav_a df gap-1">
+								<i class="fa fa-money-bill"></i>
+								<h6>Jobs</h6>
+								<span class="stockCount">(1126)</span>
+							</a>
+						</li>
+						<li class="nav_li p-1">
+							<a href="#" class="nav_a df gap-1">
+								<i class="fa fa-calendar-plus"></i>
+								<h6>Events & Happenings</h6>
+								<span class="stockCount">(99)</span>
+							</a>
+						</li>
+						<li class="nav_li p-1">
+							<a href="#" class="nav_a df gap-1">
+								<i class="fa fa-plane"></i>
+								<h6>Travel, Tours & Packages</h6>
+								<span class="stockCount">(673)</span>
+							</a>
+						</li>
+
+						<li class="mt-1 pt-1 pr-1 pb-1"><span class="gr">Daily Needs:</span></li>
+						<li class="nav_li p-1">
+							<a href="#" class="nav_a df gap-1">
+								<i class="fa fa-cake"></i>
+								<h6>Fresh Veggies & Meat</h6>
+								<span class="stockCount">(723)</span>
+							</a>
+						</li>
+						<li class="nav_li p-1">
+							<a href="#" class="nav_a df gap-1">
+								<i class="fa fa-cat"></i>
+								<h6>Pets & Pet Care</h6>
+								<span class="stockCount">(289)</span>
+							</a>
+						</li>
+						<li class="mt-1 pt-1 pr-1 pb-1"><span class="gr">Properties:</span></li>
+						<li class="nav_li p-1">
+							<a href="#" class="nav_a df gap-1">
+								<i class="fa fa-house-signal"></i>
+								<h6>Real Estate</h6>
+								<span class="stockCount">(357)</span>
+							</a>
+						</li>
+
+						<li class="mt-1 pt-1 pr-1 pb-1"><span class="gr">Others:</span></li>
+						<li class="nav_li p-1">
+							<a href="#" class="nav_a df gap-1">
+								<i class="fa fa-briefcase"></i>
+								<h6>Business & Industrial</h6>
+								<span class="stockCount">(752)</span>
+							</a>
+						</li>
+						
+						<li class="nav_li p-1">
+							<a href="#" class="nav_a df gap-1">
+								<i class="fa fa-tv-alt"></i>
+								<h6>Electronics, TVs, & More</h6>
+								<span class="stockCount">(666)</span>
+							</a>
+						</li>
+
+					</ul>
+
+				</ul>
+
+			</div>
+			<!-- end menu_wrap -->
+
+			<div class="colg-9 content">
+				<div class="product-slider owl-carousel owl-theme">
+					<article class="item br-2">				
+						<img src="images/slide1.jpg">
+					</article>
+					<article class="item br-2">				
+						<img src="images/slide2.jpg">
+					</article>	
+					<article class="item br-2">				
+						<img src="images/slide3.jpg">
+					</article>
+					<article class="item br-2">				
+						<img src="images/slide4.jpg">
+					</article>	
+					<article class="item br-2">				
+						<img src="images/slide5.jpg">
+					</article>		
+				</div>
+				<!-- end today-pic -->
+
+				<div class="mt-2">
+					<h4 class="block_title prime">Featured Items <a href="#" class="blc ml-1">All</a></h4>
+					<div class="featured dg col12 gap-1">
+
+						<a class="ex-item colg-3 p-1 br-1 dfc gap-1" href="#">
+							<img src="images/product/crew-t-short.png" class="br-1">
+							<h6 class="ex-item_title">Premium Regular Fit Long Sleeve Crew Neck T-Shirt For Men</h6>
+							<h5 class="ex-item_price">RS.298 
+								<span class="ex-item_discount ml-1 blc">-24%</span>
+							</h5>	
+						</a>
+
+						<a class="ex-item colg-3 p-1 br-1 dfc gap-1" href="#">
+							<img src="images/product/glue.png" class="br-1">
+							<h6 class="ex-item_title">Sneaker Shoes Clean & Fresh  Cleaner Shoes Shining (Pack of 1)</h6>
+							<h5 class="ex-item_price">RS.209 
+								<span class="ex-item_discount ml-1 blc">-28%</span>
+							</h5>	
+						</a>
+
+						<a class="ex-item colg-3 p-1 br-1 dfc gap-1" href="#">
+							<img src="images/product/socks.png" class="br-1">
+							<h6 class="ex-item_title">Pack of 5 Unisex Long Thick Vintage Pattern  Winter Wool Cashmere Socks -multicolors</h6>
+							<h5 class="ex-item_price">RS.785 
+								<span class="ex-item_discount ml-1 blc">-21%</span>
+							</h5>	
+						</a>
+
+						<a class="ex-item colg-3 p-1 br-1 dfc gap-1" href="#">
+							<img src="images/product/sliper.png" class="br-1">
+							<h6 class="ex-item_title">Women's Solid Color Flip Flops, Casual Clip Toe Beach Shoes, Summer Lightweight Platform Shoes</h6>
+							<h5 class="ex-item_price">RS.785 
+								<span class="ex-item_discount ml-1 blc">-21%</span>
+							</h5>	
+						</a>
+
+					</div>
+				</div>
+
+				<div class="mt-2">
+					<h4 class="block_title prime">Latest Uploads <a href="#" class="blc ml-1">All</a></h4>
+					<div class="latest dg col12 gap-1">
+
+						<a class="ex-item colg-3 p-1 br-1 dfc gap-1" href="#">
+							<img src="images/product/jacket.png" class="br-1">
+							<h6 class="ex-item_title">Ninja Mask Hoodie -Built- In- face covering For all</h6>
+							<h5 class="ex-item_price">RS.1799 
+								<span class="ex-item_discount ml-1 blc">-21%</span>
+							</h5>	
+						</a>
+
+						<a class="ex-item colg-3 p-1 br-1 dfc gap-1" href="#">
+							<img src="images/product/lady-jacket.png" class="br-1">
+							<h6 class="ex-item_title">Warm Inner Fleece Full Zipup Hoodie Jacket And Straight Trouser Set For Women</h6>
+							<h5 class="ex-item_price">RS.1880 
+								<span class="ex-item_discount ml-1 blc">-42%</span>
+							</h5>	
+						</a>
+
+						<a class="ex-item colg-3 p-1 br-1 dfc gap-1" href="#">
+							<img src="images/product/costemic.png" class="br-1">
+							<h6 class="ex-item_title">Multi-function Blush Stick Long Lasting Natural Cheek Face Rouge Blusher Cream Waterproof High Brightening Skin Tone Makeup</h6>
+							<h5 class="ex-item_price">RS.275 
+								<span class="ex-item_discount ml-1 blc">-15%</span>
+							</h5>	
+						</a>
+
+						<a class="ex-item colg-3 p-1 br-1 dfc gap-1" href="#">
+							<img src="images/product/kattu.png" class="br-1">
+							<h6 class="ex-item_title">Super Comfortable Running Gym Shorts For Men</h6>
+							<h5 class="ex-item_price">RS.665 
+								<span class="ex-item_discount ml-1 blc">-16%</span>
+							</h5>	
+						</a>
+
+					</div>
+				</div>
+
+				<div class="mt-2">
+					<h4 class="block_title prime">Just For You</h4>
+					<div class="latest dg col12 gap-1">
+
+						<a class="ex-item colg-3 p-1 br-1 dfc gap-1" href="#">
+							<img src="images/product/jacket.png" class="br-1">
+							<h6 class="ex-item_title">Ninja Mask Hoodie -Built- In- face covering For all</h6>
+							<h5 class="ex-item_price">RS.1799 
+								<span class="ex-item_discount ml-1 blc">-21%</span>
+							</h5>	
+						</a>
+
+						<a class="ex-item colg-3 p-1 br-1 dfc gap-1" href="#">
+							<img src="images/product/lady-jacket.png" class="br-1">
+							<h6 class="ex-item_title">Warm Inner Fleece Full Zipup Hoodie Jacket And Straight Trouser Set For Women</h6>
+							<h5 class="ex-item_price">RS.1880 
+								<span class="ex-item_discount ml-1 blc">-42%</span>
+							</h5>	
+						</a>
+
+						<a class="ex-item colg-3 p-1 br-1 dfc gap-1" href="#">
+							<img src="images/product/costemic.png" class="br-1">
+							<h6 class="ex-item_title">Multi-function Blush Stick Long Lasting Natural Cheek Face Rouge Blusher Cream Waterproof High Brightening Skin Tone Makeup</h6>
+							<h5 class="ex-item_price">RS.275 
+								<span class="ex-item_discount ml-1 blc">-15%</span>
+							</h5>	
+						</a>
+
+						<a class="ex-item colg-3 p-1 br-1 dfc gap-1" href="#">
+							<img src="images/product/kattu.png" class="br-1">
+							<h6 class="ex-item_title">Super Comfortable Running Gym Shorts For Men</h6>
+							<h5 class="ex-item_price">RS.665 
+								<span class="ex-item_discount ml-1 blc">-16%</span>
+							</h5>	
+						</a>
+
+						<a class="ex-item colg-3 p-1 br-1 dfc gap-1" href="#">
+							<img src="images/product/crew-t-short.png" class="br-1">
+							<h6 class="ex-item_title">Premium Regular Fit Long Sleeve Crew Neck T-Shirt For Men</h6>
+							<h5 class="ex-item_price">RS.298 
+								<span class="ex-item_discount ml-1 blc">-24%</span>
+							</h5>	
+						</a>
+
+						<a class="ex-item colg-3 p-1 br-1 dfc gap-1" href="#">
+							<img src="images/product/glue.png" class="br-1">
+							<h6 class="ex-item_title">Sneaker Shoes Clean & Fresh  Cleaner Shoes Shining (Pack of 1)</h6>
+							<h5 class="ex-item_price">RS.209 
+								<span class="ex-item_discount ml-1 blc">-28%</span>
+							</h5>	
+						</a>
+
+						<a class="ex-item colg-3 p-1 br-1 dfc gap-1" href="#">
+							<img src="images/product/socks.png" class="br-1">
+							<h6 class="ex-item_title">Pack of 5 Unisex Long Thick Vintage Pattern  Winter Wool Cashmere Socks -multicolors</h6>
+							<h5 class="ex-item_price">RS.785 
+								<span class="ex-item_discount ml-1 blc">-21%</span>
+							</h5>	
+						</a>
+
+						<a class="ex-item colg-3 p-1 br-1 dfc gap-1" href="#">
+							<img src="images/product/sliper.png" class="br-1">
+							<h6 class="ex-item_title">Women's Solid Color Flip Flops, Casual Clip Toe Beach Shoes, Summer Lightweight Platform Shoes</h6>
+							<h5 class="ex-item_price">RS.785 
+								<span class="ex-item_discount ml-1 blc">-21%</span>
+							</h5>	
+						</a>
+
+						<a class="ex-item colg-3 p-1 br-1 dfc gap-1" href="#">
+							<img src="images/product/crew-t-short.png" class="br-1">
+							<h6 class="ex-item_title">Premium Regular Fit Long Sleeve Crew Neck T-Shirt For Men</h6>
+							<h5 class="ex-item_price">RS.298 
+								<span class="ex-item_discount ml-1 blc">-24%</span>
+							</h5>	
+						</a>
+
+						<a class="ex-item colg-3 p-1 br-1 dfc gap-1" href="#">
+							<img src="images/product/glue.png" class="br-1">
+							<h6 class="ex-item_title">Sneaker Shoes Clean & Fresh  Cleaner Shoes Shining (Pack of 1)</h6>
+							<h5 class="ex-item_price">RS.209 
+								<span class="ex-item_discount ml-1 blc">-28%</span>
+							</h5>	
+						</a>
+
+						<a class="ex-item colg-3 p-1 br-1 dfc gap-1" href="#">
+							<img src="images/product/socks.png" class="br-1">
+							<h6 class="ex-item_title">Pack of 5 Unisex Long Thick Vintage Pattern  Winter Wool Cashmere Socks -multicolors</h6>
+							<h5 class="ex-item_price">RS.785 
+								<span class="ex-item_discount ml-1 blc">-21%</span>
+							</h5>	
+						</a>
+
+						<a class="ex-item colg-3 p-1 br-1 dfc gap-1" href="#">
+							<img src="images/product/sliper.png" class="br-1">
+							<h6 class="ex-item_title">Women's Solid Color Flip Flops, Casual Clip Toe Beach Shoes, Summer Lightweight Platform Shoes</h6>
+							<h5 class="ex-item_price">RS.785 
+								<span class="ex-item_discount ml-1 blc">-21%</span>
+							</h5>	
+						</a>
+
+					</div>
+
+					<div class="btn-wrap mt-1 df">
+						<a class="btn-sm btn-main-br prime load-more-btn" href="javascript:void()">
+							Load More Items
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+			<!-- end content -->
+
+		</section>
+
+
+		<footer class="footer mt-2 py-4">
+			<div class="wrapper-wide dg col12 gap-3">
+
+				<div class="colg-3">
+					<h5 class="prime mb-1">Sewa Exchange</h5>
+					<ul class="footer_ul dfc">
+						<li class="footer_li">
+							Cashless Exchange Platform
+						</li>
+						<li class="footer_li">
+							"Use what you don’t need. Get what you need."
+						</li>					
+					</ul>
+				</div>
+
+				<div class="colg-3">
+					<h5 class="prime mb-1">Support</h5>
+					<ul class="footer_ul dfc">
+						<li class="footer_li">
+							<a href="#" class="footer_a bla db">Help Center</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a bla db">How Exchange Works</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a bla db">Safety Guidelines</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a bla db">Report an Issue</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a bla db">Contact Support</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="colg-3">
+					<h5 class="prime mb-1">Company</h5>
+					<ul class="footer_ul dfc">
+						<li class="footer_li">
+							<a href="#" class="footer_a bla db">About Us</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a bla db">Terms & Conditions</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a bla db">Privacy Policy</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a bla db">Dispute Resolution</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a bla db">Careers</a>
+						</li>					
+					</ul>
+				</div>
+
+				<div class="colg-3">
+					<h5 class="prime mb-1">Connect</h5>
+					<ul class="footer_ul dfc">
+						<li class="footer_li">
+							<a href="javascript:void()" class="footer_a bla db">Anamnagar, Kathmandu, Nepal</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a bla db">info@sewaexchange.com</a>
+						</li>
+						<li class="footer_li">
+							<a href="javascript:void()" class="footer_a bla db">00977-9841000000</a>
+						</li>					
+					</ul>
+					<ul class="footer_ul df gap-1 social_ul">
+						<li class="footer_li">
+							<a href="#" class="footer_a">
+								<i class="fab fa-facebook-square"></i>
+							</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a">
+								<i class="fab fa-instagram-square"></i>
+							</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a">
+								<i class="fab fa-tiktok"></i>
+							</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a">
+								<i class="fab fa-youtube-square"></i>
+							</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a">
+								<i class="fab fa-linkedin-in"></i>
+							</a>
+						</li>
+						<li class="footer_li">
+							<a href="#" class="footer_a">
+								<i class="fab fa-x-twitter"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="colg-12 mt-2 pt-2 copyright">
+					<p>© 2026 Sewa Exchange. All rights reserved. <a href="#">Cashless Exchange Platform</a></p>
+				</div>
+
+			</div>
+		</footer>
+
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/main.js"></script>
+
+		<script>
+			$(document).ready(function(){
+				$(".product-slider").owlCarousel({
+					items: 1,
+					loop: true,
+					autoplay: true,
+					autoplayTimeout: 5000,
+					dots: true,
+					nav: false
+				});
+
+				
+				$("#viewAll").click(function () {
+				  $(".more-categories").slideToggle();
+				  $(".default_ul").slideToggle();
+
+				  $(this).text(function (i, text) {
+				    return text.includes("View") 
+				      ? "< Main Categories" 
+				      : "+ View All Categories";
+				  });
+				});
+
+			});
+		</script>
+
+	</body>
+	</html>

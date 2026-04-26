@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sewa Exchange: Users</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="images/img/favi.png" type="png">
+	
+	<!-- fontawesome -->
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+
+	<!-- custom -->
+	<link rel="stylesheet" type="text/css" href="css/admin.css">
+</head>
+<body>	
+
+	<div class="progress-wrapper">
+		<div class="progress-bar"></div>
+	</div>
+
+	<nav class="nav py-1 top_nav">
+		<div class="wrapper-wide df alc gap-3 header-wrap">
+			<a href="dashboard.html" class="logo df alc gap-1">
+				<img src="images/img/logo.png">
+				<h3 class="prime">SewaExchange</h3>
+			</a>
+
+			<form class="search-form header-form">
+				<input type="search" class="br-3" placeholder="search item(s) here....">
+				<i class="fa fa-search"></i>
+			</form>
+
+			<ul class="btn-group action-buttons df gap-2">
+				<!-- these two list will show after login -->					
+				<li class="df sobg br-1 alc">
+					<a class="btn-sm blc db notify-btn" href="javascript:void()">				
+						<i class="fa fa-bell"></i>
+					</a>
+					<a class="btn-sm sec df profile-btn" href="javascript:void()">		
+						<img src="images/img/man.png">
+						<i class="fa fa-chevron-down"></i>
+					</a>
+				</li>
+
+			</ul>
+			
+		</div>
+	</nav>
+
+
+	<div class="box_on-click notification p-2 br-1">
+		<h4 class="blc box_on-click_title pb-1 df alc">Notifications 
+			<span class="clear">Clear</span>
+		</h4>
+		<ul class="box_on-click_ul dfc">
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Vestibulum ac arcu id libero dignissim mollis sed ut nunc</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Sed cursus nibh molestie, imperdiet urna a, blandit justo</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Morbi auctor odio sed massa semper molestie</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Praesent nec eros sed sem lacinia mattis sit amet in diam</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Aliquam dictum libero id orci laoreet dignissim</a>
+			</li>
+		</ul>
+	</div>
+
+
+	<div class="box_on-click profile_box py-1 px-2 br-1">
+		<h4 class="blc box_on-click_title pb-1 mb-1 df alc">Gopal Nepal</h4>
+		<ul class="box_on-click_ul dfc">
+			<li class="box_on-click_li">
+			<a class="box_on-click_a blc df gap-1 alc p-1" href="#">
+				<i class="fa fa-user-circle"></i>
+				<span>Visit Profile
+				</a>
+			</li>
+			<li class="box_on-click_li">
+				<a class="box_on-click_a blc df gap-1 alc p-1" href="#">
+					<i class="fa fa-sign-out"></i>
+					<span>Logout</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<section class="db">
+		<nav class="nav left_nav p-2">
+			<aside class="mb-1">
+				<h4 class="gr mt-2 hide-on-desktop">MENU</h4>
+				<button class="nav_toggler">
+					<i class="fa fa-bars toggler"></i>				   
+				</button>
+				<button class="close-menu">
+					<i class="fa fa-times toggler"></i>				   
+				</button>
+			</aside>
+
+			<ul class="nav_ul dfc">
+				<li class="nav_li">
+					<a href="dashboard.html" class="nav_a df gap-1 p-1">
+						<i class="fa fa-dashboard homeicon"></i>
+						<h6>Dashboard</h6>
+					</a>
+				</li>
+
+				<li class="nav_li active">
+					<a href="users.html" class="nav_a df gap-1 p-1">
+						<i class="fa fa-users"></i>
+						<h6>Users</h6>
+					</a>
+				</li>
+
+				<li class="nav_li">
+					<a href="agents.html" class="nav_a df gap-1 p-1">
+						<i class="fa fa-user-secret"></i>
+						<h6>Agents</h6>
+					</a>
+				</li>
+
+				<li class="nav_li">
+					<a href="exchange.html" class="nav_a df gap-1 p-1">
+						<i class="fa fa-exchange"></i>
+						<h6>Exchanges</h6>
+					</a>
+				</li>
+
+				<li class="nav_li">
+					<a href="wallet_system.html" class="nav_a df gap-1 p-1">
+						<i class="fa fa-wallet"></i>
+						<h6>Wallet System</h6>
+					</a>
+				</li>
+
+				<li class="nav_li">
+					<a href="finance.html" class="nav_a df gap-1 p-1">
+						<i class="fa fa-money-bill"></i>
+						<h6>Finance</h6>
+					</a>
+				</li>
+
+				<hr class="my-2">
+
+				<li class="nav_li">
+					<a href="dispute.html" class="nav_a df gap-1 p-1">
+						<i class="fa fa-vcard"></i>
+						<h6>Disputes</h6>
+					</a>
+				</li>
+
+				<li class="nav_li">
+					<a href="trust_system.html" class="nav_a df gap-1 p-1">
+						<i class="fa fa-clipboard-check"></i>
+						<h6>Trust System</h6>
+					</a>
+				</li>
+				<li class="nav_li">
+					<a href="analytics.html" class="nav_a df gap-1 p-1">
+						<i class="fa fa-chart-column"></i>
+						<h6>Analytics</h6>
+					</a>
+				</li>
+				<li class="nav_li">
+					<a href="complaince.html" class="nav_a df gap-1 p-1">
+						<i class="fa fa-shield"></i>
+						<h6>Complaince</h6>
+					</a>
+				</li>
+				<li class="nav_li">
+					<a href="community.html" class="nav_a df gap-1 p-1">
+						<i class="fa fa-people-group"></i>
+						<h6>Community</h6>
+					</a>
+				</li>
+				<li class="nav_li">
+					<a href="settings.html" class="nav_a df gap-1 p-1">
+						<i class="fa fa-cogs"></i>
+						<h6>Settings</h6>
+					</a>
+				</li>
+
+			</ul>
+
+		</nav>
+		<!-- end menu_wrap -->
+
+		<div class="content">
+			<div class="content_page users dg col12 p-2 gap-1">
+				
+				<div class="content_page-btnSection colg-12 df gap-2 pb-1">
+					<h4 class="prime">User Management</h4>
+					<div class="content_page-btnSection_btnGroup df gap-1">
+						<a class="btn btn-xs btn-main-bg df alc" href="addUserAgent.html">
+							<i class="fa fa-plus"></i>
+							Add User
+						</a>
+						<a class="btn btn-xs btn-gray-br df alc" href="#">
+							<i class="fa fa-file-upload"></i>
+							Import file
+						</a>
+						<a class="btn btn-xs btn-dim-br df alc" href="#">
+							<i class="fa fa-file-download"></i>
+							Export Report
+						</a>
+					</div>
+				</div>
+
+
+				<div class="content_page-top colg-12 dg col12 gap-1 pb-1">
+					<h6 class="blc colg-12">Filter/Search By:</h6>
+					<form class="form colg-12 dg col12 gap-2" action="">
+						<div class="colg-3 form-group df gap-1 alc">
+							<select class="content_page-top_select">
+								<option>All Provinces</option>
+							    <option>Koshi</option>
+							    <option>Madhesh</option>
+							    <option>Bagmati</option>
+							</select>
+						</div>
+						<div class="colg-3 form-group df gap-1 alc">
+							<select>
+								<option>All Districts</option>
+							    <option>Taplejung</option>
+							    <option>Panchthar</option>
+							    <option>Ilam</option>
+							    <option>Jhapa</option>
+							</select>
+						</div>
+						<div class="colg-3 form-group df gap-1 alc">
+							<select>
+								<option>All Statuses</option>
+							    <option>Active</option>
+							    <option>Inactive</option>
+							    <option>Suspended</option>
+							</select>
+						</div>
+						<div class="colg-3 form-group search-form inside-form df gap-1 alc">
+							<input type="search" class="btn-gray-br" placeholder="search item(s) here....">
+							<i class="fa fa-search"></i>
+						</div>
+					</form>
+				</div>
+				<!-- end content_page-top -->
+
+				<div class="colg-12 table-wrap">
+					<table>
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Name</th>
+								<th>Phone</th>
+								<th>E-mail</th>
+								<th>District/Area</th>
+								<th>Status</th>
+								<th>Rating</th>
+								<th>Exchanges</th>
+								<th>Balance(Rs.)</th>
+								<th>Actions</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Nabin Sitaula</td>
+								<td>9841895645</td>
+								<td>sitaula@gmail.com</td>
+								<td>Chahil, Kathmandu</td>
+								<td>
+									<span class="blc br-1 status active">Active</span>
+								</td>
+								<td>
+									<aside class="df">
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star"></i>
+									</aside>
+								</td>
+								<td>27</td>
+								<td>7200</td>
+								<td>
+									<aside class="df">
+										<a class="btn view-btn" href="javascript:void()">View</a>
+										<a class="btn edit-btn" href="#">Edit</a>
+										<a class="btn del-btn" href="javascript:void()">Delete</a>
+									</aside>
+								</td>
+							</tr>
+
+							<tr>
+								<td>2</td>
+								<td>Preeti Neupane</td>
+								<td>9841895645</td>
+								<td>preeti.neu@gmail.com</td>
+								<td>Gyaneswor, Kathmandu</td>
+								<td>
+									<span class="blc br-1 status inactive">Inactive</span>
+								</td>
+								<td>
+									<aside class="df">
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star"></i>
+									</aside>
+								</td>
+								<td>70</td>
+								<td>11700</td>
+								<td>
+									<aside class="df">
+										<a class="btn view-btn" href="#">View</a>
+										<a class="btn edit-btn" href="#">Edit</a>
+										<a class="btn del-btn" href="#">Delete</a>
+									</aside>
+								</td>
+							</tr>
+
+							<tr>
+								<td>3</td>
+								<td>Jasika Manandhar</td>
+								<td>9841895645</td>
+								<td>preeti.neu@gmail.com</td>
+								<td>Kuleswor, Kathmandu</td>
+								<td>
+									<span class="blc br-1 status suspended">Suspended</span>
+								</td>
+								<td>
+									<aside class="df">
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star"></i>
+									</aside>
+								</td>
+								<td>30</td>
+								<td>5000</td>
+								<td>
+									<aside class="df">
+										<a class="btn view-btn" href="#">View</a>
+										<a class="btn edit-btn" href="#">Edit</a>
+										<a class="btn del-btn" href="#">Delete</a>
+									</aside>
+								</td>
+							</tr>
+
+							<tr>
+								<td>4</td>
+								<td>Trilochan Karki</td>
+								<td>9841895645</td>
+								<td>trilok.neu@gmail.com</td>
+								<td>Maitidevi, Kathmandu</td>
+								<td>
+									<span class="blc br-1 status pending">Pending</span>
+								</td>
+								<td>
+									<aside class="df">
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star"></i>
+									</aside>
+								</td>
+								<td>30</td>
+								<td>5000</td>
+								<td>
+									<aside class="df">
+										<a class="btn view-btn" href="#">View</a>
+										<a class="btn edit-btn" href="#">Edit</a>
+										<a class="btn del-btn" href="#">Delete</a>
+									</aside>
+								</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>Nabin Sitaula</td>
+								<td>9841895645</td>
+								<td>sitaula@gmail.com</td>
+								<td>Chahil, Kathmandu</td>
+								<td>
+									<span class="blc br-1 status active">Active</span>
+								</td>
+								<td>
+									<aside class="df">
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star"></i>
+									</aside>
+								</td>
+								<td>27</td>
+								<td>7200</td>
+								<td>
+									<aside class="df">
+										<a class="btn view-btn" href="#">View</a>
+										<a class="btn edit-btn" href="#">Edit</a>
+										<a class="btn del-btn" href="#">Delete</a>
+									</aside>
+								</td>
+							</tr>
+
+							<tr>
+								<td>6</td>
+								<td>Preeti Neupane</td>
+								<td>9841895645</td>
+								<td>preeti.neu@gmail.com</td>
+								<td>Gyaneswor, Kathmandu</td>
+								<td>
+									<span class="blc br-1 status inactive">Inactive</span>
+								</td>
+								<td>
+									<aside class="df">
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star"></i>
+									</aside>
+								</td>
+								<td>70</td>
+								<td>11700</td>
+								<td>
+									<aside class="df">
+										<a class="btn view-btn" href="#">View</a>
+										<a class="btn edit-btn" href="#">Edit</a>
+										<a class="btn del-btn" href="#">Delete</a>
+									</aside>
+								</td>
+							</tr>
+
+							<tr>
+								<td>7</td>
+								<td>Jasika Manandhar</td>
+								<td>9841895645</td>
+								<td>preeti.neu@gmail.com</td>
+								<td>Kuleswor, Kathmandu</td>
+								<td>
+									<span class="blc br-1 status suspended">Suspended</span>
+								</td>
+								<td>
+									<aside class="df">
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star"></i>
+									</aside>
+								</td>
+								<td>30</td>
+								<td>5000</td>
+								<td>
+									<aside class="df">
+										<a class="btn view-btn" href="#">View</a>
+										<a class="btn edit-btn" href="#">Edit</a>
+										<a class="btn del-btn" href="#">Delete</a>
+									</aside>
+								</td>
+							</tr>
+
+							<tr>
+								<td>8</td>
+								<td>Trilochan Karki</td>
+								<td>9841895645</td>
+								<td>trilok.neu@gmail.com</td>
+								<td>Maitidevi, Kathmandu</td>
+								<td>
+									<span class="blc br-1 status pending">Pending</span>
+								</td>
+								<td>
+									<aside class="df">
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star"></i>
+									</aside>
+								</td>
+								<td>30</td>
+								<td>5000</td>
+								<td>
+									<aside class="df">
+										<a class="btn view-btn" href="#">View</a>
+										<a class="btn edit-btn" href="#">Edit</a>
+										<a class="btn del-btn" href="#">Delete</a>
+									</aside>
+								</td>
+							</tr>
+
+							<tr>
+								<td>9</td>
+								<td>Nabin Sitaula</td>
+								<td>9841895645</td>
+								<td>sitaula@gmail.com</td>
+								<td>Chahil, Kathmandu</td>
+								<td>
+									<span class="blc br-1 status active">Active</span>
+								</td>
+								<td>
+									<aside class="df">
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star"></i>
+									</aside>
+								</td>
+								<td>27</td>
+								<td>7200</td>
+								<td>
+									<aside class="df">
+										<a class="btn view-btn" href="#">View</a>
+										<a class="btn edit-btn" href="#">Edit</a>
+										<a class="btn del-btn" href="#">Delete</a>
+									</aside>
+								</td>
+							</tr>
+
+							<tr>
+								<td>10</td>
+								<td>Preeti Neupane</td>
+								<td>9841895645</td>
+								<td>preeti.neu@gmail.com</td>
+								<td>Gyaneswor, Kathmandu</td>
+								<td>
+									<span class="blc br-1 status inactive">Inactive</span>
+								</td>
+								<td>
+									<aside class="df">
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star"></i>
+									</aside>
+								</td>
+								<td>70</td>
+								<td>11700</td>
+								<td>
+									<aside class="df">
+										<a class="btn view-btn" href="#">View</a>
+										<a class="btn edit-btn" href="#">Edit</a>
+										<a class="btn del-btn" href="#">Delete</a>
+									</aside>
+								</td>
+							</tr>
+
+							<tr>
+								<td>11</td>
+								<td>Jasika Manandhar</td>
+								<td>9841895645</td>
+								<td>preeti.neu@gmail.com</td>
+								<td>Kuleswor, Kathmandu</td>
+								<td>
+									<span class="blc br-1 status suspended">Suspended</span>
+								</td>
+								<td>
+									<aside class="df">
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star"></i>
+									</aside>
+								</td>
+								<td>30</td>
+								<td>5000</td>
+								<td>
+									<aside class="df">
+										<a class="btn view-btn" href="#">View</a>
+										<a class="btn edit-btn" href="#">Edit</a>
+										<a class="btn del-btn" href="#">Delete</a>
+									</aside>
+								</td>
+							</tr>
+
+							<tr>
+								<td>12</td>
+								<td>Trilochan Karki</td>
+								<td>9841895645</td>
+								<td>trilok.neu@gmail.com</td>
+								<td>Maitidevi, Kathmandu</td>
+								<td>
+									<span class="blc br-1 status pending">Pending</span>
+								</td>
+								<td>
+									<aside class="df">
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star"></i>
+									</aside>
+								</td>
+								<td>30</td>
+								<td>5000</td>
+								<td>
+									<aside class="df">
+										<a class="btn view-btn" href="#">View</a>
+										<a class="btn edit-btn" href="#">Edit</a>
+										<a class="btn del-btn" href="#">Delete</a>
+									</aside>
+								</td>
+							</tr>
+							<tr>
+								<td>13</td>
+								<td>Jasika Manandhar</td>
+								<td>9841895645</td>
+								<td>preeti.neu@gmail.com</td>
+								<td>Kuleswor, Kathmandu</td>
+								<td>
+									<span class="blc br-1 status suspended">Suspended</span>
+								</td>
+								<td>
+									<aside class="df">
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star active"></i>
+										<i class="fa fa-star star"></i>
+									</aside>
+								</td>
+								<td>30</td>
+								<td>5000</td>
+								<td>
+									<aside class="df">
+										<a class="btn view-btn" href="#">View</a>
+										<a class="btn edit-btn" href="#">Edit</a>
+										<a class="btn del-btn" href="#">Delete</a>
+									</aside>
+								</td>
+							</tr>
+
+							
+							
+						</tbody>
+					</table>
+
+				</div>
+				<!-- end table-wrap -->
+
+				<div class="mt-1 colg-12 alc paginate df gap-2">
+					<aside class="paginate_left df gap-1">
+						<a class="page-numbers" href="#">First</a>
+						<a class="prev page-numbers" href="#">&lt;</a>
+						<span aria-current="page" class="page-numbers current">2</span>					
+						<span aria-current="page" class="page-numbers count">of</span>	
+						<a class="next page-numbers" href="#">&gt;</a>					
+						<a class="page-numbers" href="#">99</a>
+					</aside>
+					<aside class="paginate_right df">
+						<p class="p2">Showing 
+							<strong class="blc">13</strong>
+							of 
+							<strong class="blc">3,215</strong>
+						</p>
+					</aside>
+				</div>				
+
+			</div>
+	
+			<!-- display content while clicking on the 'view-btn' -->
+			<div class="popup">	
+				<div class="popup_content">
+					<i class="fa fa-times-circle pop_hide"></i>
+					<aside class="dfc contentDetail">
+						<figcaption class="contentDetail_item df gap-2 alc">
+							<span class="contentDetail_item-name">User ID</span>
+							<p class="p2 contentDetail_item-text">1</p>
+						</figcaption>
+						<figcaption class="contentDetail_item df gap-2 alc">
+							<span class="contentDetail_item-name">Name</span>
+							<p class="p2 contentDetail_item-text">Bijay Rawal</p>
+						</figcaption>
+						<figcaption class="contentDetail_item df gap-2 alc">
+							<span class="contentDetail_item-name">Phone</span>
+							<p class="p2 contentDetail_item-text">9841917256</p>
+						</figcaption>
+						<figcaption class="contentDetail_item df gap-2 alc">
+							<span class="contentDetail_item-name">E-mail</span>
+							<p class="p2 contentDetail_item-text">rawal@gmail.com</p>
+						</figcaption>
+						<figcaption class="contentDetail_item df gap-2 alc">
+							<span class="contentDetail_item-name">District/Area</span>
+							<p class="p2 contentDetail_item-text">Chabil, Kathmandu</p>
+						</figcaption>
+						<figcaption class="contentDetail_item df gap-2 alc">
+							<span class="contentDetail_item-name">Status</span>
+							<p class="p2 contentDetail_item-text">Active</p>
+						</figcaption>
+						<figcaption class="contentDetail_item df gap-2 alc">
+							<span class="contentDetail_item-name">Rating</span>
+							<p class="p2 contentDetail_item-text">
+								<i class="fa fa-star star active"></i>
+								<i class="fa fa-star star active"></i>
+								<i class="fa fa-star star active"></i>
+								<i class="fa fa-star star active"></i>
+								<i class="fa fa-star star"></i>
+								4.8
+							</p>
+						</figcaption>
+						<figcaption class="contentDetail_item df gap-2 alc">
+							<span class="contentDetail_item-name">Exchanges</span>
+							<p class="p2 contentDetail_item-text">35</p>
+						</figcaption>
+						<figcaption class="contentDetail_item df gap-2 alc">
+							<span class="contentDetail_item-name">Balance</span>
+							<p class="p2 contentDetail_item-text">Rs.8200</p>
+						</figcaption>
+						<figcaption class="contentDetail_item df gap-2 alc">
+							<span class="contentDetail_item-name">Image</span>
+							<p class="p2 contentDetail_item-text">
+								<img src="images/img/man.png">
+							</p>
+						</figcaption>
+					</aside>
+				</div>	
+			</div>
+
+
+			<footer class="footer p-1 sobg">
+				<ul class="footer_ul df gap-2 alc">
+					<li class="footer_li df alc">
+						<i class="fa fa-lock"></i>
+						<a class="footer_a blc" href="#">Secure Platform</a>
+					</li>
+					<li class="footer_li df alc">
+						<i class="fa fa-people-group"></i>
+						<a class="footer_a blc" href="#">Trusted Community</a>
+					</li>
+					<li class="footer_li df alc">
+						<i class="fa fa-wallet"></i>
+						<a class="footer_a blc" href="#">Wallet Protected</a>
+					</li>
+					<li class="footer_li df alc">
+						<i class="fa fa-check-circle"></i>
+						<a class="footer_a blc" href="#">Verified System</a>
+					</li>					
+					<li class="footer_li df alc">
+						<i class="fa fa-money-bill-wheat"></i>
+						<a class="footer_a blc" href="#">Community Economy</a>
+					</li>					
+				</ul>
+			</footer>
+
+		</div>
+		<!-- end content -->
+
+	</section>
+
+	<script src="js/jquery-3.5.0.min.js"></script>
+	<script src="js/sweetalert2@11.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript">
+		$('.del-btn').click(function(e) {
+		    e.preventDefault();
+		    Swal.fire({
+		        title: 'Are you sure?',
+		        icon: 'warning',
+		        showCancelButton: true,
+		        confirmButtonText: 'Yes, delete it!'
+		    }).then((result) => {
+		        if (result.isConfirmed) {
+		            Swal.fire('Deleted!', '', 'success');
+		        }
+		    });
+		});
+	</script>
+
+	
+
+</body>
+</html>

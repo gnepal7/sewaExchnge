@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sewa Exchange: Agents</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="images/img/favi.png" type="png">
+	
+	<!-- fontawesome -->
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<!-- custom -->
+	<link rel="stylesheet" type="text/css" href="css/admin.css">
+</head>
+<body>	
+
+	<div class="progress-wrapper">
+		<div class="progress-bar"></div>
+	</div>
+
+	<nav class="nav py-1 top_nav">
+		<div class="wrapper-wide df alc gap-3 header-wrap">
+			<a href="dashboard.html" class="logo df alc gap-1">
+				<img src="images/img/logo.png">
+				<h3 class="prime">SewaExchange</h3>
+			</a>
+
+			<form class="search-form header-form">
+				<input type="search" class="br-3" placeholder="search item(s) here....">
+				<i class="fa fa-search"></i>
+			</form>
+
+			<ul class="btn-group action-buttons df gap-2">
+				<!-- these two list will show after login -->					
+				<li class="df sobg br-1 alc">
+					<a class="btn-sm blc db notify-btn" href="javascript:void()">				
+						<i class="fa fa-bell"></i>
+					</a>
+					<a class="btn-sm sec df profile-btn" href="javascript:void()">		
+						<img src="images/img/man.png">
+						<i class="fa fa-chevron-down"></i>
+					</a>
+				</li>
+
+			</ul>
+			
+		</div>
+	</nav>
+
+	<div class="box_on-click notification p-2 br-1">
+		<h4 class="blc box_on-click_title pb-1 df alc">Notifications 
+			<span class="clear">Clear</span>
+		</h4>
+		<ul class="box_on-click_ul dfc">
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Vestibulum ac arcu id libero dignissim mollis sed ut nunc</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Sed cursus nibh molestie, imperdiet urna a, blandit justo</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Morbi auctor odio sed massa semper molestie</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Praesent nec eros sed sem lacinia mattis sit amet in diam</a>
+			</li>
+			<li class="box_on-click_li py-1">
+				<a class="box_on-click_a blc" href="#">Aliquam dictum libero id orci laoreet dignissim</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="box_on-click profile_box py-1 px-2 br-1">
+		<h4 class="blc box_on-click_title pb-1 mb-1 df alc">Gopal Nepal</h4>
+		<ul class="box_on-click_ul dfc">
+			<li class="box_on-click_li">
+				<a class="box_on-click_a blc df gap-1 alc p-1" href="#">
+					<i class="fa fa-user-circle"></i>
+					<span>Visit Profile
+					</a>
+				</li>
+				<li class="box_on-click_li">
+					<a class="box_on-click_a blc df gap-1 alc p-1" href="#">
+						<i class="fa fa-sign-out"></i>
+						<span>Logout</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<section class="db">
+			<nav class="nav left_nav p-2">
+				<aside class="mb-1">
+					<h4 class="gr mt-2 hide-on-desktop">MENU</h4>
+					<button class="nav_toggler">
+						<i class="fa fa-bars toggler"></i>				   
+					</button>
+					<button class="close-menu">
+						<i class="fa fa-times toggler"></i>				   
+					</button>
+				</aside>
+
+				<ul class="nav_ul dfc">
+					<li class="nav_li">
+						<a href="dashboard.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-dashboard homeicon"></i>
+							<h6>Dashboard</h6>
+						</a>
+					</li>
+
+					<li class="nav_li">
+						<a href="users.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-users"></i>
+							<h6>Users</h6>
+						</a>
+					</li>
+
+					<li class="nav_li">
+						<a href="agents.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-user-secret"></i>
+							<h6>Agents</h6>
+						</a>
+					</li>
+
+					<li class="nav_li active">
+						<a href="exchange.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-exchange"></i>
+							<h6>Exchanges</h6>
+						</a>
+					</li>
+
+					<li class="nav_li">
+						<a href="wallet_system.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-wallet"></i>
+							<h6>Wallet System</h6>
+						</a>
+					</li>
+
+					<li class="nav_li">
+						<a href="finance.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-money-bill"></i>
+							<h6>Finance</h6>
+						</a>
+					</li>
+
+					<hr class="my-2">
+
+					<li class="nav_li">
+						<a href="dispute.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-vcard"></i>
+							<h6>Disputes</h6>
+						</a>
+					</li>
+
+					<li class="nav_li">
+						<a href="trust_system.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-clipboard-check"></i>
+							<h6>Trust System</h6>
+						</a>
+					</li>
+					<li class="nav_li">
+						<a href="analytics.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-chart-column"></i>
+							<h6>Analytics</h6>
+						</a>
+					</li>
+					<li class="nav_li">
+						<a href="complaince.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-shield"></i>
+							<h6>Complaince</h6>
+						</a>
+					</li>
+					<li class="nav_li">
+						<a href="community.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-people-group"></i>
+							<h6>Community</h6>
+						</a>
+					</li>
+					<li class="nav_li">
+						<a href="settings.html" class="nav_a df gap-1 p-1">
+							<i class="fa fa-cogs"></i>
+							<h6>Settings</h6>
+						</a>
+					</li>
+
+				</ul>
+
+			</nav>
+			<!-- end menu_wrap -->
+
+			<div class="content">
+				<div class="content_page exchange dg col12 p-2 gap-1">
+
+					<div class="content_page-btnSection colg-12 df gap-2 pb-1">
+						<h4 class="prime">Exchange Management</h4>
+						<div class="content_page-btnSection_btnGroup df gap-1">
+							<a class="btn btn-xs btn-main-bg df alc" href="#">
+								<i class="fa fa-plus"></i>
+								Add Exchange
+							</a>
+							<a class="btn btn-xs btn-gray-br df alc" href="#">
+								<i class="fa fa-file-upload"></i>
+								Import file
+							</a>
+							<a class="btn btn-xs btn-dim-br df alc" href="#">
+								<i class="fa fa-file-download"></i>
+								Export Report
+							</a>
+						</div>
+					</div>
+
+
+					<div class="content_page-top dg colg-12 gap-1 pb-1">
+						<h6 class="blc colg-12">Filter/Search By:</h6>
+						<form class="form colg-12 col15 gap-2" action="">
+							<div class="colg-3 form-group df gap-1 alc">
+								<select class="content_page-top_select">
+									<option>All Status</option>
+									<option>Active</option>
+									<option>Inactive</option>
+									<option>Suspended</option>
+									<option>Pending</option>
+								</select>
+							</div>
+							<div class="colg-3 form-group df gap-1 alc">
+								<select>
+									<option>All Agents</option>
+									<option>Narayan Chauhan</option>
+									<option>Nabin Sitaula</option>
+									<option>Saugat Parajuli</option>
+								</select>
+							</div>
+							<div class="colg-3 form-group df gap-1 alc">
+								<select>
+									<option>All Provinces</option>
+									<option>Koshi</option>
+									<option>Madhesh</option>
+									<option>Bagmati</option>
+								</select>
+							</div>
+							<div class="colg-3 form-group df gap-1 alc">
+								<select>
+									<option>All District</option>
+									<option>Taplejung</option>
+									<option>Panchthat</option>
+									<option>Ilam</option>
+									<option>Jhapa</option>
+								</select>
+							</div>
+							<div class="colg-3 form-group search-form inside-form df gap-1 alc">
+								<input type="search" class="btn-gray-br" placeholder="search item(s) here....">
+								<i class="fa fa-search"></i>
+							</div>
+						</form>
+					</div>
+					<!-- end content_page-top -->
+
+					<div class="colg-12 table-wrap">
+						<table>
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>Exchange ID</th>
+									<th>Requested By</th>
+									<th>Offered Item</th>
+									<th>Requested Item</th>
+									<th>Status</th>
+									<th>Agent Assigned</th>
+									<th>Initiated Date</th>
+									<th>Last Updated</th>
+									<th>Actions</th>
+								</tr>
+							</thead>
+							<tbody>
+
+								<tr>
+									<td>1</td>
+									<td>20451</td>
+									<td>
+										<aside class="df alc">
+											<img src="images/img/man.png">
+											Nabin Sitaula
+										</aside>
+									</td>
+									<td>Iphone 12</td>
+									<td>Samsumg 221</td>
+									<td>
+										<span class="blc br-1 status inprogress">In-progress</span>
+									</td>
+									<td>
+										<aside class="df alc">
+											<img src="images/img/man2.jpg">
+											Jagat Chauhan
+										</aside>
+									</td>
+									<td>01/01/2026</td>
+									<td>01/15/2026</td>									
+									<td>
+										<aside class="df">
+											<a class="btn view-btn" href="#">View</a>
+											<a class="btn del-btn" href="#">Delete</a>
+										</aside>
+									</td>
+								</tr>
+
+								<tr>
+									<td>2</td>
+									<td>20450</td>
+									<td>
+										<aside class="df alc">
+											<img src="images/img/man2.jpg">
+											Ashok Rajbhandari
+										</aside>
+									</td>
+									<td>Honda Active</td>
+									<td>Motorcycle</td>
+									<td>
+										<span class="blc br-1 status successed">Successed</span>
+									</td>
+									<td>
+										<aside class="df alc">
+											<img src="images/img/man.png">
+											Prayag Panta
+										</aside>
+									</td>
+									<td>02/01/2026</td>
+									<td>01/22/2026</td>									
+									<td>
+										<aside class="df">
+											<a class="btn view-btn" href="#">View</a>
+											<a class="btn del-btn" href="#">Delete</a>
+										</aside>
+									</td>
+								</tr>
+
+								<tr>
+									<td>3</td>
+									<td>20455</td>
+									<td>
+										<aside class="df alc">
+											<img src="images/img/man.png">
+											Naresh Baral
+										</aside>
+									</td>
+									<td>Sofa Set</td>
+									<td>Dining Table</td>
+									<td>
+										<span class="blc br-1 status disputed">Disputed</span>
+									</td>
+									<td>
+										<aside class="df alc">
+											<img src="images/img/man2.jpg">
+											Nayan Chhetri
+										</aside>
+									</td>
+									<td>02/01/2026</td>
+									<td>01/22/2026</td>									
+									<td>
+										<aside class="df">
+											<a class="btn view-btn" href="#">View</a>
+											<a class="btn del-btn" href="#">Delete</a>
+										</aside>
+									</td>
+								</tr>
+
+								<tr>
+									<td>4</td>
+									<td>20455</td>
+									<td>
+										<aside class="df alc">
+											<img src="images/img/man2.jpg">
+											Prem Bhandari
+										</aside>
+									</td>
+									<td>Helmet</td>
+									<td>Guitar</td>
+									<td>
+										<span class="blc br-1 status cancelled">Cancelled</span>
+									</td>
+									<td>
+										<aside class="df alc">
+											<img src="images/img/man2.jpg">
+											Brijesh Neupane
+										</aside>
+									</td>
+									<td>02/01/2026</td>
+									<td>01/22/2026</td>									
+									<td>
+										<aside class="df">
+											<a class="btn view-btn" href="#">View</a>
+											<a class="btn del-btn" href="#">Delete</a>
+										</aside>
+									</td>
+								</tr>
+
+								<tr>
+									<td>5</td>
+									<td>20451</td>
+									<td>
+										<aside class="df alc">
+											<img src="images/img/man.png">
+											Nabin Sitaula
+										</aside>
+									</td>
+									<td>Iphone 12</td>
+									<td>Samsumg 221</td>
+									<td>
+										<span class="blc br-1 status inprogress">In-progress</span>
+									</td>
+									<td>
+										<aside class="df alc">
+											<img src="images/img/man2.jpg">
+											Jagat Chauhan
+										</aside>
+									</td>
+									<td>01/01/2026</td>
+									<td>01/15/2026</td>									
+									<td>
+										<aside class="df">
+											<a class="btn view-btn" href="#">View</a>
+											<a class="btn del-btn" href="#">Delete</a>
+										</aside>
+									</td>
+								</tr>
+
+								<tr>
+									<td>6</td>
+									<td>20450</td>
+									<td>
+										<aside class="df alc">
+											<img src="images/img/man2.jpg">
+											Ashok Rajbhandari
+										</aside>
+									</td>
+									<td>Honda Active</td>
+									<td>Motorcycle</td>
+									<td>
+										<span class="blc br-1 status successed">Successed</span>
+									</td>
+									<td>
+										<aside class="df alc">
+											<img src="images/img/man.png">
+											Prayag Panta
+										</aside>
+									</td>
+									<td>02/01/2026</td>
+									<td>01/22/2026</td>									
+									<td>
+										<aside class="df">
+											<a class="btn view-btn" href="#">View</a>
+											<a class="btn del-btn" href="#">Delete</a>
+										</aside>
+									</td>
+								</tr>
+
+								<tr>
+									<td>7</td>
+									<td>20455</td>
+									<td>
+										<aside class="df alc">
+											<img src="images/img/man.png">
+											Naresh Baral
+										</aside>
+									</td>
+									<td>Sofa Set</td>
+									<td>Dining Table</td>
+									<td>
+										<span class="blc br-1 status disputed">Disputed</span>
+									</td>
+									<td>
+										<aside class="df alc">
+											<img src="images/img/man2.jpg">
+											Nayan Chhetri
+										</aside>
+									</td>
+									<td>02/01/2026</td>
+									<td>01/22/2026</td>									
+									<td>
+										<aside class="df">
+											<a class="btn view-btn" href="#">View</a>
+											<a class="btn del-btn" href="#">Delete</a>
+										</aside>
+									</td>
+								</tr>
+
+								<tr>
+									<td>8</td>
+									<td>20455</td>
+									<td>
+										<aside class="df alc">
+											<img src="images/img/man2.jpg">
+											Prem Bhandari
+										</aside>
+									</td>
+									<td>Helmet</td>
+									<td>Guitar</td>
+									<td>
+										<span class="blc br-1 status cancelled">Cancelled</span>
+									</td>
+									<td>
+										<aside class="df alc">
+											<img src="images/img/man2.jpg">
+											Brijesh Neupane
+										</aside>
+									</td>
+									<td>02/01/2026</td>
+									<td>01/22/2026</td>									
+									<td>
+										<aside class="df">
+											<a class="btn view-btn" href="#">View</a>
+											<a class="btn del-btn" href="#">Delete</a>
+										</aside>
+									</td>
+								</tr>
+
+								<tr>
+									<td>9</td>
+									<td>20451</td>
+									<td>
+										<aside class="df alc">
+											<img src="images/img/man.png">
+											Nabin Sitaula
+										</aside>
+									</td>
+									<td>Iphone 12</td>
+									<td>Samsumg 221</td>
+									<td>
+										<span class="blc br-1 status inprogress">In-progress</span>
+									</td>
+									<td>
+										<aside class="df alc">
+											<img src="images/img/man2.jpg">
+											Jagat Chauhan
+										</aside>
+									</td>
+									<td>01/01/2026</td>
+									<td>01/15/2026</td>									
+									<td>
+										<aside class="df">
+											<a class="btn view-btn" href="#">View</a>
+											<a class="btn del-btn" href="#">Delete</a>
+										</aside>
+									</td>
+								</tr>
+
+								<tr>
+									<td>10</td>
+									<td>20450</td>
+									<td>
+										<aside class="df alc">
+											<img src="images/img/man2.jpg">
+											Ashok Rajbhandari
+										</aside>
+									</td>
+									<td>Honda Active</td>
+									<td>Motorcycle</td>
+									<td>
+										<span class="blc br-1 status successed">Successed</span>
+									</td>
+									<td>
+										<aside class="df alc">
+											<img src="images/img/man.png">
+											Prayag Panta
+										</aside>
+									</td>
+									<td>02/01/2026</td>
+									<td>01/22/2026</td>									
+									<td>
+										<aside class="df">
+											<a class="btn view-btn" href="#">View</a>
+											<a class="btn del-btn" href="#">Delete</a>
+										</aside>
+									</td>
+								</tr>
+
+								<tr>
+									<td>11</td>
+									<td>20455</td>
+									<td>
+										<aside class="df alc">
+											<img src="images/img/man.png">
+											Naresh Baral
+										</aside>
+									</td>
+									<td>Sofa Set</td>
+									<td>Dining Table</td>
+									<td>
+										<span class="blc br-1 status disputed">Disputed</span>
+									</td>
+									<td>
+										<aside class="df alc">
+											<img src="images/img/man2.jpg">
+											Nayan Chhetri
+										</aside>
+									</td>
+									<td>02/01/2026</td>
+									<td>01/22/2026</td>									
+									<td>
+										<aside class="df">
+											<a class="btn view-btn" href="#">View</a>
+											<a class="btn del-btn" href="#">Delete</a>
+										</aside>
+									</td>
+								</tr>
+
+								<tr>
+									<td>12</td>
+									<td>20455</td>
+									<td>
+										<aside class="df alc">
+											<img src="images/img/man2.jpg">
+											Prem Bhandari
+										</aside>
+									</td>
+									<td>Helmet</td>
+									<td>Guitar</td>
+									<td>
+										<span class="blc br-1 status cancelled">Cancelled</span>
+									</td>
+									<td>
+										<aside class="df alc">
+											<img src="images/img/man2.jpg">
+											Brijesh Neupane
+										</aside>
+									</td>
+									<td>02/01/2026</td>
+									<td>01/22/2026</td>									
+									<td>
+										<aside class="df">
+											<a class="btn view-btn" href="#">View</a>
+											<a class="btn del-btn" href="#">Delete</a>
+										</aside>
+									</td>
+								</tr>
+
+								<tr>
+									<td>13</td>
+									<td>20455</td>
+									<td>
+										<aside class="df alc">
+											<img src="images/img/man.png">
+											Naresh Baral
+										</aside>
+									</td>
+									<td>Sofa Set</td>
+									<td>Dining Table</td>
+									<td>
+										<span class="blc br-1 status disputed">Disputed</span>
+									</td>
+									<td>
+										<aside class="df alc">
+											<img src="images/img/man2.jpg">
+											Nayan Chhetri
+										</aside>
+									</td>
+									<td>02/01/2026</td>
+									<td>01/22/2026</td>									
+									<td>
+										<aside class="df">
+											<a class="btn view-btn" href="#">View</a>
+											<a class="btn del-btn" href="#">Delete</a>
+										</aside>
+									</td>
+								</tr>
+
+
+
+							</tbody>
+						</table>
+
+					</div>
+					<!-- end table-wrap -->
+
+					<div class="mt-1 colg-12 alc paginate df gap-2">
+						<aside class="paginate_left df gap-1">
+							<a class="page-numbers" href="#">First</a>
+							<a class="prev page-numbers" href="#">&lt;</a>
+							<span aria-current="page" class="page-numbers current">2</span>					
+							<span aria-current="page" class="page-numbers count">of</span>	
+							<a class="next page-numbers" href="#">&gt;</a>					
+							<a class="page-numbers" href="#">99</a>
+						</aside>
+						<aside class="paginate_right df">
+							<p class="p2">Showing 
+								<strong class="blc">13</strong>
+								of 
+								<strong class="blc">3,215</strong>
+							</p>
+						</aside>
+					</div>	
+					
+
+				</div>
+
+				<footer class="footer p-1 sobg">
+					<ul class="footer_ul df gap-2 alc">
+						<li class="footer_li df alc">
+							<i class="fa fa-lock"></i>
+							<a class="footer_a blc" href="#">Secure Platform</a>
+						</li>
+						<li class="footer_li df alc">
+							<i class="fa fa-people-group"></i>
+							<a class="footer_a blc" href="#">Trusted Community</a>
+						</li>
+						<li class="footer_li df alc">
+							<i class="fa fa-wallet"></i>
+							<a class="footer_a blc" href="#">Wallet Protected</a>
+						</li>
+						<li class="footer_li df alc">
+							<i class="fa fa-check-circle"></i>
+							<a class="footer_a blc" href="#">Verified System</a>
+						</li>					
+						<li class="footer_li df alc">
+							<i class="fa fa-money-bill-wheat"></i>
+							<a class="footer_a blc" href="#">Community Economy</a>
+						</li>					
+					</ul>
+				</footer>
+
+			</div>
+			<!-- end content -->
+
+		</section>
+
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/main.js"></script>
+
+	</body>
+	</html>
